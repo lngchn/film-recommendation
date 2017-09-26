@@ -19,8 +19,11 @@ class Navbar extends React.Component {
   constructor() {
     super();
     this.state = {
-      active: "Recommendation"
+      active: "Recommendation",
+      searchValue: ""
     }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleClick(value) {
@@ -28,6 +31,17 @@ class Navbar extends React.Component {
     this.setState({
       active
     });
+  }
+
+  handleChange(event) {
+    this.setState({
+      searchValue: event.target.value
+    });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    console.log(this.state.searchValue);
   }
 
   render() {
@@ -44,8 +58,8 @@ class Navbar extends React.Component {
               <NavItem name="Activity" active={this.state.active} onClick={value => this.handleClick("Activity")} />
               <NavItem name="People" active={this.state.active} onClick={value => this.handleClick("People")} />
             </div>
-            <form className="form-inline">
-              <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+            <form className="form-inline" onSubmit={this.handleSubmit}>
+              <input className="form-control mr-sm-2" type="text" value={this.state.searchValue} onChange={this.handleChange} placeholder="Search" aria-label="Search" />
               <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>
