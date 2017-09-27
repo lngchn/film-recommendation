@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.css';
+import Logo from '../img/film_pro_logo.png';
 
 function NavItem(props) {
   const name = props.name;
@@ -49,12 +50,12 @@ class Navbar extends React.Component {
       <div className="row">
         <div className="col">
           <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-            <a className="navbar-brand text-uppercase" href="./">Film Pro</a>
+            <a className="navbar-brand text-uppercase" href="./"><img src={Logo} width="100" height="13" alt="Film Pro" /></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <div className="navbar-nav mr-auto">
+              <div className="navbar-nav mr-md-3">
                 <NavItem name="Recommendation" active={this.state.active} onClick={value => this.handleClick("Recommendation")} />
                 <NavItem name="Activity" active={this.state.active} onClick={value => this.handleClick("Activity")} />
                 <NavItem name="People" active={this.state.active} onClick={value => this.handleClick("People")} />
