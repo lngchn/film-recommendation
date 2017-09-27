@@ -1,0 +1,16 @@
+nav {
+  background-color: #212F3D;
+}
+
+.jumbotron {
+  background-color: #212F3D; 
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: gray;
+}
