@@ -1,4 +1,4 @@
-#(5:12 pm, 9-27-17)
+#9-27-17, 5:41 pm
 
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
@@ -19,31 +19,25 @@ def get_user_full_id(url):
     user_id = re.search( "^http:\/\/[^\/]*\/[^\/]*\/([^\/]*).*", url).group(1)
     return user_id
 
-
 def get_user_id(url):
     url = "http://www.imdb.com/user/ur1000000/ratings?start=1&view=compact"
     user_id = re.search( "^http:\/\/[^\/]*\/[^\/]*\/ur([\d]*).*", url).group(1)
     return user_id
 
-#Pseudo place holder function
 def init(new_user_num, max_users):
     for i in range(0, max_users):
-    
         try:
             new_user_num = str(i + int(new_user_num))
             url = "http://www.imdb.com/user/ur"+new_user_num+"/ratings?start=1&view=compact"
             r = requests.get(url)
             process_user_data(url, new_user_num)
-            
-            
+               
         except Exception as e:
             print(str(e))
             print("USER: " + new_user_num + " = N/A" +"\n")
             #print(new_user_num)
 
 def get_parsed_page(user, page_num):
-    
-    
     try:
         r = requests.get("http://www.imdb.com/user/"+user+"/ratings?start="+str(page_num)+"&view=compact")
         if r.status_code == 200:
