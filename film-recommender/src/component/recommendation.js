@@ -7,7 +7,7 @@ class Recommendation extends React.Component {
     return(
       <div className="container-fluid">
         <div className="row">
-
+          {/* Sidebar */}
           <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
             <h4 className="ml-3 mb-1 text-light text-uppercase">Genre</h4>
             <nav className="nav flex-column">
@@ -31,8 +31,12 @@ class Recommendation extends React.Component {
             </nav>
           </nav>
 
+          {/* Body */}
           <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 text-light">
-            <h2 className="text-left mt-3">Seed Films</h2>
+            {/* Seed Films */}
+            <h2 className="text-left mt-3">Seed Films
+              <button type="button" className="btn btn-outline-info ml-2" data-toggle="modal" data-target="#addSeedFilm" >+</button>
+            </h2>
             <section className="row text-center placeholders">
               <div className="col-6 col-sm-3 placeholder">
                 <img src={movie01} width="202" height="300" className="img-fluid" alt="Generic placeholder thumbnail" />
@@ -51,7 +55,7 @@ class Recommendation extends React.Component {
                 <h4>Movie Title</h4>
               </div>
             </section>
-
+            {/* Recommendations */}
             <h2 className="text-left mt-5">Recommendations</h2>
             <section className="row text-center placeholders">
               <div className="col-6 col-sm-3 placeholder">
@@ -72,6 +76,27 @@ class Recommendation extends React.Component {
               </div>
             </section>
           </main>
+
+          {/* Modal for Add a Seed Film */}
+          <div className="modal fade" id="addSeedFilm" tabIndex="-1" role="dialog" aria-labelledby="addSeedFilmLabel" aria-hidden="true">
+            <div className="modal-dialog" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="addSeedFilmLabel">Add a Seed Film</h5>
+                  <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div className="modal-body">
+                  Testing
+                </div>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" className="btn btn-outline-success seedFilmAddButton">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>

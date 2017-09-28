@@ -14,3 +14,8 @@ a {
 a:hover {
   color: gray;
 }
+
+.seedFilmAddButton {
+  padding-right: 1.2em;
+  padding-left: 1.2em;
+}
