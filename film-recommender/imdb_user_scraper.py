@@ -1,4 +1,4 @@
-#9-28-17, 12:01 am
+#9-28-17, 2:39 am
 
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
@@ -19,24 +19,32 @@ def get_full_user_id(url):
     user_id = re.search( "^http:\/\/[^\/]*\/[^\/]*\/([^\/]*).*", url).group(1)
     return user_id
     
-#Returns just numeric portion of user id (not used)
+#Returns just numeric portion of user ID (not used)
 def get_user_id(url):
     user_id = re.search( "^http:\/\/[^\/]*\/[^\/]*\/ur([\d]*).*", url).group(1)
     return user_id
 
 #Accepts a user number and a value for max users, initializes program  
 def init(new_user_num, max_users):
+    list_of_users =[]
+    
+    #Had issues generating and using the user IDs directly, decided to store them first
     for i in range(0, max_users):
+        list_of_users.append( new_user_num + int(i))
+    
+
+    for i in range(len(list_of_users)):
         try:
-            new_user_num = str(i + int(new_user_num))
-            url = "http://www.imdb.com/user/ur"+new_user_num+"/ratings?start=1&view=compact"
+            new_user_num = list_of_users[i]
+            url = "http://www.imdb.com/user/ur"+str(new_user_num)+"/ratings?start=1&view=compact"
             r = requests.get(url)
             process_user_data(url, new_user_num)
+           
                
         except Exception as e:
-            print("USER: " + new_user_num + " = N/A" +"\n")
+            print("USER: " + str(new_user_num) + " = N/A" +"\n")
             print(str(e))
-
+    
 
 # Inputs full user id and page number and returns a parsed page of html content
 def get_parsed_page(user_id, page_num):
@@ -76,7 +84,7 @@ def append_to_list(html_query, updated_list):
 #Process user data
 def process_user_data(url, user_num):
     film_ids, titles, ratings = [], [], []
-    user_id = "ur" + user_num 
+    user_id = "ur" + str(user_num) 
     film_data = {"user_id": user_id, "films":[]}
     parsed_page = get_parsed_page(user_id, 1)
     id_query  = parsed_page.find_all('tr')    #search for film id
@@ -84,8 +92,7 @@ def process_user_data(url, user_num):
     rating_query = parsed_page.find_all('td', class_="your_ratings") #search for movie rating
     film_total = get_film_total(parsed_page) #All the films on a user's page
 
-    i = 1 # page num
-    for i in range(1, 750, 250):  #750 will eventually be film_total
+    for i in range(0, 750, 250):  #750 will eventually be film_total
         try:
             append_to_film_id_list(id_query, film_ids)
             append_to_list(title_query, titles)
@@ -107,8 +114,8 @@ def process_user_data(url, user_num):
         
 
 def main():
-	init("1000000", 5000) #start user, go for 200 entries
-	
+    init(1000000, 5000) #start user, go for 200 entries
+    
 
 if __name__ == "__main__":
     main()
