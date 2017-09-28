@@ -1,29 +1,30 @@
-#9-27-17, 5:41 pm
+#9-28-17, 12:01 am
 
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
 import re                     #For regular expresions 
 import json                   #For exporting a JSON file
-
 #from multiprocessing import Pool
 
 '''
+# Uses a list of user ids rather than grabbing them dynamically 
 def init():
     sample_users = ['1000000','0024634','0204988','12887646','1591648' ] 
     for i in range(0, len(sample_users)):
         process_user_data("http://www.imdb.com/user/ur"+sample_users[i]+"/ratings?start=1&view=compact")
 '''
 
-def get_user_full_id(url):
-    url = "http://www.imdb.com/user/ur1000000/ratings?start=1&view=compact"
+#Returns full user id with "ur" prefix (not used)
+def get_full_user_id(url):
     user_id = re.search( "^http:\/\/[^\/]*\/[^\/]*\/([^\/]*).*", url).group(1)
     return user_id
-
+    
+#Returns just numeric portion of user id (not used)
 def get_user_id(url):
-    url = "http://www.imdb.com/user/ur1000000/ratings?start=1&view=compact"
     user_id = re.search( "^http:\/\/[^\/]*\/[^\/]*\/ur([\d]*).*", url).group(1)
     return user_id
 
+#Accepts a user number and a value for max users, initializes program  
 def init(new_user_num, max_users):
     for i in range(0, max_users):
         try:
@@ -33,13 +34,14 @@ def init(new_user_num, max_users):
             process_user_data(url, new_user_num)
                
         except Exception as e:
-            print(str(e))
             print("USER: " + new_user_num + " = N/A" +"\n")
-            #print(new_user_num)
+            print(str(e))
 
-def get_parsed_page(user, page_num):
+
+# Inputs full user id and page number and returns a parsed page of html content
+def get_parsed_page(user_id, page_num):
     try:
-        r = requests.get("http://www.imdb.com/user/"+user+"/ratings?start="+str(page_num)+"&view=compact")
+        r = requests.get("http://www.imdb.com/user/"+user_id+"/ratings?start="+str(page_num)+"&view=compact")
         if r.status_code == 200:
             html = r.text
             parsed_page = BeautifulSoup(html, "lxml")
@@ -50,7 +52,8 @@ def get_parsed_page(user, page_num):
     finally:
         return parsed_page
 
-    
+
+#Returns the the total number of films watched by a given user    
 def get_film_total(parsed_page):
     #Extract the total amount of films the user has reviewed
     x = parsed_page.find('div', class_='desc')
@@ -58,20 +61,22 @@ def get_film_total(parsed_page):
     return film_total
 
 
+#Append elements to a list a film IDs
 def append_to_film_id_list(html_query, updated_list):
     for line in html_query: #Search and store film imdb film ids
         updated_list.append( "tt" + str(line.get('data-item-id')))
+   
         
-
+#Append elements to a list of film titles or a list of film ratings 
 def append_to_list(html_query, updated_list):
     for line in html_query: #Search and store film imdb film ids
         updated_list.append(line.getText(strip=True).encode("utf-8"))
 
 
+#Process user data
 def process_user_data(url, user_num):
     film_ids, titles, ratings = [], [], []
     user_id = "ur" + user_num 
-    #print("user: " + user_id)
     film_data = {"user_id": user_id, "films":[]}
     parsed_page = get_parsed_page(user_id, 1)
     id_query  = parsed_page.find_all('tr')    #search for film id
@@ -102,8 +107,8 @@ def process_user_data(url, user_num):
         
 
 def main():
-    init("1000000", 300) #start user, go for 200 entries
+	init("1000000", 5000) #start user, go for 200 entries
+	
 
- 
 if __name__ == "__main__":
     main()
