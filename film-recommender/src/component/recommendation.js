@@ -37,42 +37,50 @@ class Recommendation extends React.Component {
             <h2 className="text-left mt-3">Seed Films
               <button type="button" className="btn btn-outline-info ml-2" data-toggle="modal" data-target="#addSeedFilm" >+</button>
             </h2>
-            <section className="row text-center placeholders">
-              <div className="col-6 col-sm-3 placeholder">
-                <img src={movie01} width="202" height="300" className="img-fluid" alt="Generic placeholder thumbnail" />
-                <h4>Movie Title</h4>
+            <section className="row">
+              <div className="col-6 col-md-3 thumbnail">
+                <img src={movie01} width="202" height="300" className="img-fluid movie-poster" alt="Movie Poster" />
+                <h4 className="movie-title">The Martian</h4>
+                <p className="movie-description lead">An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.</p> 
               </div>
-              <div className="col-6 col-sm-3 placeholder">
-                <img src={movie01} width="202" height="300" className="img-fluid" alt="Generic placeholder thumbnail" />
-                <h4>Movie Title</h4>
+              <div className="col-6 col-md-3 thumbnail">
+                <img src={movie01} width="202" height="300" className="img-fluid movie-poster" alt="Movie Poster" />
+                <h4 className="movie-title">The Martian</h4>
+                <p className="movie-description lead">An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.</p> 
               </div>
-              <div className="col-6 col-sm-3 placeholder">
-                <img src={movie01} width="202" height="300" className="img-fluid" alt="Generic placeholder thumbnail" />
-                <h4>Movie Title</h4>
+              <div className="col-6 col-md-3 thumbnail">
+                <img src={movie01} width="202" height="300" className="img-fluid movie-poster" alt="Movie Poster" />
+                <h4 className="movie-title">The Martian</h4>
+                <p className="movie-description lead">An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.</p> 
               </div>
-              <div className="col-6 col-sm-3 placeholder">
-                <img src={movie01} width="202" height="300" className="img-fluid" alt="Generic placeholder thumbnail" />
-                <h4>Movie Title</h4>
+              <div className="col-6 col-md-3 thumbnail">
+                <img src={movie01} width="202" height="300" className="img-fluid movie-poster" alt="Movie Poster" />
+                <h4 className="movie-title">The Martian</h4>
+                <p className="movie-description lead">An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.</p> 
               </div>
             </section>
             {/* Recommendations */}
             <h2 className="text-left mt-5">Recommendations</h2>
             <section className="row text-center placeholders">
-              <div className="col-6 col-sm-3 placeholder">
-                <img src={movie01} width="202" height="300" className="img-fluid" alt="Generic placeholder thumbnail" />
-                <h4>Movie Title</h4>
+              <div className="col-6 col-md-3 thumbnail">
+                <img src={movie01} width="202" height="300" className="img-fluid movie-poster" alt="Movie Poster" />
+                <h4 className="movie-title">The Martian</h4>
+                <p className="movie-description lead">An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.</p> 
               </div>
-              <div className="col-6 col-sm-3 placeholder">
-                <img src={movie01} width="202" height="300" className="img-fluid" alt="Generic placeholder thumbnail" />
-                <h4>Movie Title</h4>
+              <div className="col-6 col-md-3 thumbnail">
+                <img src={movie01} width="202" height="300" className="img-fluid movie-poster" alt="Movie Poster" />
+                <h4 className="movie-title">The Martian</h4>
+                <p className="movie-description lead">An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.</p> 
               </div>
-              <div className="col-6 col-sm-3 placeholder">
-                <img src={movie01} width="202" height="300" className="img-fluid" alt="Generic placeholder thumbnail" />
-                <h4>Movie Title</h4>
+              <div className="col-6 col-md-3 thumbnail">
+                <img src={movie01} width="202" height="300" className="img-fluid movie-poster" alt="Movie Poster" />
+                <h4 className="movie-title">The Martian</h4>
+                <p className="movie-description lead">An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.</p> 
               </div>
-              <div className="col-6 col-sm-3 placeholder">
-                <img src={movie01} width="202" height="300" className="img-fluid" alt="Generic placeholder thumbnail" />
-                <h4>Movie Title</h4>
+              <div className="col-6 col-md-3 thumbnail">
+                <img src={movie01} width="202" height="300" className="img-fluid movie-poster" alt="Movie Poster" />
+                <h4 className="movie-title">The Martian</h4>
+                <p className="movie-description lead">An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.</p> 
               </div>
             </section>
           </main>

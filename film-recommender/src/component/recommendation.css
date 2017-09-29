@@ -1,9 +1,5 @@
-nav {
+nav, main {
   background-color: #212F3D;
-}
-
-main {
-  background-color: #212F3D; 
 }
 
 a {
@@ -13,6 +9,39 @@ a {
 
 a:hover {
   color: gray;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.movie-poster, .movie-title, .movie-description {
+  transition: 0.5s ease;
+}
+
+.movie-title {
+  top: 10%;
+}
+
+.movie-description {
+  top: 20%;
+  font-size: 1em;
+}
+
+.movie-title, .movie-description {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+
+.thumbnail:hover .movie-poster {
+  opacity: 0.3;
+}
+
+.thumbnail:hover .movie-title, .thumbnail:hover .movie-description {
+  opacity: 1;
 }
 
 .seedFilmAddButton {
