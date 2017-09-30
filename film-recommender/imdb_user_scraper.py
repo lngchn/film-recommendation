@@ -1,4 +1,4 @@
-#9-28-17, 2:39 am
+#9-30-17, 1:53 am
 
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
