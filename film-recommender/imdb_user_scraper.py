@@ -24,13 +24,28 @@ def get_user_id(url):
     user_id = re.search( "^http:\/\/[^\/]*\/[^\/]*\/ur([\d]*).*", url).group(1)
     return user_id
 
+# If length is less than 7 add leading zeros 
+def check_user_id_length(user_id_num):
+    
+    if(len(user_id_num) != 7):
+        for i in range(len(user_id_num), 7):
+            user_id_num = "0" + user_id_num
+    else:
+        print user_id_num + " the length of this user ID is 7."
+
+    return user_id_num
+    
+
 #Accepts a user number and a value for max users, initializes program  
 def init(new_user_num, max_users):
     list_of_users =[]
     
     #Had issues generating and using the user IDs directly, decided to store them first
     for i in range(0, max_users):
-        list_of_users.append( new_user_num + int(i))
+        current_user = str(new_user_num + int(i))
+        current_user = check_user_id_length(current_user)
+        
+        list_of_users.append(current_user)
     
 
     for i in range(len(list_of_users)):
@@ -42,20 +57,21 @@ def init(new_user_num, max_users):
            
                
         except Exception as e:
-            print("USER: " + str(new_user_num) + " = N/A" +"\n")
-            print(str(e))
+            print("Exception: tt"+ str(new_user_num) + " ratings are N/A." + "\n" )
+           
+            #print(str(e))
     
 
 # Inputs full user id and page number and returns a parsed page of html content
 def get_parsed_page(user_id, page_num):
     try:
-        r = requests.get("http://www.imdb.com/user/"+user_id+"/ratings?start="+str(page_num)+"&view=compact")
+        r = requests.get("http://www.imdb.com/user/" + user_id + "/ratings?start="+str(page_num)+"&view=compact")
         if r.status_code == 200:
             html = r.text
             parsed_page = BeautifulSoup(html, "lxml")
         
     except Exception as e:
-        print(str(e))
+        print("Exception: tt" + user_id + "ratings page is N/A.")
     
     finally:
         return parsed_page
@@ -72,7 +88,15 @@ def get_film_total(parsed_page):
 #Append elements to a list a film IDs
 def append_to_film_id_list(html_query, updated_list):
     for line in html_query: #Search and store film imdb film ids
-        updated_list.append( "tt" + str(line.get('data-item-id')))
+        user_num = str(line.get('data-item-id'))
+
+        try:
+            int(user_num) # Test if x is an int value.
+            updated_list.append( "tt" + str(user_num))
+        
+        except Exception as e:
+            print "Exception: " + str(e)
+            print "Moving to next user.... " + "\n"
    
         
 #Append elements to a list of film titles or a list of film ratings 
@@ -87,9 +111,11 @@ def process_user_data(url, user_num):
     user_id = "ur" + str(user_num) 
     film_data = {"user_id": user_id, "films":[]}
     parsed_page = get_parsed_page(user_id, 1)
-    id_query  = parsed_page.find_all('tr')    #search for film id
+    
+    id_query  = parsed_page.find_all('tr', class_="list_item")    #search for film id
     title_query = parsed_page.find_all('td', class_="title") #search for title 
     rating_query = parsed_page.find_all('td', class_="your_ratings") #search for movie rating
+    
     film_total = get_film_total(parsed_page) #All the films on a user's page
 
     for i in range(0, 750, 250):  #750 will eventually be film_total
@@ -98,8 +124,9 @@ def process_user_data(url, user_num):
             append_to_list(title_query, titles)
             append_to_list(rating_query, ratings)
             
-        except IndexError:
-            print("Index error!")
+        except Exception as e:
+            print "Exception: " + str(e)
+            print "Moving to next user ratings page...." + "\n"
             break
         parsed_page = get_parsed_page(user_id, i)
         
@@ -109,12 +136,12 @@ def process_user_data(url, user_num):
         print(film_data["films"][i])
     
     #Output user info into JSON file    
-    with open(user_id +"_film_ratings" + '.json', 'w') as output:
+    with open(str(user_id) + ".json", "w") as output:
         json.dump(film_data, output, sort_keys=True, indent=2)
         
 
 def main():
-    init(1000000, 5000) #start user, go for 200 entries
+    init(0, 5000) #start user is ur0000000 (does not exist), script then iterates 5000 times
     
 
 if __name__ == "__main__":
