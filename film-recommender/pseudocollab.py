@@ -58,7 +58,7 @@ Rather than calculating distance, I would use cosine similarities (from python l
 1a) i.e. -> match Toy Story similar films such as Toy Story 2, Bug's Life, Up, etc. (animation films)
 2) THEN I would apply user-based filtering
 
-^^^ above is a work in progress, I will need to do more research
+^^^ above is a work in progress, I will need to do more research'''
 
 
 
