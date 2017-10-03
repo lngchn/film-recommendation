@@ -19,6 +19,7 @@ class Recommendation extends React.Component {
               <a className="nav-item nav-link" href="#">Drama</a>
               <a className="nav-item nav-link" href="#">Horror</a>
               <a className="nav-item nav-link" href="#">Sci-Fi & Fantasy</a>
+              <a className="nav-item nav-link text-right text-secondary" href="#">More</a>
             </nav>
             <h4 className="mt-4 ml-3 mb-1 text-light text-uppercase">Rating</h4>
             <nav className="nav flex-column">
@@ -28,6 +29,7 @@ class Recommendation extends React.Component {
               <a className="nav-item nav-link" href="#">R</a>
               <a className="nav-item nav-link" href="#">NR</a>
               <a className="nav-item nav-link" href="#">NC-17</a>
+              <a className="nav-item nav-link text-right text-secondary" href="#">More</a>
             </nav>
           </nav>
 
