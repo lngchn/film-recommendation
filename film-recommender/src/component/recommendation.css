@@ -2,12 +2,12 @@
   background-color: #212F3D;
 }
 
-a {
+.filter-link a {
   text-decoration: none;
   color: white;
 }
 
-a:hover {
+.filter-link a:hover {
   color: gray;
 }
 

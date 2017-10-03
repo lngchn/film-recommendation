@@ -1,3 +1,8 @@
-.footer {
-  /*background-color: gray;*/
+.footer-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-link a:hover {
+  color: gray;
 }

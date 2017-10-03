@@ -10,7 +10,7 @@ class Recommendation extends React.Component {
           {/* Sidebar */}
           <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
             <h4 className="ml-3 mb-1 text-light text-uppercase">Genre</h4>
-            <nav className="nav flex-column">
+            <nav className="nav flex-column filter-link">
               <a className="nav-item nav-link" href="#">Action & Adventure</a>
               <a className="nav-item nav-link" href="#">Animation & Anime</a>
               <a className="nav-item nav-link" href="#">Children's & Family</a>
@@ -19,17 +19,17 @@ class Recommendation extends React.Component {
               <a className="nav-item nav-link" href="#">Drama</a>
               <a className="nav-item nav-link" href="#">Horror</a>
               <a className="nav-item nav-link" href="#">Sci-Fi & Fantasy</a>
-              <a className="nav-item nav-link text-right text-secondary" href="#">More</a>
+              <a className="nav-item nav-link text-right text-secondary filterLinkMore" href="#">More</a>
             </nav>
             <h4 className="mt-4 ml-3 mb-1 text-light text-uppercase">Rating</h4>
-            <nav className="nav flex-column">
+            <nav className="nav flex-column filter-link">
               <a className="nav-item nav-link" href="#">G</a>
               <a className="nav-item nav-link" href="#">PG</a>
               <a className="nav-item nav-link" href="#">PG-13</a>
               <a className="nav-item nav-link" href="#">R</a>
               <a className="nav-item nav-link" href="#">NR</a>
               <a className="nav-item nav-link" href="#">NC-17</a>
-              <a className="nav-item nav-link text-right text-secondary" href="#">More</a>
+              <a className="nav-item nav-link text-right text-secondary filterLinkMore" href="#">More</a>
             </nav>
           </nav>
 
