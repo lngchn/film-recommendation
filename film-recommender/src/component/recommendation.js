@@ -34,7 +34,7 @@ class Recommendation extends React.Component {
           </nav>
 
           {/* Body */}
-          <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 text-light recommendation">
+          <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pb-5 text-light recommendation">
             {/* Seed Films */}
             <h2 className="text-left mt-3">Seed Films
               <button type="button" className="btn btn-outline-info ml-2" data-toggle="modal" data-target="#addSeedFilm" >+</button>
