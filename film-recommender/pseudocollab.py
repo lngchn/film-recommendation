@@ -53,6 +53,9 @@ def pearson(p1, p2):
 def s_users(p1, database_ppl):
     ##TO DO: essentially, get all of the top scores (add a cutoff)
     ##store in dictionary/list? have the most similar "on top"
+    top_15_scores = [pearson(UUOWMP, RODTMU)] ##<--- write something to loop through database
+    top_15_scores.sort().reverse() 
+    return top_15_scores[0: 15] ##15? 20? Need to decide on this
 
 def colab_filt(p1):
     ##TO DO: ignore invalid scores, movies person1 hasn't seen
