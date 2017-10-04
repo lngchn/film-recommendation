@@ -1,8 +1,8 @@
-#10-3-17, 2:03 am
+#10-4-17, 10:51 pm
 
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
-import re                     #For regular expresions 
+import re                     #For regular expressions 
 import json                   #For exporting a JSON file
 #from multiprocessing import Pool
 
@@ -37,8 +37,7 @@ def init(new_user_num, max_users, pages_per_user):
     for i in range(0, max_users):
         current_user = str(new_user_num + int(i))
         current_user = check_user_id_length(current_user) 
-        list_of_users.append(current_user)
-    
+        list_of_users.append(current_user) 
 
     for i in range(len(list_of_users)):
         try:
@@ -55,9 +54,8 @@ def init(new_user_num, max_users, pages_per_user):
 # Inputs full user id and page number and returns a parsed page of html content
 def get_parsed_page(user_id, page_num):
     
-    r = requests.get("http://www.imdb.com/user/" + user_id + "/ratings?start="+str(page_num)+"&view=compact")
+    r = requests.get("http://www.imdb.com/user/"+user_id+"/ratings?start="+str(page_num)+"&view=compact")
     try:
-        
         if r.status_code == 200:
             html = r.text
             parsed_page = BeautifulSoup(html, "lxml")
@@ -68,9 +66,6 @@ def get_parsed_page(user_id, page_num):
     except:
         print("Exception: tt" + user_id + "ratings page is N/A.")
         return
-       
-    #finally:
-        #return parsed_page
         
 
 #Returns the the total number of films watched by a given user    
@@ -85,7 +80,7 @@ def get_film_total(parsed_page):
 def append_to_film_id_list(html_query, updated_list):
     for line in html_query: #Search and store film imdb film ids
         user_num = str(line.get('data-item-id'))
-
+        
         try:
             int(user_num) # Test if x is an int value.
             updated_list.append( "tt" + str(user_num))
@@ -103,7 +98,7 @@ def append_to_list(html_query, updated_list):
 
 #Removes TV and Video Game entries from film_data list, (TV Movies are fine)
 def delete_tv_entries(film_data, type):
-    for i in range(len(type) - 1, 0, -1): #for i in range(start, stop, step):
+    for i in range(len(type)-1, -1, -1): #for i in range(start, stop, step):
         if type[i] == "TV Episode" or type[i] == "TV Series" or type[i] == "Video Game":
             del film_data["films"][i]
 
