@@ -89,10 +89,6 @@ def pearson(p1, p2):
     bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / len(common_films)) * (p2_sum_sq - pow(p2_sum, 2) / len(common_films)))
     ########
     return top/bottom
-
-#def s_users(p1, p2):
-    
-
     
 
 def do_append(the_dict, the_info):
@@ -101,31 +97,35 @@ def do_append(the_dict, the_info):
         the_dict[split_info[15]] = int(split_info[3])
 
 def get_json_files(store):
-    parent_dir = 'C:/Users//bendo/Desktop/Capstone Project/json' #change pathname to wherever files are stored
+    parent_dir = 'C:/Users//bendo/Desktop/Capstone Project' #change pathname to wherever files are stored
     for json_file in glob.glob(os.path.join(parent_dir, '*.json')):
         json_split = str(json_file).split("\\")
         store.append(json_split[1])
       
 def main():
-    ############# me ###########
-    with open('ur0000001.json') as data_file:
-        me = json.load(data_file)
-    ############################
-
     my_dict = {} ###user using website (me)
+    other_dict = {} ##person to compare
     sim_score = [] ##store all pearson scores
     json_files_store = []
     
     get_json_files(json_files_store) #get all available .json files
-    do_append(my_dict, me["films"])
+    
+    ############# me (as an example) ###########
+    with open(json_files_store[0]) as data_file:
+        me = json.load(data_file)
+    ############################
+        
+    do_append(my_dict, me["films"]) ##set up my dictionary 
 
-    for i in range(0, len(json_files_store)):
+    for i in range(1, len(json_files_store)):
         with open(json_files_store[i]) as data_file:
             other = json.load(data_file)
-
+        do_append(other_dict, other["films"]) ##1) set up the dictionary for the other person
+        sim_score.append(pearson(my_dict, other_dict)) ##2) do the pearson between the other user and me, add to the score
+        other_dict.clear() ##3)clear the dictionary for the next person    
+            
 if __name__ == "__main__":
     main()
-
 
 
     
