@@ -13,7 +13,7 @@ Pearson's
 "best fit" line and solves inflation problem (i.e. 10 and 4 vs. 8 and 2 will not be too far apart)
 '''
 
-##warning: this may not scale, will have to do something before to filter out
+'''##warning: this may not scale, will have to do something before to filter out
 ##suggestion: perhaps only compare users who match with user's first "seed" film 
 def pearson(p1, p2):
     ##TO DO: check to see if person1 and person2 have common films
@@ -61,7 +61,71 @@ def colab_filt(p1):
     ##TO DO: ignore invalid scores, movies person1 hasn't seen
     ##calculate similarity scores to everyone in database (might be too slow)
     ##get the movies most similar to p1's preferences
-    ##display 
+    ##display '''
+
+#######################################
+
+import json
+import glob
+import os
+from math import sqrt
+
+def pearson(p1, p2):
+    common_films = {}
+    for movie in p1:
+        if movie in p2:
+            common_films[movie] = 1
+
+    if len(common_films) == 0: return 0
+    p1_sum = sum([p1.get(movie) for movie in common_films])
+    p2_sum = sum([p2.get(movie) for movie in common_films])
+    ########
+    p1_sum_sq = sum((pow(p1.get(movie), 2) for movie in common_films))
+    p2_sum_sq = sum((pow(p2.get(movie), 2) for movie in common_films))
+    ########
+    product_sum = sum([p1.get(movie) * p2.get(movie) for movie in common_films])
+    ########
+    top = product_sum - ((p1_sum * p2_sum) / len(common_films))
+    bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / len(common_films)) * (p2_sum_sq - pow(p2_sum, 2) / len(common_films)))
+    ########
+    return top/bottom
+
+#def s_users(p1, p2):
+    
+
+    
+
+def do_append(the_dict, the_info):
+    for info in the_info:
+        split_info = str(info).split("'")
+        the_dict[split_info[15]] = int(split_info[3])
+
+def get_json_files(store):
+    parent_dir = 'C:/Users//bendo/Desktop/Capstone Project/json' #change pathname to wherever files are stored
+    for json_file in glob.glob(os.path.join(parent_dir, '*.json')):
+        json_split = str(json_file).split("\\")
+        store.append(json_split[1])
+      
+def main():
+    ############# me ###########
+    with open('ur0000001.json') as data_file:
+        me = json.load(data_file)
+    ############################
+
+    my_dict = {} ###user using website (me)
+    sim_score = [] ##store all pearson scores
+    json_files_store = []
+    
+    get_json_files(json_files_store) #get all available .json files
+    do_append(my_dict, me["films"])
+
+    for i in range(0, len(json_files_store)):
+        with open(json_files_store[i]) as data_file:
+            other = json.load(data_file)
+
+if __name__ == "__main__":
+    main()
+
 
 
     
