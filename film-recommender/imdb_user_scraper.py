@@ -1,4 +1,4 @@
-#10-4-17, 10:51 pm
+#10-6-17, 2:03 pm
 
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
@@ -48,7 +48,7 @@ def init(new_user_num, max_users, pages_per_user):
                
         except Exception as e:
             print("Exception: tt"+ str(new_user_num) + " ratings are N/A." + "\n" )
-            continue
+            continue #continue looping through list of users
     
 
 # Inputs full user id and page number and returns a parsed page of html content
@@ -80,15 +80,16 @@ def get_film_total(parsed_page):
 def append_to_film_id_list(html_query, updated_list):
     for line in html_query: #Search and store film imdb film ids
         user_num = str(line.get('data-item-id'))
-        
+
         try:
-            int(user_num) # Test if x is an int value.
+            int(user_num) # Test if user_num is an int value.
             updated_list.append( "tt" + str(user_num))
         
-        except Exception as e:
-            print "Exception: " + str(e)
-            print "1. Move to the next user.... " + "\n"
+        except ValueError:
+            print("Failure w/ value " + user_num +" for user_num ")
+            print "1. Continue to export user data.... " + "\n"
             continue
+            
         
 #Append elements to a list of film titles or a list of film ratings 
 def append_to_list(html_query, updated_list):
@@ -101,10 +102,12 @@ def delete_tv_entries(film_data, type):
     for i in range(len(type)-1, -1, -1): #for i in range(start, stop, step):
         if type[i] == "TV Episode" or type[i] == "TV Series" or type[i] == "Video Game":
             del film_data["films"][i]
+            
 
+#Set the page numbers for IMDb for sequential scraping, values our 1 to i * 250
 def set_page_amt(page_nums, max):
-  
-    for i in range(0, max):
+    page_nums.append('1') #Manually add 1 as our first value, IMDb's page value starts at 1 and then increase by multiples of 250
+    for i in range(1, max):
         page_nums.append(str(i * 250))
        
 
@@ -113,12 +116,10 @@ def process_user_data(url, user_num, pages_per_user):
     film_ids, titles, ratings, type = [], [], [], []
     user_id = "ur" + str(user_num) 
     film_data = {"user_id": user_id, "films":[]}
-    page_nums = ['1']
-    set_page_amt(page_nums, pages_per_user)
+    page_nums = [] 
+    set_page_amt(page_nums, pages_per_user) # Fill the page num list with values that our multiples of 250
     
-    i = 0
-    while i < len(page_nums):  #1250 will eventually be film_total, 5 x 250 pages
-    
+    for i in range(0, len(page_nums)): #1250 will eventually be film_total, 5 x 250 pages
         try:
             r = requests.get("http://www.imdb.com/user/" + user_id + "/ratings?start="+page_nums[i]+"&view=compact") 
             html = r.text
@@ -129,17 +130,16 @@ def process_user_data(url, user_num, pages_per_user):
             rating_query = parsed_page.find_all('td', class_="your_ratings") #search for movie rating
             type_query = parsed_page.find_all('td', class_="title_type") #search for movie rating  
             film_total = get_film_total(parsed_page) #All the films on a user's page
-            
+
             append_to_film_id_list(id_query, film_ids)
             append_to_list(title_query, titles)
             append_to_list(rating_query, ratings)
             append_to_list(type_query, type)
-            i +=1
             
         except Exception as e:
             print "Exception: " + str(e)
-            print "2. Exit from this user...." + "\n"
-            return
+            print  user_id + " ratings content is out of range." + "\n"
+            break
             
     #If this list is empty the script should return
     if len(film_ids) == 0:
@@ -161,7 +161,7 @@ def process_user_data(url, user_num, pages_per_user):
         
 
 def main():
-    init(0, 5000, 10) # user ID, total users, pages per user
+    init(0, 5000, 11) # user ID, total users, pages per user
     
 
 if __name__ == "__main__":
