@@ -4,7 +4,7 @@ import './footer.css';
 class Footer extends React.Component {
   render() {
     return (
-      <div className="container-fluid text-light">
+      <div className="container-fluid text-light text-center">
         <div className="row justify-content-center navbar-dark bg-dark">
           <div className="col-auto">
             <nav className="nav footer-link mt-4">

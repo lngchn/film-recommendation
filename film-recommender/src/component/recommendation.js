@@ -33,7 +33,7 @@ function SideBarFilter(props) {
 
 function MovieImage(props) {
   return(
-    <div className="col-6 col-md-3 thumbnail">
+    <div className="col-6 col-md-3 thumbnail text-center">
       <img src={movie01} width="202" height="300" className="img-fluid movie-poster" alt="Movie Poster" />
       <h4 className="movie-title">The Martian</h4>
       <button type="button" className="btn btn-outline-danger remove-button">-</button>
