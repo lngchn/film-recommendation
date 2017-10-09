@@ -1,10 +1,8 @@
-#10-6-17, 2:03 pm
-
+#10-9-17, 1:22 am
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
 import re                     #For regular expressions 
 import json                   #For exporting a JSON file
-#from multiprocessing import Pool
 
 
 #Returns full user id with "ur" prefix (not used)
@@ -97,27 +95,21 @@ def append_to_list(html_query, updated_list):
         updated_list.append(line.getText(strip=True).encode("utf-8"))
 
 
-#Removes TV and Video Game entries from film_data list, (TV Movies are fine)
-def delete_tv_entries(film_data, type):
-    for i in range(len(type)-1, -1, -1): #for i in range(start, stop, step):
-        if type[i] == "TV Episode" or type[i] == "TV Series" or type[i] == "Video Game":
-            del film_data["films"][i]
-            
-
 #Set the page numbers for IMDb for sequential scraping, values our 1 to i * 250
 def set_page_amt(page_nums, max):
     page_nums.append('1') #Manually add 1 as our first value, IMDb's page value starts at 1 and then increase by multiples of 250
     for i in range(1, max):
         page_nums.append(str(i * 250))
-       
+ 
 
 #Process user data
 def process_user_data(url, user_num, pages_per_user):
     film_ids, titles, ratings, type = [], [], [], []
     user_id = "ur" + str(user_num) 
-    film_data = {"user_id": user_id, "films":[]}
+    film_data = {"user_id": user_id, "films": []}
     page_nums = [] 
     set_page_amt(page_nums, pages_per_user) # Fill the page num list with values that our multiples of 250
+    dict = {}
     
     for i in range(0, len(page_nums)): #1250 will eventually be film_total, 5 x 250 pages
         try:
@@ -125,7 +117,7 @@ def process_user_data(url, user_num, pages_per_user):
             html = r.text
             parsed_page = BeautifulSoup(html, "lxml")
             
-            id_query  = parsed_page.find_all('tr', class_="list_item")    #search for film id
+            id_query  = parsed_page.find_all('tr', class_="list_item")  #search for film id
             title_query = parsed_page.find_all('td', class_="title") #search for title 
             rating_query = parsed_page.find_all('td', class_="your_ratings") #search for movie rating
             type_query = parsed_page.find_all('td', class_="title_type") #search for movie rating  
@@ -135,30 +127,36 @@ def process_user_data(url, user_num, pages_per_user):
             append_to_list(title_query, titles)
             append_to_list(rating_query, ratings)
             append_to_list(type_query, type)
-            
+  
+
         except Exception as e:
             print "Exception: " + str(e)
             print  user_id + " ratings content is out of range." + "\n"
             break
             
+            
     #If this list is empty the script should return
     if len(film_ids) == 0:
         return 
-        
-    #Store the user's film watching data in a list
-    for i in range(0, len(ratings)):
-        film_data["films"].append({"film_id": film_ids[i], "title": titles[i], "rating": ratings[i], "type": type[i]})
-        #print(film_data["films"][i])
     
-    delete_tv_entries(film_data, type) #Delete all TV Episode and TV Series entries
- 
-    for i in range(0, len(film_data["films"])):
-        print(film_data["films"][i])
+    #Set up key and attributes in dict
+    for i in range(0, len(film_ids)):
+        if type[i] != "TV Episode" and type[i] != "TV Series" and type[i] != "Video Game":
+            dict[film_ids[i]] = ({"title": titles[i], "rating":ratings[i], "type": type[i]})
+        
+    #Append dict to films location
+    for item in [dict]: 
+        film_data['films'].append(item) 
+  
+   
+    # print 
+    for line in film_data["films"]:
+        print line
 
     #Output user info into JSON file    
     with open(str(user_id) + ".json", "w") as output:
-        json.dump(film_data, output, sort_keys=True, indent=2)
-        
+        json.dump(film_data, output, sort_keys=True, indent = 2, ensure_ascii=False)
+  
 
 def main():
     init(0, 5000, 11) # user ID, total users, pages per user
