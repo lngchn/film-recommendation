@@ -1,0 +1,26 @@
+{
+  "name": "capstone-project",
+  "version": "1.0.0",
+  "description": "File Recommender",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lngchn/capstone-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lngchn/capstone-project/issues"
+  },
+  "homepage": "https://github.com/lngchn/capstone-project#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
