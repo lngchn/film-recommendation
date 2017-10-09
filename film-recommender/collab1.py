@@ -1,4 +1,4 @@
-#######################################
+####################################### 10/8 9:49 PM
 
 import json
 import glob
@@ -26,6 +26,7 @@ def pearson(p1, p2):
     top = product_sum - ((p1_sum * p2_sum) / len(common_films))
     bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / len(common_films)) * (p2_sum_sq - pow(p2_sum, 2) / len(common_films)))
     ########
+    if bottom == 0: return
     return top/bottom  
 
 #set up a dictionary, (movie title -> rating) for movie based on user
@@ -41,12 +42,9 @@ def get_json_files(store):
         json_split = str(json_file).split("\\")
         store.append(json_split[1])
 
-def generate_sim_scores():
+def generate_sim_scores(my_films_store, sim_score):
     my_dict = {} ###user using website (me)
-    sim_score = {} ##store all pearson scores
     other_dict = {} ##person to compare
-    my_films_store = {}
-    top_films_store = {}
     json_files_store = []
 
     get_json_files(json_files_store) #get all available .json files
@@ -65,21 +63,25 @@ def generate_sim_scores():
         other_id = str(other["user_id"]) ##0) get the user id for the other person
         do_append(other_dict, other["films"]) ##1) set up the dictionary for the other person
         sim_score[other_id] = (pearson(my_dict, other_dict)) ##2) do the pearson between the other user and me, add to the score
-        other_dict.clear() ##4)clear the dictionary for the next person
+        other_dict.clear() ##3)clear the dictionary for the next person
 
-    top_id = top_person(sim_score)
-    print top_id ##not complete
+    return top_person(sim_score)
 
 #return the person most similar to me
 def top_person(sim_score):
     temp_store = sorted(sim_score.items(), key=operator.itemgetter(1))
     temp_store.reverse()
-    return temp_store[0][0] #change?
+    return temp_store[0][0]
 
 #########
       
 def main():
-    generate_sim_scores()
+    my_films_store = {}
+    sim_score = {}
+    
+    top_id = generate_sim_scores(my_films_store, sim_score)
+    
             
 if __name__ == "__main__":
     main()
+
