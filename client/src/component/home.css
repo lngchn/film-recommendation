@@ -1,0 +1,23 @@
+#home-background {
+  position: relative;
+  background: url("../img/home_background.jpg") no-repeat center;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+#home-background {
+  padding-top: 12em;
+  padding-bottom: 12em;
+}
+
+#home-content h1 {
+  transform: translateY(-100%);
+}
+
+#home-content p {
+  transform: translateY(-40%);
+}
+
+#home-content p a {
+  transform: translateY(50%);
+}

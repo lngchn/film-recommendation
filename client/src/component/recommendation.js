@@ -74,19 +74,24 @@ class Recommendation extends React.Component {
           {/* Body */}
           <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pb-5 text-light recommendation">
             {/* Seed Films */}
-            <h2 className="text-left mt-3">Seed Films
-              <button type="button" className="btn btn-outline-info ml-2" data-toggle="modal" data-target="#addSeedFilm" >
-                <i className="fa fa-plus" aria-hidden="true"></i>
-              </button>
-            </h2>
-            <section className="row">
-              {this.state.seedMovies}
-            </section>
+            <div>
+              <h2 className="text-left mt-3">Seed Films
+                <button type="button" className="btn btn-outline-info ml-2" data-toggle="modal" data-target="#addSeedFilm" >
+                  <i className="fa fa-plus" aria-hidden="true"></i>
+                </button>
+              </h2>
+              <section className="row">
+                {this.state.seedMovies}
+              </section>
+            </div>
+            <hr />
             {/* Recommendations */}
-            <h2 className="text-left mt-5">Recommendations</h2>
-            <section className="row text-center placeholders">
-              {this.state.recommendationMovies}
-            </section>
+            <div>
+              <h2 className="text-left mt-5">Recommendations</h2>
+              <section className="row text-center placeholders">
+                {this.state.recommendationMovies}
+              </section>
+            </div>
           </main>
 
           {/* Modal for Add a Seed Film Button */}
