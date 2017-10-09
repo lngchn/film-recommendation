@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+var mongojs = require('mongojs')
+var userdb = mongojs('userdb')
+var usercollection = userdb.collection('usercollection')
 
 // Serve production build on Express server as static file
 // You can check the project at localhost:3001 (Express server, not React server)
