@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/lngchn/capstone-project#readme",
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "mongojs": "^2.4.1"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
