@@ -11,8 +11,6 @@
   color: gray;
 }
 
-
-
 .seedFilmAddButton {
   padding-right: 1.2em;
   padding-left: 1.2em;
@@ -55,5 +53,8 @@
   left: 44%;
 }
 
-
+hr {
+  border: 0.05em solid lightgrey;
+  margin-top: 3.5em;
+}
 
