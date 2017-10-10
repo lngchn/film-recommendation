@@ -1,4 +1,4 @@
-####################################### 10/10/17 12:15 PM
+####################################### 10/10/17 6:44PM
 
 import json
 import glob
@@ -38,7 +38,7 @@ def do_append(the_dict, the_info):
         if split_info[3] == '': continue ##ignore empty ratings
         if len(split_info[14]) > 2:
             split14 = split_info[14].split('"')
-            combine = split14[1] + split_info[15]
+            combine = split14[1] + "'" + split_info[15]
             the_dict[combine] = int(split_info[3]) 
         else: the_dict[split_info[15]] = int(split_info[3])
 
@@ -98,7 +98,6 @@ def fill_rankings(rankings, my_dict, other_dict, pearson_num):
             temp2[movie] += pearson_num
 
     rankings.extend([(ranking / temp2[movie], movie) for movie, ranking in temp1.items()])
-    rankings.sort()
     rankings.reverse()
 
 #########
@@ -108,9 +107,8 @@ def main():
     sim_score = {}
     
     films_to_rec = rec_movies(sim_score)
-
-    print [x[1] for x in films_to_rec[:15]] #print the top 15 films 
-
+    
+    print [x[1] for x in films_to_rec[:15]] #print the top 15 films
             
 if __name__ == "__main__":
     main()
