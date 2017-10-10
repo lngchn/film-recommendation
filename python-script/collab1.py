@@ -1,4 +1,4 @@
-####################################### 10/10/17 11:55 AM
+####################################### 10/9/17 10:38 PM
 
 import json
 import glob
@@ -37,8 +37,9 @@ def do_append(the_dict, the_info):
         split_info = [word.strip(string.punctuation) for word in str_info.split("'")]
         if split_info[3] == '': continue ##ignore empty ratings
         if len(split_info[14]) > 2:
-            combine = split_info[14] + split_info[15]
-            the_dict[combine] = int(split_info[3])  
+            split14 = split_info[14].split('"')
+            combine = split14[1] + split_info[15]
+            the_dict[combine] = int(split_info[3]) 
         else: the_dict[split_info[15]] = int(split_info[3])
 
 #get all of the json files and put it into a list, first user of the list is me (for now)
@@ -74,10 +75,10 @@ def rec_movies(sim_score):
         sim_score[other_id] = pearson_num ##3) store the similarity score
         fill_rankings(rankings, my_dict, other_dict, pearson_num) ##4) fill the rankings (for recommendation)
         other_dict.clear()
-
+        
     return rankings
 
-#return the person most similar to me
+#return the person most similar to me (not used for now)
 def top_person(sim_score):
     temp_store = sorted(sim_score.items(), key=operator.itemgetter(1))
     temp_store.reverse()
@@ -108,7 +109,7 @@ def main():
     
     films_to_rec = rec_movies(sim_score)
 
-    print [x[1] for x in films_to_rec[:10]] #print the top 10 films 
+    print [x[1] for x in films_to_rec[:15]] #print the top 15 films 
 
             
 if __name__ == "__main__":
