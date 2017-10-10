@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './not-found.css';
 
 class NotFound extends Component {
   constructor() {
@@ -23,10 +24,12 @@ class NotFound extends Component {
 
   render() {
     return(
-      <div className="mt-5 mb-5 pt-5 pb-5 text-center">
-        <h1 className="text-uppercase">404</h1>
-        <h1 className="text-uppercase">Opps, Sorry We Can't Find That Page!</h1>
-        <p>Either something went wrong or the page doesn't exist anymore</p>
+      <div className="jumbotron jumbotron-fluid m-0 text-center" id="not-found">
+        <div className="container" id="not-found-content">
+          <h1 className="display-4"><i className="fa fa-frown-o fa-lg" aria-hidden="true"></i> 404 Not Found</h1>
+          <p className="lead">We couldn't find what you're looking for.</p>
+          <button type="button" className="btn btn-outline-success mt-2 p-3">Take Me To The Homepage</button>
+        </div>
       </div>
     );
   }

@@ -1,0 +1,18 @@
+#not-found {
+  position: relative;
+  height: 30em;
+}
+
+/* Centering both horizontally and vertically */
+#not-found-content {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Select a class with names: .fa, .fa-frown-o AND .fa-lg */
+.fa.fa-frown-o.fa-lg {
+  color: #CD202C;
+}
