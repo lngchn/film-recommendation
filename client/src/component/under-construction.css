@@ -1,0 +1,18 @@
+#under-construction {
+  position: relative;
+  height: 30em;
+}
+
+/* Centering both horizontally and vertically */
+#under-construction-content {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Select a class with names: .fa, .fa-frown-o AND .fa-lg */
+.fa.fa-hourglass-o.fa-lg {
+  color: #82c3c7;
+}
