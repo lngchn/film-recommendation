@@ -1,4 +1,4 @@
-####################################### 10/9/17 10:38 PM
+####################################### 10/10/17 11:55 AM
 
 import json
 import glob
@@ -38,8 +38,8 @@ def do_append(the_dict, the_info):
         if split_info[3] == '': continue ##ignore empty ratings
         if len(split_info[14]) > 2:
             combine = split_info[14] + split_info[15]
-            the_dict[combine] = int(split_info[3]) ## *** FIX THIS ISSUE *** 
-        the_dict[split_info[15]] = int(split_info[3])
+            the_dict[combine] = int(split_info[3])  
+        else: the_dict[split_info[15]] = int(split_info[3])
 
 #get all of the json files and put it into a list, first user of the list is me (for now)
 def get_json_files(store):
