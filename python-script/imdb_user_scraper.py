@@ -1,4 +1,4 @@
-#10-10-17, 8:04 pm
+#10-10-17, 8:11 pm
 
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
@@ -77,11 +77,6 @@ def append_to_list(html_query, updated_list):
         updated_list.append(line.getText(strip=True).encode("utf-8"))
 
 
-#Removes TV and Video Game entries from film_data list, (TV Movies are fine), This function is no longer needed
-def delete_tv_entries(film_data, type):
-    for i in range(len(type)-1, -1, -1): #for i in range(start, stop, step):
-        if type[i] == "TV Episode" or type[i] == "TV Series" or type[i] == "Video Game":
-            del film_data["films"][i] 
             
 #Process user data
 def process_user_data(url, user_num, pages_per_user):
