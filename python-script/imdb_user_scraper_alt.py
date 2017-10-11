@@ -1,8 +1,12 @@
-#10-9-17, 1:22 am
+#10-10-17, 8:22 pm
+
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
 import re                     #For regular expressions 
 import json                   #For exporting a JSON file
+from time import sleep
+import urllib2 
+#from multiprocessing import Pool
 
 
 #Returns full user id with "ur" prefix (not used)
@@ -44,39 +48,17 @@ def init(new_user_num, max_users, pages_per_user):
             r = requests.get(url)
             process_user_data(url, new_user_num, pages_per_user) 
                
-        except Exception as e:
-            print("Exception: tt"+ str(new_user_num) + " ratings are N/A." + "\n" )
+        except requests.ConnectionError as e:
+            print "Exception: " + str(e)
+            print "Exception: tt"+ str(new_user_num) + " ratings are N/A." + "\n"
             continue #continue looping through list of users
     
 
-# Inputs full user id and page number and returns a parsed page of html content
-def get_parsed_page(user_id, page_num):
-    
-    r = requests.get("http://www.imdb.com/user/"+user_id+"/ratings?start="+str(page_num)+"&view=compact")
-    try:
-        if r.status_code == 200:
-            html = r.text
-            parsed_page = BeautifulSoup(html, "lxml")
-            return parsed_page
-        else:
-            return
-        
-    except:
-        print("Exception: tt" + user_id + "ratings page is N/A.")
-        return
-        
-
-#Returns the the total number of films watched by a given user    
-def get_film_total(parsed_page):
-    #Extract the total amount of films the user has reviewed
-    x = parsed_page.find('div', class_='desc')
-    film_total = int(x.get('data-size')) * 250
-    return film_total
-
-
 #Append elements to a list a film IDs
 def append_to_film_id_list(html_query, updated_list):
+    
     for line in html_query: #Search and store film imdb film ids
+        
         user_num = str(line.get('data-item-id'))
 
         try:
@@ -84,82 +66,107 @@ def append_to_film_id_list(html_query, updated_list):
             updated_list.append( "tt" + str(user_num))
         
         except ValueError:
-            print("Failure w/ value " + user_num +" for user_num ")
-            print "1. Continue to export user data.... " + "\n"
+            print "Failure w/ value " + user_num +" for user_num "
+            print "Continue to export user data.... " + "\n"
             continue
-            
-        
+
+  
 #Append elements to a list of film titles or a list of film ratings 
 def append_to_list(html_query, updated_list):
     for line in html_query: #Search and store film imdb film ids
         updated_list.append(line.getText(strip=True).encode("utf-8"))
 
 
-#Set the page numbers for IMDb for sequential scraping, values our 1 to i * 250
-def set_page_amt(page_nums, max):
-    page_nums.append('1') #Manually add 1 as our first value, IMDb's page value starts at 1 and then increase by multiples of 250
-    for i in range(1, max):
-        page_nums.append(str(i * 250))
- 
-
 #Process user data
 def process_user_data(url, user_num, pages_per_user):
     film_ids, titles, ratings, type = [], [], [], []
     user_id = "ur" + str(user_num) 
-    film_data = {"user_id": user_id, "films": []}
-    page_nums = [] 
-    set_page_amt(page_nums, pages_per_user) # Fill the page num list with values that our multiples of 250
-    dict = {}
+    film_data = {"user_id": user_id, "films":[]}
+    #page_nums = [] 
+    #set_page_amt(page_nums, pages_per_user) # Fill the page num list with values that our multiples of 250
     
-    for i in range(0, len(page_nums)): #1250 will eventually be film_total, 5 x 250 pages
+    i = 0
+    #while True: # For total pages
+    while i < (pages_per_user * 250):  #pages are numbered in increments of 250
         try:
-            r = requests.get("http://www.imdb.com/user/" + user_id + "/ratings?start="+page_nums[i]+"&view=compact") 
-            html = r.text
+            if i == 0:
+            	page_num = str(1)
+                url = "http://www.imdb.com/user/" + user_id + "/ratings?start="+page_num+"&view=compact" 
+            
+            else:
+            	page_num = str(i)   
+                url = "http://www.imdb.com/user/" + user_id + "/ratings?start="+page_num+"&view=compact"
+            
+            html = urllib2.urlopen(url) 
             parsed_page = BeautifulSoup(html, "lxml")
+    
+            print "User: " + str(user_id) + ", Page #" + page_num 
+            #exist_query = parsed_page.find_all('tr', class_="article")  
             
-            id_query  = parsed_page.find_all('tr', class_="list_item")  #search for film id
-            title_query = parsed_page.find_all('td', class_="title") #search for title 
-            rating_query = parsed_page.find_all('td', class_="your_ratings") #search for movie rating
-            type_query = parsed_page.find_all('td', class_="title_type") #search for movie rating  
-            film_total = get_film_total(parsed_page) #All the films on a user's page
-
+            #scraping code
+            id_query  = parsed_page.find_all('tr', class_="list_item")    #search for film id
             append_to_film_id_list(id_query, film_ids)
+            
+            #If this list is empty, the script should return, no need to go further
+            #for users with pages but no ratings
+            if len(film_ids) == 0:
+                break 
+            
+            title_query = parsed_page.find_all('td', class_="title") #search for title 
             append_to_list(title_query, titles)
+            
+            rating_query = parsed_page.find_all('td', class_="your_ratings") #search for movie rating
             append_to_list(rating_query, ratings)
+            
+            type_query = parsed_page.find_all('td', class_="title_type") #search for movie rating  
             append_to_list(type_query, type)
-  
-
-        except Exception as e:
-            print "Exception: " + str(e)
-            print  user_id + " ratings content is out of range." + "\n"
+            sleep(2)
+            
+            #increase page num
+            i += 250  
+            
+        except urllib2.HTTPError, err:
+            if err.code == 404:
+                print "404 Error! Page not found! For user: " + str(user_id) + "."
+                break
+            elif err.code == 403:
+                print "403 Error! Access denied!"
+                break
+                
+            elif err.code == 503:
+                print "503 Error!"
+                break
+                
+            else:
+                print "Error! Code:", err.code
+                break
+                
+        except urllib2.URLError, err:
+            print "Some other error happened:", err.reason
             break
+           
             
-            
-    #If this list is empty the script should return
+    #If this list is empty the script should return, for some reason I have to put this here also
+    #Otherwise files will be generated for users with no ratings
     if len(film_ids) == 0:
         return 
-    
-    #Set up key and attributes in dict
-    for i in range(0, len(film_ids)):
-        if type[i] != "TV Episode" and type[i] != "TV Series" and type[i] != "Video Game":
-            dict[film_ids[i]] = ({"title": titles[i], "rating":ratings[i], "type": type[i]})
         
-    #Append dict to films location
-    for item in [dict]: 
-        film_data['films'].append(item) 
-  
-   
-    # print 
-    for line in film_data["films"]:
-        print line
+    #Store the user's film watching data in a list
+    for i in range(0, len(ratings)):
+        if type[i] != "TV Episode" and type[i] != "TV Series" and type[i] != "Video Game":
+            film_data["films"].append({"film_id": film_ids[i], "title": titles[i], "rating": ratings[i], "type": type[i]})
+    
+ 
+    for i in range(0, len(film_data["films"])):
+        print film_data["films"][i] 
 
     #Output user info into JSON file    
     with open(str(user_id) + ".json", "w") as output:
-        json.dump(film_data, output, sort_keys=True, indent = 2, ensure_ascii=False)
-  
+        json.dump(film_data, output, sort_keys=True, indent=2, ensure_ascii=False)
+        
 
 def main():
-    init(0, 5000, 11) # user ID, total users, pages per user
+    init(0, 20000, 11) # user ID, total users, pages per user
     
 
 if __name__ == "__main__":
