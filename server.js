@@ -1,20 +1,15 @@
 const express = require('express');
 const app = express();
 
-const MongoClient = require('mongodb').MongoClient;
-const assert = require('assert');
-const url = 'mongodb://localhost:27017/filmpro';  //filmpro indicates the database to use
-
-// Use connect method to connect to the server
-MongoClient.connect(url, (err, db) => {
-  assert.equal(null, err);
-  console.log("Connected successfully to MongoDB server");
-  db.close();
-});
-
 // Serve production build on Express server as static file
 // You can check the project at localhost:3001 (Express server, not React server)
 app.use(express.static(`${__dirname}/client/build`));
+
+// Use the film router
+// Usage example: localhost:3001/film
+// In React, you can call fetch to /film
+var film = require('./router/film');
+app.use('/film', film);
 
 app.get('/hello', (req, res) => {
   res.json({message: "Hello World"});
