@@ -1,4 +1,4 @@
-#10-10-17, 7:15 pm
+#10-10-17, 8:11 pm
 
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
@@ -7,6 +7,7 @@ import json                   #For exporting a JSON file
 from time import sleep
 #import urllib2 
 #from multiprocessing import Pool
+
 
 #Returns full user id with "ur" prefix (not used)
 def get_full_user_id(url):
@@ -76,11 +77,6 @@ def append_to_list(html_query, updated_list):
         updated_list.append(line.getText(strip=True).encode("utf-8"))
 
 
-#Removes TV and Video Game entries from film_data list, (TV Movies are fine), This function is no longer needed
-def delete_tv_entries(film_data, type):
-    for i in range(len(type)-1, -1, -1): #for i in range(start, stop, step):
-        if type[i] == "TV Episode" or type[i] == "TV Series" or type[i] == "Video Game":
-            del film_data["films"][i] 
             
 #Process user data
 def process_user_data(url, user_num, pages_per_user):
@@ -101,6 +97,7 @@ def process_user_data(url, user_num, pages_per_user):
                 url = "http://www.imdb.com/user/" + user_id + "/ratings?start="+page_num+"&view=compact"
             
             r = requests.get(url) 
+            r.raise_for_status()
             html = r.text
             parsed_page = BeautifulSoup(html, "lxml")
     
@@ -131,14 +128,14 @@ def process_user_data(url, user_num, pages_per_user):
         except requests.exceptions.HTTPError as e:
            
             if e.response.status_code == 404:
-                print "404 error! Page not found! For user: " + str(user_id) + "."
+                print "404 Error! Page not found! For user: " + str(user_id) + "."
                 break
             elif e.response.status_code == 403:
-                print "403 error! Access denied!"
+                print "403 Error! Access denied!"
                 break
                 
             elif e.response.status_code == 503:
-                print "503 error!"
+                print "503 Error!"
                 break
                 
             else:
