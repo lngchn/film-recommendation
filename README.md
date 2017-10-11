@@ -17,3 +17,15 @@ MongoDB:
 1. Install MongoDB Community Edition: https://docs.mongodb.com/manual/administration/install-community
 2. Create the data directory (absolute path on the drive from which you start MongoDB): /data/db
 3. Start the server by running: mongod
+
+You can use the mongo Shell or Mongo Compass to check the database.
+Start the mongo Shell at bin/mongo
+
+Useful mongo Shell commands:
+
+show dbs - show all the databases
+db - show current database
+use filmpro - switch to a database called filmpro
+show collections - show all the collections in the current database
+db.users.find() - show all the data in the users collection
+db.users.drop() - drop the collection called users (WARNING, it will delete the collection and all the data in it)
