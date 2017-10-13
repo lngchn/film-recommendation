@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/lngchn/capstone-project#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.1",
-    "mongodb": "^2.2.31"
+    "mongodb": "^2.2.31",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"

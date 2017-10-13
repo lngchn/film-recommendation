@@ -7,7 +7,7 @@ class Navbar extends React.Component {
   constructor() {
     super();
     this.state = {
-      searchValue: ""
+      query: ""
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -15,13 +15,26 @@ class Navbar extends React.Component {
 
   handleChange(event) {
     this.setState({
-      searchValue: event.target.value
+      query: event.target.value
     });
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log(this.state.searchValue);
+    fetch("/search", {
+      method: "post",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        query: this.state.query
+      })
+    })
+    .then(res => res.json())
+    .then(json => {
+      console.log(json);  // need a way to display the result to users
+    });
   }
 
   render() {

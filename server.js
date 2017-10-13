@@ -9,7 +9,9 @@ app.use(express.static(`${__dirname}/client/build`));
 // Usage example: localhost:3001/film
 // In React, you can call fetch to /film
 var film = require('./router/film');
+var search = require('./router/search');
 app.use('/film', film);
+app.use('/search', search);
 
 app.get('/hello', (req, res) => {
   res.json({message: "Hello World"});
