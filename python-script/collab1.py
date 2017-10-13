@@ -31,6 +31,7 @@ def pearson(p1, p2):
     return top/bottom  
 
 #set up a dictionary, (movie title -> rating) for movie based on user
+#also, sets up dictionary for movie ids (movie title -> ID) for movie_id_store
 def do_append(the_dict, movie_id_store, the_info):
     for info in the_info:
         str_info = str(info)
