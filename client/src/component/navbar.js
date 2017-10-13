@@ -10,7 +10,8 @@ class Navbar extends React.Component {
       <div className="row">
         <div className="col">
           <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-            <a className="navbar-brand text-uppercase" href="./"><img src={Logo} width="100" height="13" alt="Film Pro" /></a>
+            <a className="navbar-brand text-uppercase mr-5" href="./"><img src={Logo} width="100" height="13" alt="Film Pro" /></a>
+            <SearchBar />
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -29,7 +30,6 @@ class Navbar extends React.Component {
                   <a className="dropdown-item" href="#">Dropdown link</a>
                 </div>
               </div>
-              <SearchBar />
             </div>
           </nav>
         </div>
