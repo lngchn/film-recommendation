@@ -7,12 +7,6 @@ import './searchbar.css';
 class SearchBar extends Component {
   constructor() {
     super();
-
-    // Autosuggest is a controlled component.
-    // This means that you need to provide an input value
-    // and an onChange handler that updates this value (see below).
-    // Suggestions also need to be provided to the Autosuggest,
-    // and they are initially empty because the Autosuggest is closed.
     this.state = {
       films: [],
       value: '',
@@ -46,7 +40,7 @@ class SearchBar extends Component {
     });
   };
 
-  // Teach Autosuggest how to calculate suggestions for any given input value.
+  // Get a list of suggestions from the this.state.films
   getSuggestions = value => {
     const inputValue = value.trim().toLowerCase();
     const inputLength = inputValue.length;
@@ -56,20 +50,17 @@ class SearchBar extends Component {
     );
   };
 
-  // When suggestion is clicked, Autosuggest needs to populate the input
-  // based on the clicked suggestion. Teach Autosuggest how to calculate the
-  // input value for every given suggestion.
+  // Suggestion should be based on movie title.
   getSuggestionValue = suggestion => suggestion.title;
 
-  // Use your imagination to render suggestions.
+  // Render the dropdown suggestion section
   renderSuggestion(suggestion, { query }) {
     const suggestionText = suggestion.title;
     const matches = AutosuggestHighlightMatch(suggestionText, query);
     const parts = AutosuggestHighlightParse(suggestionText, matches);
     const imageUrl = `https://image.tmdb.org/t/p/w45/${suggestion.poster_path}`;
-    const year = suggestion.release_date.substring(0, 4);
-
     let image = imageUrl.includes("null") ? <i className="fa fa-file-image-o fa-4x" aria-hidden="true"></i> : <img src={imageUrl} alt="Movie Poster" /> 
+    const year = suggestion.release_date.substring(0, 4);
 
     return (
       <span className='suggestion-content'>
@@ -88,15 +79,25 @@ class SearchBar extends Component {
       </span>
     );
   }
-  // Autosuggest will call this function every time you need to update suggestions.
-  // You already implemented this logic above, so just use it.
-  onSuggestionsFetchRequested = ({ value }) => {
-    this.setState({
-      suggestions: this.getSuggestions(value)
-    });
+
+  // Async suggestion, the 1000 milliseconds is VERY IMPORTANT because it needs to wait
+  // for TMDB API to respond. It will also reduce the amount of API calls.
+  loadSuggestions = value => {
+    setTimeout(() => {
+      if (value === this.state.value) {
+        this.setState({
+          suggestions: this.getSuggestions(value)
+        });
+      }
+    }, 1000);
   };
 
-  // Autosuggest will call this function every time you need to clear suggestions.
+  // Will be called every time a key is pressed.
+  onSuggestionsFetchRequested = ({ value }) => {
+    this.loadSuggestions(value);
+  };
+
+  // Will be called when the input field is empty.
   onSuggestionsClearRequested = () => {
     this.setState({
       suggestions: []
@@ -105,15 +106,12 @@ class SearchBar extends Component {
 
   render() {
     const { value, suggestions } = this.state;
-
-    // Autosuggest will pass through all these props to the input.
     const inputProps = {
       placeholder: 'Search',
       value,
       onChange: this.handleChange
     };
 
-    // Finally, render it!
     return (
       <Autosuggest
         suggestions={suggestions}
