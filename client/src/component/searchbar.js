@@ -81,7 +81,7 @@ class SearchBar extends Component {
   }
 
   // Async suggestion, the 1000 milliseconds is VERY IMPORTANT because it needs to wait
-  // for TMDB API to respond. It will also reduce the amount of API calls.
+  // for TMDB API to respond.
   loadSuggestions = value => {
     setTimeout(() => {
       if (value === this.state.value) {
