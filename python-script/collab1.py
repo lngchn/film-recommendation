@@ -1,4 +1,4 @@
-####################################### 10/10/17 6:44PM
+####################################### 10/13/17 2:49 PM
 
 import json
 import glob
@@ -42,6 +42,18 @@ def do_append(the_dict, the_info):
             the_dict[combine] = int(split_info[3]) 
         else: the_dict[split_info[15]] = int(split_info[3])
 
+def do_append_movieid_store(movie_id_store, the_info):
+    for info in the_info:
+        str_info = str(info)
+        split_info = [word.strip(string.punctuation) for word in str_info.split("'")]
+        if split_info[15] in movie_id_store: continue ##ignore duplicates
+        if len(split_info[14]) > 2:
+            split14 = split_info[14].split('"')
+            combine = split14[1] + "'" + split_info[15]
+            if combine in movie_id_store: continue ##ignore duplicates
+            movie_id_store[combine] = split_info[11]
+        else: movie_id_store[split_info[15]] = split_info[11]
+
 #get all of the json files and put it into a list, first user of the list is me (for now)
 def get_json_files(store):
     parent_dir = 'C:/Users//bendo/Desktop/Capstone Project' #change pathname to wherever files are stored
@@ -50,7 +62,7 @@ def get_json_files(store):
         store.append(json_split[1])
 
 ##get the id of the most similar user to me
-def rec_movies(sim_score):
+def rec_movies(sim_score, movie_id_store):
     my_dict = {} ###user using website (me)
     other_dict = {} ##person to compare
     rankings = []
@@ -71,12 +83,14 @@ def rec_movies(sim_score):
             other = json.load(data_file)
         other_id = str(other["user_id"]) ##0) get the user id for the other person
         do_append(other_dict, other["films"]) ##1) set up the dictionary for the other person
-        pearson_num = (pearson(my_dict, other_dict)) ##2) get the pearson correlation between me and another user
-        sim_score[other_id] = pearson_num ##3) store the similarity score
-        fill_rankings(rankings, my_dict, other_dict, pearson_num) ##4) fill the rankings (for recommendation)
+        do_append_movieid_store(movie_id_store, other["films"]) ##2) store movie ids tied to names of movies
+        pearson_num = (pearson(my_dict, other_dict)) ##3) get the pearson correlation between me and another user
+        sim_score[other_id] = pearson_num ##4) store the similarity score
+        fill_rankings(rankings, my_dict, other_dict, pearson_num) ##5) fill the rankings (for recommendation)
         other_dict.clear()
         
     return rankings
+    
 
 #return the person most similar to me (not used for now)
 def top_person(sim_score):
@@ -104,11 +118,13 @@ def fill_rankings(rankings, my_dict, other_dict, pearson_num):
       
 def main():
     #my_films_store = {}
+    movie_id_store = {}
     sim_score = {}
     
-    films_to_rec = rec_movies(sim_score)
+    films_to_rec = rec_movies(sim_score, movie_id_store)
     
-    print [x[1] for x in films_to_rec[:15]] #print the top 15 films
+    for x in films_to_rec[:15]:
+        print movie_id_store[x[1]] + " <-- " + x[1]
             
 if __name__ == "__main__":
     main()
