@@ -1,4 +1,4 @@
-####################################### 10/13/17 2:49 PM
+####################################### 10/13/17 2:56 PM
 
 import json
 import glob
@@ -31,7 +31,7 @@ def pearson(p1, p2):
     return top/bottom  
 
 #set up a dictionary, (movie title -> rating) for movie based on user
-def do_append(the_dict, the_info):
+def do_append(the_dict, movie_id_store, the_info):
     for info in the_info:
         str_info = str(info)
         split_info = [word.strip(string.punctuation) for word in str_info.split("'")]
@@ -39,20 +39,12 @@ def do_append(the_dict, the_info):
         if len(split_info[14]) > 2:
             split14 = split_info[14].split('"')
             combine = split14[1] + "'" + split_info[15]
-            the_dict[combine] = int(split_info[3]) 
-        else: the_dict[split_info[15]] = int(split_info[3])
-
-def do_append_movieid_store(movie_id_store, the_info):
-    for info in the_info:
-        str_info = str(info)
-        split_info = [word.strip(string.punctuation) for word in str_info.split("'")]
-        if split_info[15] in movie_id_store: continue ##ignore duplicates
-        if len(split_info[14]) > 2:
-            split14 = split_info[14].split('"')
-            combine = split14[1] + "'" + split_info[15]
-            if combine in movie_id_store: continue ##ignore duplicates
-            movie_id_store[combine] = split_info[11]
-        else: movie_id_store[split_info[15]] = split_info[11]
+            the_dict[combine] = int(split_info[3])
+            if combine not in movie_id_store: movie_id_store[combine] = split_info[11] 
+        else:
+            the_dict[split_info[15]] = int(split_info[3])
+            if split_info[15] not in movie_id_store: movie_id_store[split_info[15]] = split_info[11]
+        
 
 #get all of the json files and put it into a list, first user of the list is me (for now)
 def get_json_files(store):
@@ -75,18 +67,17 @@ def rec_movies(sim_score, movie_id_store):
         me = json.load(data_file)
     ############################
         
-    do_append(my_dict, me["films"]) ##set up my dictionary for pearson
+    do_append(my_dict, movie_id_store, me["films"]) ##set up my dictionary for pearson
     #my_films_store[str(me["user_id"])] = me["films"] ##set up dictionary for recommender
 
     for i in range(1, len(json_files_store)):
         with open(json_files_store[i]) as data_file:
             other = json.load(data_file)
         other_id = str(other["user_id"]) ##0) get the user id for the other person
-        do_append(other_dict, other["films"]) ##1) set up the dictionary for the other person
-        do_append_movieid_store(movie_id_store, other["films"]) ##2) store movie ids tied to names of movies
-        pearson_num = (pearson(my_dict, other_dict)) ##3) get the pearson correlation between me and another user
-        sim_score[other_id] = pearson_num ##4) store the similarity score
-        fill_rankings(rankings, my_dict, other_dict, pearson_num) ##5) fill the rankings (for recommendation)
+        do_append(other_dict, movie_id_store, other["films"]) ##1) set up the dictionary for the other person
+        pearson_num = (pearson(my_dict, other_dict)) ##2) get the pearson correlation between me and another user
+        sim_score[other_id] = pearson_num ##3) store the similarity score
+        fill_rankings(rankings, my_dict, other_dict, pearson_num) ##4) fill the rankings (for recommendation)
         other_dict.clear()
         
     return rankings
