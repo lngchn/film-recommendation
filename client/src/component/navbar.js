@@ -2,41 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
 import Logo from '../img/film_pro_logo.png';
+import SearchBar from './searchbar';
 
 class Navbar extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      query: ""
-    }
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({
-      query: event.target.value
-    });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-    fetch("/search", {
-      method: "post",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        query: this.state.query
-      })
-    })
-    .then(res => res.json())
-    .then(json => {
-      console.log(json);  // need a way to display the result to users
-    });
-  }
-
   render() {
     return(
       <div className="row">
@@ -61,10 +29,7 @@ class Navbar extends React.Component {
                   <a className="dropdown-item" href="#">Dropdown link</a>
                 </div>
               </div>
-              <form className="form-inline px-auto px-md-0 mt-3 mt-md-0" onSubmit={this.handleSubmit}>
-                <input className="form-control col-8" type="text" value={this.state.searchValue} onChange={this.handleChange} placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-success col-4" type="submit">Search</button>
-              </form>
+              <SearchBar />
             </div>
           </nav>
         </div>
