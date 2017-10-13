@@ -1,4 +1,4 @@
-Film Recommender
+# Film Recommender
 
 ## Instructions
 
@@ -31,11 +31,9 @@ Start the mongo Shell at bin/mongo
 
 Useful mongo Shell commands:
 
-```bash
-1. show dbs - show all the databases
-2. db - show current database
-3. use filmpro - switch to a database called filmpro
-4. show collections - show all the collections in the current database
-5. db.users.find() - show all the data in the users collection
-6. db.users.drop() - drop the collection called users (WARNING, it will delete the collection and all the data in it)
-```
+* show dbs - show all the databases
+* db - show current database
+* use filmpro - switch to a database called filmpro
+* show collections - show all the collections in the current database
+* db.users.find() - show all the data in the users collection
+* db.users.drop() - drop the collection called users (WARNING, it will delete the collection and all the data in it)
