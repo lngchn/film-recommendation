@@ -21,6 +21,7 @@ class SearchBar extends Component {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
+      // This is the body parameter
       body: JSON.stringify({
         query: newValue
       })
@@ -32,7 +33,7 @@ class SearchBar extends Component {
       });
     })
     .catch(err => {
-      // console.log(err);
+      console.log(err.message);
     });
 
     this.setState({
