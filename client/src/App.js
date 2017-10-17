@@ -6,6 +6,7 @@ import Home from './component/home';
 import Recommendation from './component/recommendation';
 import Activity from './component/activity';
 import People from './component/people';
+import Register from './component/register';
 import Footer from './component/footer';
 import NotFound from './component/not-found';
 
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path="/recommendation" component={Recommendation} />
             <Route path="/activity" component={Activity} />
             <Route path="/people" component={People} />
+            <Route path="/register" component={Register} />
             <Route component={NotFound} />
           </Switch>
           <Footer />
