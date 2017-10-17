@@ -1,4 +1,4 @@
-#10-15-17, 11:50 pm
+#10-16-17, 8:05 pm
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
 import re                     #For regular expressions 
@@ -51,8 +51,6 @@ def init(new_user_num, max_users):
             r = requests.get(url, headers=headers)
             html = r.text
             parsed_page = BeautifulSoup(html, "lxml")
-
-
             html_query = parsed_page.find_all('div', class_="pagination") #search for title 
           
             page_num = 0
@@ -63,10 +61,9 @@ def init(new_user_num, max_users):
                 search_str = "^Page\W1\Wof\W([\d]*).*"
                 result = re.search(search_str.decode('utf-8'), html_string.decode('utf-8'), re.I | re.U)
                 page_num = result.group(1)
-
-            
+      
             if page_num != 0:
-                print "Total pages for ur"+ str(new_user_num) +" " + str(page_num) + "\n"
+                print "Total pages for ur"+ str(new_user_num) +": " + str(page_num) + "\n"
                 process_user_data(url, new_user_num, int(page_num)) 
 
             else:
@@ -79,7 +76,6 @@ def init(new_user_num, max_users):
              print e
              print "ur" + str(new_user_num) + " may have one page of film ratings."
              process_user_data(url, new_user_num, 1) 
-
 
         except requests.exceptions.HTTPError as e:
            
