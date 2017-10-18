@@ -1,0 +1,15 @@
+#navLoginDiv {
+  width: 400%;
+}
+
+/* This CSS setting is the same as Bootstrap dropdown-menu-right class,
+   but for some reason it wasn't working, so it has to be manually defined here */
+#navSettingButton {
+  margin-top: 0.7em;
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu-right {
+  margin-top: 0.7em;
+}

@@ -33,18 +33,18 @@ class Login extends Component {
           <div className="form-group row justify-content-center">
             <label htmlFor="email-login" className="col-sm-2 col-form-label">Email</label>
             <div className="col-sm-4">
-              <input type="email" value={this.state.email} onChange={this.handleEmailChange} className="form-control" id="email-login" placeholder="Email" required/>
+              <input type="email" value={this.state.email} onChange={this.handleEmailChange} className="form-control" id="email-login" required/>
             </div>
           </div>
           <div className="form-group row justify-content-center">
             <label htmlFor="password-login" className="col-sm-2 col-form-label">Password</label>
             <div className="col-sm-4">
-              <input type="password" value={this.state.password} onChange={this.handlePasswordChange} className="form-control" id="password-login" placeholder="Password" required/>
+              <input type="password" value={this.state.password} onChange={this.handlePasswordChange} className="form-control" id="password-login" required/>
             </div>
           </div>
           <div className="form-group row justify-content-center">
             <div className="col-sm-2">
-              <button type="submit" className="btn btn-secondary">Login</button>
+              <button type="submit" className="btn btn-success">Login</button>
             </div>
           </div>
         </div>
