@@ -5,7 +5,7 @@ import Logo from '../img/film_pro_logo.png';
 import SearchBar from './searchbar';
 
 function CreateNavbarDropDown(props) {
-  var user = true;
+  var user = false;
 
   if(user) {
     return (
