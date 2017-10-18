@@ -23,12 +23,12 @@ function CreateNavbarDropDown(props) {
   }
 
   return (
-    <div className="btn-group mr-md-4" role="group">
-      <button type="button" className="btn btn-outline-info text-uppercase">
+    <form action="/login" className="btn-group mr-md-4" role="group">
+      <button type="submit" className="btn btn-outline-info text-uppercase">
         Login
       </button>
-    </div>
-  )
+    </form>
+  );
 }
 
 class Navbar extends React.Component {

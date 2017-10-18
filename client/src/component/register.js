@@ -62,7 +62,7 @@ class Register extends Component {
           </div>
           <div className="form-group row justify-content-center">
             <div className="col-sm-2">
-              <button type="submit" className="btn btn-primary">Register</button>
+              <button type="submit" className="btn btn-secondary">Register</button>
             </div>
           </div>
         </div>
