@@ -2,6 +2,11 @@
 
 ## Instructions
 
+UPDATED 10/19/2017:
+TMDB API key is no longer hardcoded in the source code. API key is stored in the database and retreived when requested.
+You can insert your API key into the MongoDB by using the this mongo Shell command:
+db.apikey.insert({"key": "your_key_here"})
+
 Deveopment Build:
 ```bash
 1. clone project
