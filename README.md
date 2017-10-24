@@ -2,34 +2,29 @@
 
 ## Instructions
 
-UPDATED 10/19/2017:
-TMDB API key is no longer hardcoded in the source code. API key is stored in the database and retreived when requested.
-You can insert your API key into the MongoDB by using the this mongo Shell command:
-db.apikey.insert({"key": "your_key_here"})
-
 Deveopment Build:
-```bash
+
 1. clone project
 2. cd to root directory: npm install (install Express dependencies)
-3. to start Express server: npm start (under root directory)
-4. cd to client: npm install (install React dependencies)
-5. to start React server: npm start (under client directory)
+3. cd to client: npm install (install React dependencies)
+4. in the root directory create a tmdb-api-key.js with these two lines: 
+```bash
+const key = 'INSERT_YOUR_KEY_HERE';
+module.exports = { key };
 ```
+5. to start Express server: npm start (under root directory)
+6. to start React server: npm start (under client directory)
 
 Production Build:
-```bash
 1. cd to client
 2. npm run build
 3. a folder called 'build' will be created
 4. production build will be hosted on the Express server
-```
 
 MongoDB:
-```bash
 1. Install MongoDB Community Edition: https://docs.mongodb.com/manual/administration/install-community
 2. Create the data directory (absolute path on the drive from which you start MongoDB): /data/db
 3. Start the server by running: mongod
-```
 
 You can use the mongo Shell or Mongo Compass to check the database.
 Start the mongo Shell at bin/mongo
