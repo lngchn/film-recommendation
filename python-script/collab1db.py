@@ -1,4 +1,4 @@
-###################################### 10/22/17 2:25 PM
+###################################### 10/26/17 2:25 PM
 
 import json
 import glob
@@ -96,7 +96,8 @@ def rec_movies(sim_score, movie_id_store):
         sim_score[other_id] = pearson_num ##3) store the similarity score
         fill_rankings(rankings, my_dict, other_dict, pearson_num) ##4) fill the rankings (for recommendation)
         other_dict.clear()
-        
+    
+    rankings.reverse()
     return rankings
 
 #essentially provides the films to recommend
@@ -112,8 +113,10 @@ def fill_rankings(rankings, my_dict, other_dict, pearson_num):
             temp2.setdefault(movie, 0)
             temp2[movie] += pearson_num
 
-    rankings.extend([(ranking / temp2[movie], movie) for movie, ranking in temp1.items()])
-    rankings.reverse()
+    ##rankings.extend([(ranking / temp2[movie], movie) for movie, ranking in temp1.items()])
+    for movie, ranking in temp1.items():
+        if ranking > 8:
+            rankings.extend([(ranking / temp2[movie], movie)])
 
 #########
       
