@@ -3,7 +3,8 @@ var router = express.Router();
 
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-const url = 'mongodb://localhost:27017/filmpro';  //filmpro indicates the database to use
+const MongoDB_URL = require('../mongodb-url.js');
+const url = MongoDB_URL.url;
 
 function insertFilms(db, callback) {
   // Get the films collection

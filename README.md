@@ -12,8 +12,13 @@ Deveopment Build:
 const key = 'INSERT_YOUR_KEY_HERE';
 module.exports = { key };
 ```
-5. to start Express server: npm start (under root directory)
-6. to start React server: npm start (under client directory)
+5. in the root directory craete a mongodb-url.js with these two lines:
+```bash
+const url = 'INSERT_MONGODB_URL_HERE';
+module.exports = { url };
+```
+6. to start Express server: npm start (under root directory)
+7. to start React server: npm start (under client directory)
 
 Production Build:
 1. cd to client
