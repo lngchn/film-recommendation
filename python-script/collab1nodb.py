@@ -1,4 +1,4 @@
-####################################### 10/13/17 2:56 PM
+####################################### 10/26/17 2:26 PM
 
 import json
 import glob
@@ -27,7 +27,7 @@ def pearson(p1, p2):
     top = product_sum - ((p1_sum * p2_sum) / len(common_films))
     bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / len(common_films)) * (p2_sum_sq - pow(p2_sum, 2) / len(common_films)))
     ########
-    if bottom == 0: return
+    if bottom == 0: return 0
     return top/bottom  
 
 #set up a dictionary, (movie title -> rating) for movie based on user
@@ -80,7 +80,8 @@ def rec_movies(sim_score, movie_id_store):
         sim_score[other_id] = pearson_num ##3) store the similarity score
         fill_rankings(rankings, my_dict, other_dict, pearson_num) ##4) fill the rankings (for recommendation)
         other_dict.clear()
-        
+
+    rankings.reverse()
     return rankings
     
 
@@ -103,8 +104,11 @@ def fill_rankings(rankings, my_dict, other_dict, pearson_num):
             temp2.setdefault(movie, 0)
             temp2[movie] += pearson_num
 
-    rankings.extend([(ranking / temp2[movie], movie) for movie, ranking in temp1.items()])
-    rankings.reverse()
+    #rankings.extend([(ranking / temp2[movie], movie) for movie, ranking in temp1.items()])
+
+    for movie, ranking in temp1.items():
+        if ranking > 8:
+            rankings.extend([(ranking / temp2[movie], movie)])
 
 #########
       
@@ -116,7 +120,8 @@ def main():
     films_to_rec = rec_movies(sim_score, movie_id_store)
     
     for x in films_to_rec[:15]:
-        print movie_id_store[x[1]] + " <-- " + x[1]
+        print x[0], movie_id_store[x[1]] + " <-- " + x[1]
             
 if __name__ == "__main__":
     main()
+
