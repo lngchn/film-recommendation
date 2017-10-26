@@ -47,7 +47,7 @@ def pearson(p1, p2):
     top = product_sum - ((p1_sum * p2_sum) / len(common_films))
     bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / len(common_films)) * (p2_sum_sq - pow(p2_sum, 2) / len(common_films)))
     ########
-    if bottom == 0: return
+    if bottom == 0: return 0
     return top/bottom  
 
 #set up a dictionary, (movie title -> rating) for movie based on user
