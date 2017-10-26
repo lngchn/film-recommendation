@@ -115,7 +115,7 @@ def fill_rankings(rankings, my_dict, other_dict, pearson_num):
 
     ##rankings.extend([(ranking / temp2[movie], movie) for movie, ranking in temp1.items()])
     for movie, ranking in temp1.items():
-        if ranking > 8:
+        if ranking > 8: ##threshold to only extend movies with a weighted Pearson score greater than 8
             rankings.extend([(ranking / temp2[movie], movie)])
 
 #########
