@@ -114,7 +114,6 @@ def do_weights(rating_pearson, just_pearson, my_dict, other_dict, pearson_num):
 def fill_rankings(rankings, rating_pearson, just_pearson):
     for movie, ranking in rating_pearson.items():
         if ranking > 9:
-            print time.time()
             rankings.extend([(ranking / just_pearson[movie], movie)])
 
 #########
