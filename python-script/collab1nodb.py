@@ -1,5 +1,4 @@
-####################################### 10/29/17 2:04 PM
-####Use this?? 
+####################################### 10/31/17 2:25 PM
 
 import json
 import glob
@@ -85,7 +84,6 @@ def fill_rankings(rankings, rating_pearson, just_pearson):
         num = ranking / just_pearson[movie]
         if num > 9 and num <= 10:
             rankings[movie] = num
-            #rankings.extend([(num, movie)])
 
 ##function to remove all movies that appear less than 5 times (removes bias towards films with only less than 5 ratings)
 def remove_five(all_movies, rankings):
@@ -93,14 +91,13 @@ def remove_five(all_movies, rankings):
         if count < 5 and movie in rankings: rankings.pop(movie, 0)
         
 ##get the id of the most similar user to me
-def rec_movies(sim_score, movie_id_store):
+def rec_movies(sim_score, movie_id_store, all_movies):
     my_dict = {} ###user using website (me)
     other_dict = {} ##person to compare
     rankings = {}
     json_files_store = []
     rating_pearson = {}
     just_pearson = {}
-    all_movies = {} #used for remove_five
 
     get_json_files(json_files_store) #get all available .json files
     
@@ -110,8 +107,7 @@ def rec_movies(sim_score, movie_id_store):
     ############################
         
     do_append(my_dict, movie_id_store, me["films"], all_movies) ##set up my dictionary for pearson
-    #my_films_store[str(me["user_id"])] = me["films"] ##set up dictionary for recommender
-
+    
     for i in range(1, len(json_files_store)):
         with open(json_files_store[i]) as data_file:
             other = json.load(data_file)
@@ -133,22 +129,19 @@ def rec_movies(sim_score, movie_id_store):
 #########
       
 def main():
-    #my_films_store = {}
     movie_id_store = {}
     sim_score = {}
+    all_movies = {} #used for remove_five
 
-    films_to_rec = rec_movies(sim_score, movie_id_store)
+    films_to_rec = rec_movies(sim_score, movie_id_store, all_movies)
 
     '''sim_score = sorted(sim_score.items(), key=operator.itemgetter(1))
     sim_score.reverse()
     for x in sim_score[:15]:
         print x'''
-    
-    '''for x in films_to_rec[:15]:
-        print x[0], movie_id_store[x[1]] + " <-- " + x[1]'''
 
-    for x in films_to_rec:
-        print x, movie_id_store[x[0]]
+    '''for x in films_to_rec:
+        print x, movie_id_store[x[0]]'''
             
 if __name__ == "__main__":
     main()
