@@ -7,16 +7,19 @@ function SideBarFilter(props) {
     <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
       <h4 className="ml-3 mb-1 text-light text-uppercase">Genre</h4>
       <nav className="nav flex-column filter-link">
-        <a className="nav-item nav-link" href="#">Action & Adventure</a>
-        <a className="nav-item nav-link" href="#">Animation & Anime</a>
-        <a className="nav-item nav-link" href="#">Children's & Family</a>
+        <a className="nav-item nav-link" href="#">Action</a>
+        <a className="nav-item nav-link" href="#">Adventure</a>
+        <a className="nav-item nav-link" href="#">Animation</a>
         <a className="nav-item nav-link" href="#">Comedy</a>
         <a className="nav-item nav-link" href="#">Documentary</a>
         <a className="nav-item nav-link" href="#">Drama</a>
         <a className="nav-item nav-link" href="#">Horror</a>
-        <a className="nav-item nav-link" href="#">Sci-Fi & Fantasy</a>
+        <a className="nav-item nav-link" href="#">Sci-Fi</a>
+            <a className="nav-item nav-link" href="#">Fantasy</a>
         <a className="nav-item nav-link text-right" href="#">More</a>
       </nav>
+      <hr />
+      
       <h4 className="mt-4 ml-3 mb-1 text-light text-uppercase">Rating</h4>
       <nav className="nav flex-column filter-link">
         <a className="nav-item nav-link" href="#">G</a>
