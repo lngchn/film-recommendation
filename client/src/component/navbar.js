@@ -4,6 +4,8 @@ import './navbar.css';
 import Logo from '../img/film_pro_logo.png';
 import SearchBar from './searchbar';
 
+import FormValidation from '../helperFunctions/formValidation';
+
 function LoggedInNavbar(props) {
   return (
     <div className="row">
@@ -78,6 +80,10 @@ class Navbar extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
+  }
+
+  componentWillMount() {
+    FormValidation('navLoginForm');
   }
 
   componentWillReceiveProps(nextProps) {

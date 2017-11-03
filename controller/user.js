@@ -60,7 +60,7 @@ router.post('/register', (req, res) => {
           MongoClient.connect(url, (err, db) => {
             createUser(db, newUser, (user) => {
               db.close();
-              req.logIn(user, () => {
+              req.login(newUser, () => {
                 res.sendStatus(200);
               })
             });

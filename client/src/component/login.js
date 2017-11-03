@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import './login.css';
 
+import FormValidation from '../helperFunctions/formValidation';
+
 class Login extends Component {
   constructor() {
     super();
@@ -13,6 +15,10 @@ class Login extends Component {
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentWillMount() {
+    FormValidation('login-form');
   }
 
   handleEmailChange(event) {
@@ -43,8 +49,8 @@ class Login extends Component {
     .then(res => {
       if(res.status === 200) {
        this.setState({isLoggedIn: true});
+       this.props.onAuthChange(true);
       }
-      this.props.onAuthChange(true);
     })
     .catch(err => {
       console.log(err.message);

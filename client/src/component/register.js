@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './register.css';
 
+import FormValidation from '../helperFunctions/formValidation';
+
 class Register extends Component {
   constructor() {
     super();
@@ -15,6 +17,10 @@ class Register extends Component {
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
     this.handleConfirmPasswordChange = this.handleConfirmPasswordChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentWillMount() {
+    FormValidation('register-form');
   }
 
   handleUsernameChange(event) {
