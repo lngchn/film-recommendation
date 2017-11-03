@@ -71,12 +71,17 @@ class Navbar extends React.Component {
   constructor() {
     super();
     this.state = {
+      isAuthed: false,
       email: '',
       password: ''
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
+  }
+
+  componentWillMount() {
+    this.setState({isAuthed: this.props.isAuthed});
   }
 
   handleEmailChange(event) {
@@ -93,10 +98,10 @@ class Navbar extends React.Component {
   }
 
   render() {
-    var user = true;
+    let isAuthed = this.state.isAuthed;
 
     return(
-      user ? <LoggedInNavbar /> : 
+      isAuthed ? <LoggedInNavbar /> : 
              <LoggedOutNavbar handleSubmit={this.handleSubmit} 
                               handleEmailChange={this.handleEmailChange} 
                               handlePasswordChange={this.handlePasswordChange} 
