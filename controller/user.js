@@ -58,10 +58,9 @@ router.post('/register', (req, res) => {
           newUser.password = hashedPassword;
 
           MongoClient.connect(url, (err, db) => {
-            createUser(db, newUser, (result) => {
+            createUser(db, newUser, (user) => {
               db.close();
-              let user = result[0];
-              req.login(user, () => {
+              req.logIn(user, () => {
                 res.sendStatus(200);
               })
             });

@@ -39,6 +39,21 @@ class App extends Component {
     this.state = { isAuthed: false };
   }
 
+  componentWillMount() {
+    fetch("/auth")
+    .then(res => {
+      console.log(res);
+      if(res.status === 200) {
+       this.setState({ isAuthed: true });
+      } else {
+        this.setState({ isAuthed: false });
+      }
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
+  }
+
   render() {
     return (
       <BrowserRouter>

@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(expressSession(({
   secret: 'super secret',
-  resave: true,
+  resave: false,
   saveUninitialized: true
 })));
 app.use(passport.initialize());

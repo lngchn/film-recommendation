@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import './login.css';
 
 class Login extends Component {
@@ -6,7 +7,8 @@ class Login extends Component {
     super();
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      isLoggedIn: false
     }
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
@@ -23,10 +25,36 @@ class Login extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    var {email, password} = this.state;
+    let {email, password} = this.state;
+    fetch("/login", {
+      method: "post",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      // This is the body parameter
+      body: JSON.stringify({
+        email: email,
+        password: password
+      })
+    })
+    .then(res => {
+      if(res.status === 200) {
+       this.setState({isLoggedIn: true});
+      }
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
   }
 
   render() {
+    let isLoggedIn = this.state.isLoggedIn;
+
+    if(isLoggedIn) {
+      return(<Redirect to="/" />);
+    }
+
     return(
       <form onSubmit={this.handleSubmit} className="jumbotron jumbotron-fluid m-0" id="login-form" noValidate>
         <div className="container" id="login-form-content">
