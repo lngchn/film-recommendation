@@ -34,11 +34,6 @@ function createUser(db, newUser, callback) {
   });
 }
 
-router.get('/register', passport.redirectIfLoggedIn('/welcome'), (req, res) => {
-  // This should be part of React, check if user is logged in
-  res.redirect('/')
-});
-
 router.post('/register', (req, res) => {
   const username = req.body.username;
   const email = req.body.email;
@@ -67,7 +62,7 @@ router.post('/register', (req, res) => {
               db.close();
               let user = result[0];
               req.login(user, () => {
-                res.redirect('/welcome');
+                res.sendStatus(200);
               })
             });
           });
@@ -77,25 +72,17 @@ router.post('/register', (req, res) => {
   });
 });
 
-router.get('/login', passport.redirectIfLoggedIn('/welcome'), (req, res) => {
-  // This should be part of React, check if user is logged in
-  res.redirect('/')
-});
-
 router.post('/login', passport.authenticate('local'), (req, res) => {
-  res.redirect('/welcome')
+  res.sendStatus(200);
 });
 
 router.get('/logout', (req, res) => {
   req.logout();
-  res.redirect('/')
+  res.sendStatus(200);
 })
 
-// Only allow access to logged in users
-// passport.redirectIfNotLoggedIn can be used at application level 
-// by using router.use() at the top of the file.
-router.get('/profile', passport.redirectIfNotLoggedIn('/'), (req, res) => {
-  res.redirect('/welcome');
-});
+router.get('/auth', passport.redirectIfLoggedIn(200), (req, res) => {
+  res.sendStatus(401);
+}); 
 
 module.exports = router;
