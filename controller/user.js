@@ -80,8 +80,14 @@ router.get('/logout', (req, res) => {
   res.sendStatus(200);
 })
 
-router.get('/auth', passport.redirectIfLoggedIn(200), (req, res) => {
-  res.sendStatus(401);
+router.get('/auth', (req, res) => {
+  // If user is logged in, then req.user returns the user object
+  if(req.user) {
+    res.sendStatus(200);
+  }
+  else {
+    res.sendStatus(401);
+  }
 }); 
 
 module.exports = router;

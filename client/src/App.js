@@ -22,13 +22,13 @@ function PrivateRoute({component: Component, isAuthed, ...rest}) {
   );
 }
 
-function LoginOrRegisterRoute({component: Component, isAuthed, ...rest}) {
+function LoginOrRegisterRoute({component: Component, isAuthed, onAuthChange, ...rest}) {
   return(
     <Route 
       {...rest}
       render={(props) => isAuthed === true 
         ? <Redirect to={{pathname: '/', state: {from: props.location}}} />
-        : <Component {...props} /> }
+        : <Component onAuthChange={onAuthChange} {...props} /> }
     />
   );
 }
@@ -37,12 +37,20 @@ class App extends Component {
   constructor() {
     super();
     this.state = { isAuthed: false };
+    this.handleAuth = this.handleAuth.bind(this);
   }
 
   componentWillMount() {
-    fetch("/auth")
+    // You need credentials: "same-origin" for express session to work.
+    fetch("/auth", {
+      method: 'get',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin",
+    })
     .then(res => {
-      console.log(res);
       if(res.status === 200) {
        this.setState({ isAuthed: true });
       } else {
@@ -54,6 +62,10 @@ class App extends Component {
     });
   }
 
+  handleAuth(isAuthed) {
+    this.setState({isAuthed: isAuthed});
+  }
+
   render() {
     return (
       <BrowserRouter>
@@ -62,7 +74,7 @@ class App extends Component {
           <Switch>
             {/* <Redirect exact from="/" to="/recommendation" /> */}
             <Route exact path="/" component={Home} />
-            <LoginOrRegisterRoute isAuthed={this.state.isAuthed} path="/login" component={Login} />
+            <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/login" component={Login} />
             <LoginOrRegisterRoute isAuthed={this.state.isAuthed} path="/register" component={Register} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/recommendation" component={Recommendation} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/activity" component={Activity} />

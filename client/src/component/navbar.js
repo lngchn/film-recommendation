@@ -80,8 +80,8 @@ class Navbar extends React.Component {
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
   }
 
-  componentWillMount() {
-    this.setState({isAuthed: this.props.isAuthed});
+  componentWillReceiveProps(nextProps) {
+    this.setState({isAuthed: nextProps.isAuthed});
   }
 
   handleEmailChange(event) {

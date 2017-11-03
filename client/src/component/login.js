@@ -23,6 +23,7 @@ class Login extends Component {
     this.setState({password: event.target.value});
   }
 
+  // You need credentials: "same-origin" for express session to work.
   handleSubmit(event) {
     event.preventDefault();
     let {email, password} = this.state;
@@ -32,6 +33,7 @@ class Login extends Component {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
+      credentials: "same-origin",
       // This is the body parameter
       body: JSON.stringify({
         email: email,
@@ -42,6 +44,7 @@ class Login extends Component {
       if(res.status === 200) {
        this.setState({isLoggedIn: true});
       }
+      this.props.onAuthChange(true);
     })
     .catch(err => {
       console.log(err.message);
