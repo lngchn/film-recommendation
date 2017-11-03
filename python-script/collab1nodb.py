@@ -1,13 +1,19 @@
-####################################### 10/31/17 2:25 PM
+####################################### 11/3/17 2:04 PM
+####Use this?? 
 
 import json
 import glob
 import os
 import operator
 import string
+import requests
+import tmdbsimple as tmdb
+import random
 import time
+from time import sleep
 from math import sqrt
-import itertools
+
+tmdb.API_KEY = '22b44af24d5169327b6fa06c36f89483'
 
 
 ####INACTIVE FUNCTIONS#####
@@ -43,11 +49,15 @@ def pearson(p1, p2):
 
 #set up a dictionary, (movie title -> rating) for movie based on user
 #also, sets up dictionary for movie ids (movie title -> ID) for movie_id_store
-def do_append(the_dict, movie_id_store, the_info, all_movies):
+def do_append(the_dict, movie_id_store, the_info, all_movies, check, seed_genres):
     for info in the_info:
         str_info = str(info)
         split_info = [word.strip(string.punctuation) for word in str_info.split("'")]
         if split_info[3] == '': continue ##ignore empty ratings
+        if check == 0: ##store genres for seed films only!
+                movie = tmdb.Movies(split_info[11])
+                response = movie.info()
+                for genre in movie.genres: seed_genres.append(str(genre['name']))
         if len(split_info[14]) > 2: ##account for special characters
             split14 = split_info[14].split('"')
             combine = split14[1] + "'" + split_info[15]
@@ -70,28 +80,53 @@ def get_json_files(store):
 
 #essentially provides the films to recommend
 #we provide weighted scores in this function, modify ratings depending on how closely correlated they are in tastes to you
-def do_weights(rating_pearson, just_pearson, my_dict, other_dict, pearson_num):
+def do_weights(rankings, rating_pearson, just_pearson, my_dict, other_dict, pearson_num):
     for movie in other_dict: #we need to adjust the scores so that they're weighted
         if movie not in my_dict or my_dict[movie] == 0:
-            if movie not in rating_pearson: rating_pearson.setdefault(movie, 0)
+            rating_pearson.setdefault(movie, 0)
             rating_pearson[movie] += other_dict[movie] * pearson_num
-            if movie not in just_pearson: just_pearson.setdefault(movie, 0)
+            just_pearson.setdefault(movie, 0)
             just_pearson[movie] += pearson_num
 
 ##fill the rankings list to be returned as recommendations
 def fill_rankings(rankings, rating_pearson, just_pearson):
     for movie, ranking in rating_pearson.items():
         num = ranking / just_pearson[movie]
-        if num > 9 and num <= 10:
-            rankings[movie] = num
+        if num > 7: rankings[movie] = num
 
-##function to remove all movies that appear less than 5 times (removes bias towards films with only less than 5 ratings)
-def remove_five(all_movies, rankings):
+##function to remove all movies that appear less than 50 times (removes bias towards films with only less than 50 ratings)
+def remove_fifty(all_movies, rankings):
     for movie, count in all_movies.items():
-        if count < 5 and movie in rankings: rankings.pop(movie, 0)
+        if count < 50 and movie in rankings: rankings.pop(movie, 0)
+
+def remove_non_genre(seed_genres, movie_id_store, rankings):
+    temp = []
+    check = 0
+    for movies in rankings:
+        if len(temp) == 15: return temp ##return the top 15
+        while True:
+            try:
+                movie = tmdb.Movies(movie_id_store[movies[0]])
+                response = movie.info()
+                print movie.title
+                for genre in movie.genres:
+                    if str(genre['name']) not in seed_genres:
+                        check = 1
+                        break
+                if check == 1:
+                    check = 0
+                    break
+                else:
+                    temp.extend(movies[0])
+                    break
+            except requests.exceptions.HTTPError as e:
+                if e.response.status_code == 429:
+                    print "uh oh"
+                    sleep(random.randint(1, 4)) ##to prevent server request overload
+                    pass
         
 ##get the id of the most similar user to me
-def rec_movies(sim_score, movie_id_store, all_movies):
+def rec_movies(seed_genres, sim_score, movie_id_store, all_movies):
     my_dict = {} ###user using website (me)
     other_dict = {} ##person to compare
     rankings = {}
@@ -106,42 +141,49 @@ def rec_movies(sim_score, movie_id_store, all_movies):
         me = json.load(data_file)
     ############################
         
-    do_append(my_dict, movie_id_store, me["films"], all_movies) ##set up my dictionary for pearson
+    do_append(my_dict, movie_id_store, me["films"], all_movies, 0, seed_genres) ##set up my dictionary for pearson
     
     for i in range(1, len(json_files_store)):
         with open(json_files_store[i]) as data_file:
             other = json.load(data_file)
         other_id = str(other["user_id"]) ##0) get the user id for the other person
-        do_append(other_dict, movie_id_store, other["films"], all_movies) ##1) set up the dictionary for the other person
+        do_append(other_dict, movie_id_store, other["films"], all_movies, 1, seed_genres) ##1) set up the dictionary for the other person
         pearson_num = (pearson(my_dict, other_dict)) ##2) get the pearson correlation between me and another user
+        sim_score[other_id] = pearson_num ##3) store the similarity score
         if pearson_num > 0 and pearson_num < 1:
-            sim_score[other_id] = pearson_num ##3) store the similarity score
-            do_weights(rating_pearson, just_pearson, my_dict, other_dict, pearson_num) ##4) get the weights (for recommendation)
-            fill_rankings(rankings, rating_pearson, just_pearson) ##fill the rankings
+            do_weights(rankings, rating_pearson, just_pearson, my_dict, other_dict, pearson_num) ##4) get the weights (for recommendation)
             other_dict.clear()
         else: other_dict.clear()
 
-    remove_five(all_movies, rankings) ##remove all movies with less than five ratings (remove the bias)
+    fill_rankings(rankings, rating_pearson, just_pearson) ##fill the rankings
+    remove_fifty(all_movies, rankings) ##remove all movies with less than fifty ratings (remove the bias)
     rankings = sorted(rankings.items(), key=operator.itemgetter(1))
     rankings.reverse()
-    return rankings
+    fix_rankings = remove_non_genre(seed_genres, movie_id_store, rankings) ##remove all movies of the wrong genre
+
+    return fix_rankings
 
 #########
       
 def main():
+    start = time.time()
     movie_id_store = {}
     sim_score = {}
-    all_movies = {} #used for remove_five
+    all_movies = {} #used for remove_fifty
+    seed_genres = []
 
-    films_to_rec = rec_movies(sim_score, movie_id_store, all_movies)
+    films_to_rec = rec_movies(seed_genres, sim_score, movie_id_store, all_movies)
 
     '''sim_score = sorted(sim_score.items(), key=operator.itemgetter(1))
     sim_score.reverse()
     for x in sim_score[:15]:
         print x'''
 
-    '''for x in films_to_rec:
-        print x, movie_id_store[x[0]]'''
-            
+    for x in films_to_rec:
+        print x, movie_id_store[x]
+
+    print str(time.time() - start) + " seconds"
+        
 if __name__ == "__main__":
     main()
+
