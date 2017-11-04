@@ -1,5 +1,5 @@
-####################################### 11/3/17 2:04 PM
-####Use this?? 
+####################################### 11/4/17 1:04 PM
+####TO DO: address only 1 seed film, fix run time?, play around with count and size of what to be returned
 
 import json
 import glob
@@ -7,13 +7,14 @@ import os
 import operator
 import string
 import requests
-import tmdbsimple as tmdb
+from imdb import IMDb
 import random
 import time
 from time import sleep
 from math import sqrt
 
-tmdb.API_KEY = '22b44af24d5169327b6fa06c36f89483'
+#tmdb.API_KEY = '22b44af24d5169327b6fa06c36f89483'
+ia = IMDb()
 
 
 ####INACTIVE FUNCTIONS#####
@@ -31,7 +32,7 @@ def pearson(p1, p2):
     for movie in p1:
         if movie in p2: common_films[movie] = 1
 
-    the_length = float(len(common_films))
+    the_length = len(common_films)
     if the_length == 0: return 0
     p1_sum = sum([p1.get(movie) for movie in common_films])
     p2_sum = sum([p2.get(movie) for movie in common_films])
@@ -55,9 +56,10 @@ def do_append(the_dict, movie_id_store, the_info, all_movies, check, seed_genres
         split_info = [word.strip(string.punctuation) for word in str_info.split("'")]
         if split_info[3] == '': continue ##ignore empty ratings
         if check == 0: ##store genres for seed films only!
-                movie = tmdb.Movies(split_info[11])
-                response = movie.info()
-                for genre in movie.genres: seed_genres.append(str(genre['name']))
+                temp = split_info[11][2:len(split_info[11])]
+                movie = ia.get_movie(temp)
+                for genre in movie['genre']:
+                    if genre not in seed_genres: seed_genres.append(str(genre))
         if len(split_info[14]) > 2: ##account for special characters
             split14 = split_info[14].split('"')
             combine = split14[1] + "'" + split_info[15]
@@ -92,38 +94,35 @@ def do_weights(rankings, rating_pearson, just_pearson, my_dict, other_dict, pear
 def fill_rankings(rankings, rating_pearson, just_pearson):
     for movie, ranking in rating_pearson.items():
         num = ranking / just_pearson[movie]
-        if num > 7: rankings[movie] = num
+        if num > 6: rankings[movie] = num
 
 ##function to remove all movies that appear less than 50 times (removes bias towards films with only less than 50 ratings)
 def remove_fifty(all_movies, rankings):
     for movie, count in all_movies.items():
-        if count < 50 and movie in rankings: rankings.pop(movie, 0)
+        if count < 100 and movie in rankings: rankings.pop(movie, 0)
 
 def remove_non_genre(seed_genres, movie_id_store, rankings):
     temp = []
     check = 0
     for movies in rankings:
-        if len(temp) == 15: return temp ##return the top 15
+        if len(temp) == 10: break ##return the top 10
         while True:
             try:
-                movie = tmdb.Movies(movie_id_store[movies[0]])
-                response = movie.info()
-                print movie.title
-                for genre in movie.genres:
-                    if str(genre['name']) not in seed_genres:
+                temp_id = movie_id_store[movies[0]][2:len(movie_id_store[movies[0]])]
+                movie = ia.get_movie(temp_id)
+                for genre in movie['genre']:
+                    if str(genre) not in seed_genres:
                         check = 1
                         break
-                if check == 1:
-                    check = 0
-                    break
-                else:
-                    temp.extend(movies[0])
-                    break
+                if check == 1: check = 0
+                else: temp.append(movies[0])
+                break
             except requests.exceptions.HTTPError as e:
-                if e.response.status_code == 429:
-                    print "uh oh"
-                    sleep(random.randint(1, 4)) ##to prevent server request overload
+                if e.response.status_code == 503:
+                    sleep(random.randint(3, 5)) ##to prevent server request overload
                     pass
+
+    return temp
         
 ##get the id of the most similar user to me
 def rec_movies(seed_genres, sim_score, movie_id_store, all_movies):
@@ -140,9 +139,9 @@ def rec_movies(seed_genres, sim_score, movie_id_store, all_movies):
     with open(json_files_store[0]) as data_file:
         me = json.load(data_file)
     ############################
-        
+
     do_append(my_dict, movie_id_store, me["films"], all_movies, 0, seed_genres) ##set up my dictionary for pearson
-    
+
     for i in range(1, len(json_files_store)):
         with open(json_files_store[i]) as data_file:
             other = json.load(data_file)
