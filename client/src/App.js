@@ -70,7 +70,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Navbar isAuthed={this.state.isAuthed} />
+          <Navbar isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} />
           <Switch>
             {/* <Redirect exact from="/" to="/recommendation" /> */}
             <Route exact path="/" component={Home} />

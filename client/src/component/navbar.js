@@ -29,7 +29,7 @@ function LoggedInNavbar(props) {
               <div className="dropdown-menu" id="navSettingButton" aria-labelledby="navbarLoggedIn">
                 <a className="dropdown-item" href="#">Profile</a>
                 <a className="dropdown-item" href="#">Setting</a>
-                <a className="dropdown-item" href="#">Logout</a>
+                <a className="dropdown-item" href="#" onClick={props.onLogoutClick}>Logout</a>
               </div>
             </div>
           </div>
@@ -55,9 +55,9 @@ function LoggedOutNavbar(props) {
                 Login
               </button>
               <div className="dropdown-menu dropdown-menu-right p-4" id="navLoginDiv" aria-labelledby="navLogin">
-                <form onSubmit={props.handleSubmit} className="form" id="navLoginForm" noValidate> 
-                  <input className="form-control mb-2" type="email" value={props.email} onChange={props.handleEmailChange} placeholder="Email" required />
-                  <input className="form-control mb-2" type="password" value={props.password} onChange={props.handlePasswordChange} placeholder="Password" required />
+                <form onSubmit={props.onSubmit} className="form" id="navLoginForm" noValidate> 
+                  <input className="form-control mb-2" type="email" value={props.email} onChange={props.onEmailChange} placeholder="Email" required />
+                  <input className="form-control mb-2" type="password" value={props.password} onChange={props.onPasswordChange} placeholder="Password" required />
                   <button className="btn btn-secondary" type="submit">Login</button>
                 </form>
               </div>
@@ -80,6 +80,7 @@ class Navbar extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
   }
 
   componentWillMount() {
@@ -100,19 +101,62 @@ class Navbar extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    var {email, password} = this.state;
+    let {email, password} = this.state;
+    fetch("/login", {
+      method: "post",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin",
+      // This is the body parameter
+      body: JSON.stringify({
+        email: email,
+        password: password
+      })
+    })
+    .then(res => {
+      if(res.status === 200) {
+        this.props.onAuthChange(true);
+        this.setState({isAuthed: true});
+      }
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
+  }
+
+  handleLogout(event) {
+    event.preventDefault();
+    fetch("/logout", {
+      method: "get",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin"
+    })
+    .then(res => {
+      if(res.status === 200) {
+        this.props.onAuthChange(false);
+        this.setState({isAuthed: false});
+      }
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
   }
 
   render() {
     let isAuthed = this.state.isAuthed;
 
     return(
-      isAuthed ? <LoggedInNavbar /> : 
-             <LoggedOutNavbar handleSubmit={this.handleSubmit} 
-                              handleEmailChange={this.handleEmailChange} 
-                              handlePasswordChange={this.handlePasswordChange} 
-                              email={this.state.email} 
-                              password={this.state.password} />
+      isAuthed ? <LoggedInNavbar onLogoutClick={this.handleLogout} /> 
+               : <LoggedOutNavbar onSubmit={this.handleSubmit} 
+                                  onEmailChange={this.handleEmailChange} 
+                                  onPasswordChange={this.handlePasswordChange} 
+                                  email={this.state.email} 
+                                  password={this.state.password} />
     );
   }
 }
