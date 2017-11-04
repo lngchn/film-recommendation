@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
 import './login.css';
 
+import { Redirect } from 'react-router-dom';
 import FormValidation from '../helperFunctions/formValidation';
 
 class Login extends Component {
@@ -48,8 +48,8 @@ class Login extends Component {
     })
     .then(res => {
       if(res.status === 200) {
+        this.setState({isLoggedIn: true});        
         this.props.onAuthChange(true);
-        this.setState({isLoggedIn: true});
       }
     })
     .catch(err => {

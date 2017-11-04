@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './register.css';
 
+import { Redirect } from 'react-router-dom';
 import FormValidation from '../helperFunctions/formValidation';
 
 class Register extends Component {
@@ -10,7 +11,8 @@ class Register extends Component {
       username: '',
       email: '',
       password: '',
-      confirmPassword: ''
+      confirmPassword: '',
+      isLoggedIn: false
     }
     this.handleUsernameChange = this.handleUsernameChange.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
@@ -41,17 +43,39 @@ class Register extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    var {username, email, password, confirmPassword} = this.state;
-    console.log(username);
-    if(password !== confirmPassword) {
-
-    }
-    else {
-      // fetch here
-    }
+    let {username, email, password, confirmPassword} = this.state;
+    fetch("/register", {
+      method: "post",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin",
+      body: JSON.stringify({
+        username, email, password, confirmPassword
+      })
+    })
+    .then(res => {
+      console.log(res);
+      if(res.status === 200) {
+        this.setState({isLoggedIn: true});
+        this.props.onAuthChange(true);
+      } else {
+        // Need to implement feedback as to why registration fails. 
+      }
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
   }
 
   render() {
+    let isLoggedIn = this.state.isLoggedIn;
+
+    if(isLoggedIn) {
+      return(<Redirect to="/" />);
+    }
+
     return(
       <form onSubmit={this.handleSubmit} className="jumbotron jumbotron-fluid m-0" id="register-form" noValidate>
         <div className="container" id="register-form-content">

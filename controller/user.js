@@ -34,41 +34,59 @@ function createUser(db, newUser, callback) {
   });
 }
 
+function isValidUserInfo(username, email, password, confirmPassword) {
+  // Need a better validation check. Perhaps a validator package?
+  if(password !== confirmPassword || password.length === 0 || 
+     username.length === 0 || email.length === 0) {
+    return false;
+  }
+  return true;
+}
+
 router.post('/register', (req, res) => {
   const username = req.body.username;
   const email = req.body.email;
+  const password = req.body.password;
+  const confirmPassword = req.body.confirmPassword;
 
-  MongoClient.connect(url, (err, db) => {
-    findUser(db, username, email, (result) => {
-      db.close();
-      if(result.length > 0) {
-        res.send('Username or email is already taken');
-      }
-      else {
-        let newUser = {
-          username: req.body.username,
-          email: req.body.email,
-          password: req.body.password,
-          seedFilms: [],
-          recommendation: []
+  if(!isValidUserInfo(username, email, password, confirmPassword)) {
+    // Need to return sensible message for front-end to consume as to
+    // why registration fails.
+    res.sendStatus(400) // Bad Request
+  } else {
+    MongoClient.connect(url, (err, db) => {
+      findUser(db, username, email, (result) => {
+        db.close();
+        if(result.length > 0) {
+          // Need to return message saying that username or email is already taken.
+          res.sendStatus(400);
         }
+        else {
+          let newUser = {
+            username: username,
+            email: email,
+            password: password,
+            seedFilms: [],
+            recommendation: []
+          }
 
-        bcrypt.hash(newUser.password, saltRounds)
-        .then(hashedPassword => {
-          newUser.password = hashedPassword;
+          bcrypt.hash(newUser.password, saltRounds)
+          .then(hashedPassword => {
+            newUser.password = hashedPassword;
 
-          MongoClient.connect(url, (err, db) => {
-            createUser(db, newUser, (user) => {
-              db.close();
-              req.login(newUser, () => {
-                res.sendStatus(200);
-              })
+            MongoClient.connect(url, (err, db) => {
+              createUser(db, newUser, (user) => {
+                db.close();
+                req.login(newUser, () => {
+                  res.sendStatus(200);
+                })
+              });
             });
           });
-        });
-      }
+        }
+      });
     });
-  });
+  }
 });
 
 router.post('/login', passport.authenticate('local'), (req, res) => {

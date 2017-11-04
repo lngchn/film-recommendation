@@ -117,8 +117,8 @@ class Navbar extends React.Component {
     })
     .then(res => {
       if(res.status === 200) {
-        this.props.onAuthChange(true);
         this.setState({isAuthed: true});
+        this.props.onAuthChange(true);
       }
     })
     .catch(err => {

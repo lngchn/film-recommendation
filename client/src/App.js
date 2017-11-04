@@ -75,7 +75,7 @@ class App extends Component {
             {/* <Redirect exact from="/" to="/recommendation" /> */}
             <Route exact path="/" component={Home} />
             <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/login" component={Login} />
-            <LoginOrRegisterRoute isAuthed={this.state.isAuthed} path="/register" component={Register} />
+            <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/register" component={Register} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/recommendation" component={Recommendation} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/activity" component={Activity} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/people" component={People} />
