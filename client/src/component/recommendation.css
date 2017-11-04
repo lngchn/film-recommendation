@@ -1,9 +1,9 @@
 .sidebar{
-  background-color: #000000;
+   background-color: #212529;
 }
 
  .recommendation {
-  background-color: #111111;
+  background-color: #343a40;
 }
 
 .filter-link a {
@@ -61,4 +61,3 @@ hr {
   border: 0.05em solid lightgrey;
   margin-top: 3.5em;
 }
-
