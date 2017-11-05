@@ -1,4 +1,4 @@
-####################################### 11/4/17 1:04 PM
+####################################### 11/5/17 11:04 AM
 ####TO DO: address only 1 seed film, fix run time?, play around with count and size of what to be returned
 
 import json
@@ -55,23 +55,28 @@ def do_append(the_dict, movie_id_store, the_info, all_movies, check, seed_genres
         str_info = str(info)
         split_info = [word.strip(string.punctuation) for word in str_info.split("'")]
         if split_info[3] == '': continue ##ignore empty ratings
-        if check == 0: ##store genres for seed films only!
-                temp = split_info[11][2:len(split_info[11])]
+        if len(split_info[6]) > 2: ##account for special characters
+            if check == 0: ##store genres for seed films only!
+                temp = split_info[14][2:len(split_info[14])] #split_info[14][2:x] --> ID without "tt" due to splice
                 movie = ia.get_movie(temp)
                 for genre in movie['genre']:
                     if genre not in seed_genres: seed_genres.append(str(genre))
-        if len(split_info[14]) > 2: ##account for special characters
-            split14 = split_info[14].split('"')
-            combine = split14[1] + "'" + split_info[15]
-            the_dict[combine] = int(split_info[3])
-            movie_id_store[combine] = split_info[11] #combine is the movie name, split_info[11] is the movie ID
+            split6 = split_info[6].split('"') #split_info[6] --> first part of title (Assassin)
+            combine = split6[1] + "'" + split_info[7] #split_info[7] --> second part of title ('s Creed)
+            the_dict[combine] = int(split_info[3]) #split_info[3] --> rating (6, 8, 9, etc.)
+            movie_id_store[combine] = split_info[14] #split_info[14] --> ID with "tt"
             if combine not in all_movies: all_movies.setdefault(combine, 1)
             else: all_movies[combine] = all_movies[combine] + 1
         else:
-            the_dict[split_info[15]] = int(split_info[3])
-            movie_id_store[split_info[15]] = split_info[11] ##split_info[15] is the movie name
-            if split_info[15] not in all_movies: all_movies.setdefault(split_info[15], 1)
-            else: all_movies[split_info[15]] = all_movies[split_info[15]] + 1
+            if check == 0: ##store genres for seed films only!
+                temp = split_info[15][2:len(split_info[15])] #split_info[15][2:x] --> ID without "tt" due to splice
+                movie = ia.get_movie(temp)
+                for genre in movie['genre']:
+                    if genre not in seed_genres: seed_genres.append(str(genre))
+            the_dict[split_info[7]] = int(split_info[3]) #split_info[7] --> the entire title 
+            movie_id_store[split_info[7]] = split_info[15] ##split_info[15] --> ID with "tt"
+            if split_info[7] not in all_movies: all_movies.setdefault(split_info[15], 1)
+            else: all_movies[split_info[7]] = all_movies[split_info[7]] + 1
             
 #get all of the json files and put it into a list, first user of the list is me (for now)
 def get_json_files(store):
@@ -115,7 +120,7 @@ def remove_non_genre(seed_genres, movie_id_store, rankings):
                         check = 1
                         break
                 if check == 1: check = 0
-                else: temp.append(movies[0])
+                else: temp.append((movies[0], movies[1]))
                 break
             except requests.exceptions.HTTPError as e:
                 if e.response.status_code == 503:
@@ -179,10 +184,9 @@ def main():
         print x'''
 
     for x in films_to_rec:
-        print x, movie_id_store[x]
+        print str(x[0]) + " " + str(movie_id_store[x]) + " Match: " + str(x[1])
 
     print str(time.time() - start) + " seconds"
         
 if __name__ == "__main__":
     main()
-
