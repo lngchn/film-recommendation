@@ -1,12 +1,10 @@
-#10-16-17, 8:05 pm
+#11-4-17, 6:06 pm
 from bs4 import BeautifulSoup #For html parsing
 import requests               #For handling URLs 
 import re                     #For regular expressions 
 import json                   #For exporting a JSON file
 from time import sleep
 import random
-#import urllib2 
-#from multiprocessing import Pool
 
 
 #Returns full user id with "ur" prefix (not used)
@@ -25,9 +23,7 @@ def check_user_id_length(user_id_num):
     if(len(user_id_num) != 7):
         for i in range(len(user_id_num), 7):
             user_id_num = "0" + user_id_num
-    else:
-        print user_id_num + " the length of this user ID is 7."
-
+ 
     return user_id_num
     
 
@@ -54,7 +50,7 @@ def init(new_user_num, max_users):
             html_query = parsed_page.find_all('div', class_="pagination") #search for title 
           
             page_num = 0
-            for line in html_query: #Search and store film imdb film ids
+            for line in html_query: #Search and store imdb film ids
                 html_string = line.getText(strip=True).encode("utf-8")
            
                 #Get the total page number of ratings for each user
@@ -96,8 +92,8 @@ def init(new_user_num, max_users):
                 continue 
     
 
-#Append elements to a list a film IDs
-def append_to_film_id_list(html_query, updated_list):
+#Append elements to a list of IMDb IDs
+def append_to_imdb_id_list(html_query, updated_list):
     
     for line in html_query: #Search and store film imdb film ids
         
@@ -115,13 +111,13 @@ def append_to_film_id_list(html_query, updated_list):
   
 #Append elements to a list of film titles or a list of film ratings 
 def append_to_list(html_query, updated_list):
-    for line in html_query: #Search and store film imdb film ids
+    for line in html_query: #Search and store IMDb film ids
         updated_list.append(line.getText(strip=True).encode("utf-8"))
 
           
 #Process user data
 def process_user_data(url, user_num, pages_per_user):
-    film_ids, titles, ratings, type = [], [], [], []
+    imdb_ids, titles, ratings, type = [], [], [], []
     user_id = "ur" + str(user_num) 
     film_data = {"user_id": user_id, "films":[]}
  
@@ -152,11 +148,11 @@ def process_user_data(url, user_num, pages_per_user):
      
             #scraping code
             id_query  = parsed_page.find_all('tr', class_="list_item")    #search for film id
-            append_to_film_id_list(id_query, film_ids)
+            append_to_imdb_id_list(id_query, imdb_ids)
             
             #If this list is empty, the script should return, no need to go further
             #for users with pages but no ratings
-            if len(film_ids) == 0:
+            if len(imdb_ids) == 0:
                 break 
             
             title_query = parsed_page.find_all('td', class_="title") #search for title 
@@ -192,15 +188,15 @@ def process_user_data(url, user_num, pages_per_user):
            
     #If this list is empty the script should return, for some reason I have to put this here also
     #Otherwise files will be generated for users with no ratings
-    if len(film_ids) == 0:
+    if len(imdb_ids) == 0:
         return 
         
     #Store the user's film watching data in a list
     seen_set = set() #create a set to check for duplicate entries, if not in seen_set go ahead and add to film_data
     for i in range(0, len(ratings)):
         if i not in seen_set and type[i] != "TV Episode" and type[i] != "TV Series" and type[i] != "Video Game":
-            seen_set.add(film_ids[i])
-            film_data["films"].append({"film_id": film_ids[i], "title": titles[i], "rating": ratings[i], "type": type[i]})
+            seen_set.add(imdb_ids[i])
+            film_data["films"].append({"imdb_id": imdb_ids[i], "title": titles[i], "rating": ratings[i], "type": type[i]})
     
 
     for i in range(0, len(film_data["films"])):
@@ -212,7 +208,7 @@ def process_user_data(url, user_num, pages_per_user):
         
 
 def main():
-    init(0, 20000) # user ID, total users
+    init(0000001, 900000) # user ID, total users
     
 
 if __name__ == "__main__":
