@@ -112,7 +112,7 @@ class Recommendation extends React.Component {
                 </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" className="btn btn-outline-success SeedFilmAddButton">Add</button>
+                  <button type="button" className="btn btn-outline-success seedFilmAddButton">Add</button>
                 </div>
               </div>
             </div>
