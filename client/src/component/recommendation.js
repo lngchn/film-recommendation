@@ -15,7 +15,7 @@ function SideBarFilter(props) {
         <a className="nav-item nav-link" href="#">Drama</a>
         <a className="nav-item nav-link" href="#">Horror</a>
         <a className="nav-item nav-link" href="#">Sci-Fi</a>
-            <a className="nav-item nav-link" href="#">Fantasy</a>
+        <a className="nav-item nav-link" href="#">Fantasy</a>
         <a className="nav-item nav-link text-right" href="#">More</a>
       </nav>
       <hr />
@@ -50,21 +50,21 @@ class Recommendation extends React.Component {
   constructor() {
     super();
     this.state = {
-      seedMovies: [],
-      recommendationMovies: []
+      seedFilms: [],
+      recommendatioratn: []
     }  
   }
 
   componentDidMount() {
-    // Movie data is to be fetched here, and then seedMovies and recommendationMovies would
+    // Movie data is to be fetched here, and then seedFilms and recommendation would
     // map over the json instead of temp. 
     const temp = [1, 2, 3, 4];
-    const seedMovies = temp.map(movie => <MovieImage data={movie} key={movie} />);
-    const recommendationMovies = temp.map(movie => <MovieImage data={movie} key={movie} />);
+    const seedFilms = temp.map(movie => <MovieImage data={movie} key={movie} />);
+    const recommendation = temp.map(movie => <MovieImage data={movie} key={movie} />);
 
     this.setState({
-      seedMovies,
-      recommendationMovies
+      seedFilms,
+      recommendation,
     });
   }
 
@@ -84,7 +84,7 @@ class Recommendation extends React.Component {
                 </button>
               </h2>
               <section className="row">
-                {this.state.seedMovies}
+                {this.state.seedFilms}
               </section>
             </div>
             <hr />
@@ -92,7 +92,7 @@ class Recommendation extends React.Component {
             <div>
               <h2 className="text-left mt-5">Recommendations</h2>
               <section className="row text-center placeholders">
-                {this.state.recommendationMovies}
+                {this.state.recommendation}
               </section>
             </div>
           </main>
@@ -102,7 +102,7 @@ class Recommendation extends React.Component {
             <div className="modal-dialog" role="document">
               <div className="modal-content">
                 <div className="modal-header">
-                  <h5 className="modal-title" id="addSeedFilmLabel">Add a Seed Film</h5>
+                  <h5 className="modal-title" id="addSeedFilmLabel">Add Seed Films</h5>
                   <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -112,7 +112,7 @@ class Recommendation extends React.Component {
                 </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" className="btn btn-outline-success seedFilmAddButton">Add</button>
+                  <button type="button" className="btn btn-outline-success SeedFilmAddButton">Add</button>
                 </div>
               </div>
             </div>

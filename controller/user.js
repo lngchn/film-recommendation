@@ -66,8 +66,9 @@ router.post('/register', (req, res) => {
             username: username,
             email: email,
             password: password,
+            ratedFilms: [],
             seedFilms: [],
-            recommendation: []
+            recommendation: [],
           }
 
           bcrypt.hash(newUser.password, saltRounds)
