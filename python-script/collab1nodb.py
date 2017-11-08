@@ -1,5 +1,5 @@
-####################################### 11/7/17 8:35 AM
-####TO DO: address only 1 seed film, fix run time?, play around with count and size of what to be returned
+####################################### 11/7/17 2:59 PM
+####TO DO: slowness resolved ... somewhat (bad wifi connection), fix only one seed
 
 import json
 import glob
@@ -15,7 +15,6 @@ from math import sqrt
 
 #tmdb.API_KEY = '22b44af24d5169327b6fa06c36f89483'
 ia = IMDb()
-start = time.time()
 
 
 ####INACTIVE FUNCTIONS#####
@@ -82,7 +81,7 @@ def do_append(the_dict, movie_id_store, the_info, all_movies, check, seed_genres
             
 #get all of the json files and put it into a list, first user of the list is me (for now)
 def get_json_files(store):
-    parent_dir = 'C:/Users//bendo/Desktop/Capstone Project/' #change pathname to wherever files are stored
+    parent_dir = 'C://Users/bendo/Desktop/Capstone Project/IMDb_User_Ratings_JSON_Output_11-4-17/' #change pathname to wherever files are stored
     for json_file in glob.glob(os.path.join(parent_dir, '*.json')):
         json_split = str(json_file).split("\\")
         store.append(json_split[1])
@@ -106,25 +105,22 @@ def fill_rankings(rankings, rating_pearson, just_pearson):
 ##function to remove all movies that appear less than 50 times (removes bias towards films with only less than 50 ratings)
 def remove_fifty(all_movies, rankings):
     for movie, count in all_movies.items():
-        if count < 50 and movie in rankings:
-            rankings.pop(movie, 0)
+        if count < 1000 and movie in rankings: rankings.pop(movie, 0)
 
 def remove_non_genre(seed_genres, movie_id_store, rankings):
-    temp = []
+    temp = {}
     check = 0
     for movies in rankings:
-        if len(temp) == 15: break ##return the top 15
+        if len(temp) == 10: break ##return the top 10
         temp_id = movie_id_store[movies[0]][2:len(movie_id_store[movies[0]])]
-        if temp_id == '': continue
+        if temp_id == '': continue ##ignore invalid ids
         movie = ia.get_movie(temp_id)
         for genre in movie['genre']:
             if str(genre) not in seed_genres:
                 check = 1
                 break
         if check == 1: check = 0
-        else:
-            print movies[0], movies[1]
-            temp.append(movies[0])
+        else: temp[movies[0]] = movies[1]
 
     return temp
         
@@ -158,18 +154,20 @@ def rec_movies(seed_genres, sim_score, movie_id_store, all_movies):
             other_dict.clear()
         else: other_dict.clear()
 
-
     fill_rankings(rankings, rating_pearson, just_pearson) ##fill the rankings
     remove_fifty(all_movies, rankings) ##remove all movies with less than fifty ratings (remove the bias)
     rankings = sorted(rankings.items(), key=operator.itemgetter(1))
     rankings.reverse()
     fix_rankings = remove_non_genre(seed_genres, movie_id_store, rankings) ##remove all movies of the wrong genre
+    fix_rankings = sorted(fix_rankings.items(), key=operator.itemgetter(1))
+    fix_rankings.reverse()
 
     return fix_rankings
 
 #########
       
 def main():
+    start = time.time()
     movie_id_store = {}
     sim_score = {}
     all_movies = {} #used for remove_fifty
@@ -183,7 +181,7 @@ def main():
         print x'''
 
     for x in films_to_rec:
-        print str(x) + " " + str(movie_id_store[x])
+        print str(x[0]) + " " + str(movie_id_store[x[0]]) + " <--- Match: " + str(x[1] * 10) + "%"
 
     print str(time.time() - start) + " seconds"
         
