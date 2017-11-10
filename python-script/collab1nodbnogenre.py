@@ -1,4 +1,4 @@
-####################################### 11/9/17 2:57 PM
+####################################### 11/5/17 8:01 PM
 
 import json
 import glob
@@ -6,14 +6,12 @@ import os
 import operator
 import string
 import requests
-from imdb import IMDb
 import random
 import time
 from time import sleep
 from math import sqrt
 
 #tmdb.API_KEY = '22b44af24d5169327b6fa06c36f89483'
-ia = IMDb()
 
 
 ####INACTIVE FUNCTIONS#####
@@ -79,22 +77,11 @@ def pearson(p1, p2):
 #also, sets up dictionary for movie ids (movie title -> ID) for movie_id_store
 def do_append(the_dict, movie_id_store, the_info, all_movies):
     for info in the_info:
-        str_info = str(info)
-        split_info = [word.strip(string.punctuation) for word in str_info.split("'")]
-        if split_info[3] == '': continue ##ignore empty ratings
-        if len(split_info[6]) > 2: ##account for special characters
-            split6 = split_info[6].split('"')
-            split7 = split_info[7].split('"')
-            combine = split6[1] + "'" + split7[0]
-            the_dict[combine] = int(split_info[3])
-            movie_id_store[combine] = split_info[14] #combine is the movie name, split_info[11] is the movie ID
-            if combine not in all_movies: all_movies.setdefault(combine, 1)
-            else: all_movies[combine] = all_movies[combine] + 1
-        else:
-            the_dict[split_info[7]] = int(split_info[3])
-            movie_id_store[split_info[7]] = split_info[15] ##split_info[15] is the movie name
-            if split_info[7] not in all_movies: all_movies.setdefault(split_info[7], 1)
-            else: all_movies[split_info[7]] = all_movies[split_info[7]] + 1
+        if info["rating"] == '': continue
+        the_dict[info["title"]] = int(info["rating"])
+        movie_id_store[info["title"]] = info["imdb_id"]
+        if info["title"] not in all_movies: all_movies.setdefault(info["title"], 1)
+        else: all_movies[info["title"]] = all_movies[info["title"]] + 1
             
 #get all of the json files and put it into a list, first user of the list is me (for now)
 def get_json_files(store):
@@ -117,12 +104,12 @@ def do_weights(rankings, rating_pearson, just_pearson, my_dict, other_dict, pear
 def fill_rankings(rankings, rating_pearson, just_pearson):
     for movie, ranking in rating_pearson.items():
         num = ranking / just_pearson[movie]
-        if num > 6 and num < 10: rankings[movie] = num
+        if num > 7: rankings[movie] = num
 
 ##function to remove all movies that appear less than 50 times (removes bias towards films with only less than 50 ratings)
 def remove_fifty(all_movies, rankings):
     for movie, count in all_movies.items():
-        if count < 500 and movie in rankings: rankings.pop(movie, 0)
+        if count < 100 and movie in rankings: rankings.pop(movie, 0)
         
 ##get the id of the most similar user to me
 def rec_movies(sim_score, movie_id_store, all_movies):
@@ -132,6 +119,7 @@ def rec_movies(sim_score, movie_id_store, all_movies):
     json_files_store = []
     rating_pearson = {}
     just_pearson = {}
+    movies_store = {}
 
     get_json_files(json_files_store) #get all available .json files
     
@@ -144,23 +132,25 @@ def rec_movies(sim_score, movie_id_store, all_movies):
 
     for i in range(1, len(json_files_store)):
         with open(json_files_store[i]) as data_file:
-            other = json.load(data_file)
-        other_id = str(other["user_id"]) ##0) get the user id for the other person
-        do_append(other_dict, movie_id_store, other["films"], all_movies) ##1) set up the dictionary for the other person
-        pearson_num = (pearson(my_dict, other_dict)) ##2) get the pearson correlation between me and another user
-        sim_score[other_id] = pearson_num ##3) store the similarity score
-        if pearson_num > 0 and pearson_num < 1:
-            do_weights(rankings, rating_pearson, just_pearson, my_dict, other_dict, pearson_num) ##4) get the weights (for recommendation)
-            other_dict.clear()
-        else: other_dict.clear()
+            other = json.load(data_file) #1) get the .json file data, store as object
+        other_id = str(other["user_id"]) #2) get the ID from the .json file object
+        do_append(other_dict, movie_id_store, other["films"], all_movies) #3) do_append (see above)
+        pearson_num = pearson(my_dict, other_dict) #4) get the pearson correlation between my movies and the other person's movies
+        if pearson_num > 0 and pearson_num < 1: #5) ignore pearsons less than or equal to 0, greater than or equal to 1
+            sim_score[other_id] = pearson_num
+            movies_store[other_id] = other_dict.copy()
+        other_dict.clear()
 
+    sim_score = sorted(sim_score.items(), key=operator.itemgetter(1))
+    sim_score.reverse()
+
+    for j in range(0, 11): #we only care about the top ten pearsons
+        do_weights(rankings, rating_pearson, just_pearson, my_dict, movies_store[sim_score[j][0]], sim_score[j][1])   
+    
     fill_rankings(rankings, rating_pearson, just_pearson) ##fill the rankings
     remove_fifty(all_movies, rankings) ##remove all movies with less than fifty ratings (remove the bias)
     rankings = sorted(rankings.items(), key=operator.itemgetter(1))
     rankings.reverse()
-    #fix_rankings = remove_non_genre(seed_genres, movie_id_store, rankings) ##remove all movies of the wrong genre
-    #fix_rankings = sorted(fix_rankings.items(), key=operator.itemgetter(1))
-    #fix_rankings.reverse()
 
     return rankings
 
@@ -176,11 +166,11 @@ def main():
 
     '''sim_score = sorted(sim_score.items(), key=operator.itemgetter(1))
     sim_score.reverse()
-    for x in sim_score[:15]:
+    for x in sim_score[:5]:
         print x'''
 
-    for x in films_to_rec:
-        print str(x[0]) + " " + str(movie_id_store[x[0]]) + " <--- Match: " + str(x[1] * 10) + "%"
+    for x in films_to_rec[:100]:
+        print x[0], movie_id_store[x[0]], x[1]
 
     print str(time.time() - start) + " seconds"
         
