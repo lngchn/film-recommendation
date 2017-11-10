@@ -1,6 +1,5 @@
 import React from 'react';
 import './recommendation.css';
-import movie01 from '../img/01.jpg';
 
 function SideBarFilter(props) {
   return(
@@ -35,12 +34,14 @@ function SideBarFilter(props) {
 }
 
 function MovieImage(props) {
+  const title = props.data.title;
+  const imageUrl = `https://image.tmdb.org/t/p/w185/${props.data.poster_path}`;
   return(
     <div className="col-6 col-md-3 thumbnail text-center">
-      <img src={movie01} width="202" height="300" className="img-fluid movie-poster" alt="Movie Poster" />
-      <h4 className="movie-title">The Martian</h4>
+      <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
+      <h4 className="movie-title">{title}</h4>
       <button type="button" className="btn btn-outline-danger remove-button">
-        <i className="fa fa-minus" aria-hidden="true"></i>
+        <a href="#" onClick={(event) => props.onSeedDelete(props.data.id, props.data.imdb_id, event)}><i className="fa fa-minus" aria-hidden="true"></i></a>
       </button>
     </div>
   );
@@ -52,19 +53,57 @@ class Recommendation extends React.Component {
     this.state = {
       seedFilms: [],
       recommendatioratn: []
-    }  
+    };
+    this.handleSeedDelete = this.handleSeedDelete.bind(this);
   }
 
   componentDidMount() {
-    // Movie data is to be fetched here, and then seedFilms and recommendation would
-    // map over the json instead of temp. 
-    const temp = [1, 2, 3, 4];
-    const seedFilms = temp.map(movie => <MovieImage data={movie} key={movie} />);
-    const recommendation = temp.map(movie => <MovieImage data={movie} key={movie} />);
+    this.fetchFilms();
+  }
 
-    this.setState({
-      seedFilms,
-      recommendation,
+  fetchFilms() {
+    fetch("/user/films", {
+      method: "get",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin"
+    })
+    .then(res => res.json())
+    .then(user => {
+      const seedFilms = user.seedFilms.map(movie => <MovieImage data={movie} key={movie.id} onSeedDelete={this.handleSeedDelete} />);
+      const recommendation = user.recommendation.map(movie => <MovieImage data={movie} key={movie.id} />);
+
+      this.setState({
+        seedFilms,
+        recommendation,
+      });
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
+  }
+
+  handleSeedDelete(id, imdb_id, event) {
+    event.preventDefault();
+    fetch("/user/seedfilm", {
+      method: "delete",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin",
+      body: JSON.stringify({
+        id: id,
+        imdb_id: imdb_id
+      })
+    })
+    .then(res => {
+      this.fetchFilms();
+    })
+    .catch(err => {
+      console.log(err.message);
     });
   }
 

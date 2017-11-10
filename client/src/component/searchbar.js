@@ -12,6 +12,8 @@ class SearchBar extends Component {
       value: '',
       suggestions: []
     };
+    this.renderSuggestion = this.renderSuggestion.bind(this);
+    this.onHeartClick = this.onHeartClick.bind(this);
   }
 
   handleChange = (event, { newValue }) => {
@@ -62,7 +64,7 @@ class SearchBar extends Component {
     const imageUrl = `https://image.tmdb.org/t/p/w45/${suggestion.poster_path}`;
     let image = imageUrl.includes("null") ? <i className="fa fa-file-image-o fa-4x" aria-hidden="true"></i> : <img src={imageUrl} alt="Movie Poster" /> 
     const year = suggestion.release_date.substring(0, 4);
-
+    const isAuthed = this.props.isAuthed;
     return (
       <span className='suggestion-content'>
         {image}
@@ -77,6 +79,11 @@ class SearchBar extends Component {
           }
           {` (${year})`}
         </span>
+        {isAuthed && 
+          <span id="searchBarHeart">
+            <a href="#"><i className="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+            <a href="#" onClick={(event) => this.onHeartClick(suggestion.id, suggestion.title, suggestion.poster_path, event)}><i className="fa fa-heart fa-2x" aria-hidden="true"></i></a>
+          </span>}
       </span>
     );
   }
@@ -104,6 +111,32 @@ class SearchBar extends Component {
       suggestions: []
     });
   };
+
+  onHeartClick(id, title, poster_path, event) {
+    event.preventDefault();
+    fetch("/user/seedfilm", {
+      method: "post",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin",
+      body: JSON.stringify({
+        id: id,
+        imdb_id: '',
+        title: title, 
+        poster_path: poster_path
+      })
+    })
+    .then(res => {
+      this.setState({
+        value: ''
+      });
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
+  }
 
   render() {
     const { value, suggestions } = this.state;

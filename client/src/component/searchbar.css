@@ -78,3 +78,21 @@
 .react-autosuggest__suggestion--focused .highlight {
   color: #120000;
 }
+
+#searchBarHeart {
+  margin-left: auto;
+  color: red;
+}
+
+#searchBarHeart:hover .fa-heart-o, #searchBarHeart .fa-heart {
+    display: none;
+}
+
+#searchBarHeart:hover .fa-heart {
+    display: inline;
+}
+
+#searchBarHeart a {
+  text-decoration: none;
+  color: inherit;
+}

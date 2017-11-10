@@ -12,7 +12,7 @@ function LoggedInNavbar(props) {
       <div className="col">
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
           <a className="navbar-brand text-uppercase mr-5" href="./"><img src={Logo} width="100" height="13" alt="Film Pro" /></a>
-          <SearchBar />
+          <SearchBar isAuthed={props.isAuthed} />
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -45,7 +45,7 @@ function LoggedOutNavbar(props) {
       <div className="col">
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
           <a className="navbar-brand text-uppercase mr-5" href="./"><img src={Logo} width="100" height="13" alt="Film Pro" /></a>
-          <SearchBar />
+          <SearchBar isAuthed={props.isAuthed} />
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -151,8 +151,10 @@ class Navbar extends React.Component {
     let isAuthed = this.state.isAuthed;
 
     return(
-      isAuthed ? <LoggedInNavbar onLogoutClick={this.handleLogout} /> 
-               : <LoggedOutNavbar onSubmit={this.handleSubmit} 
+      isAuthed ? <LoggedInNavbar isAuthed={isAuthed} 
+                                 onLogoutClick={this.handleLogout} /> 
+               : <LoggedOutNavbar isAuthed={isAuthed}
+                                  onSubmit={this.handleSubmit} 
                                   onEmailChange={this.handleEmailChange} 
                                   onPasswordChange={this.handlePasswordChange} 
                                   email={this.state.email} 

@@ -57,7 +57,14 @@
   left: 44%;
 }
 
+.remove-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
 hr {
   border: 0.05em solid lightgrey;
   margin-top: 3.5em;
 }
+
+
