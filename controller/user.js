@@ -11,6 +11,10 @@ const assert = require('assert');
 const MongoDB_URL = require('../mongodb-url.js');
 const url = MongoDB_URL.url;
 
+const axios = require('axios');
+const TMDB_KEY = require('../tmdb-api-key');
+const API_KEY = TMDB_KEY.key;
+
 function findUser(db, username, email, callback) {
   const collection = db.collection('users');
   collection.find({
@@ -171,18 +175,26 @@ router.post('/user/seedfilm', (req, res) => {
           res.sendStatus(400);  // Need to return message saying that user is not found.
         }
         else {
-          const id = req.body.id;
-          const imdb_id = req.body.imdb_id;
-          const title = req.body.title;
-          const poster_path = req.body.poster_path;
-          const seedFilm = { id: id, imdb_id: imdb_id, title: title, poster_path: poster_path };
+          let id = req.body.id;
+          let imdb_id = req.body.imdb_id;
+          let title = req.body.title;
+          let poster_path = req.body.poster_path;
 
-          MongoClient.connect(url, (err, db) => {
-            addSeedFilm(db, email, seedFilm, (user) => {
-              db.close();
-              res.sendStatus(200);
-            });
-          });
+          axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
+            .then(res => {
+              imdb_id = res.data.imdb_id;
+              const seedFilm = { id: id, imdb_id: imdb_id, title: title, poster_path: poster_path };
+              MongoClient.connect(url, (err, db) => {
+                addSeedFilm(db, email, seedFilm, (user) => {
+                  db.close();
+                });
+              });
+            })
+            .catch(error => {
+              console.log(error);
+            })
+
+          res.sendStatus(200);
         }
       });
     });
