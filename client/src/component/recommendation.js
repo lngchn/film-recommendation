@@ -39,9 +39,11 @@ function MovieImage(props) {
     <div className="col-6 col-md-3 thumbnail text-center">
       <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
       <h4 className="movie-title">{title}</h4>
-      <button type="button" className="btn btn-outline-danger remove-button">
-        <a href="#" onClick={(event) => props.onSeedDelete(props.data.id, props.data.imdb_id, event)}><i className="fa fa-minus" aria-hidden="true"></i></a>
-      </button>
+      <a href="#" onClick={(event) => props.onSeedDelete(props.data.id, props.data.imdb_id, event)}>
+        <button type="button" className="btn btn-outline-danger remove-button">
+          <i className="fa fa-minus" aria-hidden="true"></i>
+        </button>
+      </a>
     </div>
   );
 }
@@ -117,9 +119,9 @@ class Recommendation extends React.Component {
             {/* Seed Films */}
             <div>
               <h2 className="text-left mt-3">Seed Films
-                <button type="button" className="btn btn-outline-info ml-2" data-toggle="modal" data-target="#addSeedFilm" >
+           {/*  <button type="button" className="btn btn-outline-info ml-2" data-toggle="modal" data-target="#addSeedFilm" >
                   <i className="fa fa-plus" aria-hidden="true"></i>
-                </button>
+                </button> */}
               </h2>
               <section className="row">
                 {this.state.seedFilms}
@@ -136,7 +138,7 @@ class Recommendation extends React.Component {
           </main>
 
           {/* Modal for Add a Seed Film Button */}
-          <div className="modal fade" id="addSeedFilm" tabIndex="-1" role="dialog" aria-labelledby="addSeedFilmLabel" aria-hidden="true">
+     {/*   <div className="modal fade" id="addSeedFilm" tabIndex="-1" role="dialog" aria-labelledby="addSeedFilmLabel" aria-hidden="true">
             <div className="modal-dialog" role="document">
               <div className="modal-content">
                 <div className="modal-header">
@@ -154,7 +156,7 @@ class Recommendation extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
+          </div>  */}
 
         </div>
       </div>
