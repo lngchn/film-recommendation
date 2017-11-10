@@ -109,4 +109,60 @@ router.get('/auth', (req, res) => {
   }
 }); 
 
+
+////////////////////////////////////////////////
+// API for adding rated films and seed films  //
+////////////////////////////////////////////////
+
+function addRatedFilm() {
+
+}
+
+function addSeedFilm(db, email, seedFilm, callback) {
+  const collection = db.collection('users');
+
+  // $addToSet prevents duplicate
+  collection.updateOne({email: email}, { $addToSet: {seedFilms: seedFilm} }, (err, result) => {
+      assert.equal(err, null);
+      callback(result);
+  });
+}
+
+router.post('/user/ratedfilm', (req, res) => {  
+
+});
+
+router.post('/user/seedfilm', (req, res) => {
+  if(!req.user) {
+    res.sendStatus(401);
+  }
+
+  const username = req.user.username;
+  const email = req.user.email;
+
+  MongoClient.connect(url, (err, db) => {
+    findUser(db, username, email, (result) => {
+      db.close();
+      if(result.length === 0) {
+        res.sendStatus(400);  // Need to return message saying that user is not found.
+      }
+      else {
+        const id = req.body.id;
+        const imdb_id = req.body.imdb_id;
+        const seedFilm = { id: id, imdb_id: imdb_id };
+
+        MongoClient.connect(url, (err, db) => {
+          addSeedFilm(db, email, seedFilm, (user) => {
+            db.close();
+            res.sendStatus(200);
+          });
+        });
+      }
+    });
+  });
+});
+
+
+
+
 module.exports = router;

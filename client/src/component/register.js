@@ -56,7 +56,6 @@ class Register extends Component {
       })
     })
     .then(res => {
-      console.log(res);
       if(res.status === 200) {
         this.setState({isLoggedIn: true});
         this.props.onAuthChange(true);
