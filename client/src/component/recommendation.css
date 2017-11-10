@@ -1,9 +1,5 @@
-.sidebar{
+.sidebar, .recommendation {
    background-color: #212529;
-}
-
- .recommendation {
-  background-color: #343a40;
 }
 
 .filter-link a {

@@ -17,7 +17,6 @@ function SideBarFilter(props) {
         <a className="nav-item nav-link" href="#">Fantasy</a>
         <a className="nav-item nav-link text-right" href="#">More</a>
       </nav>
-      <hr />
       
       <h4 className="mt-4 ml-3 mb-1 text-light text-uppercase">Rating</h4>
       <nav className="nav flex-column filter-link">
