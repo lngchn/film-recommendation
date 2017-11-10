@@ -1,4 +1,4 @@
-####################################### 11/5/17 8:01 PM
+####################################### 11/10/17 11:45 AM
 
 import json
 import glob
@@ -104,7 +104,7 @@ def do_weights(rankings, rating_pearson, just_pearson, my_dict, other_dict, pear
 def fill_rankings(rankings, rating_pearson, just_pearson):
     for movie, ranking in rating_pearson.items():
         num = ranking / just_pearson[movie]
-        if num > 7: rankings[movie] = num
+        if num > 7 and num < 10: rankings[movie] = num
 
 ##function to remove all movies that appear less than 50 times (removes bias towards films with only less than 50 ratings)
 def remove_fifty(all_movies, rankings):
