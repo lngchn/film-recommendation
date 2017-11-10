@@ -109,7 +109,7 @@ def fill_rankings(rankings, rating_pearson, just_pearson):
 ##function to remove all movies that appear less than 50 times (removes bias towards films with only less than 50 ratings)
 def remove_fifty(all_movies, rankings):
     for movie, count in all_movies.items():
-        if count < 100 and movie in rankings: rankings.pop(movie, 0)
+        if count < 50 and movie in rankings: rankings.pop(movie, 0)
         
 ##get the id of the most similar user to me
 def rec_movies(sim_score, movie_id_store, all_movies):
@@ -157,7 +157,7 @@ def rec_movies(sim_score, movie_id_store, all_movies):
 #########
       
 def main():
-    start = time.time()
+    #start = time.time()
     movie_id_store = {}
     sim_score = {}
     all_movies = {} #used for remove_x
@@ -172,7 +172,7 @@ def main():
     for x in films_to_rec[:100]:
         print x[0], movie_id_store[x[0]], x[1]
 
-    print str(time.time() - start) + " seconds"
+    #print str(time.time() - start) + " seconds"
         
 if __name__ == "__main__":
     main()
