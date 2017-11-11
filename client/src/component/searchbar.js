@@ -14,6 +14,7 @@ class SearchBar extends Component {
     };
     this.renderSuggestion = this.renderSuggestion.bind(this);
     this.onHeartClick = this.onHeartClick.bind(this);
+    this.escapeRegexCharacters = this.escapeRegexCharacters.bind(this);
   }
 
   handleChange = (event, { newValue }) => {
@@ -43,14 +44,47 @@ class SearchBar extends Component {
     });
   };
 
+  onHeartClick(id, title, poster_path, event) {
+    event.preventDefault();
+    fetch("/user/seedfilm", {
+      method: "post",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin",
+      body: JSON.stringify({
+        id: id,
+        imdb_id: '',
+        title: title, 
+        poster_path: poster_path
+      })
+    })
+    .then(res => {
+      this.setState({
+        value: ''
+      });
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
+  }
+
+  escapeRegexCharacters = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
   // Get a list of suggestions from the this.state.films
   getSuggestions = value => {
-    const inputValue = value.trim().toLowerCase();
-    const inputLength = inputValue.length;
-    const films = this.state.films;
-    return inputLength === 0 || films === undefined ? [] : films.filter(lang =>
-      lang.title.toLowerCase().slice(0, inputLength) === inputValue
-    );
+    let films = this.state.films;
+    const escapedValue = this.escapeRegexCharacters(value.trim());
+
+    if (escapedValue === '' || films === undefined) {
+      return [];
+    }
+
+    const regex = new RegExp('^' + escapedValue, 'i');
+    films.forEach(film => film.title = film.title.replace('-', ' '));
+
+    return films.filter(film => regex.test(film.title));
   };
 
   // Suggestion should be based on movie title.
@@ -111,32 +145,6 @@ class SearchBar extends Component {
       suggestions: []
     });
   };
-
-  onHeartClick(id, title, poster_path, event) {
-    event.preventDefault();
-    fetch("/user/seedfilm", {
-      method: "post",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      credentials: "same-origin",
-      body: JSON.stringify({
-        id: id,
-        imdb_id: '',
-        title: title, 
-        poster_path: poster_path
-      })
-    })
-    .then(res => {
-      this.setState({
-        value: ''
-      });
-    })
-    .catch(err => {
-      console.log(err.message);
-    });
-  }
 
   render() {
     const { value, suggestions } = this.state;

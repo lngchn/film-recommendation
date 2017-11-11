@@ -32,11 +32,11 @@ function SideBarFilter(props) {
   );
 }
 
-function MovieImage(props) {
+function SeedFilm(props) {
   const title = props.data.title;
   const imageUrl = `https://image.tmdb.org/t/p/w185/${props.data.poster_path}`;
   return(
-    <div className="col-6 col-md-3 thumbnail text-center">
+    <div className="col-6 col-md-3 mt-4 thumbnail text-center">
       <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
       <h4 className="movie-title">{title}</h4>
       <a href="#" onClick={(event) => props.onSeedDelete(props.data.id, props.data.imdb_id, event)}>
@@ -48,12 +48,23 @@ function MovieImage(props) {
   );
 }
 
+function RecommendationFilm(props) {
+  const title = props.data.title;
+  const imageUrl = `https://image.tmdb.org/t/p/w185/${props.data.poster_path}`;
+  return(
+    <div className="col-6 col-md-3 mt-4 thumbnail text-center">
+      <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
+      <h4 className="movie-title">{title}</h4>
+    </div>
+  );  
+}
+
 class Recommendation extends React.Component {
   constructor() {
     super();
     this.state = {
       seedFilms: [],
-      recommendatioratn: []
+      recommendation: []
     };
     this.handleSeedDelete = this.handleSeedDelete.bind(this);
   }
@@ -73,8 +84,8 @@ class Recommendation extends React.Component {
     })
     .then(res => res.json())
     .then(user => {
-      const seedFilms = user.seedFilms.map(movie => <MovieImage data={movie} key={movie.id} onSeedDelete={this.handleSeedDelete} />);
-      const recommendation = user.recommendation.map(movie => <MovieImage data={movie} key={movie.id} />);
+      const seedFilms = user.seedFilms.map(movie => <SeedFilm data={movie} key={movie.id} onSeedDelete={this.handleSeedDelete} />);
+      const recommendation = user.recommendation.map(movie => <RecommendationFilm data={movie} key={movie.id} />);
 
       this.setState({
         seedFilms,
