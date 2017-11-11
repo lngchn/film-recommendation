@@ -20,7 +20,6 @@ def top_person(sim_score):
     temp_store = sorted(sim_score.items(), key=operator.itemgetter(1))
     temp_store.reverse()
     return temp_store[0][0]
-
 ##function to remove movies that do not match the seed films' genres
 def remove_non_genre(seed_genres, movie_id_store, rankings):
     temp = {}
@@ -40,7 +39,6 @@ def remove_non_genre(seed_genres, movie_id_store, rankings):
                     sleep(random.randint(2,4))
                     pass
             
-
     return temp'''
 
 '''if check == 0: ##store genres for seed films only!
@@ -85,7 +83,7 @@ def do_append(the_dict, movie_id_store, the_info, all_movies):
             
 #get all of the json files and put it into a list, first user of the list is me (for now)
 def get_json_files(store):
-    parent_dir = 'C://Users/bendo/Desktop/Capstone Project/IMDb_User_Ratings_JSON_Output_11-4-17/' #change pathname to wherever files are stored
+    parent_dir = 'C://Users/bendo/Desktop/Capstone Project/' #change pathname to wherever files are stored
     for json_file in glob.glob(os.path.join(parent_dir, '*.json')):
         json_split = str(json_file).split("\\")
         store.append(json_split[1])
@@ -109,7 +107,7 @@ def fill_rankings(rankings, rating_pearson, just_pearson):
 ##function to remove all movies that appear less than 50 times (removes bias towards films with only less than 50 ratings)
 def remove_fifty(all_movies, rankings):
     for movie, count in all_movies.items():
-        if count < 50 and movie in rankings: rankings.pop(movie, 0)
+        if count < 600 and movie in rankings: rankings.pop(movie, 0)
         
 ##get the id of the most similar user to me
 def rec_movies(sim_score, movie_id_store, all_movies):
@@ -136,7 +134,7 @@ def rec_movies(sim_score, movie_id_store, all_movies):
         other_id = str(other["user_id"]) #2) get the ID from the .json file object
         do_append(other_dict, movie_id_store, other["films"], all_movies) #3) do_append (see above)
         pearson_num = pearson(my_dict, other_dict) #4) get the pearson correlation between my movies and the other person's movies
-        if pearson_num > 0 and pearson_num < 1: #5) ignore pearsons less than or equal to 0, greater than or equal to 1
+        if pearson_num > 0 and pearson_num <= 1: #5) ignore pearsons less than or equal to 0, greater than 1
             sim_score[other_id] = pearson_num
             movies_store[other_id] = other_dict.copy()
         other_dict.clear()
@@ -163,11 +161,6 @@ def main():
     all_movies = {} #used for remove_x
 
     films_to_rec = rec_movies(sim_score, movie_id_store, all_movies)
-
-    '''sim_score = sorted(sim_score.items(), key=operator.itemgetter(1))
-    sim_score.reverse()
-    for x in sim_score[:5]:
-        print x'''
 
     for x in films_to_rec[:100]:
         print x[0], movie_id_store[x[0]], x[1]
