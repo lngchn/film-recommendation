@@ -1,5 +1,11 @@
 .sidebar, .recommendation {
+   /*background-color: #14181c;*/
    background-color: #212529;
+   /*background-color: #445566;*/
+   /*background-color: #667788;*/
+
+  /* bootstrap bg-dark color */
+   /*background-color: #343a40;  */
 }
 
 .filter-link a {
