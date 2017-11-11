@@ -18,9 +18,9 @@ function LoggedInNavbar(props) {
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <div className="navbar-nav mr-md-3">
-              <NavLink to="/recommendation" className="nav-item nav-link text-uppercase">Recommendation</NavLink>
-              <NavLink to="/activity" className="nav-item nav-link text-uppercase">Activity</NavLink>
-              <NavLink to="/people" className="nav-item nav-link text-uppercase">People</NavLink>
+              <NavLink to="/recommendation" className="nav-item nav-link text-uppercase navbar-item">Recommendation</NavLink>
+              <NavLink to="/activity" className="nav-item nav-link text-uppercase navbar-item">Activity</NavLink>
+              <NavLink to="/people" className="nav-item nav-link text-uppercase navbar-item">People</NavLink>
             </div>
             <div className="btn-group mr-md-1" role="group">
               <button id="navbarLoggedIn" type="button" className="btn btn-outline-info dropdown-toggle text-uppercase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

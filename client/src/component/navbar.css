@@ -13,3 +13,16 @@
 .dropdown-menu-right {
   margin-top: 0.7em;
 }
+
+/* Add transparent border-bottom to navbar menu item.
+   The effect is to reserved 2px of space on the bottom so, when hover over the
+   menu item, it won't push the other content away. */
+.navbar-item {
+  border-bottom: 2px solid transparent;
+}
+
+/* Add underline to navbar item */
+.navbar-item:hover {
+  border-bottom: 2px solid white;
+}
+
