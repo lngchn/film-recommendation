@@ -5,6 +5,6 @@ router.use('/', require('./user'));
 router.use('/film', require('./film'));
 router.use('/search', require('./search'));
 
-router.use('/call_film-based_cf', require('./call_film-based_cf'));
+router.use('/recommendation', require('./recommendation'));
 
 module.exports = router;
