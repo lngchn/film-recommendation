@@ -3,7 +3,33 @@ var router = express.Router();
 
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
+<<<<<<< HEAD
+const MongoDB_URL = require('../mongodb-url.js');
+const url = MongoDB_URL.url;
+var request = require('request');
+
+const tmdb_api = "https://api.themoviedb.org/3/movie/";
+const tmdb_api_key = "?api_key=";
+const API_KEY = TMDB_KEY.key;
+
+router.get('/', (req, res) => {
+});
+
+router.get('/movie_id/:id', (req, res) => {
+  request.get(tmdb_api+req.params.id+tmdb_api_key+API_KEY, (error, response, body) => {
+    res.json(body);
+  });
+});
+
+module.exports = router;
+
+
+
+//**************************Sample code**********************************
+/*
+=======
 const url = process.env.MongoDB_URL;
+>>>>>>> e2363a81da5bdbdbbdd2dd800024f4c8cafe5f56
 
 function insertFilms(db, callback) {
   // Get the films collection
@@ -52,9 +78,3 @@ router.get('/', (req, res) => {
     });
   });
 });
-
-router.get('/:id', (req, res) => {
-  res.json({message: 'Message from /film/:id'});
-});
-
-module.exports = router;
