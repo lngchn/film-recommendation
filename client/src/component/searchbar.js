@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+
 import Autosuggest from 'react-autosuggest';
 import AutosuggestHighlightMatch from 'autosuggest-highlight/match';
 import AutosuggestHighlightParse from 'autosuggest-highlight/parse';
+
+import ReactStars from 'react-stars';
+
 import './searchbar.css';
 
 class SearchBar extends Component {
@@ -13,7 +17,7 @@ class SearchBar extends Component {
       suggestions: []
     };
     this.renderSuggestion = this.renderSuggestion.bind(this);
-    this.onHeartClick = this.onHeartClick.bind(this);
+    this.handleRatingChange = this.handleRatingChange.bind(this);
     this.escapeRegexCharacters = this.escapeRegexCharacters.bind(this);
   }
 
@@ -44,9 +48,8 @@ class SearchBar extends Component {
     });
   };
 
-  onHeartClick(id, title, poster_path, event) {
-    event.preventDefault();
-    fetch("/user/seedfilm", {
+  handleRatingChange(id, title, poster_path, rating, event) {
+    fetch("/user/ratedfilm", {
       method: "post",
       headers: {
         'Accept': 'application/json',
@@ -56,6 +59,7 @@ class SearchBar extends Component {
       body: JSON.stringify({
         id: id,
         imdb_id: '',
+        rating: rating,
         title: title, 
         poster_path: poster_path
       })
@@ -114,9 +118,12 @@ class SearchBar extends Component {
           {` (${year})`}
         </span>
         {isAuthed && 
-          <span id="searchBarHeart">
-            <a href="#"><i className="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
-            <a href="#" onClick={(event) => this.onHeartClick(suggestion.id, suggestion.title, suggestion.poster_path, event)}><i className="fa fa-heart fa-2x" aria-hidden="true"></i></a>
+          <span id="film-rating">
+            <ReactStars count={10}
+                        half={false}
+                        onChange={(event) => this.handleRatingChange(suggestion.id, suggestion.title, suggestion.poster_path, event)} 
+                        size={24}
+                        color2={'#ffd700'} />
           </span>}
       </span>
     );

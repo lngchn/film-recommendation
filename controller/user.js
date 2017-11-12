@@ -118,25 +118,6 @@ router.get('/auth', (req, res) => {
 // API for adding rated films and seed films  //
 ////////////////////////////////////////////////
 
-function addSeedFilm(db, email, seedFilm, callback) {
-  const collection = db.collection('users');
-
-  // $addToSet prevents duplicate
-  collection.updateOne({email: email}, { $addToSet: {seedFilms: seedFilm} }, (err, result) => {
-      assert.equal(err, null);
-      callback(result);
-  });
-}
-
-function deleteSeedFilm(db, email, seedFilm, callback) {
-  const collection = db.collection('users');
-
-  collection.update({email: email}, { $pull: {seedFilms: seedFilm} }, (err, result) => {
-      assert.equal(err, null);
-      callback(result);
-  });
-}
-
 router.get('/user/films', (req, res) => {
   if(!req.user) {
     res.sendStatus(401);
@@ -152,16 +133,63 @@ router.get('/user/films', (req, res) => {
         }
         else {
           let user = result[0];
+          let ratedFilms = user.ratedFilms;
           let seedFilms = user.seedFilms;
           let recommendation = user.recommendation;
-          res.status(200).json({seedFilms, recommendation});
+          res.status(200).json({ratedFilms, seedFilms, recommendation});
         }
       });
     });
   }
 });
 
-router.post('/user/seedfilm', (req, res) => {
+
+function addRatedFilm(db, email, ratedFilm, callback) {
+  const collection = db.collection('users');
+
+  collection.findOne({email: email}, (err, user) => {
+    let ratedFilms = user.ratedFilms.find(film => {
+      return film.id === ratedFilm.id && film.imdb_id === ratedFilm.imdb_id;
+    });
+
+    // If the film already exists in the rated film, we don't add it.
+    // This essentailly prevent the users from updating their rating.
+    // If changing rating is allowed, a different logic is required here.
+    if(!ratedFilms) {
+      collection.updateOne({email: email}, { $addToSet: {ratedFilms: ratedFilm} }, (err, result) => {
+          assert.equal(err, null);
+          callback(result);
+      });
+    } else {
+      callback(null);
+    }
+  });
+}
+
+function deleteRatedFilm(db, email, ratedFilm, callback) {
+  const collection = db.collection('users');
+
+  collection.findOne({email: email}, (err, user) => {
+    let ratedFilms = user.ratedFilms.find(film => {
+      return film.id === ratedFilm.id && film.imdb_id === ratedFilm.imdb_id; 
+    });
+
+    if(ratedFilms) {
+      ratedFilm.rating = ratedFilms.rating;
+      ratedFilm.title = ratedFilms.title;
+      ratedFilm.poster_path = ratedFilms.poster_path;
+
+      collection.update({email: email}, { $pull: {ratedFilms: ratedFilm} }, (err, result) => {
+          assert.equal(err, null);
+          callback(result);
+      });
+    } else {
+      callback(null);
+    }
+  });
+}
+
+router.post('/user/ratedfilm', (req, res) => {
   if(!req.user) {
     res.sendStatus(401);
   } else {
@@ -175,17 +203,18 @@ router.post('/user/seedfilm', (req, res) => {
           res.sendStatus(400);  // Need to return message saying that user is not found.
         }
         else {
-          let id = req.body.id;
+          let id = parseInt(req.body.id);
           let imdb_id = req.body.imdb_id;
+          let rating = parseInt(req.body.rating);
           let title = req.body.title;
           let poster_path = req.body.poster_path;
 
           axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
             .then(res => {
               imdb_id = res.data.imdb_id;
-              const seedFilm = { id: id, imdb_id: imdb_id, title: title, poster_path: poster_path };
+              const ratedFilm = { id: id, imdb_id: imdb_id, rating: rating, title: title, poster_path: poster_path };
               MongoClient.connect(url, (err, db) => {
-                addSeedFilm(db, email, seedFilm, (user) => {
+                addRatedFilm(db, email, ratedFilm, (user) => {
                   db.close();
                 });
               });
@@ -201,7 +230,7 @@ router.post('/user/seedfilm', (req, res) => {
   }
 });
 
-router.delete('/user/seedfilm', (req, res) => {
+router.delete('/user/ratedfilm', (req, res) => {
   if(!req.user) {
     res.sendStatus(401);
   }
@@ -216,12 +245,12 @@ router.delete('/user/seedfilm', (req, res) => {
         res.sendStatus(400);  // Need to return message saying that user is not found.
       }
       else {
-        const id = req.body.id;
+        const id = parseInt(req.body.id);
         const imdb_id = req.body.imdb_id;
-        const seedFilm = { id: id, imdb_id: imdb_id };
+        const ratedFilm = { id: id, imdb_id: imdb_id };
 
         MongoClient.connect(url, (err, db) => {
-          deleteSeedFilm(db, email, seedFilm, (user) => {
+          deleteRatedFilm(db, email, ratedFilm, (user) => {
             db.close();
             res.sendStatus(200);
           });
@@ -231,12 +260,51 @@ router.delete('/user/seedfilm', (req, res) => {
   });
 });
 
-function addRatedFilm() {
+// function addSeedFilm() {
 
-}
+// }
 
-router.post('/user/ratedfilm', (req, res) => {  
+// function deleteSeedFilm(db, email, seedFilm, callback) {
+//   const collection = db.collection('users');
+
+//   collection.update({email: email}, { $pull: {seedFilms: seedFilm} }, (err, result) => {
+//       assert.equal(err, null);
+//       callback(result);
+//   });
+// }
+
+router.post('/user/seedfilm', (req, res) => {  
 
 });
+
+// router.delete('/user/seedfilm', (req, res) => {
+//   if(!req.user) {
+//     res.sendStatus(401);
+//   }
+
+//   const username = req.user.username;
+//   const email = req.user.email;
+
+//   MongoClient.connect(url, (err, db) => {
+//     findUser(db, username, email, (result) => {
+//       db.close();
+//       if(result.length === 0) {
+//         res.sendStatus(400);  // Need to return message saying that user is not found.
+//       }
+//       else {
+//         const id = req.body.id;
+//         const imdb_id = req.body.imdb_id;
+//         const seedFilm = { id: id, imdb_id: imdb_id };
+
+//         MongoClient.connect(url, (err, db) => {
+//           deleteSeedFilm(db, email, seedFilm, (user) => {
+//             db.close();
+//             res.sendStatus(200);
+//           });
+//         });
+//       }
+//     });
+//   });
+// });
 
 module.exports = router;
