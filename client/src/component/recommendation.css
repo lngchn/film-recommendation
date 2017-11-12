@@ -68,4 +68,45 @@ hr {
   margin-top: 3.5em;
 }
 
+#addSeedFilmNav {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 1;
+}
+
+#overlay-main {
+  height: 72%;
+}
+
+#overlay-content {
+  top: 20%;
+  overflow-y: scroll;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#addSeedFilmNav a.closebtn:hover, a.closebtn:focus {
+  color: #4c4c4c;
+}
+
+#addSeedFilmNav .closebtn {
+  text-decoration: none;
+  color: #737373;
+  /*display: block;*/
+  transition: 0.3s;
+  position: absolute;
+  top: -9%;
+  right: 2%;
+  font-size: 1000%;
+}
+
+.uneditableStars {
+  left: 0.7em;
+}
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactStars from 'react-stars';
 
 import './recommendation.css';
 
@@ -36,6 +37,7 @@ function SideBarFilter(props) {
 function RatedFilm(props) {
   const id = props.data.id;
   const imdb_id = props.data.imdb_id;
+  const rating = props.data.rating;
   const title = props.data.title;
   const imageUrl = `https://image.tmdb.org/t/p/w45/${props.data.poster_path}`;
   const image = imageUrl.includes("null") ? <i className="fa fa-file-image-o fa-4x" aria-hidden="true"></i> : <img src={imageUrl} alt="Movie Poster" /> 
@@ -43,12 +45,19 @@ function RatedFilm(props) {
   return(
     <div className="list-group" id="list-rated-films">
       <a href="#" onClick={(event) => props.onSeedAdd(id, imdb_id, event)} className="list-group-item list-group-item-action flex-column align-items-start">
-        <span>
+        <span className="col-2">
           {image}
-          <span className="ml-5">
-            {title}
-          </span>
         </span>
+        <span className="col-2">
+          {title}
+        </span>
+        <ReactStars className="uneditableStars"
+            count={10}
+            half={false}
+            size={24}
+            color2={'#ffd700'} 
+            edit={false}
+            value={rating} />
       </a>
     </div>
   );
@@ -91,6 +100,8 @@ class Recommendation extends React.Component {
     };
     this.handleSeedDelete = this.handleSeedDelete.bind(this);
     this.handleSeedAdd = this.handleSeedAdd.bind(this);
+    this.openNav = this.openNav.bind(this);
+    this.closeNav = this.closeNav.bind(this);
   }
 
   componentDidMount() {
@@ -167,6 +178,15 @@ class Recommendation extends React.Component {
     });
   }
 
+  openNav() {
+    document.getElementById("addSeedFilmNav").style.display = "block";
+  }
+
+  closeNav() {
+    document.getElementById("addSeedFilmNav").style.display = "none";
+    this.fetchFilms();
+  }
+
   render() {
     return(
       <div className="container-fluid">
@@ -178,7 +198,7 @@ class Recommendation extends React.Component {
             {/* Seed Films */}
             <div>
               <h2 className="text-left mt-3">Seed Films
-                <button type="button" className="btn btn-outline-info ml-2" data-toggle="modal" data-target="#addSeedFilm" >
+                <button type="button" className="btn btn-outline-info ml-2" onClick={this.openNav}>
                   <i className="fa fa-plus" aria-hidden="true"></i>
                 </button>
               </h2>
@@ -196,8 +216,17 @@ class Recommendation extends React.Component {
             </div>
           </main>
 
+          <div id="addSeedFilmNav">
+            <a href="#" className="closebtn" onClick={this.closeNav}>&times;</a>
+              <div className="row" id="overlay-main">
+                <div className="col-6" id="overlay-content">
+                  {this.state.ratedFilms}
+                </div>
+              </div>
+          </div>
+
           {/* Modal for Add a Seed Film Button */}
-          <div className="modal fade" id="addSeedFilm" tabIndex="-1" role="dialog" aria-labelledby="addSeedFilmLabel" aria-hidden="true">
+          {/*<div className="modal fade" id="addSeedFilm" tabIndex="-1" role="dialog" aria-labelledby="addSeedFilmLabel" aria-hidden="true">
             <div className="modal-dialog" role="document">
               <div className="modal-content">
                 <div className="modal-header">
@@ -214,7 +243,7 @@ class Recommendation extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
+          </div>*/}
 
         </div>
       </div>
