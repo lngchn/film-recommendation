@@ -69,7 +69,7 @@ web: node server.js
 ```
 <br/>
 NOTE: Make sure you push the production /client/build folder to heroku master branch for the app to work.
-<br/>
+
 If you have an existing app on Heroku and you are getting 'no app specified' message on the command line, you can correct it by running this on your local terminal:
 ```bash
 heroku git:reomte -a MyHerokuAppName
