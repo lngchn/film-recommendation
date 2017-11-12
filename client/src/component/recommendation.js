@@ -119,7 +119,8 @@ class Recommendation extends React.Component {
     })
     .then(res => res.json())
     .then(user => {
-      const ratedFilms = user.ratedFilms.map(movie => <RatedFilm data={movie} key={movie.id} onSeedAdd={this.handleSeedAdd} />);
+      let ratedFilms = user.ratedFilms.sort((filmA, filmB) => filmA.title < filmB.title ? -1 : 1);
+      ratedFilms = ratedFilms.map(movie => <RatedFilm data={movie} key={movie.id} onSeedAdd={this.handleSeedAdd} />);
       const seedFilms = user.seedFilms.map(movie => <SeedFilm data={movie} key={movie.id} onSeedDelete={this.handleSeedDelete} />);
       const recommendation = user.recommendation.map(movie => <RecommendationFilm data={movie} key={movie.id} />);
 

@@ -78,17 +78,16 @@ class SearchBar extends Component {
 
   // Get a list of suggestions from the this.state.films
   getSuggestions = value => {
-    let films = this.state.films;
-    const escapedValue = this.escapeRegexCharacters(value.trim());
+    const films = this.state.films;
+    const inputValue = value.trim().toLowerCase();
+    const inputLength = inputValue.length;
 
-    if (escapedValue === '' || films === undefined) {
-      return [];
-    }
-
-    const regex = new RegExp('^' + escapedValue, 'i');
+    // Remove '-' char with space from the film title, such as 'Spider-man'
     films.forEach(film => film.title = film.title.replace('-', ' '));
 
-    return films.filter(film => regex.test(film.title));
+    return inputLength === 0 || films === undefined ? [] : films.filter(film =>
+      film.title.toLowerCase().includes(inputValue)
+    );
   };
 
   // Suggestion should be based on movie title.
