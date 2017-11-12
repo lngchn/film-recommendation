@@ -26,19 +26,46 @@ Production Build:
 3. a folder called 'build' will be created
 4. production build will be hosted on the Express server
 
-MongoDB:
-1. Install MongoDB Community Edition: https://docs.mongodb.com/manual/administration/install-community
-2. Create the data directory (absolute path on the drive from which you start MongoDB): /data/db
-3. Start the server by running: mongod
+## Heroku Deployment
 
-You can use the mongo Shell or Mongo Compass to check the database.
-Start the mongo Shell at bin/mongo
+1. cd to project root directory
 
-Useful mongo Shell commands:
+2. 
+```bash
+heroku login
+```
 
-* show dbs - show all the databases
-* db - show current database
-* use filmpro - switch to a database called filmpro
-* show collections - show all the collections in the current database
-* db.users.find() - show all the data in the users collection
-* db.users.drop() - drop the collection called users (WARNING, it will delete the collection and all the data in it)
+3.
+```bash
+heroku create filmpro
+```
+
+4. Go to Heroku dashboard > filmpro > Settings, under Config Variables section, set up two environment variables: <br/>
+KEY: TMDB_KEY, VALUE: tmdb_api_key <br/>
+KEY: MongoDB_URL, VALUE: mongodb_url
+
+5.
+```bash
+git push heroku master
+```
+
+6.
+```bash
+heroku ps:scale web=1
+```
+
+OPTIONAL: If you don't have your own mLab setup, you can set it up on Heroku (you need credit card).<br/><br/>
+7. Create a free mLab MongoDB database on Heroku
+```bash
+heroku addons:create mongolab
+```
+8. To see Heroku environment variable where it contains the MongoDB URI (you must also edit your code to use this environemnt variable in your program)
+```bash
+heroku config:get MONGODB_URI
+```
+9. Create a 'Procfile' (no file extension) file if not already existed in your project root directory. This tells Heroku how to start the app. Add this line to the file:
+```bash
+web: node server.js
+```
+<br/>
+NOTE: Make sure you push the production /client/build folder to heroku master branch for the app to work.
