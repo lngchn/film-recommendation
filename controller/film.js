@@ -3,8 +3,7 @@ var router = express.Router();
 
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-const MongoDB_URL = require('../mongodb-url.js');
-const url = MongoDB_URL.url;
+const url = process.env.MongoDB_URL;
 
 function insertFilms(db, callback) {
   // Get the films collection

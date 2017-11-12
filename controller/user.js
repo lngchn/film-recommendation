@@ -8,12 +8,10 @@ const passport = require('../middleware/authentication');
 
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-const MongoDB_URL = require('../mongodb-url.js');
-const url = MongoDB_URL.url;
+const url = process.env.MongoDB_URL;
 
 const axios = require('axios');
-const TMDB_KEY = require('../tmdb-api-key');
-const API_KEY = TMDB_KEY.key;
+const API_KEY = process.env.TMDB_KEY;
 
 function findUser(db, username, email, callback) {
   const collection = db.collection('users');

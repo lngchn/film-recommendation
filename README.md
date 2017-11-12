@@ -7,15 +7,15 @@ Deveopment Build:
 1. clone project
 2. cd to root directory: npm install (install Express dependencies)
 3. cd to client: npm install (install React dependencies)
-4. in the root directory create a tmdb-api-key.js with these two lines: 
+4. create environment variable for TMDB API key: 
 ```bash
-const key = 'INSERT_YOUR_KEY_HERE';
-module.exports = { key };
+variable name: TMDB_KEY
+variable value: Your TMDB API key
 ```
-5. in the root directory craete a mongodb-url.js with these two lines:
+5. create environment variable for MongoDB url
 ```bash
-const url = 'INSERT_MONGODB_URL_HERE';
-module.exports = { url };
+variable name: MongoDB_URL
+variable value: full path to MongoDB url, including username and password
 ```
 6. to start Express server: npm start (under root directory)
 7. to start React server: npm start (under client directory)

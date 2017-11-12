@@ -9,8 +9,7 @@ const passport = require('../middleware/authentication');
 
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-const MongoDB_URL = require('../mongodb-url.js');
-const url = MongoDB_URL.url;
+const url = process.env.MongoDB_URL;
 
 function exportSeedFilmFile(output, res){
   const fs = require('fs');

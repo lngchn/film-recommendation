@@ -4,8 +4,7 @@ const bcrypt = require('bcrypt');
 
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-const MongoDB_URL = require('../mongodb-url.js');
-const url = MongoDB_URL.url;
+const url = process.env.MongoDB_URL;
 
 function findUser(db, email, callback) {
   const collection = db.collection('users');
