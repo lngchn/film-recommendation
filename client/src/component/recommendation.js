@@ -179,12 +179,13 @@ class Recommendation extends React.Component {
   }
 
   openNav() {
+    this.fetchFilms();
     document.getElementById("addSeedFilmNav").style.display = "block";
   }
 
   closeNav() {
-    document.getElementById("addSeedFilmNav").style.display = "none";
     this.fetchFilms();
+    document.getElementById("addSeedFilmNav").style.display = "none";
   }
 
   render() {
