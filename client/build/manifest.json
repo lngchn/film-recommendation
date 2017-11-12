@@ -1,0 +1,15 @@
+{
+  "short_name": "Film Pro",
+  "name": "Film Pro",
+  "icons": [
+    {
+      "src": "film_pro_logo.png",
+      "sizes": "300x39",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
