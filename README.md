@@ -41,8 +41,8 @@ heroku create filmpro
 ```
 
 4. Go to Heroku dashboard > filmpro > Settings, under Config Variables section, set up two environment variables: <br/>
-KEY: TMDB_KEY       VALUE: tmdb_api_key <br/>
-KEY: MongoDB_URL    VALUE: mongodb_url
+KEY: TMDB_KEY, VALUE: tmdb_api_key <br/>
+KEY: MongoDB_URL, VALUE: mongodb_url
 
 5.
 ```bash
@@ -59,12 +59,10 @@ OPTIONAL: If you don't have your own mLab setup, you can set it up on Heroku (yo
 ```bash
 heroku addons:create mongolab
 ```
-
 8. To see Heroku environment variable where it contains the MongoDB URI (you must also edit your code to use this environemnt variable in your program)
 ```bash
 heroku config:get MONGODB_URI
 ```
-
 9. Create a 'Procfile' (no file extension) file if not already existed in your project root directory. This tells Heroku how to start the app. Add this line to the file:
 ```bash
 web: node server.js
