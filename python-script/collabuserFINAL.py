@@ -1,4 +1,4 @@
-####################################### 11/10/17 11:45 AM
+####################################### 11/12/17 12:42 PM
 
 import json
 import glob
@@ -48,8 +48,14 @@ def remove_non_genre(seed_genres, movie_id_store, rankings):
                     if genre not in seed_genres: seed_genres.append(str(genre))'''
 ##############################
 
+#euclidean distance, only applied for when there is only one seed film
+def euc(p1, p2, common):
+    p1p2_sum_sq = float(pow(p1.get(common) - p2.get(common), 2))
+    
+    return 1 / (1 + p1p2_sum_sq)
 
-#calculate the pearson correlation between two users
+#calculate the pearson correlation between two users UNLESS only one seed film --> euclidean
+#pearson ALWAYS returns 1 if there is only one value, which is bad because I'm ignoring perfect pearsons
 def pearson(p1, p2):
     common_films = {}
     for movie in p1:
@@ -57,15 +63,16 @@ def pearson(p1, p2):
 
     the_length = len(common_films)
     if the_length == 0: return 0
-    p1_sum = sum([p1.get(movie) for movie in common_films])
-    p2_sum = sum([p2.get(movie) for movie in common_films])
+    if len(p1) == 1: return euc(p1, p2, common_films.keys()[0]) ##only one seed, use euclidean
+    p1_sum = float(sum([p1.get(movie) for movie in common_films]))
+    p2_sum = float(sum([p2.get(movie) for movie in common_films]))
     ########
-    p1_sum_sq = sum((pow(p1.get(movie), 2) for movie in common_films))
-    p2_sum_sq = sum((pow(p2.get(movie), 2) for movie in common_films))
+    p1_sum_sq = float(sum([pow(p1.get(movie), 2) for movie in common_films]))
+    p2_sum_sq = float(sum([pow(p2.get(movie), 2) for movie in common_films]))
     ########
-    product_sum = sum([p1.get(movie) * p2.get(movie) for movie in common_films])
+    product_sum = float(sum([p1.get(movie) * p2.get(movie) for movie in common_films]))
     ########
-    top = product_sum - ((p1_sum * p2_sum) / the_length)
+    top = product_sum - (p1_sum * p2_sum / the_length)
     bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / the_length) * (p2_sum_sq - pow(p2_sum, 2) / the_length))
     ########
     if bottom == 0: return 0
@@ -102,12 +109,12 @@ def do_weights(rankings, rating_pearson, just_pearson, my_dict, other_dict, pear
 def fill_rankings(rankings, rating_pearson, just_pearson):
     for movie, ranking in rating_pearson.items():
         num = ranking / just_pearson[movie]
-        if num > 7 and num < 10: rankings[movie] = num
+        if num > 7 and num <= 9: rankings[movie] = num
 
 ##function to remove all movies that appear less than 50 times (removes bias towards films with only less than 50 ratings)
 def remove_fifty(all_movies, rankings):
     for movie, count in all_movies.items():
-        if count < 600 and movie in rankings: rankings.pop(movie, 0)
+        if count < 300 and movie in rankings: rankings.pop(movie, 0)
         
 ##get the id of the most similar user to me
 def rec_movies(sim_score, movie_id_store, all_movies):
@@ -143,6 +150,7 @@ def rec_movies(sim_score, movie_id_store, all_movies):
     sim_score.reverse()
 
     for j in range(0, 11): #we only care about the top ten pearsons
+        #print sim_score[j][0], sim_score[j][1]
         do_weights(rankings, rating_pearson, just_pearson, my_dict, movies_store[sim_score[j][0]], sim_score[j][1])   
     
     fill_rankings(rankings, rating_pearson, just_pearson) ##fill the rankings
