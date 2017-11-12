@@ -40,10 +40,8 @@ heroku login
 heroku create filmpro
 ```
 
-4. Go to Heroku dashboard > filmpro > Settings, under Config Variables section, set up two environment variables:
-<br />
-KEY: TMDB_KEY       VALUE: tmdb_api_key
-<br />
+4. Go to Heroku dashboard > filmpro > Settings, under Config Variables section, set up two environment variables: <br/>
+KEY: TMDB_KEY       VALUE: tmdb_api_key <br/>
 KEY: MongoDB_URL    VALUE: mongodb_url
 
 5.
@@ -56,8 +54,7 @@ git push heroku master
 heroku ps:scale web=1
 ```
 
-OPTIONAL: If you don't have your own mLab setup, you can set it up on Heroku (you need credit card).
-<br />
+OPTIONAL: If you don't have your own mLab setup, you can set it up on Heroku (you need credit card).<br/><br/>
 7. Create a free mLab MongoDB database on Heroku
 ```bash
 heroku addons:create mongolab
@@ -72,5 +69,5 @@ heroku config:get MONGODB_URI
 ```bash
 web: node server.js
 ```
-
+<br/>
 NOTE: Make sure you push the production /client/build folder to heroku master branch for the app to work.
