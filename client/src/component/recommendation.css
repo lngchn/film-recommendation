@@ -17,11 +17,6 @@
   color: gray;
 }
 
-.seedFilmAddButton {
-  padding-right: 1.2em;
-  padding-left: 1.2em;
-}
-
 .thumbnail {
   position: relative;
 }
@@ -62,6 +57,10 @@
 .remove-button a {
   text-decoration: none;
   color: inherit;
+}
+
+#list-rated-films a:hover {
+  border: 1px solid #72d147;
 }
 
 hr {

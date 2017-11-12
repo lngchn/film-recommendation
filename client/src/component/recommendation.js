@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './recommendation.css';
 
 function SideBarFilter(props) {
@@ -29,6 +30,27 @@ function SideBarFilter(props) {
         <a className="nav-item nav-link text-right" href="#">More</a>
       </nav>
     </nav>
+  );
+}
+
+function RatedFilm(props) {
+  const id = props.data.id;
+  const imdb_id = props.data.imdb_id;
+  const title = props.data.title;
+  const imageUrl = `https://image.tmdb.org/t/p/w45/${props.data.poster_path}`;
+  const image = imageUrl.includes("null") ? <i className="fa fa-file-image-o fa-4x" aria-hidden="true"></i> : <img src={imageUrl} alt="Movie Poster" /> 
+  
+  return(
+    <div className="list-group" id="list-rated-films">
+      <a href="#" onClick={(event) => props.onSeedAdd(id, imdb_id, event)} className="list-group-item list-group-item-action flex-column align-items-start">
+        <span>
+          {image}
+          <span className="ml-5">
+            {title}
+          </span>
+        </span>
+      </a>
+    </div>
   );
 }
 
@@ -68,6 +90,7 @@ class Recommendation extends React.Component {
       recommendation: []
     };
     this.handleSeedDelete = this.handleSeedDelete.bind(this);
+    this.handleSeedAdd = this.handleSeedAdd.bind(this);
   }
 
   componentDidMount() {
@@ -85,13 +108,37 @@ class Recommendation extends React.Component {
     })
     .then(res => res.json())
     .then(user => {
+      const ratedFilms = user.ratedFilms.map(movie => <RatedFilm data={movie} key={movie.id} onSeedAdd={this.handleSeedAdd} />);
       const seedFilms = user.seedFilms.map(movie => <SeedFilm data={movie} key={movie.id} onSeedDelete={this.handleSeedDelete} />);
       const recommendation = user.recommendation.map(movie => <RecommendationFilm data={movie} key={movie.id} />);
 
       this.setState({
+        ratedFilms,
         seedFilms,
         recommendation,
       });
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
+  }
+
+  handleSeedAdd(id, imdb_id, event) {
+    event.preventDefault();
+    fetch("/user/seedfilm", {
+      method: "post",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin",
+      body: JSON.stringify({
+        id: id,
+        imdb_id: imdb_id
+      })
+    })
+    .then(res => {
+
     })
     .catch(err => {
       console.log(err.message);
@@ -160,11 +207,10 @@ class Recommendation extends React.Component {
                   </button>
                 </div>
                 <div className="modal-body">
-                  Testing
+                  {this.state.ratedFilms}
                 </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" className="btn btn-outline-success seedFilmAddButton">Add</button>
                 </div>
               </div>
             </div>
