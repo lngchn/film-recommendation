@@ -20,3 +20,8 @@
 #home-content p a {
   transform: translateY(50%);
 }
+
+.navbar-register-link a {
+  text-decoration: none;
+  color: #28a745;
+}

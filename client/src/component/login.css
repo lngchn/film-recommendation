@@ -7,3 +7,15 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
+.login-register-link {
+  /* Make <span> a block element in order to apply margin to it*/
+  display: block;
+  width: 15em;
+  margin-left: 29.7em;
+}
+
+.login-register-link a {
+  text-decoration: none;
+  color: #28a745;
+}

@@ -55,11 +55,12 @@ function LoggedOutNavbar(props) {
                 Login
               </button>
               <div className="dropdown-menu dropdown-menu-right p-4" id="navLoginDiv" aria-labelledby="navLogin">
-                <form onSubmit={props.onSubmit} className="form" id="navLoginForm" noValidate> 
+                <form onSubmit={props.onSubmit} className="form mb-2" id="navLoginForm" noValidate> 
                   <input className="form-control mb-2" type="email" value={props.email} onChange={props.onEmailChange} placeholder="Email" required />
                   <input className="form-control mb-2" type="password" value={props.password} onChange={props.onPasswordChange} placeholder="Password" required />
                   <button className="btn btn-secondary" type="submit">Login</button>
                 </form>
+                <span className="navbar-register-link">Don't have an account? <a href="/register">Register</a></span>
               </div>
             </div>
           </div>
