@@ -42,7 +42,8 @@ function callPyScript(data, res) {
 
   // Add elements to the recommendation array
   py.stdout.on('end', function(){
-    recommendations.push(dataString);
+    //recommendations.push(dataString);
+    recommendations.push(JSON.parse(JSON.stringify(dataString)));
 
     for(var i =0; i < recommendations.length; i++){
       res.json({message: recommendations[i]}); 
