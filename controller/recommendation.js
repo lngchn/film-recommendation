@@ -4,8 +4,7 @@ const router = express.Router();
 const passport = require('../middleware/authentication');
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-const MongoDB_URL = require('../mongodb-url.js');
-const url = MongoDB_URL.url;
+const url = process.env.MongoDB_URL;
 
 /* Uncomment to export an actual JSON file.
 function exportSeedFilmFile(output, res){
@@ -41,7 +40,8 @@ function callPyScript(data, res) {
 
   // Add elements to the recommendation array
   py.stdout.on('end', function(){
-    recommendations.push(dataString);
+    //recommendations.push(dataString);
+    recommendations.push(JSON.parse(JSON.stringify(dataString)));
 
     for(var i =0; i < recommendations.length; i++){
       res.json({message: recommendations[i]}); 
