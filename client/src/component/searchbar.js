@@ -103,9 +103,9 @@ class SearchBar extends Component {
     const year = suggestion.release_date.substring(0, 4);
     const isAuthed = this.props.isAuthed;
     return (
-      <span className='suggestion-content'>
+      <span className='suggestion-content row ml-2'>
         {image}
-        <span className="name">
+        <span className="name col">
           {
             parts.map((part, index) => {
               const className = part.highlight ? 'highlight' : null;
@@ -117,7 +117,7 @@ class SearchBar extends Component {
           {` (${year})`}
         </span>
         {isAuthed && 
-          <span id="film-rating">
+          <span className="col-12 pl-0" id="film-rating">
             <ReactStars count={10}
                         half={false}
                         onChange={(event) => this.handleRatingChange(suggestion.id, suggestion.title, suggestion.poster_path, event)} 

@@ -3,13 +3,12 @@
 }
 
 .react-autosuggest__input {
-  width: 330%;
+  width: 350%;
   height: 100%;
   padding: 0.6em 1em;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
   font-size: 1em;
-  border: 1px solid #aaa;
 }
 
 .react-autosuggest__input:focus {
@@ -29,7 +28,7 @@
   display: block;
   position: absolute;
   top: 3em;
-  width: 330%;
+  width: 350%;
   border: 1px solid #aaa;
   background-color: #fff;
   font-family: Helvetica, sans-serif;

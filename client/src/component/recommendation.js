@@ -52,12 +52,12 @@ function RatedFilm(props) {
           {title}
         </span>
         <ReactStars className="uneditableStars"
-            count={10}
-            half={false}
-            size={24}
-            color2={'#ffd700'} 
-            edit={false}
-            value={rating} />
+          count={10}
+          half={false}
+          size={24}
+          color2={'#ffd700'} 
+          edit={false}
+          value={rating} />
       </a>
     </div>
   );
@@ -226,26 +226,6 @@ class Recommendation extends React.Component {
                 </div>
               </div>
           </div>
-
-          {/* Modal for Add a Seed Film Button */}
-          {/*<div className="modal fade" id="addSeedFilm" tabIndex="-1" role="dialog" aria-labelledby="addSeedFilmLabel" aria-hidden="true">
-            <div className="modal-dialog" role="document">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title" id="addSeedFilmLabel">Add Seed Films</h5>
-                  <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div className="modal-body">
-                  {this.state.ratedFilms}
-                </div>
-                <div className="modal-footer">
-                  <button type="button" className="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>*/}
 
         </div>
       </div>
