@@ -81,3 +81,11 @@
 #film-rating {
   margin-left: auto;
 }
+
+/* Adjust search bar width according to thw vw (view width) */
+@media screen and (max-width: 1150px) {
+  .react-autosuggest__input,
+  .react-autosuggest__container--open .react-autosuggest__suggestions-container {
+    width: 45vw;
+  }
+}
