@@ -1,76 +1,79 @@
-# Film Recommender
+# Film Recommendation
 
-## Instructions
+## Project Setup
 
-Deveopment Build:
+### Deveopment Build:
 
-1. clone project
-2. cd to root directory: npm install (install Express dependencies)
-3. cd to client: npm install (install React dependencies)
-4. create environment variable for TMDB API key: 
-```bash
+1) Clone repository
+2) cd to root directory and install Express.js install Express.js dependencies
+```
+npm install
+```
+3) cd to /client to install React.js dependencies
+```
+npm install
+```
+4) Create environment variable for TMDB API key: 
+```
 variable name: TMDB_KEY
 variable value: Your TMDB API key
 ```
-5. create environment variable for MongoDB url
-```bash
+5) Create environment variable for MongoDB uri
+```
 variable name: MongoDB_URL
 variable value: full path to MongoDB url, including username and password
 ```
-6. to start Express server: npm start (under root directory)
-7. to start React server: npm start (under client directory)
+6) To start Express server, under root directory
+```
+npm start
+```
+7) To start React server, under /client directory
+```
+npm start
+```
 
-Production Build:
-1. cd to client
-2. npm run build
-3. a folder called 'build' will be created
-4. production build will be hosted on the Express server
+### Production Build:
+
+cd to /client; this step creates a build folder in /client that will be read by Express.js
+```
+npm run build
+```
 
 ## Heroku Deployment
 
-1. cd to project root directory
-
-2. 
-```bash
-heroku login
+1) cd to project root directory
 ```
-
-3.
-```bash
+heroku login
 heroku create filmpro
 ```
-
-4. Go to Heroku dashboard > filmpro > Settings, under Config Variables section, set up two environment variables: <br/>
-KEY: TMDB_KEY, VALUE: tmdb_api_key <br/>
-KEY: MongoDB_URL, VALUE: mongodb_url
-
-5.
-```bash
+2) Using your web browser and go to Heroku dashboard > filmpro > Settings, under Config Variables section, set up two environment variables with their respective values
+`KEY: TMDB_KEY`
+`KEY: MongoDB_URL`
+3) Push the project to Heroku master branch
+```
 git push heroku master
 ```
-
-6.
-```bash
+4) To ensure that at least one instance of the application is running
+```
 heroku ps:scale web=1
 ```
-
-OPTIONAL: If you don't have your own mLab setup, you can set it up on Heroku (you need credit card).<br/><br/>
-7. Create a free mLab MongoDB database on Heroku
-```bash
+### OPTIONAL
+5) If you don't have your own mLab setup, you can set it up on Heroku (you need credit card)
+```
 heroku addons:create mongolab
 ```
-8. To see Heroku environment variable where it contains the MongoDB URI (you must also edit your code to use this environemnt variable in your program)
-```bash
+6) To see Heroku environment variable where it contains the MongoDB URI (you must also edit the code to use this environemnt variable in your program)
+```
 heroku config:get MONGODB_URI
 ```
-9. Create a 'Procfile' (no file extension) file if not already existed in your project root directory. This tells Heroku how to start the app. Add this line to the file:
-```bash
+7) Create a 'Procfile' (no file extension) file if not already existed in your project root directory. This tells Heroku how to start the app. Add this line to the file
+```
 web: node server.js
 ```
-<br/>
-NOTE: Make sure you push the production /client/build folder to heroku master branch for the app to work.
 
-If you have an existing app on Heroku and you are getting 'no app specified' message on the command line, you can correct it by running this on your local terminal:
-```bash
+### NOTE
+- Make sure you push the production /client/build folder to Heroku master branch for the app to work.
+- If you have an existing app on Heroku and you are getting 'no app specified' message on the command line, you can correct it by running this on your local terminal
+```
 heroku git:remote -a MyHerokuAppName
 ```
