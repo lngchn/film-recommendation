@@ -13,21 +13,12 @@ npm install
 ```
 npm install
 ```
-4) Create environment variable for TMDB API key: 
-```
-variable name: TMDB_KEY
-variable value: Your TMDB API key
-```
-5) Create environment variable for MongoDB uri
-```
-variable name: MongoDB_URL
-variable value: full path to MongoDB url, including username and password
-```
-6) To start Express server, under root directory
+4) Create environment variables for TMDB API key and MongoDB URL and their respective values: `KEY: TMDB_KEY` and `KEY: MongoDB_URL`
+5) To start Express server, under root directory
 ```
 npm start
 ```
-7) To start React server, under /client directory
+6) To start React server, under /client directory
 ```
 npm start
 ```
@@ -46,9 +37,7 @@ npm run build
 heroku login
 heroku create filmpro
 ```
-2) Using your web browser and go to Heroku dashboard > filmpro > Settings, under Config Variables section, set up two environment variables with their respective values
-`KEY: TMDB_KEY`
-`KEY: MongoDB_URL`
+2) Using your web browser and go to Heroku dashboard > filmpro > Settings, under Config Variables section, set up two environment variables with their respective values: `KEY: TMDB_KEY` and `KEY: MongoDB_URL`
 3) Push the project to Heroku master branch
 ```
 git push heroku master
@@ -57,7 +46,7 @@ git push heroku master
 ```
 heroku ps:scale web=1
 ```
-### OPTIONAL
+### Heroku Deployment Optional
 5) If you don't have your own mLab setup, you can set it up on Heroku (you need credit card)
 ```
 heroku addons:create mongolab
@@ -73,7 +62,4 @@ web: node server.js
 
 ### NOTE
 - Make sure you push the production /client/build folder to Heroku master branch for the app to work.
-- If you have an existing app on Heroku and you are getting 'no app specified' message on the command line, you can correct it by running this on your local terminal
-```
-heroku git:remote -a MyHerokuAppName
-```
+- If you have an existing app on Heroku and you are getting 'no app specified' message on the command line, you can correct it by running this on your local terminal: `heroku git:remote -a MyHerokuAppName`
