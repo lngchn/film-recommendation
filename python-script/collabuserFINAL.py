@@ -177,7 +177,7 @@ def main():
  
     films_to_rec = rec_movies(user_obj["films"], sim_score, movie_id_store, all_movies)
     
-    for x in films_to_rec:
+    for x in films_to_rec[:100]:
         output_str += movie_id_store[x[0]] + " "
 
     print output_str
