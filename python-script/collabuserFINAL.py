@@ -72,8 +72,12 @@ def pearson(p1, p2):
     ########
     product_sum = float(sum([p1.get(movie) * p2.get(movie) for movie in common_films]))
     ########
-    top = product_sum - (p1_sum * p2_sum / the_length)
-    bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / the_length) * (p2_sum_sq - pow(p2_sum, 2) / the_length))
+    if len(set(p1.values())) == 1:
+        top = abs(product_sum - (p1_sum * p2_sum))
+        bottom = sqrt((p1_sum_sq - pow(p1_sum, 2)) * (p2_sum_sq - pow(p2_sum, 2)))
+    else:
+        top = product_sum - (p1_sum * p2_sum / the_length)
+        bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / the_length) * (p2_sum_sq - pow(p2_sum, 2) / the_length))
     ########
     if bottom == 0: return 0
     return top/bottom  
@@ -134,13 +138,14 @@ def rec_movies(me, sim_score, movie_id_store, all_movies):
     ############################
 
     do_append(my_dict, movie_id_store, me, all_movies) ##set up my dictionary for pearson
+    rating = me["films"][0]["rating"] #for lack of variance in input data
 
     for i in range(1, len(json_files_store)):
         with open(json_files_store[i]) as data_file:
             other = json.load(data_file) #1) get the .json file data, store as object
         other_id = str(other["user_id"]) #2) get the ID from the .json file object
         do_append(other_dict, movie_id_store, other["films"], all_movies) #3) do_append (see above)
-        pearson_num = pearson(my_dict, other_dict) #4) get the pearson correlation between my movies and the other person's movies
+        pearson_num = pearson(my_dict, other_dict, rating) #4) get the pearson correlation between my movies and the other person's movies
         if pearson_num > 0 and pearson_num <= 1: #5) ignore pearsons less than or equal to 0, greater than 1
             sim_score[other_id] = pearson_num
             movies_store[other_id] = other_dict.copy()
