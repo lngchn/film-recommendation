@@ -194,22 +194,18 @@ class Recommendation extends React.Component {
       credentials: "same-origin"
     })
     .then(res => {
-      // Cannot call fetchFilms() here because Heroku has 30 seconds limit on waiting
+      // Cannot call fetchFilms() in Heroku because Heroku has 30 seconds limit on waiting
       // for request. Request will time out and fetchFilms will never be called.
+      // Need to implement Socket.IO
+      this.fetchFilms();
     })
     .catch(err => {
       console.log(err.message);
-    });
+    }); 
 
-    // Instead, call fetchFilms() here after 1 minutes, which should be enough for
-    // the back-end to finish and store the recommendations in the database.
-    setTimeout(() => { 
-      setTimeout(() => { 
-        setTimeout(() => { 
-          this.fetchFilms();
-        }, 20000);
-      }, 20000);
-    }, 20000);
+    setTimeout(function(){ 
+      this.fetchFilms();
+    }, 50000);
   }
 
   openNav() {
