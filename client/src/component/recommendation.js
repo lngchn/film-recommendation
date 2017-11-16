@@ -204,8 +204,12 @@ class Recommendation extends React.Component {
     // Instead, call fetchFilms() here after 1 minutes, which should be enough for
     // the back-end to finish and store the recommendations in the database.
     setTimeout(() => { 
-      this.fetchFilms();
-    }, 60000);
+      setTimeout(() => { 
+        setTimeout(() => { 
+          this.fetchFilms();
+        }, 20000);
+      }, 20000);
+    }, 20000);
   }
 
   openNav() {
