@@ -1,5 +1,6 @@
 ####################################### 11/15/17 12:03 PM
 
+import sys
 import json
 import glob
 import os
@@ -10,9 +11,6 @@ import random
 import time
 from time import sleep
 from math import sqrt
-
-#tmdb.API_KEY = '22b44af24d5169327b6fa06c36f89483'
-
 
 ####INACTIVE FUNCTIONS#####
 '''#return the person most similar to me (not used for now)
@@ -56,7 +54,7 @@ def euc(p1, p2, common):
 
 #calculate the pearson correlation between two users UNLESS only one seed film --> euclidean
 #pearson ALWAYS returns 1 if there is only one value, which is bad because I'm ignoring perfect pearsons
-def pearson(p1, p2):
+def pearson(p1, p2, rating):
     common_films = {}
     for movie in p1:
         if movie in p2: common_films[movie] = 1
@@ -72,8 +70,12 @@ def pearson(p1, p2):
     ########
     product_sum = float(sum([p1.get(movie) * p2.get(movie) for movie in common_films]))
     ########
-    top = product_sum - (p1_sum * p2_sum / the_length)
-    bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / the_length) * (p2_sum_sq - pow(p2_sum, 2) / the_length))
+    if len(set(p1.values())) == 1:
+        top = abs(product_sum - (p1_sum * p2_sum))
+        bottom = sqrt((p1_sum_sq - pow(p1_sum, 2)) * (p2_sum_sq - pow(p2_sum, 2)))
+    else:
+        top = product_sum - (p1_sum * p2_sum / the_length)
+        bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / the_length) * (p2_sum_sq - pow(p2_sum, 2) / the_length))
     ########
     if bottom == 0: return 0
     return top/bottom  
@@ -90,10 +92,12 @@ def do_append(the_dict, movie_id_store, the_info, all_movies):
             
 #get all of the json files and put it into a list, first user of the list is me (for now)
 def get_json_files(store):
-    parent_dir = 'C://Users/bendo/Desktop/Capstone Project/' #change pathname to wherever files are stored
-    for json_file in glob.glob(os.path.join(parent_dir, '*.json')):
-        json_split = str(json_file).split("\\")
-        store.append(json_split[1])
+    parent_dir = 'C://Users/Liang Chen/Desktop/CSCI 499 Capstone/IMDb_User_Ratings_JSON_Output_11-4-17/' #change pathname to wherever files are stored
+    json_file = glob.glob(os.path.join(parent_dir, '*.json'))
+    for file in json_file:
+        # json_split = str(file).split("\\")
+        # print(json_split)
+        store.append(file)
 
 #essentially provides the films to recommend
 #we provide weighted scores in this function, modify ratings depending on how closely correlated they are in tastes to you
@@ -134,23 +138,23 @@ def rec_movies(me, sim_score, movie_id_store, all_movies):
     ############################
 
     do_append(my_dict, movie_id_store, me, all_movies) ##set up my dictionary for pearson
-
-    for i in range(1, len(json_files_store)):
-        with open(json_files_store[i]) as data_file:
+    rating = me[0]["rating"] #for lack of variance in input data
+    for i in range(0, len(json_files_store)):
+        with open(json_files_store[i], encoding="utf8") as data_file:
             other = json.load(data_file) #1) get the .json file data, store as object
-        other_id = str(other["user_id"]) #2) get the ID from the .json file object
-        do_append(other_dict, movie_id_store, other["films"], all_movies) #3) do_append (see above)
-        pearson_num = pearson(my_dict, other_dict) #4) get the pearson correlation between my movies and the other person's movies
-        if pearson_num > 0 and pearson_num <= 1: #5) ignore pearsons less than or equal to 0, greater than 1
-            sim_score[other_id] = pearson_num
-            movies_store[other_id] = other_dict.copy()
-        other_dict.clear()
+            other_id = str(other["user_id"]) #2) get the ID from the .json file object
+            do_append(other_dict, movie_id_store, other["films"], all_movies) #3) do_append (see above)
+            pearson_num = pearson(my_dict, other_dict, rating) #4) get the pearson correlation between my movies and the other person's movies
+            if pearson_num > 0 and pearson_num <= 1: #5) ignore pearsons less than or equal to 0, greater than 1
+                sim_score[other_id] = pearson_num
+                movies_store[other_id] = other_dict.copy()
+            other_dict.clear()
 
     sim_score = sorted(sim_score.items(), key=operator.itemgetter(1))
     sim_score.reverse()
 
     for j in range(0, 11): #we only care about the top ten pearsons
-        #print sim_score[j][0], sim_score[j][1]
+        # print (sim_score[j][0], sim_score[j][1])
         do_weights(rankings, rating_pearson, just_pearson, my_dict, movies_store[sim_score[j][0]], sim_score[j][1])   
     
     fill_rankings(rankings, rating_pearson, just_pearson) ##fill the rankings
@@ -169,7 +173,7 @@ def read_in():
 #########
       
 def main():
-    user_obj = read_in()    
+    user_obj = read_in() 
     movie_id_store = {}
     sim_score = {}
     all_movies = {} #used for remove_x
@@ -180,7 +184,7 @@ def main():
     for x in films_to_rec[:100]:
         output_str += movie_id_store[x[0]] + " "
 
-    print output_str
+    print (output_str)
         
 if __name__ == "__main__":
     main()
