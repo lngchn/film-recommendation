@@ -31,7 +31,10 @@ function doneFetchingMovies(email, recommendation, res) {
 }
 
 function callPyScript(dataToPython, req, res) {
-  let pyshell = new PythonShell(`${__dirname}/../python-script/collabuserFINAL.py`);
+  let options = {
+    scriptPath: `${__dirname}/../python-script`
+  }
+  let pyshell = new PythonShell('collabuserFINAL.py', options);
   let recommendation_imdb_id = null;
   let recommendation = [];
 
