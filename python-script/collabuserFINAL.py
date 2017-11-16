@@ -92,8 +92,9 @@ def do_append(the_dict, movie_id_store, the_info, all_movies):
             
 #get all of the json files and put it into a list, first user of the list is me (for now)
 def get_json_files(store):
-    parent_dir = 'C://Users/Liang Chen/Desktop/CSCI 499 Capstone/film-recommendation/IMDb_User_Ratings_JSON_Output_11-4-17/' #change pathname to wherever files are stored
-    json_file = glob.glob(os.path.join(parent_dir, '*.json'))
+    parent_dir = os.path.dirname(__file__)
+    json_file = glob.glob(os.path.join(parent_dir, '../IMDb_User_Ratings/*.json'))
+    print (parent_dir)
     for file in json_file:
         # json_split = str(file).split("\\")
         # print(json_split)
