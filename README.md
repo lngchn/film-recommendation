@@ -40,26 +40,33 @@ heroku login
 heroku create filmpro
 ```
 2) Using your web browser and go to Heroku dashboard > filmpro > Settings, under Config Variables section, set up two environment variables with their respective values: `KEY: TMDB_KEY` and `KEY: MongoDB_URL`
-3) Push the project to Heroku master branch
+
+3) Using your web browser and go to Heroku dashboard > filmpro > Settings, under Buildpacks section, add Python buildpack.
+
+4) Push the project to Heroku master branch
 ```
 git push heroku master
 ```
-4) To ensure that at least one instance of the application is running
+5) To ensure that at least one instance of the application is running
 ```
 heroku ps:scale web=1
 ```
 ### Heroku Deployment Optional
-5) If you don't have your own mLab setup, you can set it up on Heroku (you need credit card)
+6) If you don't have your own mLab setup, you can set it up on Heroku (you need credit card)
 ```
 heroku addons:create mongolab
 ```
-6) To see Heroku environment variable where it contains the MongoDB URI (you must also edit the code to use this environemnt variable in your program)
+7) To see Heroku environment variable where it contains the MongoDB URI (you must also edit the code to use this environemnt variable in your program)
 ```
 heroku config:get MONGODB_URI
 ```
-7) Create a 'Procfile' (no file extension) file if not already existed in your project root directory. This tells Heroku how to start the app. Add this line to the file
+8) Create a 'Procfile' (no file extension) file if not already existed in your project root directory. This file tells Heroku how to start the app. Add this line to the file
 ```
 web: node server.js
+```
+9) Create a 'requirements.txt' file if not already existed in your project root directory. This file tells Heroku what Python libraries to install. Add this line to the file
+```
+requests==2.18.4
 ```
 
 ### NOTE
