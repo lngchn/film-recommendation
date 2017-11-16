@@ -42,6 +42,7 @@ function callPyScript(dataToPython, req, res) {
   pyshell.on('message', function(result) {
     recommendation_imdb_id = JSON.parse(JSON.stringify(result));
     recommendation_imdb_id = recommendation_imdb_id.split(' ');
+    recommendation_imdb_id.pop();   // remove the last empty array item
   });
 
   pyshell.end(function(err) {
@@ -49,39 +50,40 @@ function callPyScript(dataToPython, req, res) {
       // throw err;
       res.sendStatus(500);
     } else {
-      // let numOfFilmsToSave = recommendation_imdb_id.length;
-      let numOfFilmsToSave = 10;
-      
-      for(let i = 0; i < numOfFilmsToSave; i++) {
-        let id = null;
-        let imdb_id = recommendation_imdb_id[i];
-        let rating = null;
-        let title = null;
-        let poster_path = null; 
+      let numOfFilmsToSave = recommendation_imdb_id.length;
+      for (let i = 0; i < numOfFilmsToSave; i++) {
+        (function (i) {
+          setTimeout(function () {
+            let id = null;
+            let imdb_id = recommendation_imdb_id[i];
+            let rating = null;
+            let title = null;
+            let poster_path = null; 
 
-        axios.get(`https://api.themoviedb.org/3/movie/${imdb_id}?api_key=${API_KEY}`)
-          .then(result => {
-            id = result.data.id;
-            rating = null;
-            title = result.data.title;
-            poster_path = result.data.poster_path;
+            axios.get(`https://api.themoviedb.org/3/movie/${imdb_id}?api_key=${API_KEY}`)
+              .then(result => {
+                id = result.data.id;
+                rating = null;
+                title = result.data.title;
+                poster_path = result.data.poster_path;
 
-            let film = { id: id, imdb_id: imdb_id, rating: rating, title: title, poster_path: poster_path };
-            recommendation.push(film);
+                let film = { id: id, imdb_id: imdb_id, rating: rating, title: title, poster_path: poster_path };
+                recommendation.push(film);
 
-            // Wait for for loop to finish to have all the films in the recommendation array
-            if(i === numOfFilmsToSave - 1) {
-              let email = req.user.email;
-              doneFetchingMovies(email, recommendation, res);
-            }
-          })
-          .catch(error => {
-            console.log(error.message);
-          });
-      }
+                // Wait for for loop to finish to have all the films in the recommendation array
+                if(i === numOfFilmsToSave - 1) {
+                  let email = req.user.email;
+                  doneFetchingMovies(email, recommendation, res);
+                }
+              })
+              .catch(error => {
+                console.log(error.message);
+              });
+          }, 400 * i);
+        })(i);
+      }   
     }
   });
- 
 }
 
 router.get('/', (req, res) => {
