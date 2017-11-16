@@ -100,6 +100,7 @@ class Recommendation extends React.Component {
     };
     this.handleSeedDelete = this.handleSeedDelete.bind(this);
     this.handleSeedAdd = this.handleSeedAdd.bind(this);
+    this.fetchFilms = this.fetchFilms.bind(this);
     this.updateRecommendation = this.updateRecommendation.bind(this);
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
@@ -193,11 +194,18 @@ class Recommendation extends React.Component {
       credentials: "same-origin"
     })
     .then(res => {
-      this.fetchFilms();
+      // Cannot call fetchFilms() here because Heroku has 30 seconds limit on waiting
+      // for request. Request will time out and fetchFilms will never be called.
     })
     .catch(err => {
       console.log(err.message);
     });
+
+    // Instead, call fetchFilms() here after 1 minutes, which should be enough for
+    // the back-end to finish and store the recommendations in the database.
+    setTimeout(() => { 
+      this.fetchFilms();
+    }, 60000);
   }
 
   openNav() {
