@@ -100,6 +100,7 @@ class Recommendation extends React.Component {
     };
     this.handleSeedDelete = this.handleSeedDelete.bind(this);
     this.handleSeedAdd = this.handleSeedAdd.bind(this);
+    this.updateRecommendation = this.updateRecommendation.bind(this);
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
   }
@@ -158,6 +159,9 @@ class Recommendation extends React.Component {
   }
 
   handleSeedDelete(id, imdb_id, event) {
+    // When the user delete a seed film, it doesn't call updateRecommendation()
+    // to update the recommendation films because the current implementation will 
+    // require multiple calls, which is too heavy on the TMDB API.
     event.preventDefault();
     fetch("/user/seedfilm", {
       method: "delete",
@@ -179,12 +183,30 @@ class Recommendation extends React.Component {
     });
   }
 
+  updateRecommendation() {
+    fetch("/recommendation", {
+      method: "get",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin"
+    })
+    .then(res => {
+      this.fetchFilms();
+    })
+    .catch(err => {
+      console.log(err.message);
+    });
+  }
+
   openNav() {
     this.fetchFilms();
     document.getElementById("addSeedFilmNav").style.display = "block";
   }
 
   closeNav() {
+    this.updateRecommendation();
     this.fetchFilms();
     document.getElementById("addSeedFilmNav").style.display = "none";
   }

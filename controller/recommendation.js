@@ -79,7 +79,7 @@ function callPyScript(dataToPython, req, res) {
               .catch(error => {
                 console.log(error.message);
               });
-          }, 400 * i);
+          }, 400 * i);    // Set 400 ms delay per TMDB API call, average limit is 4/1sec
         })(i);
       }   
     }
