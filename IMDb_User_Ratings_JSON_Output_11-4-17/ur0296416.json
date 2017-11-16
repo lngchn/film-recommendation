@@ -1,0 +1,485 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0103099", 
+      "rating": "8", 
+      "title": "Tongues Untied", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0071477", 
+      "rating": "8", 
+      "title": "The Execution of Private Slovik", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0088275", 
+      "rating": "9", 
+      "title": "The Times of Harvey Milk", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0064579", 
+      "rating": "8", 
+      "title": "The Learning Tree", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0061814", 
+      "rating": "9", 
+      "title": "The Incident", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086377", 
+      "rating": "9", 
+      "title": "Streamers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0123003", 
+      "rating": "8", 
+      "title": "Bruno", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116404", 
+      "rating": "8", 
+      "title": "Get on the Bus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084675", 
+      "rating": "8", 
+      "title": "Shoot the Moon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068828", 
+      "rating": "9", 
+      "title": "Lady Sings the Blues", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0065488", 
+      "rating": "10", 
+      "title": "The Boys in the Band", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082970", 
+      "rating": "9", 
+      "title": "Ragtime", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110057", 
+      "rating": "9", 
+      "title": "Hoop Dreams", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0119080", 
+      "rating": "10", 
+      "title": "Eve's Bayou", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0219519", 
+      "rating": "8", 
+      "title": "Auggie Rose", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0069368", 
+      "rating": "7", 
+      "title": "That Certain Summer", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0082979", 
+      "rating": "9", 
+      "title": "Reds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116361", 
+      "rating": "8", 
+      "title": "Freeway", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0069495", 
+      "rating": "8", 
+      "title": "What's Up, Doc?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1013753", 
+      "rating": "9", 
+      "title": "Milk", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104797", 
+      "rating": "9", 
+      "title": "Malcolm X", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0465551", 
+      "rating": "9", 
+      "title": "Notes on a Scandal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067185", 
+      "rating": "9", 
+      "title": "Harold and Maude", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0266425", 
+      "rating": "9", 
+      "title": "Conspiracy", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt2309961", 
+      "rating": "8", 
+      "title": "Afflicted", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078504", 
+      "rating": "8", 
+      "title": "The Wiz", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080716", 
+      "rating": "8", 
+      "title": "Fame", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078754", 
+      "rating": "9", 
+      "title": "All That Jazz", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0468569", 
+      "rating": "9", 
+      "title": "The Dark Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120338", 
+      "rating": "8", 
+      "title": "Titanic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2015381", 
+      "rating": "8", 
+      "title": "Guardians of the Galaxy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0180093", 
+      "rating": "9", 
+      "title": "Requiem for a Dream", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078748", 
+      "rating": "10", 
+      "title": "Alien", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082971", 
+      "rating": "9", 
+      "title": "Raiders of the Lost Ark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0848228", 
+      "rating": "8", 
+      "title": "The Avengers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083866", 
+      "rating": "9", 
+      "title": "E.T. the Extra-Terrestrial", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070047", 
+      "rating": "9", 
+      "title": "The Exorcist", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0145487", 
+      "rating": "9", 
+      "title": "Spider-Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0266697", 
+      "rating": "9", 
+      "title": "Kill Bill: Vol. 1", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118749", 
+      "rating": "9", 
+      "title": "Boogie Nights", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118799", 
+      "rating": "10", 
+      "title": "Life Is Beautiful", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0062622", 
+      "rating": "8", 
+      "title": "2001: A Space Odyssey", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0317705", 
+      "rating": "9", 
+      "title": "The Incredibles", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096895", 
+      "rating": "8", 
+      "title": "Batman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071230", 
+      "rating": "10", 
+      "title": "Blazing Saddles", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120903", 
+      "rating": "8", 
+      "title": "X-Men", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075860", 
+      "rating": "8", 
+      "title": "Close Encounters of the Third Kind", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0388795", 
+      "rating": "9", 
+      "title": "Brokeback Mountain", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0375679", 
+      "rating": "9", 
+      "title": "Crash", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0910970", 
+      "rating": "9", 
+      "title": "WALL·E", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0378194", 
+      "rating": "9", 
+      "title": "Kill Bill: Vol. 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0914798", 
+      "rating": "10", 
+      "title": "The Boy in the Striped Pajamas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119396", 
+      "rating": "8", 
+      "title": "Jackie Brown", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0175880", 
+      "rating": "9", 
+      "title": "Magnolia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0416320", 
+      "rating": "9", 
+      "title": "Match Point", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075686", 
+      "rating": "10", 
+      "title": "Annie Hall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0448157", 
+      "rating": "8", 
+      "title": "Hancock", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097216", 
+      "rating": "10", 
+      "title": "Do the Right Thing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0106226", 
+      "rating": "8", 
+      "title": "The Age of Innocence", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0443489", 
+      "rating": "8", 
+      "title": "Dreamgirls", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079261", 
+      "rating": "9", 
+      "title": "Hair", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084805", 
+      "rating": "9", 
+      "title": "Tootsie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112452", 
+      "rating": "9", 
+      "title": "Ballot Measure 9", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0408236", 
+      "rating": "10", 
+      "title": "Sweeney Todd: The Demon Barber of Fleet Street", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1791528", 
+      "rating": "3", 
+      "title": "Inherent Vice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "10", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0805564", 
+      "rating": "8", 
+      "title": "Lars and the Real Girl", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1273204", 
+      "rating": "5", 
+      "title": "David's Birthday", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0168501", 
+      "rating": "4", 
+      "title": "The Best Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0468489", 
+      "rating": "10", 
+      "title": "Half Nelson", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0042192", 
+      "rating": "9", 
+      "title": "All About Eve", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093512", 
+      "rating": "8", 
+      "title": "Maurice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120684", 
+      "rating": "8", 
+      "title": "Gods and Monsters", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "8", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068646", 
+      "rating": "9", 
+      "title": "The Godfather", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "9", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120663", 
+      "rating": "8", 
+      "title": "Eyes Wide Shut", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120586", 
+      "rating": "8", 
+      "title": "American History X", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0138097", 
+      "rating": "8", 
+      "title": "Shakespeare in Love", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033467", 
+      "rating": "10", 
+      "title": "Citizen Kane", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0296416"
+}

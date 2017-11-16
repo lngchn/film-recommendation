@@ -47,7 +47,7 @@ function callPyScript(dataToPython, req, res) {
 
   pyshell.end(function(err) {
     if(err) {
-      // throw err;
+      console.log(err);
       res.sendStatus(500);
     } else {
       let numOfFilmsToSave = recommendation_imdb_id.length;

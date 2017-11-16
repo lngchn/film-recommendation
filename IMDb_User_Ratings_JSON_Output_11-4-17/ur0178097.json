@@ -1,0 +1,815 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0115743", 
+      "rating": "7", 
+      "title": "The Boys Next Door", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0369903", 
+      "rating": "3", 
+      "title": "Scooby-Doo and the Monster of Mexico", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0081562", 
+      "rating": "6", 
+      "title": "Stir Crazy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0132347", 
+      "rating": "7", 
+      "title": "Mystery Men", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080474", 
+      "rating": "7", 
+      "title": "Brubaker", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113326", 
+      "rating": "5", 
+      "title": "Rumble in the Bronx", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "6", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108941", 
+      "rating": "7", 
+      "title": "The Stand", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0266543", 
+      "rating": "8", 
+      "title": "Finding Nemo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0379786", 
+      "rating": "8", 
+      "title": "Serenity", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111257", 
+      "rating": "7", 
+      "title": "Speed", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080745", 
+      "rating": "6", 
+      "title": "Flash Gordon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0158811", 
+      "rating": "7", 
+      "title": "Muppets from Space", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089280", 
+      "rating": "1", 
+      "title": "Hobgoblins", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1316037", 
+      "rating": "1", 
+      "title": "Birdemic: Shock and Terror", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0085811", 
+      "rating": "7", 
+      "title": "Krull", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086856", 
+      "rating": "7", 
+      "title": "The Adventures of Buckaroo Banzai Across the 8th Dimension", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089218", 
+      "rating": "7", 
+      "title": "The Goonies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088258", 
+      "rating": "8", 
+      "title": "This Is Spinal Tap", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092675", 
+      "rating": "6", 
+      "title": "Bloodsport", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0177789", 
+      "rating": "8", 
+      "title": "Galaxy Quest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097733", 
+      "rating": "7", 
+      "title": "Lethal Weapon 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0122151", 
+      "rating": "7", 
+      "title": "Lethal Weapon 4", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104714", 
+      "rating": "7", 
+      "title": "Lethal Weapon 3", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093409", 
+      "rating": "8", 
+      "title": "Lethal Weapon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081809", 
+      "rating": "6", 
+      "title": "ffolkes", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120784", 
+      "rating": "7", 
+      "title": "Payback", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071853", 
+      "rating": "8", 
+      "title": "Monty Python and the Holy Grail", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117128", 
+      "rating": "8", 
+      "title": "Mystery Science Theater 3000: The Movie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119116", 
+      "rating": "8", 
+      "title": "The Fifth Element", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0061191", 
+      "rating": "2", 
+      "title": "The Wild World of Batwoman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0052169", 
+      "rating": "2", 
+      "title": "The Screaming Skull", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107659", 
+      "rating": "6", 
+      "title": "Loaded Weapon 1", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0123322", 
+      "rating": "8", 
+      "title": "What Have We Learned, Charlie Brown?", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0081568", 
+      "rating": "8", 
+      "title": "The Stunt Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080377", 
+      "rating": "6", 
+      "title": "Any Which Way You Can", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080801", 
+      "rating": "7", 
+      "title": "The Gods Must Be Crazy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080761", 
+      "rating": "5", 
+      "title": "Friday the 13th", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054047", 
+      "rating": "8", 
+      "title": "The Magnificent Seven", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080487", 
+      "rating": "5", 
+      "title": "Caddyshack", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0055294", 
+      "rating": "2", 
+      "title": "The Phantom Planet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0124601", 
+      "rating": "8", 
+      "title": "The Forgotten Toys", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0070735", 
+      "rating": "8", 
+      "title": "The Sting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066765", 
+      "rating": "8", 
+      "title": "And Now for Something Completely Different", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110939", 
+      "rating": "7", 
+      "title": "Radioland Murders", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119918", 
+      "rating": "8", 
+      "title": "Pooh's Grand Adventure: The Search for Christopher Robin", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0089346", 
+      "rating": "7", 
+      "title": "Into the Night", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056197", 
+      "rating": "8", 
+      "title": "The Longest Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084352", 
+      "rating": "7", 
+      "title": "Monty Python Live at the Hollywood Bowl", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0103850", 
+      "rating": "8", 
+      "title": "Bob Roberts", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112691", 
+      "rating": "8", 
+      "title": "A Close Shave", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0098436", 
+      "rating": "8", 
+      "title": "The Tall Guy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104361", 
+      "rating": "9", 
+      "title": "A Grand Day Out", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0125454", 
+      "rating": "7", 
+      "title": "Paulie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0085959", 
+      "rating": "7", 
+      "title": "The Meaning of Life", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080391", 
+      "rating": "5", 
+      "title": "Attack of the Killer Tomatoes!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079945", 
+      "rating": "6", 
+      "title": "Star Trek: The Motion Picture", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092007", 
+      "rating": "8", 
+      "title": "Star Trek IV: The Voyage Home", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120844", 
+      "rating": "8", 
+      "title": "Star Trek: Insurrection", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079470", 
+      "rating": "7", 
+      "title": "Life of Brian", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084726", 
+      "rating": "8", 
+      "title": "Star Trek II: The Wrath of Khan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080461", 
+      "rating": "8", 
+      "title": "Bon Voyage, Charlie Brown (and Don't Come Back!!)", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076591", 
+      "rating": "8", 
+      "title": "Race for Your Life, Charlie Brown", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066476", 
+      "rating": "2", 
+      "title": "The Touch of Satan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0069289", 
+      "rating": "8", 
+      "title": "Snoopy Come Home", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076294", 
+      "rating": "2", 
+      "title": "The Last Dinosaur", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0064107", 
+      "rating": "8", 
+      "title": "A Boy Named Charlie Brown", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054673", 
+      "rating": "1", 
+      "title": "The Beast of Yucca Flats", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081693", 
+      "rating": "1", 
+      "title": "The Pumaman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0058007", 
+      "rating": "2", 
+      "title": "Devil Doll", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050118", 
+      "rating": "3", 
+      "title": "The Amazing Colossal Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108598", 
+      "rating": "8", 
+      "title": "The Wrong Trousers", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0105130", 
+      "rating": "8", 
+      "title": "Peter's Friends", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089118", 
+      "rating": "6", 
+      "title": "F/X", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091159", 
+      "rating": "5", 
+      "title": "Gung Ho", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095159", 
+      "rating": "8", 
+      "title": "A Fish Called Wanda", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091225", 
+      "rating": "1", 
+      "title": "Howard the Duck", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091605", 
+      "rating": "7", 
+      "title": "The Name of the Rose", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120587", 
+      "rating": "6", 
+      "title": "Antz", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092086", 
+      "rating": "5", 
+      "title": "¡Three Amigos!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053221", 
+      "rating": "7", 
+      "title": "Rio Bravo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090685", 
+      "rating": "6", 
+      "title": "Back to School", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0036613", 
+      "rating": "8", 
+      "title": "Arsenic and Old Lace", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0052077", 
+      "rating": "4", 
+      "title": "Plan 9 from Outer Space", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082971", 
+      "rating": "8", 
+      "title": "Raiders of the Lost Ark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050083", 
+      "rating": "9", 
+      "title": "12 Angry Men", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120762", 
+      "rating": "5", 
+      "title": "Mulan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097165", 
+      "rating": "10", 
+      "title": "Dead Poets Society", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088847", 
+      "rating": "7", 
+      "title": "The Breakfast Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067992", 
+      "rating": "8", 
+      "title": "Willy Wonka & the Chocolate Factory", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091042", 
+      "rating": "6", 
+      "title": "Ferris Bueller's Day Off", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097576", 
+      "rating": "7", 
+      "title": "Indiana Jones and the Last Crusade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0072431", 
+      "rating": "9", 
+      "title": "Young Frankenstein", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0059742", 
+      "rating": "8", 
+      "title": "The Sound of Music", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120591", 
+      "rating": "7", 
+      "title": "Armageddon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112384", 
+      "rating": "8", 
+      "title": "Apollo 13", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120901", 
+      "rating": "5", 
+      "title": "Wrongfully Accused", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091544", 
+      "rating": "4", 
+      "title": "Monster in the Closet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0145529", 
+      "rating": "3", 
+      "title": "Time Chasers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098061", 
+      "rating": "7", 
+      "title": "Paperhouse", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0069945", 
+      "rating": "4", 
+      "title": "Dark Star", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098987", 
+      "rating": "6", 
+      "title": "The Adventures of Ford Fairlane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0063462", 
+      "rating": "8", 
+      "title": "The Producers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0129387", 
+      "rating": "4", 
+      "title": "There's Something About Mary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080339", 
+      "rating": "8", 
+      "title": "Airplane!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0131550", 
+      "rating": "2", 
+      "title": "The Final Sacrifice", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0118137", 
+      "rating": "2", 
+      "title": "Werewolf", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0052289", 
+      "rating": "2", 
+      "title": "The Thing That Couldn't Die", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0051128", 
+      "rating": "1", 
+      "title": "The Undead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0052286", 
+      "rating": "1", 
+      "title": "Terror from the Year 5000", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060753", 
+      "rating": "1", 
+      "title": "Night Train to Mundo Fine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107910", 
+      "rating": "3", 
+      "title": "Quest of the Delta Knights", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0057507", 
+      "rating": "1", 
+      "title": "The Skydivers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "9", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034583", 
+      "rating": "7", 
+      "title": "Casablanca", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087337", 
+      "rating": "7", 
+      "title": "Give My Regards to Broad Street", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060666", 
+      "rating": "1", 
+      "title": "Manos: The Hands of Fate", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073396", 
+      "rating": "1", 
+      "title": "Mitchell", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096149", 
+      "rating": "2", 
+      "title": "Space Mutiny", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084370", 
+      "rating": "7", 
+      "title": "My Favorite Year", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0026778", 
+      "rating": "8", 
+      "title": "A Night at the Opera", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075222", 
+      "rating": "7", 
+      "title": "Silent Movie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119360", 
+      "rating": "7", 
+      "title": "In & Out", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076363", 
+      "rating": "9", 
+      "title": "The Many Adventures of Winnie the Pooh", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0062136", 
+      "rating": "7", 
+      "title": "Playtime", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033870", 
+      "rating": "8", 
+      "title": "The Maltese Falcon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "9", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093779", 
+      "rating": "7", 
+      "title": "The Princess Bride", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086190", 
+      "rating": "8", 
+      "title": "Star Wars: Episode VI - Return of the Jedi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080684", 
+      "rating": "8", 
+      "title": "Star Wars: Episode V - The Empire Strikes Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095016", 
+      "rating": "7", 
+      "title": "Die Hard", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057012", 
+      "rating": "8", 
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119654", 
+      "rating": "6", 
+      "title": "Men in Black", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120888", 
+      "rating": "6", 
+      "title": "The Wedding Singer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107616", 
+      "rating": "8", 
+      "title": "Much Ado About Nothing", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0178097"
+}

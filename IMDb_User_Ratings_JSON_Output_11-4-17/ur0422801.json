@@ -1,0 +1,503 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0300556", 
+      "rating": "6", 
+      "title": "Timeline", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0172495", 
+      "rating": "9", 
+      "title": "Gladiator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089457", 
+      "rating": "7", 
+      "title": "Ladyhawke", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0417397", 
+      "rating": "8", 
+      "title": "9th Company", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066549", 
+      "rating": "8", 
+      "title": "Waterloo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082661", 
+      "rating": "9", 
+      "title": "Lili Marleen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066473", 
+      "rating": "8", 
+      "title": "Tora! Tora! Tora!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116136", 
+      "rating": "8", 
+      "title": "DragonHeart", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0130414", 
+      "rating": "9", 
+      "title": "Merlin", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0113071", 
+      "rating": "4", 
+      "title": "First Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093779", 
+      "rating": "8", 
+      "title": "The Princess Bride", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120737", 
+      "rating": "9", 
+      "title": "The Lord of the Rings: The Fellowship of the Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167260", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Return of the King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0903624", 
+      "rating": "7", 
+      "title": "The Hobbit: An Unexpected Journey", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0183790", 
+      "rating": "7", 
+      "title": "A Knight's Tale", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089469", 
+      "rating": "8", 
+      "title": "Legend", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167261", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Two Towers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0363771", 
+      "rating": "5", 
+      "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102798", 
+      "rating": "6", 
+      "title": "Robin Hood: Prince of Thieves", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047478", 
+      "rating": "9", 
+      "title": "Seven Samurai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082198", 
+      "rating": "6", 
+      "title": "Conan the Barbarian", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071853", 
+      "rating": "10", 
+      "title": "Monty Python and the Holy Grail", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082348", 
+      "rating": "9", 
+      "title": "Excalibur", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092829", 
+      "rating": "8", 
+      "title": "Strawman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099776", 
+      "rating": "9", 
+      "title": "Europa Europa", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078492", 
+      "rating": "7", 
+      "title": "The Wild Geese", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110081", 
+      "rating": "8", 
+      "title": "To Live", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093137", 
+      "rating": "8", 
+      "title": "Hamburger Hill", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097499", 
+      "rating": "8", 
+      "title": "Henry V", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0279111", 
+      "rating": "4", 
+      "title": "Gods and Generals", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074695", 
+      "rating": "9", 
+      "title": "Cross of Iron", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067277", 
+      "rating": "8", 
+      "title": "Johnny Got His Gun", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078875", 
+      "rating": "6", 
+      "title": "The Tin Drum", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074899", 
+      "rating": "5", 
+      "title": "Midway", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095956", 
+      "rating": "3", 
+      "title": "Rambo III", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050212", 
+      "rating": "7", 
+      "title": "The Bridge on the River Kwai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096969", 
+      "rating": "7", 
+      "title": "Born on the Fourth of July", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056197", 
+      "rating": "6", 
+      "title": "The Longest Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066206", 
+      "rating": "6", 
+      "title": "Patton", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0418689", 
+      "rating": "7", 
+      "title": "Flags of our Fathers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0498380", 
+      "rating": "9", 
+      "title": "Letters from Iwo Jima", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075784", 
+      "rating": "8", 
+      "title": "A Bridge Too Far", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093105", 
+      "rating": "8", 
+      "title": "Good Morning, Vietnam", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087553", 
+      "rating": "8", 
+      "title": "The Killing Fields", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107007", 
+      "rating": "9", 
+      "title": "Gettysburg", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0159273", 
+      "rating": "6", 
+      "title": "Behind Enemy Lines", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115956", 
+      "rating": "6", 
+      "title": "Courage Under Fire", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0454824", 
+      "rating": "6", 
+      "title": "Flyboys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0361748", 
+      "rating": "9", 
+      "title": "Inglourious Basterds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0457430", 
+      "rating": "8", 
+      "title": "Pan's Labyrinth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120815", 
+      "rating": "8", 
+      "title": "Saving Private Ryan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120201", 
+      "rating": "9", 
+      "title": "Starship Troopers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112573", 
+      "rating": "7", 
+      "title": "Braveheart", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078788", 
+      "rating": "9", 
+      "title": "Apocalypse Now", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0416449", 
+      "rating": "5", 
+      "title": "300", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120762", 
+      "rating": "5", 
+      "title": "Mulan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093058", 
+      "rating": "8", 
+      "title": "Full Metal Jacket", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2084970", 
+      "rating": "9", 
+      "title": "The Imitation Game", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2713180", 
+      "rating": "8", 
+      "title": "Fury", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0265086", 
+      "rating": "8", 
+      "title": "Black Hawk Down", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2179136", 
+      "rating": "7", 
+      "title": "American Sniper", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0077416", 
+      "rating": "8", 
+      "title": "The Deer Hunter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0887912", 
+      "rating": "9", 
+      "title": "The Hurt Locker", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0320661", 
+      "rating": "8", 
+      "title": "Kingdom of Heaven", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0031381", 
+      "rating": "7", 
+      "title": "Gone with the Wind", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091763", 
+      "rating": "9", 
+      "title": "Platoon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0363163", 
+      "rating": "9", 
+      "title": "Downfall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057012", 
+      "rating": "8", 
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0829150", 
+      "rating": "6", 
+      "title": "Dracula Untold", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0325710", 
+      "rating": "7", 
+      "title": "The Last Samurai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057115", 
+      "rating": "6", 
+      "title": "The Great Escape", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120863", 
+      "rating": "9", 
+      "title": "The Thin Red Line", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0346491", 
+      "rating": "4", 
+      "title": "Alexander", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0311113", 
+      "rating": "7", 
+      "title": "Master and Commander: The Far Side of the World", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0215750", 
+      "rating": "8", 
+      "title": "Enemy at the Gates", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0462499", 
+      "rating": "5", 
+      "title": "Rambo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095327", 
+      "rating": "6", 
+      "title": "Grave of the Fireflies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1568911", 
+      "rating": "7", 
+      "title": "War Horse", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0985699", 
+      "rating": "8", 
+      "title": "Valkyrie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097441", 
+      "rating": "7", 
+      "title": "Glory", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092965", 
+      "rating": "9", 
+      "title": "Empire of the Sun", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0169880", 
+      "rating": "10", 
+      "title": "Neon Genesis Evangelion: Death & Rebirth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0169858", 
+      "rating": "9", 
+      "title": "Neon Genesis Evangelion: The End of Evangelion", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0422801"
+}

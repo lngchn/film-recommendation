@@ -1,0 +1,473 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt1862079", 
+      "rating": "9", 
+      "title": "Safety Not Guaranteed", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt5052448", 
+      "rating": "9", 
+      "title": "Get Out", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071315", 
+      "rating": "9", 
+      "title": "Chinatown", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1783732", 
+      "rating": "9", 
+      "title": "John Dies at the End", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119535", 
+      "rating": "8", 
+      "title": "A Life Less Ordinary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1767354", 
+      "rating": "8", 
+      "title": "Odd Thomas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113161", 
+      "rating": "7", 
+      "title": "Get Shorty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120815", 
+      "rating": "9", 
+      "title": "Saving Private Ryan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0177789", 
+      "rating": "8", 
+      "title": "Galaxy Quest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0283015", 
+      "rating": "8", 
+      "title": "Stranded", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0244521", 
+      "rating": "9", 
+      "title": "Funny Money", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0246578", 
+      "rating": "8", 
+      "title": "Donnie Darko", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0085852", 
+      "rating": "7", 
+      "title": "Liquid Sky", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0181875", 
+      "rating": "8", 
+      "title": "Almost Famous", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0181689", 
+      "rating": "8", 
+      "title": "Minority Report", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0217869", 
+      "rating": "8", 
+      "title": "Unbreakable", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0286106", 
+      "rating": "10", 
+      "title": "Signs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0295178", 
+      "rating": "5", 
+      "title": "Austin Powers in Goldmember", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0285742", 
+      "rating": "9", 
+      "title": "Monster's Ball", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0145487", 
+      "rating": "7", 
+      "title": "Spider-Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0121765", 
+      "rating": "4", 
+      "title": "Star Wars: Episode II - Attack of the Clones", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0245574", 
+      "rating": "8", 
+      "title": "Y Tu Mamá También", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0241527", 
+      "rating": "9", 
+      "title": "Harry Potter and the Sorcerer's Stone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053125", 
+      "rating": "9", 
+      "title": "North by Northwest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119349", 
+      "rating": "8", 
+      "title": "The Ice Storm", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0181865", 
+      "rating": "10", 
+      "title": "Traffic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0172495", 
+      "rating": "4", 
+      "title": "Gladiator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0190332", 
+      "rating": "9", 
+      "title": "Crouching Tiger, Hidden Dragon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0209958", 
+      "rating": "9", 
+      "title": "The Cell", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091217", 
+      "rating": "8", 
+      "title": "Hoosiers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120728", 
+      "rating": "5", 
+      "title": "The Last Days of Disco", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0146882", 
+      "rating": "9", 
+      "title": "High Fidelity", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0171804", 
+      "rating": "9", 
+      "title": "Boys Don't Cry", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0185014", 
+      "rating": "9", 
+      "title": "Wonder Boys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0143145", 
+      "rating": "8", 
+      "title": "The World Is Not Enough", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0181984", 
+      "rating": "8", 
+      "title": "Boiler Room", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0162661", 
+      "rating": "6", 
+      "title": "Sleepy Hollow", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103874", 
+      "rating": "4", 
+      "title": "Dracula", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0175880", 
+      "rating": "9", 
+      "title": "Magnolia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098258", 
+      "rating": "9", 
+      "title": "Say Anything...", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0146838", 
+      "rating": "8", 
+      "title": "Any Given Sunday", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "10", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119177", 
+      "rating": "8", 
+      "title": "Gattaca", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0134119", 
+      "rating": "7", 
+      "title": "The Talented Mr. Ripley", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0155267", 
+      "rating": "8", 
+      "title": "The Thomas Crown Affair", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116324", 
+      "rating": "8", 
+      "title": "Flirting with Disaster", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120188", 
+      "rating": "8", 
+      "title": "Three Kings", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119675", 
+      "rating": "6", 
+      "title": "Mimic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167404", 
+      "rating": "9", 
+      "title": "The Sixth Sense", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120601", 
+      "rating": "7", 
+      "title": "Being John Malkovich", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0145681", 
+      "rating": "7", 
+      "title": "The Bone Collector", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0062906", 
+      "rating": "9", 
+      "title": "De Düva: The Dove", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0169547", 
+      "rating": "9", 
+      "title": "American Beauty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120915", 
+      "rating": "8", 
+      "title": "Star Wars: Episode I - The Phantom Menace", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120797", 
+      "rating": "7", 
+      "title": "Pushing Tin", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0137494", 
+      "rating": "7", 
+      "title": "Entrapment", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120616", 
+      "rating": "8", 
+      "title": "The Mummy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089941", 
+      "rating": "10", 
+      "title": "Runaway Train", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076161", 
+      "rating": "8", 
+      "title": "The Hound of the Baskervilles", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120324", 
+      "rating": "9", 
+      "title": "A Simple Plan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120458", 
+      "rating": "6", 
+      "title": "Virus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120844", 
+      "rating": "7", 
+      "title": "Star Trek: Insurrection", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118661", 
+      "rating": "2", 
+      "title": "The Avengers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133751", 
+      "rating": "8", 
+      "title": "The Faculty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120877", 
+      "rating": "9", 
+      "title": "Vampires", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120782", 
+      "rating": "7", 
+      "title": "Palmetto", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0031885", 
+      "rating": "10", 
+      "title": "The Rules of the Game", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082783", 
+      "rating": "10", 
+      "title": "My Dinner with Andre", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120255", 
+      "rating": "9", 
+      "title": "The Sweet Hereafter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082146", 
+      "rating": "2", 
+      "title": "Caveman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0077412", 
+      "rating": "9", 
+      "title": "A Death in Canaan", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0078748", 
+      "rating": "9", 
+      "title": "Alien", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090605", 
+      "rating": "9", 
+      "title": "Aliens", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118749", 
+      "rating": "9", 
+      "title": "Boogie Nights", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120783", 
+      "rating": "8", 
+      "title": "The Parent Trap", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119822", 
+      "rating": "8", 
+      "title": "As Good as It Gets", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0185937", 
+      "rating": "10", 
+      "title": "The Blair Witch Project", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120890", 
+      "rating": "7", 
+      "title": "Wild Things", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0079143"
+}

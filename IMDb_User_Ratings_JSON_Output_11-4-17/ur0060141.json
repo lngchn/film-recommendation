@@ -1,0 +1,605 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0093058", 
+      "rating": "10", 
+      "title": "Full Metal Jacket", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0049833", 
+      "rating": "10", 
+      "title": "The Ten Commandments", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082089", 
+      "rating": "10", 
+      "title": "Body Heat", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0841046", 
+      "rating": "9", 
+      "title": "Walk Hard: The Dewey Cox Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3062074", 
+      "rating": "10", 
+      "title": "Sharknado 2: The Second One", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt2194326", 
+      "rating": "2", 
+      "title": "History of the Eagles", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0114367", 
+      "rating": "9", 
+      "title": "Screamers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2785390", 
+      "rating": "10", 
+      "title": "America: Imagine the World Without Her", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt1622547", 
+      "rating": "1", 
+      "title": "30 Minutes or Less", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1212974", 
+      "rating": "8", 
+      "title": "Bitch Slap", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1399097", 
+      "rating": "8", 
+      "title": "The Strat Pack", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0119116", 
+      "rating": "10", 
+      "title": "The Fifth Element", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1855401", 
+      "rating": "1", 
+      "title": "Tim and Eric's Billion Dollar Movie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1833001", 
+      "rating": "10", 
+      "title": "Jason Segel & Paul Rudd Meet Rush", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt1323605", 
+      "rating": "10", 
+      "title": "Suck", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094169", 
+      "rating": "9", 
+      "title": "Tough Guys Don't Dance", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0388482", 
+      "rating": "9", 
+      "title": "Transporter 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0407304", 
+      "rating": "1", 
+      "title": "War of the Worlds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0339291", 
+      "rating": "6", 
+      "title": "A Series of Unfortunate Events", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0190590", 
+      "rating": "10", 
+      "title": "O Brother, Where Art Thou?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0335245", 
+      "rating": "10", 
+      "title": "The Ladykillers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088286", 
+      "rating": "9", 
+      "title": "Top Secret!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114928", 
+      "rating": "1", 
+      "title": "White Man's Burden", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0284978", 
+      "rating": "8", 
+      "title": "Cypher", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0368891", 
+      "rating": "5", 
+      "title": "National Treasure", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0130414", 
+      "rating": "8", 
+      "title": "Merlin", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0248845", 
+      "rating": "10", 
+      "title": "Hedwig and the Angry Inch", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0327056", 
+      "rating": "2", 
+      "title": "Mystic River", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0279111", 
+      "rating": "8", 
+      "title": "Gods and Generals", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0285823", 
+      "rating": "9", 
+      "title": "Once Upon a Time in Mexico", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112851", 
+      "rating": "9", 
+      "title": "Desperado", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083366", 
+      "rating": "9", 
+      "title": "Zorro: The Gay Blade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081184", 
+      "rating": "8", 
+      "title": "Motel Hell", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0295552", 
+      "rating": "7", 
+      "title": "Rare Birds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0264464", 
+      "rating": "5", 
+      "title": "Catch Me If You Can", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0225071", 
+      "rating": "5", 
+      "title": "Angel Eyes", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120094", 
+      "rating": "7", 
+      "title": "Selena", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0245562", 
+      "rating": "3", 
+      "title": "Windtalkers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0252076", 
+      "rating": "7", 
+      "title": "Maid in Manhattan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0271259", 
+      "rating": "5", 
+      "title": "Welcome to Collinwood", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0298130", 
+      "rating": "8", 
+      "title": "The Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0261289", 
+      "rating": "5", 
+      "title": "Serving Sara", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079367", 
+      "rating": "9", 
+      "title": "The Jerk", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120201", 
+      "rating": "9", 
+      "title": "Starship Troopers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120890", 
+      "rating": "10", 
+      "title": "Wild Things", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103016", 
+      "rating": "8", 
+      "title": "Switch", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087800", 
+      "rating": "9", 
+      "title": "A Nightmare on Elm Street", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0279889", 
+      "rating": "6", 
+      "title": "Joe Somebody", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108941", 
+      "rating": "10", 
+      "title": "The Stand", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0214388", 
+      "rating": "7", 
+      "title": "100 Girls", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0219224", 
+      "rating": "9", 
+      "title": "On the Beach", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0115438", 
+      "rating": "8", 
+      "title": "2 Days in the Valley", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079714", 
+      "rating": "9", 
+      "title": "Phantasm", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0261392", 
+      "rating": "2", 
+      "title": "Jay and Silent Bob Strike Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0184791", 
+      "rating": "2", 
+      "title": "O", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095765", 
+      "rating": "10", 
+      "title": "Cinema Paradiso", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0258038", 
+      "rating": "1", 
+      "title": "Pootie Tang", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0203009", 
+      "rating": "9", 
+      "title": "Moulin Rouge!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0140743", 
+      "rating": "8", 
+      "title": "Invasion: Earth", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0132245", 
+      "rating": "4", 
+      "title": "Driven", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0177789", 
+      "rating": "9", 
+      "title": "Galaxy Quest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0236348", 
+      "rating": "4", 
+      "title": "Josie and the Pussycats", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0208092", 
+      "rating": "9", 
+      "title": "Snatch", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110413", 
+      "rating": "10", 
+      "title": "Léon: The Professional", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0185431", 
+      "rating": "2", 
+      "title": "Little Nicky", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0171580", 
+      "rating": "4", 
+      "title": "Nurse Betty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120913", 
+      "rating": "9", 
+      "title": "Titan A.E.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116367", 
+      "rating": "8", 
+      "title": "From Dusk Till Dawn", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0085334", 
+      "rating": "10", 
+      "title": "A Christmas Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082783", 
+      "rating": "9", 
+      "title": "My Dinner with Andre", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0043456", 
+      "rating": "8", 
+      "title": "The Day the Earth Stood Still", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084737", 
+      "rating": "7", 
+      "title": "Summer Lovers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078841", 
+      "rating": "8", 
+      "title": "Being There", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167404", 
+      "rating": "10", 
+      "title": "The Sixth Sense", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075849", 
+      "rating": "9", 
+      "title": "Cinderella", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088414", 
+      "rating": "4", 
+      "title": "The Woman in Red", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0142804", 
+      "rating": "8", 
+      "title": "Resurrection", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092532", 
+      "rating": "6", 
+      "title": "Alien from L.A.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120222", 
+      "rating": "5", 
+      "title": "Stranger in the House", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110169", 
+      "rating": "1", 
+      "title": "It's Pat: The Movie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093822", 
+      "rating": "7", 
+      "title": "Raising Arizona", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "10", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093779", 
+      "rating": "10", 
+      "title": "The Princess Bride", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "6", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078748", 
+      "rating": "9", 
+      "title": "Alien", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080684", 
+      "rating": "10", 
+      "title": "Star Wars: Episode V - The Empire Strikes Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088763", 
+      "rating": "9", 
+      "title": "Back to the Future", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080455", 
+      "rating": "8", 
+      "title": "The Blues Brothers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0061512", 
+      "rating": "10", 
+      "title": "Cool Hand Luke", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116996", 
+      "rating": "9", 
+      "title": "Mars Attacks!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096926", 
+      "rating": "8", 
+      "title": "The Big Picture", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102511", 
+      "rating": "10", 
+      "title": "Naked Lunch", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086856", 
+      "rating": "10", 
+      "title": "The Adventures of Buckaroo Banzai Across the 8th Dimension", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088247", 
+      "rating": "9", 
+      "title": "The Terminator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103064", 
+      "rating": "10", 
+      "title": "Terminator 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090756", 
+      "rating": "10", 
+      "title": "Blue Velvet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088680", 
+      "rating": "8", 
+      "title": "After Hours", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088258", 
+      "rating": "9", 
+      "title": "This Is Spinal Tap", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114558", 
+      "rating": "9", 
+      "title": "Strange Days", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078446", 
+      "rating": "9", 
+      "title": "Up in Smoke", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0060141"
+}

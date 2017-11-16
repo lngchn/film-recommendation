@@ -1,0 +1,605 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt2887322", 
+      "rating": "8", 
+      "title": "The Saratov Approach", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2145829", 
+      "rating": "7", 
+      "title": "Robot Overlords", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2388920", 
+      "rating": "7", 
+      "title": "Reel Evil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1204342", 
+      "rating": "9", 
+      "title": "The Muppets", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0770828", 
+      "rating": "6", 
+      "title": "Man of Steel", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0970452", 
+      "rating": "4", 
+      "title": "Solomon Kane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107387", 
+      "rating": "3", 
+      "title": "Leprechaun", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1219822", 
+      "rating": "6", 
+      "title": "BreadCrumbs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1151919", 
+      "rating": "6", 
+      "title": "On a Dark and Stormy Night", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1219342", 
+      "rating": "4", 
+      "title": "Legend of the Guardians: The Owls of Ga'Hoole", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1323594", 
+      "rating": "8", 
+      "title": "Despicable Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1280491", 
+      "rating": "1", 
+      "title": "Baseline Killer", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt1462562", 
+      "rating": "4", 
+      "title": "Life Room", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0279479", 
+      "rating": "3", 
+      "title": "Train Quest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0286106", 
+      "rating": "4", 
+      "title": "Signs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0348008", 
+      "rating": "9", 
+      "title": "Shockheaded", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt1340684", 
+      "rating": "2", 
+      "title": "Snuffin' Zombies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0989760", 
+      "rating": "8", 
+      "title": "Suspension", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0783538", 
+      "rating": "5", 
+      "title": "Lady Magdalene's", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0234516", 
+      "rating": "6", 
+      "title": "The President's Man", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt1174689", 
+      "rating": "5", 
+      "title": "Dangerous Worry Dolls", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0367882", 
+      "rating": "5", 
+      "title": "Indiana Jones and the Kingdom of the Crystal Skull", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1071972", 
+      "rating": "4", 
+      "title": "Wingrave", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0120361", 
+      "rating": "9", 
+      "title": "Townies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1155062", 
+      "rating": "7", 
+      "title": "Loop", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1160940", 
+      "rating": "1", 
+      "title": "Slaughtered", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt1042503", 
+      "rating": "6", 
+      "title": "Ghost Month", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0486617", 
+      "rating": "3", 
+      "title": "The Horror of H.P. Lovecraft", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0465517", 
+      "rating": "7", 
+      "title": "Zombies Anonymous", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0800139", 
+      "rating": "9", 
+      "title": "My Skin!", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0814004", 
+      "rating": "8", 
+      "title": "The Altruist", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0805511", 
+      "rating": "8", 
+      "title": "Confinement", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0428212", 
+      "rating": "6", 
+      "title": "All Souls Day: Dia de los Muertos", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0460800", 
+      "rating": "8", 
+      "title": "Frankenstein Reborn", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0382011", 
+      "rating": "6", 
+      "title": "Ghost Lake", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0213248", 
+      "rating": "1", 
+      "title": "Shower of Blood", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0128802", 
+      "rating": "1", 
+      "title": "Unnaturally Born Killers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0301165", 
+      "rating": "7", 
+      "title": "Dead & Rotting", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0146369", 
+      "rating": "1", 
+      "title": "Zombie Gang Bangers", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0270991", 
+      "rating": "3", 
+      "title": "Hollywood Vampyr", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0374526", 
+      "rating": "8", 
+      "title": "Batman: Dead End", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0210012", 
+      "rating": "1", 
+      "title": "Dragon Fury II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0181689", 
+      "rating": "6", 
+      "title": "Minority Report", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0204700", 
+      "rating": "3", 
+      "title": "Trouble Every Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0127302", 
+      "rating": "8", 
+      "title": "The Sticky Fingers of Time", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0306676", 
+      "rating": "10", 
+      "title": "The Confetti Brothers", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0157016", 
+      "rating": "1", 
+      "title": "I Stand Alone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0275229", 
+      "rating": "2", 
+      "title": "Blood Red Planet", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0091630", 
+      "rating": "8", 
+      "title": "Night of the Creeps", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117566", 
+      "rating": "4", 
+      "title": "Sci-fighters", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0225481", 
+      "rating": "6", 
+      "title": "The Dead Hate the Living!", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0083542", 
+      "rating": "7", 
+      "title": "Alone in the Dark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0138704", 
+      "rating": "10", 
+      "title": "Pi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089665", 
+      "rating": "2", 
+      "title": "The Nail Gun Massacre", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0090881", 
+      "rating": "7", 
+      "title": "Crawlspace", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104391", 
+      "rating": "4", 
+      "title": "Hard Hunted", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079788", 
+      "rating": "5", 
+      "title": "Zombie Holocaust", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089907", 
+      "rating": "8", 
+      "title": "The Return of the Living Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107668", 
+      "rating": "2", 
+      "title": "Nemesis", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0130762", 
+      "rating": "5", 
+      "title": "Hellinger", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0116365", 
+      "rating": "7", 
+      "title": "The Frighteners", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114196", 
+      "rating": "4", 
+      "title": "Proteus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112634", 
+      "rating": "6", 
+      "title": "Carnosaur 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094712", 
+      "rating": "8", 
+      "title": "Bat*21", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109551", 
+      "rating": "5", 
+      "title": "The Dark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075342", 
+      "rating": "5", 
+      "title": "The Town That Dreaded Sundown", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114872", 
+      "rating": "5", 
+      "title": "Voodoo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087909", 
+      "rating": "6", 
+      "title": "Phenomena", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110620", 
+      "rating": "3", 
+      "title": "Nadja", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114568", 
+      "rating": "9", 
+      "title": "Stripteaser", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113607", 
+      "rating": "6", 
+      "title": "Terminal Virus", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0099474", 
+      "rating": "5", 
+      "title": "Dune Warriors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092006", 
+      "rating": "2", 
+      "title": "Star Crystal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0156115", 
+      "rating": "5", 
+      "title": "Supreme Sanction", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0100291", 
+      "rating": "2", 
+      "title": "Omega Cop", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093872", 
+      "rating": "1", 
+      "title": "Robot Holocaust", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092297", 
+      "rating": "3", 
+      "title": "Zombie Nightmare", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081415", 
+      "rating": "4", 
+      "title": "Night of the Werewolf", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109589", 
+      "rating": "7", 
+      "title": "Deep Red", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0098996", 
+      "rating": "3", 
+      "title": "Aftershock", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073586", 
+      "rating": "7", 
+      "title": "Psychic Killer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100975", 
+      "rating": "3", 
+      "title": "Xtro II: The Second Encounter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100618", 
+      "rating": "2", 
+      "title": "Initiation: Silent Night, Deadly Night 4", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0167438", 
+      "rating": "4", 
+      "title": "Talisman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117497", 
+      "rating": "5", 
+      "title": "Robo Warriors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100466", 
+      "rating": "3", 
+      "title": "Red Blooded American Girl", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078089", 
+      "rating": "3", 
+      "title": "Planet of Dinosaurs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054240", 
+      "rating": "1", 
+      "title": "Orgy of the Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0138703", 
+      "rating": "7", 
+      "title": "Phantasm IV: Oblivion", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114193", 
+      "rating": "4", 
+      "title": "Project: Metalbeast", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0170459", 
+      "rating": "4", 
+      "title": "Project Vampire", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113881", 
+      "rating": "4", 
+      "title": "Mutant Species", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110215", 
+      "rating": "7", 
+      "title": "Jungleground", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099749", 
+      "rating": "3", 
+      "title": "Headhunter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076380", 
+      "rating": "3", 
+      "title": "Meatcleaver Massacre", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0122037", 
+      "rating": "7", 
+      "title": "The Dead Pit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104061", 
+      "rating": "7", 
+      "title": "Dead Boyz Can't Fly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109449", 
+      "rating": "4", 
+      "title": "The Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0106636", 
+      "rating": "5", 
+      "title": "Catacombs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0126820", 
+      "rating": "8", 
+      "title": "Bloodletting", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0338969"
+}

@@ -1,0 +1,743 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0083658", 
+      "rating": "9", 
+      "title": "Blade Runner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3371366", 
+      "rating": "3", 
+      "title": "Transformers: The Last Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086203", 
+      "rating": "7", 
+      "title": "Rock & Rule", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2316204", 
+      "rating": "6", 
+      "title": "Alien: Covenant", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2034800", 
+      "rating": "5", 
+      "title": "The Great Wall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3896198", 
+      "rating": "8", 
+      "title": "Guardians of the Galaxy Vol. 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt5013056", 
+      "rating": "7", 
+      "title": "Dunkirk", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3748528", 
+      "rating": "8", 
+      "title": "Rogue One", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0816692", 
+      "rating": "9", 
+      "title": "Interstellar", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1431045", 
+      "rating": "9", 
+      "title": "Deadpool", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3731562", 
+      "rating": "7", 
+      "title": "Kong: Skull Island", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3498820", 
+      "rating": "8", 
+      "title": "Captain America: Civil War", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1211837", 
+      "rating": "8", 
+      "title": "Doctor Strange", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3385516", 
+      "rating": "6", 
+      "title": "X-Men: Apocalypse", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2379713", 
+      "rating": "8", 
+      "title": "Spectre", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3659388", 
+      "rating": "9", 
+      "title": "The Martian", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116629", 
+      "rating": "7", 
+      "title": "Independence Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1877832", 
+      "rating": "8", 
+      "title": "X-Men: Days of Future Past", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082340", 
+      "rating": "9", 
+      "title": "Escape from New York", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091203", 
+      "rating": "9", 
+      "title": "Highlander", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081505", 
+      "rating": "9", 
+      "title": "The Shining", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167404", 
+      "rating": "9", 
+      "title": "The Sixth Sense", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070047", 
+      "rating": "10", 
+      "title": "The Exorcist", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084787", 
+      "rating": "9", 
+      "title": "The Thing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090605", 
+      "rating": "9", 
+      "title": "Aliens", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2799166", 
+      "rating": "3", 
+      "title": "The Pyramid", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3062096", 
+      "rating": "6", 
+      "title": "Inferno", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1540011", 
+      "rating": "6", 
+      "title": "Blair Witch", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098627", 
+      "rating": "7", 
+      "title": "Weekend at Bernie's", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1386697", 
+      "rating": "6", 
+      "title": "Suicide Squad", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1628841", 
+      "rating": "6", 
+      "title": "Independence Day: Resurgence", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2277860", 
+      "rating": "8", 
+      "title": "Finding Dory", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2209764", 
+      "rating": "6", 
+      "title": "Transcendence", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1519461", 
+      "rating": "4", 
+      "title": "Area 51", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2140379", 
+      "rating": "6", 
+      "title": "Self/less", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2975590", 
+      "rating": "5", 
+      "title": "Batman v Superman: Dawn of Justice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3460252", 
+      "rating": "8", 
+      "title": "The Hateful Eight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2879552", 
+      "rating": "7", 
+      "title": "11.22.63", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt3387542", 
+      "rating": "5", 
+      "title": "The Forest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2321549", 
+      "rating": "5", 
+      "title": "The Babadook", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1536044", 
+      "rating": "7", 
+      "title": "Paranormal Activity 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0369610", 
+      "rating": "7", 
+      "title": "Jurassic World", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1596363", 
+      "rating": "8", 
+      "title": "The Big Short", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0796366", 
+      "rating": "9", 
+      "title": "Star Trek", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0770828", 
+      "rating": "4", 
+      "title": "Man of Steel", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0458339", 
+      "rating": "8", 
+      "title": "Captain America: The First Avenger", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3567288", 
+      "rating": "6", 
+      "title": "The Visit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1046173", 
+      "rating": "6", 
+      "title": "G.I. Joe: The Rise of Cobra", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1355683", 
+      "rating": "8", 
+      "title": "Black Mass", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2488496", 
+      "rating": "9", 
+      "title": "Star Wars: The Force Awakens", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1699231", 
+      "rating": "5", 
+      "title": "Quarantine 2: Terminal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2918436", 
+      "rating": "5", 
+      "title": "The Lazarus Effect", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1663662", 
+      "rating": "6", 
+      "title": "Pacific Rim", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078748", 
+      "rating": "9", 
+      "title": "Alien", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0848228", 
+      "rating": "8", 
+      "title": "The Avengers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0455944", 
+      "rating": "6", 
+      "title": "The Equalizer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0903624", 
+      "rating": "9", 
+      "title": "The Hobbit: An Unexpected Journey", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1170358", 
+      "rating": "9", 
+      "title": "The Hobbit: The Desolation of Smaug", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0418279", 
+      "rating": "7", 
+      "title": "Transformers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2872732", 
+      "rating": "5", 
+      "title": "Lucy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0365748", 
+      "rating": "9", 
+      "title": "Shaun of the Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1038988", 
+      "rating": "9", 
+      "title": "[Rec]", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3235888", 
+      "rating": "4", 
+      "title": "It Follows", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2717822", 
+      "rating": "2", 
+      "title": "Blackhat", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0470752", 
+      "rating": "9", 
+      "title": "Ex Machina", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2395427", 
+      "rating": "8", 
+      "title": "Avengers: Age of Ultron", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1392190", 
+      "rating": "8", 
+      "title": "Mad Max: Fury Road", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0449467", 
+      "rating": "4", 
+      "title": "Babel", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0780607", 
+      "rating": "4", 
+      "title": "The Signal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1525366", 
+      "rating": "2", 
+      "title": "Grabbers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1031280", 
+      "rating": "8", 
+      "title": "Splinter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0806203", 
+      "rating": "6", 
+      "title": "Carriers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0261983", 
+      "rating": "4", 
+      "title": "Session 9", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3387648", 
+      "rating": "6", 
+      "title": "The Taking of Deborah Logan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0452702", 
+      "rating": "6", 
+      "title": "Vacancy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1161864", 
+      "rating": "5", 
+      "title": "The Rite", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1082868", 
+      "rating": "9", 
+      "title": "Quarantine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0432021", 
+      "rating": "5", 
+      "title": "Resident Evil: Extinction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1314655", 
+      "rating": "8", 
+      "title": "Devil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1703199", 
+      "rating": "8", 
+      "title": "Grave Encounters", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0397101", 
+      "rating": "5", 
+      "title": "The Skeleton Key", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0790686", 
+      "rating": "6", 
+      "title": "Mirrors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2309961", 
+      "rating": "7", 
+      "title": "Afflicted", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1073105", 
+      "rating": "3", 
+      "title": "The Descent: Part 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1457767", 
+      "rating": "7", 
+      "title": "The Conjuring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0387564", 
+      "rating": "6", 
+      "title": "Saw", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1259521", 
+      "rating": "7", 
+      "title": "The Cabin in the Woods", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1939659", 
+      "rating": "6", 
+      "title": "Carrie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2023587", 
+      "rating": "6", 
+      "title": "Mama", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0482606", 
+      "rating": "9", 
+      "title": "The Strangers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0816711", 
+      "rating": "7", 
+      "title": "World War Z", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1156398", 
+      "rating": "8", 
+      "title": "Zombieland", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0360486", 
+      "rating": "7", 
+      "title": "Constantine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1591095", 
+      "rating": "5", 
+      "title": "Insidious", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0230600", 
+      "rating": "7", 
+      "title": "The Others", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0289043", 
+      "rating": "9", 
+      "title": "28 Days Later...", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0884328", 
+      "rating": "6", 
+      "title": "The Mist", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1922777", 
+      "rating": "4", 
+      "title": "Sinister", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0435625", 
+      "rating": "9", 
+      "title": "The Descent", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0384537", 
+      "rating": "7", 
+      "title": "Silent Hill", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1288558", 
+      "rating": "6", 
+      "title": "Evil Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1188729", 
+      "rating": "7", 
+      "title": "Pandorum", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1465522", 
+      "rating": "8", 
+      "title": "Tucker and Dale vs Evil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0363547", 
+      "rating": "9", 
+      "title": "Dawn of the Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1853739", 
+      "rating": "6", 
+      "title": "You're Next", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120804", 
+      "rating": "7", 
+      "title": "Resident Evil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1179904", 
+      "rating": "9", 
+      "title": "Paranormal Activity", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2388715", 
+      "rating": "5", 
+      "title": "Oculus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0389722", 
+      "rating": "7", 
+      "title": "30 Days of Night", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1127180", 
+      "rating": "5", 
+      "title": "Drag Me to Hell", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0455760", 
+      "rating": "5", 
+      "title": "Dead Silence", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120681", 
+      "rating": "6", 
+      "title": "From Hell", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0318627", 
+      "rating": "6", 
+      "title": "Resident Evil: Apocalypse", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0134847", 
+      "rating": "7", 
+      "title": "Pitch Black", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1596365", 
+      "rating": "5", 
+      "title": "The Woman in Black", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0455407", 
+      "rating": "7", 
+      "title": "The Crazies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1220634", 
+      "rating": "2", 
+      "title": "Resident Evil: Afterlife", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2310332", 
+      "rating": "7", 
+      "title": "The Hobbit: The Battle of the Five Armies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1843866", 
+      "rating": "8", 
+      "title": "Captain America: The Winter Soldier", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1408101", 
+      "rating": "8", 
+      "title": "Star Trek: Into Darkness", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1428538", 
+      "rating": "3", 
+      "title": "Hansel & Gretel: Witch Hunters", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0450385", 
+      "rating": "6", 
+      "title": "1408", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0463854", 
+      "rating": "7", 
+      "title": "28 Weeks Later", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0712343"
+}

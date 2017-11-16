@@ -1,0 +1,497 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt3748172", 
+      "rating": "10", 
+      "title": "Gerald's Game", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "9", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0468569", 
+      "rating": "6", 
+      "title": "The Dark Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "8", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "6", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068646", 
+      "rating": "10", 
+      "title": "The Godfather", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "10", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1375666", 
+      "rating": "7", 
+      "title": "Inception", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114369", 
+      "rating": "7", 
+      "title": "Se7en", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "5", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0137523", 
+      "rating": "7", 
+      "title": "Fight Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110413", 
+      "rating": "8", 
+      "title": "Léon: The Professional", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099685", 
+      "rating": "8", 
+      "title": "Goodfellas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120737", 
+      "rating": "5", 
+      "title": "The Lord of the Rings: The Fellowship of the Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "6", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071562", 
+      "rating": "10", 
+      "title": "The Godfather: Part II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050083", 
+      "rating": "9", 
+      "title": "12 Angry Men", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167260", 
+      "rating": "5", 
+      "title": "The Lord of the Rings: The Return of the King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060196", 
+      "rating": "10", 
+      "title": "The Good, the Bad and the Ugly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073486", 
+      "rating": "8", 
+      "title": "One Flew Over the Cuckoo's Nest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167261", 
+      "rating": "6", 
+      "title": "The Lord of the Rings: The Two Towers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0028346", 
+      "rating": "3", 
+      "title": "Reefer Madness", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089791", 
+      "rating": "9", 
+      "title": "Pee-wee's Big Adventure", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089885", 
+      "rating": "8", 
+      "title": "Re-Animator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093822", 
+      "rating": "9", 
+      "title": "Raising Arizona", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084503", 
+      "rating": "6", 
+      "title": "Pink Floyd: The Wall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070948", 
+      "rating": "3", 
+      "title": "Zardoz", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086856", 
+      "rating": "7", 
+      "title": "The Adventures of Buckaroo Banzai Across the 8th Dimension", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093779", 
+      "rating": "8", 
+      "title": "The Princess Bride", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086250", 
+      "rating": "8", 
+      "title": "Scarface", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073629", 
+      "rating": "8", 
+      "title": "The Rocky Horror Picture Show", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084787", 
+      "rating": "10", 
+      "title": "The Thing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118715", 
+      "rating": "8", 
+      "title": "The Big Lebowski", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066921", 
+      "rating": "6", 
+      "title": "A Clockwork Orange", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090605", 
+      "rating": "10", 
+      "title": "Aliens", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0062711", 
+      "rating": "3", 
+      "title": "Barbarella", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091042", 
+      "rating": "5", 
+      "title": "Ferris Bueller's Day Off", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080120", 
+      "rating": "8", 
+      "title": "The Warriors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083907", 
+      "rating": "7", 
+      "title": "The Evil Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080455", 
+      "rating": "7", 
+      "title": "The Blues Brothers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068473", 
+      "rating": "9", 
+      "title": "Deliverance", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0151804", 
+      "rating": "9", 
+      "title": "Office Space", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082340", 
+      "rating": "9", 
+      "title": "Escape from New York", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096256", 
+      "rating": "8", 
+      "title": "They Live", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114436", 
+      "rating": "9", 
+      "title": "Showgirls", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090756", 
+      "rating": "6", 
+      "title": "Blue Velvet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080339", 
+      "rating": "9", 
+      "title": "Airplane!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088846", 
+      "rating": "8", 
+      "title": "Brazil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074486", 
+      "rating": "5", 
+      "title": "Eraserhead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0077402", 
+      "rating": "7", 
+      "title": "Dawn of the Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100814", 
+      "rating": "9", 
+      "title": "Tremors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088258", 
+      "rating": "7", 
+      "title": "This Is Spinal Tap", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070917", 
+      "rating": "9", 
+      "title": "The Wicker Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080360", 
+      "rating": "9", 
+      "title": "Altered States", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0035664", 
+      "rating": "9", 
+      "title": "Bataan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0085622", 
+      "rating": "10", 
+      "title": "The Grey Fox", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0077429", 
+      "rating": "7", 
+      "title": "Devil Dog: The Hound of Hell", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0071717", 
+      "rating": "4", 
+      "title": "Killdozer", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0071186", 
+      "rating": "6", 
+      "title": "Bad Ronald", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0057565", 
+      "rating": "8", 
+      "title": "High and Low", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050613", 
+      "rating": "9", 
+      "title": "Throne of Blood", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110057", 
+      "rating": "8", 
+      "title": "Hoop Dreams", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0086058", 
+      "rating": "5", 
+      "title": "The Osterman Weekend", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0101640", 
+      "rating": "8", 
+      "title": "Raise the Red Lantern", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083336", 
+      "rating": "8", 
+      "title": "Wolfen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0162677", 
+      "rating": "6", 
+      "title": "Summer of Sam", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120321", 
+      "rating": "8", 
+      "title": "Smoke Signals", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0000417", 
+      "rating": "6", 
+      "title": "A Trip to the Moon", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0089301", 
+      "rating": "7", 
+      "title": "Hostage Flight", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0091605", 
+      "rating": "7", 
+      "title": "The Name of the Rose", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0042876", 
+      "rating": "10", 
+      "title": "Rashomon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0055630", 
+      "rating": "10", 
+      "title": "Yojimbo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074156", 
+      "rating": "9", 
+      "title": "Assault on Precinct 13", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082484", 
+      "rating": "8", 
+      "title": "Quest for Fire", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080761", 
+      "rating": "5", 
+      "title": "Friday the 13th", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102926", 
+      "rating": "8", 
+      "title": "The Silence of the Lambs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120201", 
+      "rating": "6", 
+      "title": "Starship Troopers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120591", 
+      "rating": "7", 
+      "title": "Armageddon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047478", 
+      "rating": "10", 
+      "title": "Seven Samurai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119396", 
+      "rating": "5", 
+      "title": "Jackie Brown", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0017136", 
+      "rating": "6", 
+      "title": "Metropolis", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118880", 
+      "rating": "6", 
+      "title": "Con Air", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0423039"
+}

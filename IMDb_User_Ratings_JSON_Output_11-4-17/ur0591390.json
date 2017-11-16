@@ -1,0 +1,593 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt4230076", 
+      "rating": "8", 
+      "title": "The Defenders", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt3450958", 
+      "rating": "9", 
+      "title": "War for the Planet of the Apes", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2316204", 
+      "rating": "8", 
+      "title": "Alien: Covenant", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt4302938", 
+      "rating": "10", 
+      "title": "Kubo and the Two Strings", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2660888", 
+      "rating": "8", 
+      "title": "Star Trek: Beyond", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091680", 
+      "rating": "8", 
+      "title": "One Crazy Summer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3498820", 
+      "rating": "9", 
+      "title": "Captain America: Civil War", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105629", 
+      "rating": "7", 
+      "title": "Toys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0816692", 
+      "rating": "9", 
+      "title": "Interstellar", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2015381", 
+      "rating": "9", 
+      "title": "Guardians of the Galaxy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1714915", 
+      "rating": "9", 
+      "title": "Only Lovers Left Alive", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1454468", 
+      "rating": "10", 
+      "title": "Gravity", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0246464", 
+      "rating": "7", 
+      "title": "Big Trouble", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0433035", 
+      "rating": "8", 
+      "title": "Real Steel", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1600207", 
+      "rating": "8", 
+      "title": "The Eye of the Storm", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1706620", 
+      "rating": "9", 
+      "title": "Snowpiercer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1483013", 
+      "rating": "9", 
+      "title": "Oblivion", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1212450", 
+      "rating": "8", 
+      "title": "Lawless", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0425112", 
+      "rating": "9", 
+      "title": "Hot Fuzz", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0903624", 
+      "rating": "8", 
+      "title": "The Hobbit: An Unexpected Journey", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1074638", 
+      "rating": "9", 
+      "title": "Skyfall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1371111", 
+      "rating": "9", 
+      "title": "Cloud Atlas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1276104", 
+      "rating": "8", 
+      "title": "Looper", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1343727", 
+      "rating": "7", 
+      "title": "Dredd", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1623288", 
+      "rating": "9", 
+      "title": "ParaNorman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1345836", 
+      "rating": "9", 
+      "title": "The Dark Knight Rises", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115762", 
+      "rating": "8", 
+      "title": "Broken Silence", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1446714", 
+      "rating": "8", 
+      "title": "Prometheus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0320661", 
+      "rating": "9", 
+      "title": "Kingdom of Heaven", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0848228", 
+      "rating": "9", 
+      "title": "The Avengers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0401729", 
+      "rating": "8", 
+      "title": "John Carter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1375666", 
+      "rating": "9", 
+      "title": "Inception", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1104001", 
+      "rating": "8", 
+      "title": "TRON: Legacy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0356721", 
+      "rating": "8", 
+      "title": "I Heart Huckabees", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0893402", 
+      "rating": "8", 
+      "title": "Franklyn", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "9", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068646", 
+      "rating": "10", 
+      "title": "The Godfather", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "9", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054215", 
+      "rating": "9", 
+      "title": "Psycho", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1010048", 
+      "rating": "9", 
+      "title": "Slumdog Millionaire", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093560", 
+      "rating": "8", 
+      "title": "The Monster Squad", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0448134", 
+      "rating": "8", 
+      "title": "Sunshine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093966", 
+      "rating": "6", 
+      "title": "The Sicilian", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0811080", 
+      "rating": "8", 
+      "title": "Speed Racer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0468569", 
+      "rating": "10", 
+      "title": "The Dark Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120915", 
+      "rating": "8", 
+      "title": "Star Wars: Episode I - The Phantom Menace", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0373883", 
+      "rating": "6", 
+      "title": "Halloween", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0418279", 
+      "rating": "7", 
+      "title": "Transformers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0371746", 
+      "rating": "9", 
+      "title": "Iron Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0800080", 
+      "rating": "8", 
+      "title": "The Incredible Hulk", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0309698", 
+      "rating": "8", 
+      "title": "Identity", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0364569", 
+      "rating": "9", 
+      "title": "Oldboy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089755", 
+      "rating": "8", 
+      "title": "Out of Africa", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109592", 
+      "rating": "8", 
+      "title": "Cemetery Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070511", 
+      "rating": "9", 
+      "title": "Papillon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0417148", 
+      "rating": "7", 
+      "title": "Snakes on a Plane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0465203", 
+      "rating": "7", 
+      "title": "Them", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091530", 
+      "rating": "8", 
+      "title": "The Mission", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0466909", 
+      "rating": "5", 
+      "title": "The Omen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081534", 
+      "rating": "8", 
+      "title": "Somewhere in Time", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0077651", 
+      "rating": "9", 
+      "title": "Halloween", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087800", 
+      "rating": "9", 
+      "title": "A Nightmare on Elm Street", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0325980", 
+      "rating": "9", 
+      "title": "Pirates of the Caribbean: The Curse of the Black Pearl", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0172495", 
+      "rating": "9", 
+      "title": "Gladiator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093629", 
+      "rating": "7", 
+      "title": "A Nightmare on Elm Street 3: Dream Warriors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0360486", 
+      "rating": "7", 
+      "title": "Constantine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0363771", 
+      "rating": "7", 
+      "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0414993", 
+      "rating": "8", 
+      "title": "The Fountain", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120694", 
+      "rating": "7", 
+      "title": "Halloween H20: 20 Years Later", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108941", 
+      "rating": "7", 
+      "title": "The Stand", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0146316", 
+      "rating": "6", 
+      "title": "Lara Croft: Tomb Raider", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082495", 
+      "rating": "6", 
+      "title": "Halloween II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111686", 
+      "rating": "8", 
+      "title": "New Nightmare", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0443543", 
+      "rating": "8", 
+      "title": "The Illusionist", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0190332", 
+      "rating": "9", 
+      "title": "Crouching Tiger, Hidden Dragon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0450385", 
+      "rating": "9", 
+      "title": "1408", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0383574", 
+      "rating": "9", 
+      "title": "Pirates of the Caribbean: Dead Man's Chest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0393109", 
+      "rating": "8", 
+      "title": "Brick", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0439815", 
+      "rating": "8", 
+      "title": "Slither", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090768", 
+      "rating": "8", 
+      "title": "The Boy Who Could Fly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0482571", 
+      "rating": "9", 
+      "title": "The Prestige", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0373074", 
+      "rating": "10", 
+      "title": "Kung Fu Hustle", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075005", 
+      "rating": "9", 
+      "title": "The Omen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113409", 
+      "rating": "9", 
+      "title": "In the Mouth of Madness", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0360717", 
+      "rating": "10", 
+      "title": "King Kong", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0355295", 
+      "rating": "8", 
+      "title": "The Brothers Grimm", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0407304", 
+      "rating": "8", 
+      "title": "War of the Worlds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0372784", 
+      "rating": "9", 
+      "title": "Batman Begins", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0121766", 
+      "rating": "9", 
+      "title": "Star Wars: Episode III - Revenge of the Sith", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0401792", 
+      "rating": "9", 
+      "title": "Sin City", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0378194", 
+      "rating": "9", 
+      "title": "Kill Bill: Vol. 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167260", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Return of the King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091605", 
+      "rating": "9", 
+      "title": "The Name of the Rose", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0299658", 
+      "rating": "9", 
+      "title": "Chicago", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097576", 
+      "rating": "10", 
+      "title": "Indiana Jones and the Last Crusade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0181536", 
+      "rating": "9", 
+      "title": "Finding Forrester", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "9", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0190138", 
+      "rating": "8", 
+      "title": "The Whole Nine Yards", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0591390"
+}

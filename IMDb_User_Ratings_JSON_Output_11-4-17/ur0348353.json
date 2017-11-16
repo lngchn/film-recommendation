@@ -1,0 +1,821 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt2488496", 
+      "rating": "9", 
+      "title": "Star Wars: The Force Awakens", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "6", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0468569", 
+      "rating": "10", 
+      "title": "The Dark Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0816692", 
+      "rating": "9", 
+      "title": "Interstellar", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068646", 
+      "rating": "10", 
+      "title": "The Godfather", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2975590", 
+      "rating": "5", 
+      "title": "Batman v Superman: Dawn of Justice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102926", 
+      "rating": "8", 
+      "title": "The Silence of the Lambs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1375666", 
+      "rating": "8", 
+      "title": "Inception", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2015381", 
+      "rating": "9", 
+      "title": "Guardians of the Galaxy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1392190", 
+      "rating": "8", 
+      "title": "Mad Max: Fury Road", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3498820", 
+      "rating": "8", 
+      "title": "Captain America: Civil War", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120737", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Fellowship of the Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3385516", 
+      "rating": "7", 
+      "title": "X-Men: Apocalypse", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "9", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082971", 
+      "rating": "10", 
+      "title": "Raiders of the Lost Ark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3659388", 
+      "rating": "8", 
+      "title": "The Martian", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054215", 
+      "rating": "10", 
+      "title": "Psycho", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088763", 
+      "rating": "10", 
+      "title": "Back to the Future", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071562", 
+      "rating": "10", 
+      "title": "The Godfather: Part II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1340138", 
+      "rating": "7", 
+      "title": "Terminator Genisys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167260", 
+      "rating": "8", 
+      "title": "The Lord of the Rings: The Return of the King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167261", 
+      "rating": "9", 
+      "title": "The Lord of the Rings: The Two Towers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034583", 
+      "rating": "10", 
+      "title": "Casablanca", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038650", 
+      "rating": "10", 
+      "title": "It's a Wonderful Life", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0266543", 
+      "rating": "10", 
+      "title": "Finding Nemo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047478", 
+      "rating": "9", 
+      "title": "Seven Samurai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119313", 
+      "rating": "5", 
+      "title": "Hope Floats", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1170358", 
+      "rating": "6", 
+      "title": "The Hobbit: The Desolation of Smaug", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1951264", 
+      "rating": "8", 
+      "title": "The Hunger Games: Catching Fire", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1569364", 
+      "rating": "7", 
+      "title": "Chernaya Molniya", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0420332", 
+      "rating": "9", 
+      "title": "Veer-Zaara", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1198101", 
+      "rating": "4", 
+      "title": "Kites", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105619", 
+      "rating": "7", 
+      "title": "The Heroic Trio", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108606", 
+      "rating": "3", 
+      "title": "Executioners", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1204342", 
+      "rating": "9", 
+      "title": "The Muppets", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1229238", 
+      "rating": "9", 
+      "title": "Mission: Impossible - Ghost Protocol", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0400209", 
+      "rating": "8", 
+      "title": "Dance with the Wind", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103594", 
+      "rating": "8", 
+      "title": "1492: Conquest of Paradise", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0768116", 
+      "rating": "8", 
+      "title": "Hula Girls", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0409034", 
+      "rating": "8", 
+      "title": "Marilyn Hotchkiss' Ballroom Dancing & Charm School", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0800080", 
+      "rating": "7", 
+      "title": "The Incredible Hulk", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0367882", 
+      "rating": "8", 
+      "title": "Indiana Jones and the Kingdom of the Crystal Skull", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073707", 
+      "rating": "8", 
+      "title": "Sholay", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0335345", 
+      "rating": "9", 
+      "title": "The Passion of the Christ", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0035583", 
+      "rating": "7", 
+      "title": "You Were Never Lovelier", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0413300", 
+      "rating": "6", 
+      "title": "Spider-Man 3", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084726", 
+      "rating": "10", 
+      "title": "Star Trek II: The Wrath of Khan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0449088", 
+      "rating": "6", 
+      "title": "Pirates of the Caribbean: At World's End", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0043012", 
+      "rating": "9", 
+      "title": "Summer Stock", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0453556", 
+      "rating": "8", 
+      "title": "TMNT", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0348150", 
+      "rating": "8", 
+      "title": "Superman Returns", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088206", 
+      "rating": "6", 
+      "title": "Supergirl", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0368891", 
+      "rating": "7", 
+      "title": "National Treasure", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114924", 
+      "rating": "8", 
+      "title": "While You Were Sleeping", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0245844", 
+      "rating": "6", 
+      "title": "The Count of Monte Cristo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0131704", 
+      "rating": "6", 
+      "title": "The Adventures of Rocky & Bullwinkle", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0184894", 
+      "rating": "7", 
+      "title": "Shanghai Noon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0162650", 
+      "rating": "7", 
+      "title": "Shaft", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167404", 
+      "rating": "10", 
+      "title": "The Sixth Sense", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120903", 
+      "rating": "9", 
+      "title": "X-Men", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120755", 
+      "rating": "6", 
+      "title": "Mission: Impossible II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0143145", 
+      "rating": "8", 
+      "title": "The World Is Not Enough", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097576", 
+      "rating": "9", 
+      "title": "Indiana Jones and the Last Crusade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0163187", 
+      "rating": "6", 
+      "title": "Runaway Bride", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095444", 
+      "rating": "5", 
+      "title": "Killer Klowns from Outer Space", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0125439", 
+      "rating": "8", 
+      "title": "Notting Hill", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0141369", 
+      "rating": "7", 
+      "title": "Inspector Gadget", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0036377", 
+      "rating": "10", 
+      "title": "The Song of Bernadette", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094074", 
+      "rating": "2", 
+      "title": "Superman IV: The Quest for Peace", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086251", 
+      "rating": "8", 
+      "title": "The Scarlet and the Black", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0120855", 
+      "rating": "10", 
+      "title": "Tarzan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094332", 
+      "rating": "4", 
+      "title": "The Witches of Eastwick", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0058150", 
+      "rating": "9", 
+      "title": "Goldfinger", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099938", 
+      "rating": "8", 
+      "title": "Kindergarten Cop", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117731", 
+      "rating": "9", 
+      "title": "Star Trek: First Contact", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102975", 
+      "rating": "8", 
+      "title": "Star Trek VI: The Undiscovered Country", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079945", 
+      "rating": "6", 
+      "title": "Star Trek: The Motion Picture", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086837", 
+      "rating": "8", 
+      "title": "2010", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111280", 
+      "rating": "7", 
+      "title": "Star Trek: Generations", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088933", 
+      "rating": "7", 
+      "title": "Cocoon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094137", 
+      "rating": "9", 
+      "title": "3 Men and a Baby", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092007", 
+      "rating": "8", 
+      "title": "Star Trek IV: The Voyage Home", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098382", 
+      "rating": "6", 
+      "title": "Star Trek V: The Final Frontier", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088170", 
+      "rating": "7", 
+      "title": "Star Trek III: The Search for Spock", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120844", 
+      "rating": "8", 
+      "title": "Star Trek: Insurrection", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093886", 
+      "rating": "9", 
+      "title": "Roxanne", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120338", 
+      "rating": "6", 
+      "title": "Titanic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092890", 
+      "rating": "5", 
+      "title": "Dirty Dancing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0101272", 
+      "rating": "8", 
+      "title": "The Addams Family", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116629", 
+      "rating": "7", 
+      "title": "Independence Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083866", 
+      "rating": "10", 
+      "title": "E.T. the Extra-Terrestrial", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073195", 
+      "rating": "8", 
+      "title": "Jaws", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087332", 
+      "rating": "10", 
+      "title": "Ghostbusters", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099487", 
+      "rating": "7", 
+      "title": "Edward Scissorhands", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100802", 
+      "rating": "7", 
+      "title": "Total Recall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103064", 
+      "rating": "9", 
+      "title": "Terminator 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096895", 
+      "rating": "8", 
+      "title": "Batman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093870", 
+      "rating": "8", 
+      "title": "RoboCop", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0101414", 
+      "rating": "8", 
+      "title": "Beauty and the Beast", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100405", 
+      "rating": "8", 
+      "title": "Pretty Woman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095016", 
+      "rating": "7", 
+      "title": "Die Hard", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094898", 
+      "rating": "9", 
+      "title": "Coming to America", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099785", 
+      "rating": "8", 
+      "title": "Home Alone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094012", 
+      "rating": "7", 
+      "title": "Spaceballs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102798", 
+      "rating": "8", 
+      "title": "Robin Hood: Prince of Thieves", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093894", 
+      "rating": "6", 
+      "title": "The Running Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112462", 
+      "rating": "7", 
+      "title": "Batman Forever", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103776", 
+      "rating": "3", 
+      "title": "Batman Returns", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103644", 
+      "rating": "6", 
+      "title": "Alien³", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119654", 
+      "rating": "8", 
+      "title": "Men in Black", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080339", 
+      "rating": "7", 
+      "title": "Airplane!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097757", 
+      "rating": "9", 
+      "title": "The Little Mermaid", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111282", 
+      "rating": "7", 
+      "title": "Stargate", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104694", 
+      "rating": "8", 
+      "title": "A League of Their Own", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118688", 
+      "rating": "6", 
+      "title": "Batman & Robin", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103074", 
+      "rating": "6", 
+      "title": "Thelma & Louise", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118583", 
+      "rating": "4", 
+      "title": "Alien: Resurrection", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099810", 
+      "rating": "8", 
+      "title": "The Hunt for Red October", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099348", 
+      "rating": "10", 
+      "title": "Dances with Wolves", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096438", 
+      "rating": "10", 
+      "title": "Who Framed Roger Rabbit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105417", 
+      "rating": "10", 
+      "title": "Sister Act", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096754", 
+      "rating": "7", 
+      "title": "The Abyss", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098635", 
+      "rating": "8", 
+      "title": "When Harry Met Sally...", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120738", 
+      "rating": "7", 
+      "title": "Lost in Space", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120746", 
+      "rating": "8", 
+      "title": "The Mask of Zorro", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089457", 
+      "rating": "8", 
+      "title": "Ladyhawke", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099423", 
+      "rating": "7", 
+      "title": "Die Hard 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "8", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086190", 
+      "rating": "7", 
+      "title": "Star Wars: Episode VI - Return of the Jedi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078748", 
+      "rating": "8", 
+      "title": "Alien", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112573", 
+      "rating": "10", 
+      "title": "Braveheart", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090605", 
+      "rating": "8", 
+      "title": "Aliens", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120915", 
+      "rating": "8", 
+      "title": "Star Wars: Episode I - The Phantom Menace", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080684", 
+      "rating": "10", 
+      "title": "Star Wars: Episode V - The Empire Strikes Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119081", 
+      "rating": "4", 
+      "title": "Event Horizon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087597", 
+      "rating": "7", 
+      "title": "The Last Starfighter", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0348353"
+}

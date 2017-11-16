@@ -1,0 +1,545 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt2582846", 
+      "rating": "8", 
+      "title": "The Fault in Our Stars", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0830361", 
+      "rating": "9", 
+      "title": "The Lost Room", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt1670345", 
+      "rating": "9", 
+      "title": "Now You See Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1510918", 
+      "rating": "8", 
+      "title": "Behind Blue Skies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2244901", 
+      "rating": "4", 
+      "title": "I Give It a Year", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1155056", 
+      "rating": "5", 
+      "title": "I Love You, Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2053463", 
+      "rating": "4", 
+      "title": "Side Effects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2017020", 
+      "rating": "6", 
+      "title": "The Smurfs 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2188741", 
+      "rating": "1", 
+      "title": "Sanctuary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2364841", 
+      "rating": "7", 
+      "title": "Runner Runner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2182097", 
+      "rating": "1", 
+      "title": "Crestfallen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0816711", 
+      "rating": "4", 
+      "title": "World War Z", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1535108", 
+      "rating": "6", 
+      "title": "Elysium", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2191701", 
+      "rating": "4", 
+      "title": "Grown Ups 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2334879", 
+      "rating": "8", 
+      "title": "White House Down", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0817545", 
+      "rating": "3", 
+      "title": "The Power of Few", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2381989", 
+      "rating": "3", 
+      "title": "The Shooter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1821694", 
+      "rating": "8", 
+      "title": "RED 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2112210", 
+      "rating": "6", 
+      "title": "My Awkward Sexual Adventure", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1483013", 
+      "rating": "6", 
+      "title": "Oblivion", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1935179", 
+      "rating": "7", 
+      "title": "Mud", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1397514", 
+      "rating": "6", 
+      "title": "Journey 2: The Mysterious Island", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2642442", 
+      "rating": "10", 
+      "title": "Studentfesten", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117008", 
+      "rating": "3", 
+      "title": "Matilda", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2234155", 
+      "rating": "5", 
+      "title": "The Internship", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1659338", 
+      "rating": "4", 
+      "title": "The Numbers Station", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0231402", 
+      "rating": "5", 
+      "title": "Crocodile Dundee in Los Angeles", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2477910", 
+      "rating": "6", 
+      "title": "Crimes of Passion: No More Murders", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0113277", 
+      "rating": "9", 
+      "title": "Heat", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1045658", 
+      "rating": "7", 
+      "title": "Silver Linings Playbook", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1119646", 
+      "rating": "9", 
+      "title": "The Hangover", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090555", 
+      "rating": "7", 
+      "title": "Crocodile Dundee", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117500", 
+      "rating": "9", 
+      "title": "The Rock", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1815862", 
+      "rating": "4", 
+      "title": "After Earth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092493", 
+      "rating": "6", 
+      "title": "Crocodile Dundee II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1951261", 
+      "rating": "5", 
+      "title": "The Hangover Part III", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1411697", 
+      "rating": "6", 
+      "title": "The Hangover Part II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079794", 
+      "rating": "9", 
+      "title": "Repmånad eller Hur man gör pojkar av män", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0241527", 
+      "rating": "7", 
+      "title": "Harry Potter and the Sorcerer's Stone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0304141", 
+      "rating": "7", 
+      "title": "Harry Potter and the Prisoner of Azkaban", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0295297", 
+      "rating": "7", 
+      "title": "Harry Potter and the Chamber of Secrets", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1711425", 
+      "rating": "7", 
+      "title": "21 & Over", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1659337", 
+      "rating": "10", 
+      "title": "The Perks of Being a Wallflower", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2132285", 
+      "rating": "3", 
+      "title": "The Bling Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0323939", 
+      "rating": "5", 
+      "title": "Shade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0266697", 
+      "rating": "3", 
+      "title": "Kill Bill: Vol. 1", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0203755", 
+      "rating": "4", 
+      "title": "One Night at McCool's", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0163978", 
+      "rating": "3", 
+      "title": "The Beach", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090859", 
+      "rating": "4", 
+      "title": "Cobra", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0162650", 
+      "rating": "7", 
+      "title": "Shaft", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0172495", 
+      "rating": "10", 
+      "title": "Gladiator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0210945", 
+      "rating": "5", 
+      "title": "Remember the Titans", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120903", 
+      "rating": "9", 
+      "title": "X-Men", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088944", 
+      "rating": "3", 
+      "title": "Commando", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0187078", 
+      "rating": "10", 
+      "title": "Gone in Sixty Seconds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118607", 
+      "rating": "1", 
+      "title": "Amistad", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0161081", 
+      "rating": "7", 
+      "title": "What Lies Beneath", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0151137", 
+      "rating": "4", 
+      "title": "The Messenger: The Story of Joan of Arc", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0141926", 
+      "rating": "7", 
+      "title": "U-571", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120755", 
+      "rating": "6", 
+      "title": "Mission: Impossible II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090115", 
+      "rating": "8", 
+      "title": "Snowroller - Sällskapsresan II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081590", 
+      "rating": "10", 
+      "title": "Sällskapsresan eller Finns det svenskt kaffe på grisfesten", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0150662", 
+      "rating": "10", 
+      "title": "Show Me Love", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118750", 
+      "rating": "8", 
+      "title": "Booty Call", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120609", 
+      "rating": "4", 
+      "title": "The Big Hit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120660", 
+      "rating": "7", 
+      "title": "Enemy of the State", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0146675", 
+      "rating": "3", 
+      "title": "End of Days", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088247", 
+      "rating": "8", 
+      "title": "The Terminator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120611", 
+      "rating": "8", 
+      "title": "Blade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109686", 
+      "rating": "6", 
+      "title": "Dumb and Dumber", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0160862", 
+      "rating": "7", 
+      "title": "She's All That", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119094", 
+      "rating": "5", 
+      "title": "Face/Off", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0169547", 
+      "rating": "3", 
+      "title": "American Beauty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111257", 
+      "rating": "10", 
+      "title": "Speed", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0106977", 
+      "rating": "10", 
+      "title": "The Fugitive", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120338", 
+      "rating": "4", 
+      "title": "Titanic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "7", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "9", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "1", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114369", 
+      "rating": "7", 
+      "title": "Se7en", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "7", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120915", 
+      "rating": "8", 
+      "title": "Star Wars: Episode I - The Phantom Menace", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086190", 
+      "rating": "9", 
+      "title": "Star Wars: Episode VI - Return of the Jedi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "10", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080684", 
+      "rating": "9", 
+      "title": "Star Wars: Episode V - The Empire Strikes Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116282", 
+      "rating": "7", 
+      "title": "Fargo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103064", 
+      "rating": "8", 
+      "title": "Terminator 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097576", 
+      "rating": "7", 
+      "title": "Indiana Jones and the Last Crusade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120382", 
+      "rating": "2", 
+      "title": "The Truman Show", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0125439", 
+      "rating": "10", 
+      "title": "Notting Hill", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0446217"
+}

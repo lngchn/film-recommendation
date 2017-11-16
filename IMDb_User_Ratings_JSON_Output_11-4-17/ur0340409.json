@@ -1,0 +1,683 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0048424", 
+      "rating": "10", 
+      "title": "The Night of the Hunter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1470023", 
+      "rating": "1", 
+      "title": "MacGruber", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038578", 
+      "rating": "8", 
+      "title": "The Green Years", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0024388", 
+      "rating": "8", 
+      "title": "No Other Woman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1872818", 
+      "rating": "8", 
+      "title": "Liberal Arts", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0151804", 
+      "rating": "9", 
+      "title": "Office Space", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066921", 
+      "rating": "10", 
+      "title": "A Clockwork Orange", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1195478", 
+      "rating": "6", 
+      "title": "The Five-Year Engagement", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0064406", 
+      "rating": "8", 
+      "title": "Hard Contract", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090103", 
+      "rating": "9", 
+      "title": "The Sure Thing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0058450", 
+      "rating": "10", 
+      "title": "The Umbrellas of Cherbourg", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038669", 
+      "rating": "10", 
+      "title": "The Killers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0036775", 
+      "rating": "10", 
+      "title": "Double Indemnity", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118570", 
+      "rating": "1", 
+      "title": "Air Bud", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "9", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054215", 
+      "rating": "10", 
+      "title": "Psycho", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114814", 
+      "rating": "10", 
+      "title": "The Usual Suspects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047396", 
+      "rating": "10", 
+      "title": "Rear Window", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053125", 
+      "rating": "10", 
+      "title": "North by Northwest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0065788", 
+      "rating": "9", 
+      "title": "Goin' Down the Road", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0015881", 
+      "rating": "10", 
+      "title": "Greed", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0014429", 
+      "rating": "10", 
+      "title": "Safety Last!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0017925", 
+      "rating": "10", 
+      "title": "The General", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0021749", 
+      "rating": "10", 
+      "title": "City Lights", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0046303", 
+      "rating": "10", 
+      "title": "Shane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0044706", 
+      "rating": "10", 
+      "title": "High Noon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0020629", 
+      "rating": "10", 
+      "title": "All Quiet on the Western Front", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083929", 
+      "rating": "10", 
+      "title": "Fast Times at Ridgemont High", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103926", 
+      "rating": "10", 
+      "title": "Careful", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0199299", 
+      "rating": "7", 
+      "title": "Across This Land with Stompin' Tom Connors", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0099266", 
+      "rating": "10", 
+      "title": "My Mother's Castle", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099669", 
+      "rating": "10", 
+      "title": "My Father's Glory", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091480", 
+      "rating": "8", 
+      "title": "Manon of the Spring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095806", 
+      "rating": "9", 
+      "title": "The Outside Chance of Maximilian Glick", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0040522", 
+      "rating": "10", 
+      "title": "Bicycle Thieves", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109040", 
+      "rating": "5", 
+      "title": "Ace Ventura: Pet Detective", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107048", 
+      "rating": "6", 
+      "title": "Groundhog Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0194627", 
+      "rating": "8", 
+      "title": "War of 1812", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0294743", 
+      "rating": "7", 
+      "title": "Murder Sees the Light", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0090097", 
+      "rating": "7", 
+      "title": "The Suicide Murders", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0067504", 
+      "rating": "9", 
+      "title": "North of Superior", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0076920", 
+      "rating": "8", 
+      "title": "Why Shoot the Teacher?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113956", 
+      "rating": "8", 
+      "title": "Net Worth", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0030062", 
+      "rating": "8", 
+      "title": "Boys' School", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116488", 
+      "rating": "9", 
+      "title": "Hard Core Logo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091288", 
+      "rating": "10", 
+      "title": "Jean de Florette", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111687", 
+      "rating": "8", 
+      "title": "Whale Music", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082370", 
+      "rating": "9", 
+      "title": "The Woman Next Door", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104782", 
+      "rating": "10", 
+      "title": "Léolo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0042208", 
+      "rating": "9", 
+      "title": "The Asphalt Jungle", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090967", 
+      "rating": "10", 
+      "title": "Down by Law", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060345", 
+      "rating": "10", 
+      "title": "How the Grinch Stole Christmas!", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0095956", 
+      "rating": "1", 
+      "title": "Rambo III", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102266", 
+      "rating": "1", 
+      "title": "The Last Boy Scout", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094947", 
+      "rating": "8", 
+      "title": "Dangerous Liaisons", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033870", 
+      "rating": "10", 
+      "title": "The Maltese Falcon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104714", 
+      "rating": "2", 
+      "title": "Lethal Weapon 3", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053198", 
+      "rating": "10", 
+      "title": "The 400 Blows", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0043265", 
+      "rating": "8", 
+      "title": "The African Queen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099763", 
+      "rating": "10", 
+      "title": "Henry: Portrait of a Serial Killer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102536", 
+      "rating": "10", 
+      "title": "Night on Earth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083658", 
+      "rating": "9", 
+      "title": "Blade Runner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "5", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "9", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "6", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086190", 
+      "rating": "5", 
+      "title": "Star Wars: Episode VI - Return of the Jedi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080684", 
+      "rating": "5", 
+      "title": "Star Wars: Episode V - The Empire Strikes Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092890", 
+      "rating": "1", 
+      "title": "Dirty Dancing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116629", 
+      "rating": "5", 
+      "title": "Independence Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117951", 
+      "rating": "8", 
+      "title": "Trainspotting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088763", 
+      "rating": "6", 
+      "title": "Back to the Future", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078788", 
+      "rating": "9", 
+      "title": "Apocalypse Now", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107290", 
+      "rating": "4", 
+      "title": "Jurassic Park", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088247", 
+      "rating": "2", 
+      "title": "The Terminator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093058", 
+      "rating": "9", 
+      "title": "Full Metal Jacket", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087332", 
+      "rating": "5", 
+      "title": "Ghostbusters", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097165", 
+      "rating": "9", 
+      "title": "Dead Poets Society", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088847", 
+      "rating": "8", 
+      "title": "The Breakfast Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118749", 
+      "rating": "7", 
+      "title": "Boogie Nights", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099487", 
+      "rating": "9", 
+      "title": "Edward Scissorhands", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117509", 
+      "rating": "10", 
+      "title": "Romeo + Juliet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0032138", 
+      "rating": "9", 
+      "title": "The Wizard of Oz", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093870", 
+      "rating": "3", 
+      "title": "RoboCop", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075148", 
+      "rating": "7", 
+      "title": "Rocky", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120382", 
+      "rating": "7", 
+      "title": "The Truman Show", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102057", 
+      "rating": "3", 
+      "title": "Hook", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099785", 
+      "rating": "5", 
+      "title": "Home Alone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118880", 
+      "rating": "5", 
+      "title": "Con Air", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114746", 
+      "rating": "7", 
+      "title": "Twelve Monkeys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097493", 
+      "rating": "7", 
+      "title": "Heathers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034583", 
+      "rating": "10", 
+      "title": "Casablanca", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119822", 
+      "rating": "6", 
+      "title": "As Good as It Gets", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109686", 
+      "rating": "8", 
+      "title": "Dumb and Dumber", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0129387", 
+      "rating": "8", 
+      "title": "There's Something About Mary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054698", 
+      "rating": "9", 
+      "title": "Breakfast at Tiffany's", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090756", 
+      "rating": "7", 
+      "title": "Blue Velvet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119654", 
+      "rating": "7", 
+      "title": "Men in Black", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080339", 
+      "rating": "8", 
+      "title": "Airplane!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111503", 
+      "rating": "2", 
+      "title": "True Lies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119528", 
+      "rating": "6", 
+      "title": "Liar Liar", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033467", 
+      "rating": "10", 
+      "title": "Citizen Kane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111257", 
+      "rating": "3", 
+      "title": "Speed", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105793", 
+      "rating": "5", 
+      "title": "Wayne's World", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081398", 
+      "rating": "9", 
+      "title": "Raging Bull", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112384", 
+      "rating": "7", 
+      "title": "Apollo 13", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118655", 
+      "rating": "7", 
+      "title": "Austin Powers: International Man of Mystery", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096874", 
+      "rating": "5", 
+      "title": "Back to the Future Part II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098635", 
+      "rating": "7", 
+      "title": "When Harry Met Sally...", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107822", 
+      "rating": "8", 
+      "title": "The Piano", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109445", 
+      "rating": "9", 
+      "title": "Clerks", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109831", 
+      "rating": "8", 
+      "title": "Four Weddings and a Funeral", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107616", 
+      "rating": "7", 
+      "title": "Much Ado About Nothing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104187", 
+      "rating": "1", 
+      "title": "Encino Man", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0340409"
+}

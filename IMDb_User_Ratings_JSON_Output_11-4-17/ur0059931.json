@@ -1,0 +1,605 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0091042", 
+      "rating": "8", 
+      "title": "Ferris Bueller's Day Off", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0052852", 
+      "rating": "8", 
+      "title": "Glas", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0089886", 
+      "rating": "10", 
+      "title": "Real Genius", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1112115", 
+      "rating": "7", 
+      "title": "King Corn", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt1358290", 
+      "rating": "8", 
+      "title": "WhiteMale, BlackMale", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt1758780", 
+      "rating": "8", 
+      "title": "The Bigfoot Election", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0361748", 
+      "rating": "9", 
+      "title": "Inglourious Basterds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1023114", 
+      "rating": "10", 
+      "title": "The Way Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1403865", 
+      "rating": "9", 
+      "title": "True Grit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100814", 
+      "rating": "7", 
+      "title": "Tremors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0065126", 
+      "rating": "8", 
+      "title": "True Grit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1504320", 
+      "rating": "9", 
+      "title": "The King's Speech", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1440728", 
+      "rating": "8", 
+      "title": "The American", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0468569", 
+      "rating": "7", 
+      "title": "The Dark Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0481536", 
+      "rating": "8", 
+      "title": "Harold & Kumar Escape from Guantanamo Bay", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0366551", 
+      "rating": "8", 
+      "title": "Harold & Kumar Go to White Castle", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0469494", 
+      "rating": "1", 
+      "title": "There Will Be Blood", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0465602", 
+      "rating": "7", 
+      "title": "Shoot 'Em Up", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0122690", 
+      "rating": "8", 
+      "title": "Ronin", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0454921", 
+      "rating": "9", 
+      "title": "The Pursuit of Happyness", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0818682", 
+      "rating": "2", 
+      "title": "Islam: What the West Needs to Know", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0317219", 
+      "rating": "9", 
+      "title": "Cars", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167260", 
+      "rating": "6", 
+      "title": "The Lord of the Rings: The Return of the King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0382625", 
+      "rating": "7", 
+      "title": "The Da Vinci Code", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0375679", 
+      "rating": "9", 
+      "title": "Crash", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0121766", 
+      "rating": "9", 
+      "title": "Star Wars: Episode III - Revenge of the Sith", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0311429", 
+      "rating": "4", 
+      "title": "The League of Extraordinary Gentlemen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0298228", 
+      "rating": "9", 
+      "title": "Whale Rider", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0289043", 
+      "rating": "8", 
+      "title": "28 Days Later...", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0181852", 
+      "rating": "6", 
+      "title": "Terminator 3: Rise of the Machines", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0266543", 
+      "rating": "10", 
+      "title": "Finding Nemo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0234215", 
+      "rating": "6", 
+      "title": "The Matrix Reloaded", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0286716", 
+      "rating": "2", 
+      "title": "Hulk", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120915", 
+      "rating": "7", 
+      "title": "Star Wars: Episode I - The Phantom Menace", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0121765", 
+      "rating": "6", 
+      "title": "Star Wars: Episode II - Attack of the Clones", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0268978", 
+      "rating": "9", 
+      "title": "A Beautiful Mind", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120737", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Fellowship of the Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084920", 
+      "rating": "8", 
+      "title": "Wrong Is Right", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167404", 
+      "rating": "7", 
+      "title": "The Sixth Sense", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "9", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120663", 
+      "rating": "6", 
+      "title": "Eyes Wide Shut", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118715", 
+      "rating": "10", 
+      "title": "The Big Lebowski", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0171363", 
+      "rating": "5", 
+      "title": "The Haunting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0155267", 
+      "rating": "8", 
+      "title": "The Thomas Crown Affair", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0144214", 
+      "rating": "4", 
+      "title": "The General's Daughter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0153301", 
+      "rating": "9", 
+      "title": "Troops", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0128445", 
+      "rating": "8", 
+      "title": "Rushmore", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0139239", 
+      "rating": "8", 
+      "title": "Go", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0138097", 
+      "rating": "8", 
+      "title": "Shakespeare in Love", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089606", 
+      "rating": "8", 
+      "title": "My Life as a Dog", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119360", 
+      "rating": "5", 
+      "title": "In & Out", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118842", 
+      "rating": "7", 
+      "title": "Chasing Amy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119164", 
+      "rating": "7", 
+      "title": "The Full Monty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089881", 
+      "rating": "8", 
+      "title": "Ran", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0061735", 
+      "rating": "9", 
+      "title": "Guess Who's Coming to Dinner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119951", 
+      "rating": "3", 
+      "title": "Private Parts", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115798", 
+      "rating": "4", 
+      "title": "The Cable Guy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120749", 
+      "rating": "6", 
+      "title": "Mercury Rising", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105151", 
+      "rating": "7", 
+      "title": "The Player", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0062376", 
+      "rating": "8", 
+      "title": "To Sir, with Love", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113071", 
+      "rating": "4", 
+      "title": "First Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120873", 
+      "rating": "6", 
+      "title": "U.S. Marshals", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "9", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120338", 
+      "rating": "7", 
+      "title": "Titanic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "8", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "9", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081505", 
+      "rating": "7", 
+      "title": "The Shining", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "10", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114369", 
+      "rating": "8", 
+      "title": "Se7en", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117571", 
+      "rating": "6", 
+      "title": "Scream", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086190", 
+      "rating": "8", 
+      "title": "Star Wars: Episode VI - Return of the Jedi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119217", 
+      "rating": "7", 
+      "title": "Good Will Hunting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082971", 
+      "rating": "7", 
+      "title": "Raiders of the Lost Ark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116629", 
+      "rating": "7", 
+      "title": "Independence Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083866", 
+      "rating": "7", 
+      "title": "E.T. the Extra-Terrestrial", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120201", 
+      "rating": "6", 
+      "title": "Starship Troopers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078788", 
+      "rating": "8", 
+      "title": "Apocalypse Now", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114814", 
+      "rating": "9", 
+      "title": "The Usual Suspects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116282", 
+      "rating": "8", 
+      "title": "Fargo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118749", 
+      "rating": "5", 
+      "title": "Boogie Nights", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103064", 
+      "rating": "8", 
+      "title": "Terminator 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114746", 
+      "rating": "6", 
+      "title": "Twelve Monkeys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120177", 
+      "rating": "2", 
+      "title": "Spawn", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114709", 
+      "rating": "8", 
+      "title": "Toy Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038650", 
+      "rating": "7", 
+      "title": "It's a Wonderful Life", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119822", 
+      "rating": "9", 
+      "title": "As Good as It Gets", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057012", 
+      "rating": "9", 
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095953", 
+      "rating": "6", 
+      "title": "Rain Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033467", 
+      "rating": "9", 
+      "title": "Citizen Kane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0106977", 
+      "rating": "7", 
+      "title": "The Fugitive", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071315", 
+      "rating": "8", 
+      "title": "Chinatown", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119094", 
+      "rating": "7", 
+      "title": "Face/Off", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117060", 
+      "rating": "6", 
+      "title": "Mission: Impossible", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112384", 
+      "rating": "8", 
+      "title": "Apollo 13", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118655", 
+      "rating": "5", 
+      "title": "Austin Powers: International Man of Mystery", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120888", 
+      "rating": "6", 
+      "title": "The Wedding Singer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120738", 
+      "rating": "6", 
+      "title": "Lost in Space", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079470", 
+      "rating": "6", 
+      "title": "Life of Brian", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082348", 
+      "rating": "5", 
+      "title": "Excalibur", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119675", 
+      "rating": "3", 
+      "title": "Mimic", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0059931"
+}

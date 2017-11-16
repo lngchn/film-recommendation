@@ -1,0 +1,695 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0479289", 
+      "rating": "7", 
+      "title": "The Go-Getter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0790636", 
+      "rating": "5", 
+      "title": "Dallas Buyers Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2296697", 
+      "rating": "8", 
+      "title": "Concussion", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2502518", 
+      "rating": "7", 
+      "title": "Scrapper", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1978480", 
+      "rating": "8", 
+      "title": "Mosquita y Mari", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112527", 
+      "rating": "7", 
+      "title": "Blood & Donuts", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097940", 
+      "rating": "8", 
+      "title": "Mystery Train", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070735", 
+      "rating": "9", 
+      "title": "The Sting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1912398", 
+      "rating": "5", 
+      "title": "God Bless America", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1995304", 
+      "rating": "8", 
+      "title": "Fat Kid Rules the World", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1758786", 
+      "rating": "9", 
+      "title": "The Dungeon Master", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0390579", 
+      "rating": "10", 
+      "title": "Two Cars, One Night", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt1736636", 
+      "rating": "8", 
+      "title": "Nobody Else But You", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1560139", 
+      "rating": "8", 
+      "title": "Boy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1686313", 
+      "rating": "7", 
+      "title": "Simple Simon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1646981", 
+      "rating": "3", 
+      "title": "The Off Hours", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1344674", 
+      "rating": "9", 
+      "title": "True Beauty This Night", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt1232776", 
+      "rating": "8", 
+      "title": "Fish Tank", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0984130", 
+      "rating": "7", 
+      "title": "Miao Miao", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1291549", 
+      "rating": "7", 
+      "title": "Meet Monica Velour", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0235154", 
+      "rating": "7", 
+      "title": "6ixtynin9", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038782", 
+      "rating": "8", 
+      "title": "Nocturne", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1190536", 
+      "rating": "8", 
+      "title": "Black Dynamite", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0039772", 
+      "rating": "8", 
+      "title": "Riff-Raff", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0250323", 
+      "rating": "9", 
+      "title": "The Deep End", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1039638", 
+      "rating": "9", 
+      "title": "Sounds Like Teen Spirit", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt1077252", 
+      "rating": "8", 
+      "title": "Small Crime", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033870", 
+      "rating": "6", 
+      "title": "The Maltese Falcon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038355", 
+      "rating": "8", 
+      "title": "The Big Sleep", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0353969", 
+      "rating": "8", 
+      "title": "Memories of Murder", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0468492", 
+      "rating": "9", 
+      "title": "The Host", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096283", 
+      "rating": "10", 
+      "title": "My Neighbor Totoro", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0048424", 
+      "rating": "10", 
+      "title": "The Night of the Hunter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0478311", 
+      "rating": "2", 
+      "title": "Knocked Up", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0462322", 
+      "rating": "9", 
+      "title": "Grindhouse", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0421054", 
+      "rating": "2", 
+      "title": "Domino", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0494222", 
+      "rating": "9", 
+      "title": "Eagle vs Shark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0905361", 
+      "rating": "10", 
+      "title": "Protagonist", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0401711", 
+      "rating": "8", 
+      "title": "Paris, je t'aime", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0381429", 
+      "rating": "7", 
+      "title": "Somersault", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0464196", 
+      "rating": "8", 
+      "title": "Severance", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0425112", 
+      "rating": "8", 
+      "title": "Hot Fuzz", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0059269", 
+      "rating": "8", 
+      "title": "A High Wind in Jamaica", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0265343", 
+      "rating": "8", 
+      "title": "Monsoon Wedding", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116930", 
+      "rating": "9", 
+      "title": "Love Serenade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0085407", 
+      "rating": "9", 
+      "title": "The Dead Zone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082639", 
+      "rating": "2", 
+      "title": "Ladies and Gentlemen, the Fabulous Stains", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0411195", 
+      "rating": "8", 
+      "title": "Breakfast on Pluto", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0381270", 
+      "rating": "8", 
+      "title": "...And They Lived Happily Ever After", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0061653", 
+      "rating": "8", 
+      "title": "Fathom", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0401792", 
+      "rating": "8", 
+      "title": "Sin City", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074174", 
+      "rating": "10", 
+      "title": "The Bad News Bears", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0303353", 
+      "rating": "8", 
+      "title": "The Kid Stays in the Picture", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0103919", 
+      "rating": "8", 
+      "title": "Candyman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084728", 
+      "rating": "10", 
+      "title": "Starstruck", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0389326", 
+      "rating": "8", 
+      "title": "Riding Giants", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0275309", 
+      "rating": "8", 
+      "title": "Dogtown and Z-Boys", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0307351", 
+      "rating": "7", 
+      "title": "Prey for Rock & Roll", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0317248", 
+      "rating": "10", 
+      "title": "City of God", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088847", 
+      "rating": "9", 
+      "title": "The Breakfast Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0335266", 
+      "rating": "9", 
+      "title": "Lost in Translation", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0285823", 
+      "rating": "9", 
+      "title": "Once Upon a Time in Mexico", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0301199", 
+      "rating": "9", 
+      "title": "Dirty Pretty Things", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0212604", 
+      "rating": "9", 
+      "title": "Tully", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0351080", 
+      "rating": "10", 
+      "title": "How They Get There", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0305357", 
+      "rating": "9", 
+      "title": "Charlie's Angels: Full Throttle", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0246592", 
+      "rating": "9", 
+      "title": "Dummy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088128", 
+      "rating": "9", 
+      "title": "Sixteen Candles", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0177858", 
+      "rating": "8", 
+      "title": "In July", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0234215", 
+      "rating": "5", 
+      "title": "The Matrix Reloaded", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093986", 
+      "rating": "9", 
+      "title": "Slam Dance", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0199314", 
+      "rating": "8", 
+      "title": "About Adam", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0268126", 
+      "rating": "10", 
+      "title": "Adaptation.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0265713", 
+      "rating": "9", 
+      "title": "Scotland, Pa.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0245429", 
+      "rating": "10", 
+      "title": "Spirited Away", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093969", 
+      "rating": "10", 
+      "title": "Siesta", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0310793", 
+      "rating": "10", 
+      "title": "Bowling for Columbine", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0246464", 
+      "rating": "8", 
+      "title": "Big Trouble", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100814", 
+      "rating": "9", 
+      "title": "Tremors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0246578", 
+      "rating": "10", 
+      "title": "Donnie Darko", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0258463", 
+      "rating": "9", 
+      "title": "The Bourne Identity", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0246772", 
+      "rating": "8", 
+      "title": "Mostly Martha", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0279231", 
+      "rating": "9", 
+      "title": "Miss Minoes", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0284491", 
+      "rating": "9", 
+      "title": "Don't Tempt Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0162909", 
+      "rating": "8", 
+      "title": "Yana's Friends", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0139654", 
+      "rating": "4", 
+      "title": "Training Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086856", 
+      "rating": "9", 
+      "title": "The Adventures of Buckaroo Banzai Across the 8th Dimension", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086567", 
+      "rating": "10", 
+      "title": "WarGames", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0256009", 
+      "rating": "8", 
+      "title": "The Devil's Backbone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0147004", 
+      "rating": "9", 
+      "title": "Little Voice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0280707", 
+      "rating": "4", 
+      "title": "Gosford Park", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0211915", 
+      "rating": "9", 
+      "title": "Amélie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068421", 
+      "rating": "9", 
+      "title": "The Cowboys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0161061", 
+      "rating": "7", 
+      "title": "Life According to Muriel", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109445", 
+      "rating": "9", 
+      "title": "Clerks", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0261392", 
+      "rating": "9", 
+      "title": "Jay and Silent Bob Strike Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120188", 
+      "rating": "10", 
+      "title": "Three Kings", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104567", 
+      "rating": "8", 
+      "title": "Johnny Suede", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0151582", 
+      "rating": "9", 
+      "title": "The Minus Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0203632", 
+      "rating": "8", 
+      "title": "The Princess and the Warrior", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0140352", 
+      "rating": "4", 
+      "title": "The Insider", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0137523", 
+      "rating": "2", 
+      "title": "Fight Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0172495", 
+      "rating": "1", 
+      "title": "Gladiator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073195", 
+      "rating": "10", 
+      "title": "Jaws", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0237539", 
+      "rating": "10", 
+      "title": "Bread and Tulips", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0260193", 
+      "rating": "10", 
+      "title": "The Left-Hand Side of the Fridge", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0169547", 
+      "rating": "7", 
+      "title": "American Beauty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038650", 
+      "rating": "10", 
+      "title": "It's a Wonderful Life", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0175880", 
+      "rating": "1", 
+      "title": "Magnolia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103074", 
+      "rating": "10", 
+      "title": "Thelma & Louise", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0122459", 
+      "rating": "10", 
+      "title": "Return to Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117951", 
+      "rating": "10", 
+      "title": "Trainspotting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0205271", 
+      "rating": "1", 
+      "title": "Dr. T & the Women", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089175", 
+      "rating": "9", 
+      "title": "Fright Night", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113918", 
+      "rating": "10", 
+      "title": "Nadie hablará de nosotras cuando hayamos muerto", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0302787"
+}

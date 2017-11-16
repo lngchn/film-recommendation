@@ -1,0 +1,707 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0156735", 
+      "rating": "4", 
+      "title": "Legend of the Mummy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103242", 
+      "rating": "5", 
+      "title": "What Ever Happened to Baby Jane?", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0025919", 
+      "rating": "8", 
+      "title": "Twentieth Century", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0065206", 
+      "rating": "7", 
+      "title": "What Ever Happened to Aunt Alice?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0035169", 
+      "rating": "8", 
+      "title": "The Palm Beach Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088766", 
+      "rating": "6", 
+      "title": "The Bad Seed", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0040806", 
+      "rating": "8", 
+      "title": "The Snake Pit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117104", 
+      "rating": "10", 
+      "title": "Mrs. Winterbourne", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0051077", 
+      "rating": "9", 
+      "title": "The Three Faces of Eve", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0041968", 
+      "rating": "7", 
+      "title": "Too Late for Tears", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0058620", 
+      "rating": "7", 
+      "title": "Strait-Jacket", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0041452", 
+      "rating": "8", 
+      "title": "The Heiress", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0043924", 
+      "rating": "8", 
+      "title": "A Place in the Sun", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100486", 
+      "rating": "6", 
+      "title": "Reversal of Fortune", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0045537", 
+      "rating": "9", 
+      "title": "The Band Wagon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090110", 
+      "rating": "8", 
+      "title": "Sweet Dreams", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0058213", 
+      "rating": "8", 
+      "title": "Hush...Hush, Sweet Charlotte", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097457", 
+      "rating": "5", 
+      "title": "Great Balls of Fire!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0064418", 
+      "rating": "10", 
+      "title": "Hello, Dolly!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056262", 
+      "rating": "8", 
+      "title": "The Music Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0055471", 
+      "rating": "8", 
+      "title": "Splendor in the Grass", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080549", 
+      "rating": "10", 
+      "title": "Coal Miner's Daughter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0037913", 
+      "rating": "9", 
+      "title": "Mildred Pierce", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0986263", 
+      "rating": "4", 
+      "title": "Surrogates", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0435705", 
+      "rating": "6", 
+      "title": "Next", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0043274", 
+      "rating": "8", 
+      "title": "Alice in Wonderland", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0042192", 
+      "rating": "9", 
+      "title": "All About Eve", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0055254", 
+      "rating": "9", 
+      "title": "101 Dalmatians", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0061735", 
+      "rating": "10", 
+      "title": "Guess Who's Coming to Dinner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100258", 
+      "rating": "7", 
+      "title": "Night of the Living Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070510", 
+      "rating": "8", 
+      "title": "Paper Moon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079367", 
+      "rating": "7", 
+      "title": "The Jerk", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0810784", 
+      "rating": "7", 
+      "title": "Bright Star", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0970452", 
+      "rating": "6", 
+      "title": "Solomon Kane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0051744", 
+      "rating": "8", 
+      "title": "House on Haunted Hill", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034492", 
+      "rating": "8", 
+      "title": "Bambi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093378", 
+      "rating": "10", 
+      "title": "La Bamba", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082406", 
+      "rating": "7", 
+      "title": "The Fox and the Hound", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104454", 
+      "rating": "7", 
+      "title": "Howards End", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091541", 
+      "rating": "8", 
+      "title": "The Money Pit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096071", 
+      "rating": "7", 
+      "title": "The Serpent and the Rainbow", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108525", 
+      "rating": "1", 
+      "title": "Wayne's World 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0165710", 
+      "rating": "3", 
+      "title": "Detroit Rock City", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114702", 
+      "rating": "10", 
+      "title": "Total Eclipse", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084237", 
+      "rating": "9", 
+      "title": "The Last Unicorn", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0385004", 
+      "rating": "1", 
+      "title": "House of Flying Daggers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076618", 
+      "rating": "8", 
+      "title": "The Rescuers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107120", 
+      "rating": "10", 
+      "title": "Hocus Pocus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0800369", 
+      "rating": "9", 
+      "title": "Thor", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054215", 
+      "rating": "9", 
+      "title": "Psycho", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1298650", 
+      "rating": "8", 
+      "title": "Pirates of the Caribbean: On Stranger Tides", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073629", 
+      "rating": "8", 
+      "title": "The Rocky Horror Picture Show", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098084", 
+      "rating": "6", 
+      "title": "Pet Sematary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103639", 
+      "rating": "8", 
+      "title": "Aladdin", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0449088", 
+      "rating": "8", 
+      "title": "Pirates of the Caribbean: At World's End", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094898", 
+      "rating": "8", 
+      "title": "Coming to America", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1077258", 
+      "rating": "1", 
+      "title": "Planet Terror", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119282", 
+      "rating": "6", 
+      "title": "Hercules", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107943", 
+      "rating": "10", 
+      "title": "The Remains of the Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086879", 
+      "rating": "9", 
+      "title": "Amadeus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076786", 
+      "rating": "8", 
+      "title": "Suspiria", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0338751", 
+      "rating": "8", 
+      "title": "The Aviator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0172493", 
+      "rating": "8", 
+      "title": "Girl, Interrupted", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0045152", 
+      "rating": "9", 
+      "title": "Singin' in the Rain", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097757", 
+      "rating": "8", 
+      "title": "The Little Mermaid", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056869", 
+      "rating": "9", 
+      "title": "The Birds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0800320", 
+      "rating": "7", 
+      "title": "Clash of the Titans", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033467", 
+      "rating": "9", 
+      "title": "Citizen Kane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082198", 
+      "rating": "7", 
+      "title": "Conan the Barbarian", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0170016", 
+      "rating": "5", 
+      "title": "How the Grinch Stole Christmas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056193", 
+      "rating": "8", 
+      "title": "Lolita", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0450385", 
+      "rating": "7", 
+      "title": "1408", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0362227", 
+      "rating": "1", 
+      "title": "The Terminal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118617", 
+      "rating": "7", 
+      "title": "Anastasia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0077402", 
+      "rating": "8", 
+      "title": "Dawn of the Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107362", 
+      "rating": "8", 
+      "title": "Last Action Hero", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0195685", 
+      "rating": "2", 
+      "title": "Erin Brockovich", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0319343", 
+      "rating": "1", 
+      "title": "Elf", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0134847", 
+      "rating": "9", 
+      "title": "Pitch Black", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120623", 
+      "rating": "8", 
+      "title": "A Bug's Life", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079714", 
+      "rating": "7", 
+      "title": "Phantasm", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056687", 
+      "rating": "8", 
+      "title": "What Ever Happened to Baby Jane?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120855", 
+      "rating": "8", 
+      "title": "Tarzan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078446", 
+      "rating": "6", 
+      "title": "Up in Smoke", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103919", 
+      "rating": "6", 
+      "title": "Candyman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0253556", 
+      "rating": "5", 
+      "title": "Reign of Fire", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0963966", 
+      "rating": "10", 
+      "title": "The Sorcerer's Apprentice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0063518", 
+      "rating": "10", 
+      "title": "Romeo and Juliet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0055018", 
+      "rating": "9", 
+      "title": "The Innocents", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098453", 
+      "rating": "9", 
+      "title": "Teen Witch", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115963", 
+      "rating": "9", 
+      "title": "The Craft", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088286", 
+      "rating": "6", 
+      "title": "Top Secret!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060438", 
+      "rating": "10", 
+      "title": "A Funny Thing Happened on the Way to the Forum", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120392", 
+      "rating": "10", 
+      "title": "The Twilight of the Golds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116768", 
+      "rating": "1", 
+      "title": "Kids in the Hall: Brain Candy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0160236", 
+      "rating": "5", 
+      "title": "Dudley Do-Right", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114099", 
+      "rating": "9", 
+      "title": "The Passion of Darkly Noon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0101576", 
+      "rating": "1", 
+      "title": "Child of Darkness, Child of Light", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0077687", 
+      "rating": "10", 
+      "title": "The Hobbit", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0077869", 
+      "rating": "10", 
+      "title": "The Lord of the Rings", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0124298", 
+      "rating": "8", 
+      "title": "Blast from the Past", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067185", 
+      "rating": "10", 
+      "title": "Harold and Maude", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0166276", 
+      "rating": "4", 
+      "title": "Monkeybone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120684", 
+      "rating": "10", 
+      "title": "Gods and Monsters", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120737", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Fellowship of the Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0063522", 
+      "rating": "10", 
+      "title": "Rosemary's Baby", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167261", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Two Towers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0320691", 
+      "rating": "10", 
+      "title": "Underworld", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0209163", 
+      "rating": "9", 
+      "title": "The Mummy Returns", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0230030", 
+      "rating": "6", 
+      "title": "Bedazzled", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104187", 
+      "rating": "4", 
+      "title": "Encino Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073615", 
+      "rating": "10", 
+      "title": "The Reincarnation of Peter Proud", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118604", 
+      "rating": "7", 
+      "title": "An American Werewolf in Paris", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082010", 
+      "rating": "9", 
+      "title": "An American Werewolf in London", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120616", 
+      "rating": "10", 
+      "title": "The Mummy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074285", 
+      "rating": "10", 
+      "title": "Carrie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0032145", 
+      "rating": "10", 
+      "title": "Wuthering Heights", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0446654"
+}

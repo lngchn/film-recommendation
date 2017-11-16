@@ -1,0 +1,401 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0468569", 
+      "rating": "8", 
+      "title": "The Dark Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120201", 
+      "rating": "8", 
+      "title": "Starship Troopers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1535108", 
+      "rating": "7", 
+      "title": "Elysium", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1041829", 
+      "rating": "1", 
+      "title": "The Proposal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0335121", 
+      "rating": "1", 
+      "title": "Godsend", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0044741", 
+      "rating": "10", 
+      "title": "Ikiru", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056058", 
+      "rating": "10", 
+      "title": "Harakiri", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0359423", 
+      "rating": "1", 
+      "title": "A Home at the End of the World", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060107", 
+      "rating": "10", 
+      "title": "Andrei Rublev", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079944", 
+      "rating": "10", 
+      "title": "Stalker", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0166924", 
+      "rating": "10", 
+      "title": "Mulholland Dr.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078788", 
+      "rating": "10", 
+      "title": "Apocalypse Now", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119889", 
+      "rating": "1", 
+      "title": "The Phantom of the Opera", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056801", 
+      "rating": "10", 
+      "title": "8½", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094964", 
+      "rating": "10", 
+      "title": "Dead Ringers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0250494", 
+      "rating": "1", 
+      "title": "Legally Blonde", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0212985", 
+      "rating": "1", 
+      "title": "Hannibal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090756", 
+      "rating": "10", 
+      "title": "Blue Velvet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088846", 
+      "rating": "10", 
+      "title": "Brazil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0160127", 
+      "rating": "1", 
+      "title": "Charlie's Angels", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0207201", 
+      "rating": "1", 
+      "title": "What Women Want", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120746", 
+      "rating": "1", 
+      "title": "The Mask of Zorro", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060959", 
+      "rating": "1", 
+      "title": "Daisies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0243133", 
+      "rating": "10", 
+      "title": "The Man Who Wasn't There", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111488", 
+      "rating": "1", 
+      "title": "Trial by Jury", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083922", 
+      "rating": "10", 
+      "title": "Fanny and Alexander", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0077416", 
+      "rating": "10", 
+      "title": "The Deer Hunter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056172", 
+      "rating": "10", 
+      "title": "Lawrence of Arabia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113947", 
+      "rating": "10", 
+      "title": "Nelly & Monsieur Arnaud", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116922", 
+      "rating": "10", 
+      "title": "Lost Highway", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110413", 
+      "rating": "1", 
+      "title": "Léon: The Professional", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066921", 
+      "rating": "10", 
+      "title": "A Clockwork Orange", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120663", 
+      "rating": "10", 
+      "title": "Eyes Wide Shut", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071487", 
+      "rating": "10", 
+      "title": "The Phantom of Liberty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057012", 
+      "rating": "10", 
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0194314", 
+      "rating": "1", 
+      "title": "Romance", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0185937", 
+      "rating": "1", 
+      "title": "The Blair Witch Project", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118715", 
+      "rating": "10", 
+      "title": "The Big Lebowski", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0062622", 
+      "rating": "10", 
+      "title": "2001: A Space Odyssey", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076574", 
+      "rating": "10", 
+      "title": "Providence", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093058", 
+      "rating": "10", 
+      "title": "Full Metal Jacket", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054215", 
+      "rating": "10", 
+      "title": "Psycho", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088323", 
+      "rating": "1", 
+      "title": "The NeverEnding Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066993", 
+      "rating": "1", 
+      "title": "The Devils", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112851", 
+      "rating": "1", 
+      "title": "Desperado", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108473", 
+      "rating": "1", 
+      "title": "The Vanishing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053221", 
+      "rating": "10", 
+      "title": "Rio Bravo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112641", 
+      "rating": "10", 
+      "title": "Casino", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0072684", 
+      "rating": "10", 
+      "title": "Barry Lyndon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053125", 
+      "rating": "10", 
+      "title": "North by Northwest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071315", 
+      "rating": "10", 
+      "title": "Chinatown", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0045935", 
+      "rating": "10", 
+      "title": "Gate of Hell", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0064041", 
+      "rating": "10", 
+      "title": "The Arrangement", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056825", 
+      "rating": "10", 
+      "title": "America America", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0064612", 
+      "rating": "10", 
+      "title": "My Night at Maud's", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112769", 
+      "rating": "10", 
+      "title": "La Cérémonie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0137363", 
+      "rating": "1", 
+      "title": "Arlington Road", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079522", 
+      "rating": "10", 
+      "title": "Manhattan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056217", 
+      "rating": "10", 
+      "title": "The Man Who Shot Liberty Valance", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "1", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071562", 
+      "rating": "10", 
+      "title": "The Godfather: Part II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081398", 
+      "rating": "10", 
+      "title": "Raging Bull", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0052357", 
+      "rating": "10", 
+      "title": "Vertigo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047396", 
+      "rating": "10", 
+      "title": "Rear Window", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120863", 
+      "rating": "10", 
+      "title": "The Thin Red Line", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119167", 
+      "rating": "10", 
+      "title": "Funny Games", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0014251"
+}

@@ -1,0 +1,647 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0077975", 
+      "rating": "9", 
+      "title": "Animal House", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt6843654", 
+      "rating": "8", 
+      "title": "Zach & Dennis: How It All Began", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt3638396", 
+      "rating": "9", 
+      "title": "Closet Monster", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt5129682", 
+      "rating": "8", 
+      "title": "King Cobra", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3622870", 
+      "rating": "9", 
+      "title": "Truth or Dare", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt3018070", 
+      "rating": "8", 
+      "title": "Stonewall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120338", 
+      "rating": "10", 
+      "title": "Titanic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0222850", 
+      "rating": "9", 
+      "title": "The Broken Hearts Club: A Romantic Comedy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0065537", 
+      "rating": "8", 
+      "title": "Change of Habit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1067733", 
+      "rating": "9", 
+      "title": "Patrik, Age 1.5", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0373883", 
+      "rating": "6", 
+      "title": "Halloween", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0151804", 
+      "rating": "9", 
+      "title": "Office Space", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104070", 
+      "rating": "9", 
+      "title": "Death Becomes Her", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070903", 
+      "rating": "9", 
+      "title": "The Way We Were", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056592", 
+      "rating": "10", 
+      "title": "To Kill a Mockingbird", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1806954", 
+      "rating": "8", 
+      "title": "Lost Christmas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0313410", 
+      "rating": "9", 
+      "title": "No Night Is Too Long", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0420206", 
+      "rating": "9", 
+      "title": "Summer Storm", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2306783", 
+      "rating": "8", 
+      "title": "The Falls", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074937", 
+      "rating": "8", 
+      "title": "Murder by Death", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095765", 
+      "rating": "10", 
+      "title": "Cinema Paradiso", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105130", 
+      "rating": "8", 
+      "title": "Peter's Friends", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0048604", 
+      "rating": "8", 
+      "title": "The Seven Little Foys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1305714", 
+      "rating": "8", 
+      "title": "Make the Yuletide Gay", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0424287", 
+      "rating": "9", 
+      "title": "The Mostly Unfabulous Social Life of Ethan Green", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109831", 
+      "rating": "8", 
+      "title": "Four Weddings and a Funeral", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1720263", 
+      "rating": "8", 
+      "title": "The Green", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096289", 
+      "rating": "10", 
+      "title": "Torch Song Trilogy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1532503", 
+      "rating": "9", 
+      "title": "Beginners", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113862", 
+      "rating": "9", 
+      "title": "Mr. Holland's Opus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0069368", 
+      "rating": "9", 
+      "title": "That Certain Summer", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt1067583", 
+      "rating": "8", 
+      "title": "Water for Elephants", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0040746", 
+      "rating": "10", 
+      "title": "Rope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0032261", 
+      "rating": "8", 
+      "title": "Blondie Has Servant Trouble", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1533053", 
+      "rating": "8", 
+      "title": "Is It Just Me?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107818", 
+      "rating": "9", 
+      "title": "Philadelphia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088948", 
+      "rating": "9", 
+      "title": "Consenting Adult", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt1327788", 
+      "rating": "9", 
+      "title": "The Most Wonderful Time of the Year", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0041257", 
+      "rating": "8", 
+      "title": "Come to the Stable", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1120985", 
+      "rating": "5", 
+      "title": "Blue Valentine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050539", 
+      "rating": "10", 
+      "title": "The Incredible Shrinking Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1712573", 
+      "rating": "9", 
+      "title": "Strapped", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080157", 
+      "rating": "8", 
+      "title": "Yanks", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0069888", 
+      "rating": "7", 
+      "title": "Class of '44", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0030287", 
+      "rating": "10", 
+      "title": "Jezebel", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1043903", 
+      "rating": "8", 
+      "title": "Clapham Junction", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0041716", 
+      "rating": "10", 
+      "title": "On the Town", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1311067", 
+      "rating": "1", 
+      "title": "Halloween II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1346983", 
+      "rating": "7", 
+      "title": "Loving Leah", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0059221", 
+      "rating": "8", 
+      "title": "The Ghost and Mr. Chicken", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0893346", 
+      "rating": "7", 
+      "title": "Kiss the Bride", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0246404", 
+      "rating": "9", 
+      "title": "The 24th Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068708", 
+      "rating": "8", 
+      "title": "Home for the Holidays", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0065037", 
+      "rating": "9", 
+      "title": "The Sterile Cuckoo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0433350", 
+      "rating": "9", 
+      "title": "Boy Culture", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071222", 
+      "rating": "8", 
+      "title": "Black Christmas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107120", 
+      "rating": "7", 
+      "title": "Hocus Pocus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033533", 
+      "rating": "9", 
+      "title": "The Devil and Miss Jones", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0029192", 
+      "rating": "10", 
+      "title": "Make Way for Tomorrow", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033861", 
+      "rating": "7", 
+      "title": "The Mad Doctor", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0024649", 
+      "rating": "9", 
+      "title": "Terror Aboard", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0063661", 
+      "rating": "10", 
+      "title": "Sweet November", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0032811", 
+      "rating": "10", 
+      "title": "The Mortal Storm", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0031647", 
+      "rating": "10", 
+      "title": "Midnight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0035189", 
+      "rating": "9", 
+      "title": "The Pied Piper", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034273", 
+      "rating": "8", 
+      "title": "That Night in Rio", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0029680", 
+      "rating": "5", 
+      "title": "Top of the Town", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0032981", 
+      "rating": "10", 
+      "title": "Remember the Night", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0032520", 
+      "rating": "9", 
+      "title": "The Ghost Breakers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0046280", 
+      "rating": "6", 
+      "title": "Scared Stiff", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0286162", 
+      "rating": "7", 
+      "title": "Stolen Summer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033045", 
+      "rating": "10", 
+      "title": "The Shop Around the Corner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047673", 
+      "rating": "9", 
+      "title": "White Christmas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0037059", 
+      "rating": "10", 
+      "title": "Meet Me in St. Louis", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0030858", 
+      "rating": "9", 
+      "title": "They Drive by Night", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0242587", 
+      "rating": "9", 
+      "title": "L.I.E.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0280791", 
+      "rating": "7", 
+      "title": "The Journey of Jared Price", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0042325", 
+      "rating": "10", 
+      "title": "Champagne for Caesar", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0028158", 
+      "rating": "5", 
+      "title": "Ramona", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0048977", 
+      "rating": "10", 
+      "title": "The Bad Seed", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0048424", 
+      "rating": "10", 
+      "title": "The Night of the Hunter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034862", 
+      "rating": "10", 
+      "title": "Holiday Inn", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0025755", 
+      "rating": "9", 
+      "title": "Search for Beauty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0026138", 
+      "rating": "10", 
+      "title": "Bride of Frankenstein", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0024184", 
+      "rating": "10", 
+      "title": "The Invisible Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0156460", 
+      "rating": "8", 
+      "title": "Defying Gravity", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0124555", 
+      "rating": "9", 
+      "title": "Finding North", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071120", 
+      "rating": "9", 
+      "title": "All the Kind Strangers", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0072945", 
+      "rating": "9", 
+      "title": "Eric", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0031143", 
+      "rating": "9", 
+      "title": "The Cat and the Canary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0024348", 
+      "rating": "6", 
+      "title": "Moonlight and Pretzels", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0214698", 
+      "rating": "9", 
+      "title": "The Three Stooges", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0032247", 
+      "rating": "8", 
+      "title": "Beyond Tomorrow", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0051406", 
+      "rating": "7", 
+      "title": "Bell Book and Candle", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0162710", 
+      "rating": "7", 
+      "title": "Trick", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0163651", 
+      "rating": "7", 
+      "title": "American Pie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0138414", 
+      "rating": "9", 
+      "title": "Edge of Seventeen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0026921", 
+      "rating": "9", 
+      "title": "Remember Last Night?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0159696", 
+      "rating": "10", 
+      "title": "Relax... It's Just Sex", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0039190", 
+      "rating": "10", 
+      "title": "The Bishop's Wife", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033457", 
+      "rating": "7", 
+      "title": "Charley's Aunt", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0022002", 
+      "rating": "3", 
+      "title": "Iron Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0035388", 
+      "rating": "6", 
+      "title": "Street of Chance", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091725", 
+      "rating": "10", 
+      "title": "Parting Glances", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120684", 
+      "rating": "10", 
+      "title": "Gods and Monsters", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0124298", 
+      "rating": "7", 
+      "title": "Blast from the Past", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109445", 
+      "rating": "10", 
+      "title": "Clerks", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0041087"
+}

@@ -1,0 +1,551 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0918940", 
+      "rating": "8", 
+      "title": "The Legend of Tarzan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0486358", 
+      "rating": "7", 
+      "title": "Jesus Camp", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt2109248", 
+      "rating": "4", 
+      "title": "Transformers: Age of Extinction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0477302", 
+      "rating": "6", 
+      "title": "Extremely Loud & Incredibly Close", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2380331", 
+      "rating": "5", 
+      "title": "Words and Pictures", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1234721", 
+      "rating": "6", 
+      "title": "RoboCop", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1535108", 
+      "rating": "5", 
+      "title": "Elysium", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1445520", 
+      "rating": "9", 
+      "title": "Footnote", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1412386", 
+      "rating": "5", 
+      "title": "The Best Exotic Marigold Hotel", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0422720", 
+      "rating": "4", 
+      "title": "Marie Antoinette", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0425061", 
+      "rating": "6", 
+      "title": "Get Smart", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0338188", 
+      "rating": "6", 
+      "title": "The Missing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104810", 
+      "rating": "9", 
+      "title": "Manufacturing Consent: Noam Chomsky and the Media", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt1190080", 
+      "rating": "6", 
+      "title": "2012", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1605783", 
+      "rating": "7", 
+      "title": "Midnight in Paris", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0468492", 
+      "rating": "8", 
+      "title": "The Host", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0317705", 
+      "rating": "8", 
+      "title": "The Incredibles", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0368447", 
+      "rating": "6", 
+      "title": "The Village", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0121765", 
+      "rating": "5", 
+      "title": "Star Wars: Episode II - Attack of the Clones", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0251075", 
+      "rating": "5", 
+      "title": "Evolution", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0252866", 
+      "rating": "3", 
+      "title": "American Pie 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0238112", 
+      "rating": "5", 
+      "title": "Captain Corelli's Mandolin", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0017925", 
+      "rating": "10", 
+      "title": "The General", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105236", 
+      "rating": "8", 
+      "title": "Reservoir Dogs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0203009", 
+      "rating": "7", 
+      "title": "Moulin Rouge!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050825", 
+      "rating": "8", 
+      "title": "Paths of Glory", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0036775", 
+      "rating": "7", 
+      "title": "Double Indemnity", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033870", 
+      "rating": "8", 
+      "title": "The Maltese Falcon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0027977", 
+      "rating": "7", 
+      "title": "Modern Times", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0042876", 
+      "rating": "9", 
+      "title": "Rashomon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0052311", 
+      "rating": "8", 
+      "title": "Touch of Evil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0040522", 
+      "rating": "7", 
+      "title": "Bicycle Thieves", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0040897", 
+      "rating": "7", 
+      "title": "The Treasure of the Sierra Madre", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "7", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "8", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "7", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068646", 
+      "rating": "9", 
+      "title": "The Godfather", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "7", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102926", 
+      "rating": "7", 
+      "title": "The Silence of the Lambs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0137523", 
+      "rating": "7", 
+      "title": "Fight Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099685", 
+      "rating": "7", 
+      "title": "Goodfellas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0169547", 
+      "rating": "7", 
+      "title": "American Beauty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082971", 
+      "rating": "7", 
+      "title": "Raiders of the Lost Ark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080684", 
+      "rating": "6", 
+      "title": "Star Wars: Episode V - The Empire Strikes Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054215", 
+      "rating": "9", 
+      "title": "Psycho", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071562", 
+      "rating": "7", 
+      "title": "The Godfather: Part II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114814", 
+      "rating": "9", 
+      "title": "The Usual Suspects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073486", 
+      "rating": "7", 
+      "title": "One Flew Over the Cuckoo's Nest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118799", 
+      "rating": "7", 
+      "title": "Life Is Beautiful", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0211915", 
+      "rating": "7", 
+      "title": "Amélie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034583", 
+      "rating": "7", 
+      "title": "Casablanca", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038650", 
+      "rating": "7", 
+      "title": "It's a Wonderful Life", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0064116", 
+      "rating": "8", 
+      "title": "Once Upon a Time in the West", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056592", 
+      "rating": "7", 
+      "title": "To Kill a Mockingbird", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053291", 
+      "rating": "7", 
+      "title": "Some Like It Hot", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056172", 
+      "rating": "8", 
+      "title": "Lawrence of Arabia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0045152", 
+      "rating": "8", 
+      "title": "Singin' in the Rain", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0052357", 
+      "rating": "8", 
+      "title": "Vertigo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047396", 
+      "rating": "8", 
+      "title": "Rear Window", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033467", 
+      "rating": "10", 
+      "title": "Citizen Kane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082096", 
+      "rating": "8", 
+      "title": "Das Boot", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0022100", 
+      "rating": "9", 
+      "title": "M", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053125", 
+      "rating": "8", 
+      "title": "North by Northwest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0043014", 
+      "rating": "7", 
+      "title": "Sunset Blvd.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118661", 
+      "rating": "2", 
+      "title": "The Avengers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0165798", 
+      "rating": "7", 
+      "title": "Ghost Dog: The Way of the Samurai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114279", 
+      "rating": "8", 
+      "title": "Richard III", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113247", 
+      "rating": "8", 
+      "title": "La Haine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074462", 
+      "rating": "8", 
+      "title": "Edvard Munch", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0031885", 
+      "rating": "9", 
+      "title": "The Rules of the Game", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "7", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120657", 
+      "rating": "4", 
+      "title": "The 13th Warrior", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115751", 
+      "rating": "9", 
+      "title": "Breaking the Waves", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0173594", 
+      "rating": "10", 
+      "title": "Les rois maudits", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0118884", 
+      "rating": "5", 
+      "title": "Contact", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0142342", 
+      "rating": "6", 
+      "title": "Big Daddy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0079945", 
+      "rating": "4", 
+      "title": "Star Trek: The Motion Picture", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0122933", 
+      "rating": "4", 
+      "title": "Analyze This", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075314", 
+      "rating": "8", 
+      "title": "Taxi Driver", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071360", 
+      "rating": "9", 
+      "title": "The Conversation", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066767", 
+      "rating": "6", 
+      "title": "The Anderson Tapes", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113862", 
+      "rating": "5", 
+      "title": "Mr. Holland's Opus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119488", 
+      "rating": "8", 
+      "title": "L.A. Confidential", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0037094", 
+      "rating": "7", 
+      "title": "Mr. Skeffington", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112257", 
+      "rating": "8", 
+      "title": "301/302", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0037630", 
+      "rating": "10", 
+      "title": "Les dames du Bois de Boulogne", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074605", 
+      "rating": "9", 
+      "title": "Harlan County U.S.A.", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0011541", 
+      "rating": "10", 
+      "title": "One Week", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0096257", 
+      "rating": "8", 
+      "title": "The Thin Blue Line", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0075968", 
+      "rating": "9", 
+      "title": "The Duellists", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083658", 
+      "rating": "9", 
+      "title": "Blade Runner", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0145323"
+}

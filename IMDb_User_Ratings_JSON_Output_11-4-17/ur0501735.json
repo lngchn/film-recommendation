@@ -1,0 +1,653 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt3731562", 
+      "rating": "10", 
+      "title": "Kong: Skull Island", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114369", 
+      "rating": "9", 
+      "title": "Se7en", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092991", 
+      "rating": "9", 
+      "title": "Evil Dead II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0443496", 
+      "rating": "10", 
+      "title": "Edmond", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1745862", 
+      "rating": "8", 
+      "title": "Phil Spector", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0436078", 
+      "rating": "8", 
+      "title": "The Aristocrats", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0110074", 
+      "rating": "4", 
+      "title": "The Hudsucker Proxy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0059243", 
+      "rating": "10", 
+      "title": "The Great Race", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100150", 
+      "rating": "10", 
+      "title": "Miller's Crossing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0427944", 
+      "rating": "8", 
+      "title": "Thank You for Smoking", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120885", 
+      "rating": "8", 
+      "title": "Wag the Dog", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1446714", 
+      "rating": "9", 
+      "title": "Prometheus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119116", 
+      "rating": "8", 
+      "title": "The Fifth Element", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0816711", 
+      "rating": "7", 
+      "title": "World War Z", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1403865", 
+      "rating": "10", 
+      "title": "True Grit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0433035", 
+      "rating": "7", 
+      "title": "Real Steel", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0265666", 
+      "rating": "8", 
+      "title": "The Royal Tenenbaums", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0337978", 
+      "rating": "8", 
+      "title": "Live Free or Die Hard", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0293662", 
+      "rating": "8", 
+      "title": "The Transporter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112864", 
+      "rating": "7", 
+      "title": "Die Hard with a Vengeance", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1262981", 
+      "rating": "10", 
+      "title": "World's Greatest Dad", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0985694", 
+      "rating": "7", 
+      "title": "Machete", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118749", 
+      "rating": "10", 
+      "title": "Boogie Nights", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0410764", 
+      "rating": "10", 
+      "title": "Tideland", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096870", 
+      "rating": "1", 
+      "title": "Going Overboard", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099685", 
+      "rating": "10", 
+      "title": "Goodfellas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0027286", 
+      "rating": "7", 
+      "title": "The Amazing Adventure", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088919", 
+      "rating": "8", 
+      "title": "Chronos", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0066765", 
+      "rating": "10", 
+      "title": "And Now for Something Completely Different", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118147", 
+      "rating": "10", 
+      "title": "When We Were Kings", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0087003", 
+      "rating": "9", 
+      "title": "Broadway Danny Rose", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0256524", 
+      "rating": "7", 
+      "title": "The Curse of the Jade Scorpion", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115641", 
+      "rating": "7", 
+      "title": "Beavis and Butt-Head Do America", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083806", 
+      "rating": "7", 
+      "title": "Deathtrap", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098645", 
+      "rating": "6", 
+      "title": "Who's Harry Crumb?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082031", 
+      "rating": "7", 
+      "title": "Arthur", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112760", 
+      "rating": "7", 
+      "title": "Cutthroat Island", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092618", 
+      "rating": "8", 
+      "title": "Barfly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109361", 
+      "rating": "7", 
+      "title": "Cabin Boy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118308", 
+      "rating": "8", 
+      "title": "Emma", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0115678", 
+      "rating": "8", 
+      "title": "Big Night", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0023969", 
+      "rating": "10", 
+      "title": "Duck Soup", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0202677", 
+      "rating": "9", 
+      "title": "The Way of the Gun", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0127536", 
+      "rating": "7", 
+      "title": "Elizabeth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0218839", 
+      "rating": "9", 
+      "title": "Best in Show", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120630", 
+      "rating": "8", 
+      "title": "Chicken Run", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056923", 
+      "rating": "7", 
+      "title": "Charade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0101821", 
+      "rating": "5", 
+      "title": "Ernest Scared Stupid", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092086", 
+      "rating": "9", 
+      "title": "¡Three Amigos!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086984", 
+      "rating": "7", 
+      "title": "Body Double", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112682", 
+      "rating": "10", 
+      "title": "The City of Lost Children", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097240", 
+      "rating": "7", 
+      "title": "Drugstore Cowboy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103759", 
+      "rating": "8", 
+      "title": "Bad Lieutenant", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086856", 
+      "rating": "7", 
+      "title": "The Adventures of Buckaroo Banzai Across the 8th Dimension", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090685", 
+      "rating": "7", 
+      "title": "Back to School", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0131325", 
+      "rating": "8", 
+      "title": "Bowfinger", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083658", 
+      "rating": "10", 
+      "title": "Blade Runner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094721", 
+      "rating": "8", 
+      "title": "Beetlejuice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078748", 
+      "rating": "9", 
+      "title": "Alien", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083866", 
+      "rating": "5", 
+      "title": "E.T. the Extra-Terrestrial", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060196", 
+      "rating": "10", 
+      "title": "The Good, the Bad and the Ugly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099487", 
+      "rating": "6", 
+      "title": "Edward Scissorhands", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0072431", 
+      "rating": "8", 
+      "title": "Young Frankenstein", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0145660", 
+      "rating": "7", 
+      "title": "Austin Powers: The Spy Who Shagged Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086879", 
+      "rating": "8", 
+      "title": "Amadeus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082340", 
+      "rating": "7", 
+      "title": "Escape from New York", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116209", 
+      "rating": "5", 
+      "title": "The English Patient", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057012", 
+      "rating": "10", 
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120669", 
+      "rating": "9", 
+      "title": "Fear and Loathing in Las Vegas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0106308", 
+      "rating": "10", 
+      "title": "Army of Darkness", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112130", 
+      "rating": "8", 
+      "title": "Pride and Prejudice", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0096928", 
+      "rating": "7", 
+      "title": "Bill & Ted's Excellent Adventure", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0160127", 
+      "rating": "5", 
+      "title": "Charlie's Angels", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120655", 
+      "rating": "9", 
+      "title": "Dogma", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0243155", 
+      "rating": "7", 
+      "title": "Bridget Jones's Diary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120601", 
+      "rating": "8", 
+      "title": "Being John Malkovich", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080487", 
+      "rating": "7", 
+      "title": "Caddyshack", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120917", 
+      "rating": "7", 
+      "title": "The Emperor's New Groove", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083767", 
+      "rating": "8", 
+      "title": "Creepshow", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086979", 
+      "rating": "10", 
+      "title": "Blood Simple.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0085334", 
+      "rating": "7", 
+      "title": "A Christmas Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083791", 
+      "rating": "8", 
+      "title": "The Dark Crystal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082186", 
+      "rating": "9", 
+      "title": "Clash of the Titans", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081237", 
+      "rating": "10", 
+      "title": "The Ninth Configuration", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066740", 
+      "rating": "7", 
+      "title": "The Abominable Dr. Phibes", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0252503", 
+      "rating": "9", 
+      "title": "Heist", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0063462", 
+      "rating": "10", 
+      "title": "The Producers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078788", 
+      "rating": "10", 
+      "title": "Apocalypse Now", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0166924", 
+      "rating": "8", 
+      "title": "Mulholland Dr.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090728", 
+      "rating": "9", 
+      "title": "Big Trouble in Little China", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096764", 
+      "rating": "10", 
+      "title": "The Adventures of Baron Munchausen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120823", 
+      "rating": "10", 
+      "title": "The Impostors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099611", 
+      "rating": "7", 
+      "title": "Frankenhooker", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120202", 
+      "rating": "8", 
+      "title": "State and Main", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0077838", 
+      "rating": "8", 
+      "title": "The Last Waltz", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0017925", 
+      "rating": "9", 
+      "title": "The General", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0157472", 
+      "rating": "7", 
+      "title": "Clockstoppers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050212", 
+      "rating": "10", 
+      "title": "The Bridge on the River Kwai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118715", 
+      "rating": "10", 
+      "title": "The Big Lebowski", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090756", 
+      "rating": "9", 
+      "title": "Blue Velvet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047478", 
+      "rating": "10", 
+      "title": "Seven Samurai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088846", 
+      "rating": "10", 
+      "title": "Brazil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0106856", 
+      "rating": "7", 
+      "title": "Falling Down", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057193", 
+      "rating": "9", 
+      "title": "It's a Mad Mad Mad Mad World", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0268380", 
+      "rating": "6", 
+      "title": "Ice Age", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070917", 
+      "rating": "8", 
+      "title": "The Wicker Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0128445", 
+      "rating": "9", 
+      "title": "Rushmore", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100449", 
+      "rating": "9", 
+      "title": "Quick Change", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0501735"
+}

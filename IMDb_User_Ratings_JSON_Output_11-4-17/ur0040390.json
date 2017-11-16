@@ -1,0 +1,641 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0435651", 
+      "rating": "6", 
+      "title": "The Giver", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1596753", 
+      "rating": "7", 
+      "title": "Salinger", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt1345836", 
+      "rating": "10", 
+      "title": "The Dark Knight Rises", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0424024", 
+      "rating": "8", 
+      "title": "Darwin's Nightmare", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0266308", 
+      "rating": "9", 
+      "title": "Battle Royale", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105619", 
+      "rating": "8", 
+      "title": "The Heroic Trio", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097814", 
+      "rating": "9", 
+      "title": "Kiki's Delivery Service", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0129332", 
+      "rating": "7", 
+      "title": "Ravenous", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080546", 
+      "rating": "7", 
+      "title": "The Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0144084", 
+      "rating": "7", 
+      "title": "American Psycho", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097940", 
+      "rating": "8", 
+      "title": "Mystery Train", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0142342", 
+      "rating": "7", 
+      "title": "Big Daddy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0185014", 
+      "rating": "9", 
+      "title": "Wonder Boys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120655", 
+      "rating": "8", 
+      "title": "Dogma", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088263", 
+      "rating": "10", 
+      "title": "Michael Jackson: Thriller", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0119698", 
+      "rating": "7", 
+      "title": "Princess Mononoke", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120660", 
+      "rating": "9", 
+      "title": "Enemy of the State", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0106364", 
+      "rating": "8", 
+      "title": "Batman: Mask of the Phantasm", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120863", 
+      "rating": "9", 
+      "title": "The Thin Red Line", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0163651", 
+      "rating": "6", 
+      "title": "American Pie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120663", 
+      "rating": "10", 
+      "title": "Eyes Wide Shut", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083866", 
+      "rating": "10", 
+      "title": "E.T. the Extra-Terrestrial", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073486", 
+      "rating": "10", 
+      "title": "One Flew Over the Cuckoo's Nest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078788", 
+      "rating": "9", 
+      "title": "Apocalypse Now", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "9", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0145660", 
+      "rating": "7", 
+      "title": "Austin Powers: The Spy Who Shagged Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0139809", 
+      "rating": "7", 
+      "title": "The Thirteenth Floor", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105173", 
+      "rating": "5", 
+      "title": "Primary Motive", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118789", 
+      "rating": "9", 
+      "title": "Buffalo '66", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118607", 
+      "rating": "9", 
+      "title": "Amistad", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0106697", 
+      "rating": "7", 
+      "title": "Demolition Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0132477", 
+      "rating": "7", 
+      "title": "October Sky", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0126886", 
+      "rating": "9", 
+      "title": "Election", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067116", 
+      "rating": "7", 
+      "title": "The French Connection", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0128445", 
+      "rating": "10", 
+      "title": "Rushmore", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115734", 
+      "rating": "9", 
+      "title": "Bottle Rocket", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067800", 
+      "rating": "9", 
+      "title": "Straw Dogs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086250", 
+      "rating": "9", 
+      "title": "Scarface", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120324", 
+      "rating": "10", 
+      "title": "A Simple Plan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116282", 
+      "rating": "9", 
+      "title": "Fargo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120633", 
+      "rating": "6", 
+      "title": "A Civil Action", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089006", 
+      "rating": "8", 
+      "title": "Death of a Salesman", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0117665", 
+      "rating": "6", 
+      "title": "Sleepers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119217", 
+      "rating": "10", 
+      "title": "Good Will Hunting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120484", 
+      "rating": "7", 
+      "title": "The Waterboy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060666", 
+      "rating": "1", 
+      "title": "Manos: The Hands of Fate", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0064373", 
+      "rating": "5", 
+      "title": "All Monsters Attack", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120498", 
+      "rating": "7", 
+      "title": "What the Deaf Man Heard", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0117128", 
+      "rating": "8", 
+      "title": "Mystery Science Theater 3000: The Movie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0063172", 
+      "rating": "3", 
+      "title": "Destroy All Monsters", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118863", 
+      "rating": "8", 
+      "title": "Clay Pigeons", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119142", 
+      "rating": "7", 
+      "title": "For Richer or Poorer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116861", 
+      "rating": "3", 
+      "title": "Leprechaun 4: In Space", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0109370", 
+      "rating": "5", 
+      "title": "Canadian Bacon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119994", 
+      "rating": "7", 
+      "title": "Red Corner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120741", 
+      "rating": "4", 
+      "title": "Mafia!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120728", 
+      "rating": "7", 
+      "title": "The Last Days of Disco", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115195", 
+      "rating": "7", 
+      "title": "Gulliver's Travels", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0120654", 
+      "rating": "8", 
+      "title": "Dirty Work", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095655", 
+      "rating": "8", 
+      "title": "Moonwalker", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118111", 
+      "rating": "5", 
+      "title": "Waiting for Guffman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0124879", 
+      "rating": "9", 
+      "title": "Simon Birch", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120321", 
+      "rating": "10", 
+      "title": "Smoke Signals", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111149", 
+      "rating": "8", 
+      "title": "Shallow Grave", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071970", 
+      "rating": "6", 
+      "title": "The Parallax View", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0023969", 
+      "rating": "8", 
+      "title": "Duck Soup", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109445", 
+      "rating": "9", 
+      "title": "Clerks", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094947", 
+      "rating": "7", 
+      "title": "Dangerous Liaisons", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114694", 
+      "rating": "7", 
+      "title": "Tommy Boy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112722", 
+      "rating": "7", 
+      "title": "Copycat", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0090863", 
+      "rating": "6", 
+      "title": "The Color of Money", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067023", 
+      "rating": "8", 
+      "title": "Duel", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0118842", 
+      "rating": "8", 
+      "title": "Chasing Amy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113749", 
+      "rating": "9", 
+      "title": "Mallrats", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120768", 
+      "rating": "8", 
+      "title": "The Negotiator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120577", 
+      "rating": "7", 
+      "title": "54", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053137", 
+      "rating": "8", 
+      "title": "On the Beach", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118883", 
+      "rating": "7", 
+      "title": "Conspiracy Theory", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0072856", 
+      "rating": "6", 
+      "title": "Death Race 2000", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0122933", 
+      "rating": "6", 
+      "title": "Analyze This", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "9", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068646", 
+      "rating": "10", 
+      "title": "The Godfather", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081505", 
+      "rating": "9", 
+      "title": "The Shining", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120338", 
+      "rating": "8", 
+      "title": "Titanic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103064", 
+      "rating": "10", 
+      "title": "Terminator 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120815", 
+      "rating": "9", 
+      "title": "Saving Private Ryan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066921", 
+      "rating": "9", 
+      "title": "A Clockwork Orange", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093058", 
+      "rating": "9", 
+      "title": "Full Metal Jacket", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088247", 
+      "rating": "7", 
+      "title": "The Terminator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105236", 
+      "rating": "9", 
+      "title": "Reservoir Dogs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071562", 
+      "rating": "10", 
+      "title": "The Godfather: Part II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117571", 
+      "rating": "8", 
+      "title": "Scream", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120382", 
+      "rating": "8", 
+      "title": "The Truman Show", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057012", 
+      "rating": "8", 
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0129387", 
+      "rating": "9", 
+      "title": "There's Something About Mary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120611", 
+      "rating": "7", 
+      "title": "Blade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087363", 
+      "rating": "7", 
+      "title": "Gremlins", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118929", 
+      "rating": "7", 
+      "title": "Dark City", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120812", 
+      "rating": "6", 
+      "title": "Rush Hour", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120647", 
+      "rating": "6", 
+      "title": "Deep Impact", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112384", 
+      "rating": "10", 
+      "title": "Apollo 13", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097216", 
+      "rating": "9", 
+      "title": "Do the Right Thing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097441", 
+      "rating": "8", 
+      "title": "Glory", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120746", 
+      "rating": "7", 
+      "title": "The Mask of Zorro", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120631", 
+      "rating": "6", 
+      "title": "Ever After: A Cinderella Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120828", 
+      "rating": "6", 
+      "title": "Six Days Seven Nights", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0040390"
+}

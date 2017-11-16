@@ -1,0 +1,479 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt2771200", 
+      "rating": "9", 
+      "title": "Beauty and the Beast", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2267998", 
+      "rating": "10", 
+      "title": "Gone Girl", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2872732", 
+      "rating": "6", 
+      "title": "Lucy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2381941", 
+      "rating": "7", 
+      "title": "Focus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1674771", 
+      "rating": "8", 
+      "title": "Entourage", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0369610", 
+      "rating": "5", 
+      "title": "Jurassic World", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2015381", 
+      "rating": "7", 
+      "title": "Guardians of the Galaxy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1790864", 
+      "rating": "7", 
+      "title": "The Maze Runner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2310332", 
+      "rating": "6", 
+      "title": "The Hobbit: The Battle of the Five Armies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1951265", 
+      "rating": "7", 
+      "title": "The Hunger Games: Mockingjay - Part 1", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "8", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081505", 
+      "rating": "8", 
+      "title": "The Shining", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0993846", 
+      "rating": "7", 
+      "title": "The Wolf of Wall Street", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086190", 
+      "rating": "8", 
+      "title": "Star Wars: Episode VI - Return of the Jedi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080684", 
+      "rating": "8", 
+      "title": "Star Wars: Episode V - The Empire Strikes Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1675434", 
+      "rating": "7", 
+      "title": "The Intouchables", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103064", 
+      "rating": "7", 
+      "title": "Terminator 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1205489", 
+      "rating": "8", 
+      "title": "Gran Torino", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0892769", 
+      "rating": "7", 
+      "title": "How to Train Your Dragon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0137523", 
+      "rating": "8", 
+      "title": "Fight Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110357", 
+      "rating": "9", 
+      "title": "The Lion King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114814", 
+      "rating": "9", 
+      "title": "The Usual Suspects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070511", 
+      "rating": "9", 
+      "title": "Papillon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "10", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "6", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0361748", 
+      "rating": "2", 
+      "title": "Inglourious Basterds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "9", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110413", 
+      "rating": "9", 
+      "title": "Léon: The Professional", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120737", 
+      "rating": "8", 
+      "title": "The Lord of the Rings: The Fellowship of the Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120689", 
+      "rating": "10", 
+      "title": "The Green Mile", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "9", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0482571", 
+      "rating": "9", 
+      "title": "The Prestige", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0172495", 
+      "rating": "9", 
+      "title": "Gladiator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112573", 
+      "rating": "8", 
+      "title": "Braveheart", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120586", 
+      "rating": "8", 
+      "title": "American History X", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066921", 
+      "rating": "4", 
+      "title": "A Clockwork Orange", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0209144", 
+      "rating": "9", 
+      "title": "Memento", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1877832", 
+      "rating": "8", 
+      "title": "X-Men: Days of Future Past", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1130884", 
+      "rating": "9", 
+      "title": "Shutter Island", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167260", 
+      "rating": "9", 
+      "title": "The Lord of the Rings: The Return of the King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0208092", 
+      "rating": "9", 
+      "title": "Snatch", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095016", 
+      "rating": "7", 
+      "title": "Die Hard", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167261", 
+      "rating": "9", 
+      "title": "The Lord of the Rings: The Two Towers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0266543", 
+      "rating": "8", 
+      "title": "Finding Nemo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0440963", 
+      "rating": "9", 
+      "title": "The Bourne Ultimatum", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0816692", 
+      "rating": "9", 
+      "title": "Interstellar", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1951264", 
+      "rating": "8", 
+      "title": "The Hunger Games: Catching Fire", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0163651", 
+      "rating": "8", 
+      "title": "American Pie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1670345", 
+      "rating": "8", 
+      "title": "Now You See Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0816711", 
+      "rating": "6", 
+      "title": "World War Z", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0232500", 
+      "rating": "7", 
+      "title": "The Fast and the Furious", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0187078", 
+      "rating": "6", 
+      "title": "Gone in Sixty Seconds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1343092", 
+      "rating": "6", 
+      "title": "The Great Gatsby", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0198781", 
+      "rating": "9", 
+      "title": "Monsters, Inc.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0405422", 
+      "rating": "8", 
+      "title": "The 40-Year-Old Virgin", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1663662", 
+      "rating": "4", 
+      "title": "Pacific Rim", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0848228", 
+      "rating": "7", 
+      "title": "The Avengers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1707386", 
+      "rating": "7", 
+      "title": "Les Misérables", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1045658", 
+      "rating": "8", 
+      "title": "Silver Linings Playbook", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0936501", 
+      "rating": "10", 
+      "title": "Taken", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1690953", 
+      "rating": "8", 
+      "title": "Despicable Me 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0481499", 
+      "rating": "6", 
+      "title": "The Croods", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1375666", 
+      "rating": "10", 
+      "title": "Inception", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118880", 
+      "rating": "9", 
+      "title": "Con Air", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116483", 
+      "rating": "9", 
+      "title": "Happy Gilmore", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116704", 
+      "rating": "8", 
+      "title": "Police Story 4: First Strike", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097576", 
+      "rating": "9", 
+      "title": "Indiana Jones and the Last Crusade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119249", 
+      "rating": "1", 
+      "title": "Commander Hamilton", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120670", 
+      "rating": "7", 
+      "title": "Firestorm", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120696", 
+      "rating": "7", 
+      "title": "Hard Rain", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120741", 
+      "rating": "4", 
+      "title": "Mafia!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119173", 
+      "rating": "6", 
+      "title": "G.I. Jane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119695", 
+      "rating": "9", 
+      "title": "Money Talks", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120873", 
+      "rating": "9", 
+      "title": "U.S. Marshals", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0129387", 
+      "rating": "10", 
+      "title": "There's Something About Mary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120812", 
+      "rating": "9", 
+      "title": "Rush Hour", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111257", 
+      "rating": "9", 
+      "title": "Speed", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120382", 
+      "rating": "5", 
+      "title": "The Truman Show", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071853", 
+      "rating": "9", 
+      "title": "Monty Python and the Holy Grail", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0269805"
+}

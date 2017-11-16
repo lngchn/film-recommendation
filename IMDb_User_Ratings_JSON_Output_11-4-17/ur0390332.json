@@ -1,0 +1,515 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt2119532", 
+      "rating": "10", 
+      "title": "Hacksaw Ridge", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1316037", 
+      "rating": "1", 
+      "title": "Birdemic: Shock and Terror", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087957", 
+      "rating": "9", 
+      "title": "Purple Rain", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094721", 
+      "rating": "10", 
+      "title": "Beetlejuice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103873", 
+      "rating": "9", 
+      "title": "Dead Alive", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096446", 
+      "rating": "9", 
+      "title": "Willow", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0837156", 
+      "rating": "10", 
+      "title": "Pee-wee's Big Holiday", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099871", 
+      "rating": "10", 
+      "title": "Jacob's Ladder", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "10", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0795176", 
+      "rating": "10", 
+      "title": "Planet Earth", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt2788710", 
+      "rating": "10", 
+      "title": "The Interview", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0240515", 
+      "rating": "10", 
+      "title": "Freddy Got Fingered", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1877832", 
+      "rating": "10", 
+      "title": "X-Men: Days of Future Past", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1798709", 
+      "rating": "10", 
+      "title": "Her", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095560", 
+      "rating": "1", 
+      "title": "Mac and Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118715", 
+      "rating": "10", 
+      "title": "The Big Lebowski", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0383028", 
+      "rating": "10", 
+      "title": "Synecdoche, New York", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110826", 
+      "rating": "10", 
+      "title": "The Phoenix and the Magic Carpet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0101615", 
+      "rating": "1", 
+      "title": "Cool as Ice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095107", 
+      "rating": "9", 
+      "title": "Ernest Saves Christmas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0947798", 
+      "rating": "10", 
+      "title": "Black Swan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0368226", 
+      "rating": "1", 
+      "title": "The Room", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1144539", 
+      "rating": "10", 
+      "title": "Best Worst Movie", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0105643", 
+      "rating": "1", 
+      "title": "Troll 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1375666", 
+      "rating": "10", 
+      "title": "Inception", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078788", 
+      "rating": "10", 
+      "title": "Apocalypse Now", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0499549", 
+      "rating": "10", 
+      "title": "Avatar", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1031969", 
+      "rating": "10", 
+      "title": "The Rocker", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0468569", 
+      "rating": "10", 
+      "title": "The Dark Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050825", 
+      "rating": "10", 
+      "title": "Paths of Glory", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093116", 
+      "rating": "1", 
+      "title": "The Great Land of Small", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088323", 
+      "rating": "10", 
+      "title": "The NeverEnding Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0246578", 
+      "rating": "10", 
+      "title": "Donnie Darko", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086190", 
+      "rating": "10", 
+      "title": "Star Wars: Episode VI - Return of the Jedi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057012", 
+      "rating": "10", 
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0169547", 
+      "rating": "10", 
+      "title": "American Beauty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034583", 
+      "rating": "1", 
+      "title": "Casablanca", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0137523", 
+      "rating": "10", 
+      "title": "Fight Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0180093", 
+      "rating": "10", 
+      "title": "Requiem for a Dream", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0195909", 
+      "rating": "10", 
+      "title": "Meeting People Is Easy", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0113135", 
+      "rating": "1", 
+      "title": "Future War", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0189584", 
+      "rating": "10", 
+      "title": "The Big Kahuna", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0185014", 
+      "rating": "10", 
+      "title": "Wonder Boys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060666", 
+      "rating": "1", 
+      "title": "Manos: The Hands of Fate", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0085803", 
+      "rating": "10", 
+      "title": "Knowhutimean? Hey Vern, It's My Family Album", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0124315", 
+      "rating": "9", 
+      "title": "The Cider House Rules", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0183523", 
+      "rating": "1", 
+      "title": "Mission to Mars", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0049406", 
+      "rating": "10", 
+      "title": "The Killing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0158983", 
+      "rating": "10", 
+      "title": "South Park: Bigger, Longer & Uncut", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "10", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "10", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120815", 
+      "rating": "10", 
+      "title": "Saving Private Ryan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120586", 
+      "rating": "10", 
+      "title": "American History X", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073486", 
+      "rating": "10", 
+      "title": "One Flew Over the Cuckoo's Nest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120735", 
+      "rating": "10", 
+      "title": "Lock, Stock and Two Smoking Barrels", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120591", 
+      "rating": "1", 
+      "title": "Armageddon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088846", 
+      "rating": "10", 
+      "title": "Brazil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0134084", 
+      "rating": "2", 
+      "title": "Scream 3", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0134847", 
+      "rating": "4", 
+      "title": "Pitch Black", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0020530", 
+      "rating": "10", 
+      "title": "Un Chien Andalou", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0091059", 
+      "rating": "10", 
+      "title": "Flight of the Navigator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0101410", 
+      "rating": "10", 
+      "title": "Barton Fink", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089218", 
+      "rating": "10", 
+      "title": "The Goonies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096344", 
+      "rating": "1", 
+      "title": "The Unnamable", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100666", 
+      "rating": "1", 
+      "title": "Spaced Invaders", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068646", 
+      "rating": "10", 
+      "title": "The Godfather", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0081505", 
+      "rating": "10", 
+      "title": "The Shining", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "10", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120663", 
+      "rating": "10", 
+      "title": "Eyes Wide Shut", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070047", 
+      "rating": "10", 
+      "title": "The Exorcist", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114814", 
+      "rating": "10", 
+      "title": "The Usual Suspects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091369", 
+      "rating": "10", 
+      "title": "Labyrinth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0175880", 
+      "rating": "10", 
+      "title": "Magnolia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120669", 
+      "rating": "10", 
+      "title": "Fear and Loathing in Las Vegas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0072684", 
+      "rating": "10", 
+      "title": "Barry Lyndon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0171363", 
+      "rating": "1", 
+      "title": "The Haunting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096149", 
+      "rating": "1", 
+      "title": "Space Mutiny", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120689", 
+      "rating": "10", 
+      "title": "The Green Mile", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118665", 
+      "rating": "1", 
+      "title": "Baby Geniuses", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089791", 
+      "rating": "10", 
+      "title": "Pee-wee's Big Adventure", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066921", 
+      "rating": "10", 
+      "title": "A Clockwork Orange", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093058", 
+      "rating": "10", 
+      "title": "Full Metal Jacket", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099348", 
+      "rating": "9", 
+      "title": "Dances with Wolves", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "10", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120601", 
+      "rating": "10", 
+      "title": "Being John Malkovich", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0390332"
+}

@@ -1,0 +1,827 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt1316037", 
+      "rating": "1", 
+      "title": "Birdemic: Shock and Terror", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2055730", 
+      "rating": "10", 
+      "title": "Shadowland, the Legend", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1478323", 
+      "rating": "10", 
+      "title": "Living Dead Lock Up 3: Siege of the Dead", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0816564", 
+      "rating": "10", 
+      "title": "Living Dead Lock Up", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0940664", 
+      "rating": "10", 
+      "title": "Bit Parts", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0481598", 
+      "rating": "10", 
+      "title": "Pathogen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0457430", 
+      "rating": "10", 
+      "title": "Pan's Labyrinth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0381061", 
+      "rating": "10", 
+      "title": "Casino Royale", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0015324", 
+      "rating": "10", 
+      "title": "Sherlock Jr.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0264323", 
+      "rating": "7", 
+      "title": "2001 Maniacs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0037576", 
+      "rating": "10", 
+      "title": "Captain Kidd", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0063790", 
+      "rating": "10", 
+      "title": "Voyage to the Planet of Prehistoric Women", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0058548", 
+      "rating": "10", 
+      "title": "Santa Claus Conquers the Martians", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0013025", 
+      "rating": "10", 
+      "title": "Cops", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0011984", 
+      "rating": "10", 
+      "title": "The Boat", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0013055", 
+      "rating": "10", 
+      "title": "Daydreams", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0012570", 
+      "rating": "10", 
+      "title": "The Play House", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0013099", 
+      "rating": "10", 
+      "title": "The Electric House", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0012945", 
+      "rating": "10", 
+      "title": "The Blacksmith", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0141134", 
+      "rating": "10", 
+      "title": "The Goose That Laid the Golden Egg", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0305396", 
+      "rating": "10", 
+      "title": "The Crocodile Hunter: Collision Course", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0813999", 
+      "rating": "10", 
+      "title": "Alive in Joburg", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0417148", 
+      "rating": "10", 
+      "title": "Snakes on a Plane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0383574", 
+      "rating": "10", 
+      "title": "Pirates of the Caribbean: Dead Man's Chest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0806130", 
+      "rating": "10", 
+      "title": "My Sexiest Year", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0486639", 
+      "rating": "10", 
+      "title": "Passing Fancy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0055830", 
+      "rating": "10", 
+      "title": "Carnival of Souls", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0444605", 
+      "rating": "10", 
+      "title": "The Bahama Hustle", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0438296", 
+      "rating": "10", 
+      "title": "Push", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0421239", 
+      "rating": "10", 
+      "title": "Red Eye", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0063350", 
+      "rating": "10", 
+      "title": "Night of the Living Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0360717", 
+      "rating": "10", 
+      "title": "King Kong", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0363771", 
+      "rating": "10", 
+      "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0330373", 
+      "rating": "10", 
+      "title": "Harry Potter and the Goblet of Fire", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0383218", 
+      "rating": "5", 
+      "title": "Black Gulch", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0088993", 
+      "rating": "10", 
+      "title": "Day of the Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0407304", 
+      "rating": "9", 
+      "title": "War of the Worlds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0418819", 
+      "rating": "9", 
+      "title": "Land of the Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0372784", 
+      "rating": "10", 
+      "title": "Batman Begins", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0351283", 
+      "rating": "9", 
+      "title": "Madagascar", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110005", 
+      "rating": "10", 
+      "title": "Heavenly Creatures", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095088", 
+      "rating": "5", 
+      "title": "Elvira: Mistress of the Dark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0387564", 
+      "rating": "7", 
+      "title": "Saw", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0401792", 
+      "rating": "9", 
+      "title": "Sin City", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094072", 
+      "rating": "9", 
+      "title": "Summer School", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104029", 
+      "rating": "7", 
+      "title": "Cronos", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0333766", 
+      "rating": "10", 
+      "title": "Garden State", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0293508", 
+      "rating": "10", 
+      "title": "The Phantom of the Opera", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0345950", 
+      "rating": "9", 
+      "title": "The SpongeBob SquarePants Movie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0317705", 
+      "rating": "10", 
+      "title": "The Incredibles", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084745", 
+      "rating": "10", 
+      "title": "Swamp Thing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0380268", 
+      "rating": "10", 
+      "title": "Cocaine Cowboys", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0388482", 
+      "rating": "10", 
+      "title": "Transporter 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0378194", 
+      "rating": "10", 
+      "title": "Kill Bill: Vol. 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0265208", 
+      "rating": "10", 
+      "title": "The Girl Next Door", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0370263", 
+      "rating": "7", 
+      "title": "AVP: Alien vs. Predator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0368447", 
+      "rating": "10", 
+      "title": "The Village", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0316654", 
+      "rating": "10", 
+      "title": "Spider-Man 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0281686", 
+      "rating": "10", 
+      "title": "Bubba Ho-Tep", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0154003", 
+      "rating": "10", 
+      "title": "The Adventures of Young Indiana Jones: Travels with Father", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0115031", 
+      "rating": "10", 
+      "title": "The Adventures of Young Indiana Jones: Treasure of the Peacock's Eye", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0327437", 
+      "rating": "10", 
+      "title": "Around the World in 80 Days", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0411738", 
+      "rating": "10", 
+      "title": "Party Animals (or... How to Get to the White House in 5 Easy Steps)", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0285302", 
+      "rating": "10", 
+      "title": "Looking for God", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0304141", 
+      "rating": "10", 
+      "title": "Harry Potter and the Prisoner of Azkaban", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0387075", 
+      "rating": "1", 
+      "title": "Bloodthirst: Legend of the Chupacabras", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0349113", 
+      "rating": "1", 
+      "title": "Ax 'Em", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0338526", 
+      "rating": "10", 
+      "title": "Van Helsing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167190", 
+      "rating": "10", 
+      "title": "Hellboy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0324216", 
+      "rating": "10", 
+      "title": "The Texas Chainsaw Massacre", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167260", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Return of the King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0319061", 
+      "rating": "10", 
+      "title": "Big Fish", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0325710", 
+      "rating": "10", 
+      "title": "The Last Samurai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "10", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112573", 
+      "rating": "10", 
+      "title": "Braveheart", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0266697", 
+      "rating": "10", 
+      "title": "Kill Bill: Vol. 1", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088263", 
+      "rating": "10", 
+      "title": "Michael Jackson: Thriller", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0188030", 
+      "rating": "10", 
+      "title": "Butterfly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0288045", 
+      "rating": "10", 
+      "title": "The Medallion", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0360651", 
+      "rating": "10", 
+      "title": "Hunting for Herschell", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0339034", 
+      "rating": "10", 
+      "title": "From Justin to Kelly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0367584", 
+      "rating": "10", 
+      "title": "Carlita's Secret", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0325849", 
+      "rating": "10", 
+      "title": "Mr. St. Nick", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0313443", 
+      "rating": "10", 
+      "title": "Out of Time", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0264789", 
+      "rating": "10", 
+      "title": "The Legend of Jake Kincaid", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0338466", 
+      "rating": "10", 
+      "title": "Stuck on You", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0322259", 
+      "rating": "10", 
+      "title": "2 Fast 2 Furious", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0172156", 
+      "rating": "10", 
+      "title": "Bad Boys II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0329101", 
+      "rating": "10", 
+      "title": "Freddy vs. Jason", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120903", 
+      "rating": "10", 
+      "title": "X-Men", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0325980", 
+      "rating": "10", 
+      "title": "Pirates of the Caribbean: The Curse of the Black Pearl", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0234215", 
+      "rating": "10", 
+      "title": "The Matrix Reloaded", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0290334", 
+      "rating": "10", 
+      "title": "X-Men 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0245429", 
+      "rating": "10", 
+      "title": "Spirited Away", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038650", 
+      "rating": "10", 
+      "title": "It's a Wonderful Life", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0300471", 
+      "rating": "10", 
+      "title": "Shanghai Knights", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0287978", 
+      "rating": "10", 
+      "title": "Daredevil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107688", 
+      "rating": "10", 
+      "title": "The Nightmare Before Christmas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0121462", 
+      "rating": "10", 
+      "title": "Lao shu jie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0299658", 
+      "rating": "10", 
+      "title": "Chicago", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0207275", 
+      "rating": "10", 
+      "title": "The 10th Kingdom", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0289830", 
+      "rating": "10", 
+      "title": "Taken", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0167261", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Two Towers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068555", 
+      "rating": "10", 
+      "title": "Everything You Always Wanted to Know About Sex * But Were Afraid to Ask", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0298130", 
+      "rating": "10", 
+      "title": "The Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0331321", 
+      "rating": "10", 
+      "title": "Porn 'n Chicken", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0117731", 
+      "rating": "10", 
+      "title": "Star Trek: First Contact", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0283084", 
+      "rating": "10", 
+      "title": "Tuck Everlasting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "10", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0286098", 
+      "rating": "10", 
+      "title": "Zu Warriors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083866", 
+      "rating": "10", 
+      "title": "E.T. the Extra-Terrestrial", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0127357", 
+      "rating": "10", 
+      "title": "Who Am I?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089374", 
+      "rating": "10", 
+      "title": "Police Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102164", 
+      "rating": "10", 
+      "title": "Johnny Stecchino", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110570", 
+      "rating": "10", 
+      "title": "The Monster", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0098019", 
+      "rating": "10", 
+      "title": "Miracles - Mr. Canton and Lady Rose", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0085127", 
+      "rating": "10", 
+      "title": "Project A", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111512", 
+      "rating": "10", 
+      "title": "The Legend of Drunken Master", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0104815", 
+      "rating": "10", 
+      "title": "El Mariachi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0017925", 
+      "rating": "10", 
+      "title": "The General", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068327", 
+      "rating": "10", 
+      "title": "Cabaret", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0021749", 
+      "rating": "10", 
+      "title": "City Lights", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0012349", 
+      "rating": "10", 
+      "title": "The Kid", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0131325", 
+      "rating": "10", 
+      "title": "Bowfinger", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0290095", 
+      "rating": "10", 
+      "title": "The Tuxedo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0239879", 
+      "rating": "10", 
+      "title": "Raw Deal: A Question of Consent", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0120737", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Fellowship of the Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0145487", 
+      "rating": "10", 
+      "title": "Spider-Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118799", 
+      "rating": "10", 
+      "title": "Life Is Beautiful", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0181689", 
+      "rating": "10", 
+      "title": "Minority Report", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0286106", 
+      "rating": "10", 
+      "title": "Signs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0203009", 
+      "rating": "10", 
+      "title": "Moulin Rouge!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070735", 
+      "rating": "10", 
+      "title": "The Sting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0275847", 
+      "rating": "10", 
+      "title": "Lilo & Stitch", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0190332", 
+      "rating": "10", 
+      "title": "Crouching Tiger, Hidden Dragon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0165216", 
+      "rating": "10", 
+      "title": "E hu kuang long", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0313314", 
+      "rating": "10", 
+      "title": "Boyz in Tights", 
+      "type": "Documentary"
+    }
+  ], 
+  "user_id": "ur0715384"
+}

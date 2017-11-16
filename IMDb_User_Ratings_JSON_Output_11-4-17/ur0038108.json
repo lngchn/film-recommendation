@@ -1,0 +1,539 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0075404", 
+      "rating": "7", 
+      "title": "The Ascent", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084538", 
+      "rating": "10", 
+      "title": "Privates on Parade", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0059527", 
+      "rating": "8", 
+      "title": "The Shop on Main Street", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0879843", 
+      "rating": "7", 
+      "title": "Katyn", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076734", 
+      "rating": "10", 
+      "title": "Soldier of Orange", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074695", 
+      "rating": "8", 
+      "title": "Cross of Iron", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0881200", 
+      "rating": "8", 
+      "title": "Assembly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0266425", 
+      "rating": "9", 
+      "title": "Conspiracy", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "10", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120815", 
+      "rating": "9", 
+      "title": "Saving Private Ryan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0253474", 
+      "rating": "9", 
+      "title": "The Pianist", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0363163", 
+      "rating": "9", 
+      "title": "Downfall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0914798", 
+      "rating": "8", 
+      "title": "The Boy in the Striped Pajamas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091251", 
+      "rating": "9", 
+      "title": "Come and See", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082096", 
+      "rating": "10", 
+      "title": "Das Boot", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1688606", 
+      "rating": "6", 
+      "title": "South Riding", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0338290", 
+      "rating": "9", 
+      "title": "Normal", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0178130", 
+      "rating": "6", 
+      "title": "Cleopatra", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0120789", 
+      "rating": "8", 
+      "title": "Pleasantville", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0848228", 
+      "rating": "10", 
+      "title": "The Avengers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113540", 
+      "rating": "7", 
+      "title": "Kids", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1601913", 
+      "rating": "8", 
+      "title": "The Grey", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1029235", 
+      "rating": "9", 
+      "title": "Max Manus: Man of War", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0362192", 
+      "rating": "10", 
+      "title": "State of Play", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0362227", 
+      "rating": "3", 
+      "title": "The Terminal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0395251", 
+      "rating": "8", 
+      "title": "The Producers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0330373", 
+      "rating": "9", 
+      "title": "Harry Potter and the Goblet of Fire", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0396641", 
+      "rating": "9", 
+      "title": "Home", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0373981", 
+      "rating": "7", 
+      "title": "Kontroll", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0383694", 
+      "rating": "9", 
+      "title": "Vera Drake", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0382330", 
+      "rating": "9", 
+      "title": "As It Is in Heaven", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0385405", 
+      "rating": "9", 
+      "title": "The Befallen", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0344510", 
+      "rating": "9", 
+      "title": "A Very Long Engagement", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0106002", 
+      "rating": "8", 
+      "title": "Fortuna", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0430562", 
+      "rating": "7", 
+      "title": "Chlorox, Ammonium and Coffee", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114323", 
+      "rating": "1", 
+      "title": "Safe", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0317198", 
+      "rating": "7", 
+      "title": "Bridget Jones: The Edge of Reason", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0352277", 
+      "rating": "9", 
+      "title": "De-Lovely", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0247586", 
+      "rating": "9", 
+      "title": "Nine Queens", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0338309", 
+      "rating": "9", 
+      "title": "Evil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0155711", 
+      "rating": "9", 
+      "title": "Flawless", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0338526", 
+      "rating": "6", 
+      "title": "Van Helsing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0289879", 
+      "rating": "9", 
+      "title": "The Butterfly Effect", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0274468", 
+      "rating": "10", 
+      "title": "Door to Door", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0300140", 
+      "rating": "9", 
+      "title": "Lilya 4-Ever", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118655", 
+      "rating": "8", 
+      "title": "Austin Powers: International Man of Mystery", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0335266", 
+      "rating": "9", 
+      "title": "Lost in Translation", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0322330", 
+      "rating": "8", 
+      "title": "Freaky Friday", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0298845", 
+      "rating": "9", 
+      "title": "In America", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0296144", 
+      "rating": "8", 
+      "title": "The Best Day of My Life", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0277941", 
+      "rating": "6", 
+      "title": "Ned Kelly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057809", 
+      "rating": "9", 
+      "title": "36 Hours", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0326664", 
+      "rating": "9", 
+      "title": "Swimming Upstream", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0188674", 
+      "rating": "8", 
+      "title": "Human Traffic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0171308", 
+      "rating": "4", 
+      "title": "The Fall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118785", 
+      "rating": "8", 
+      "title": "Junk Mail", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0065528", 
+      "rating": "9", 
+      "title": "Catch-22", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054953", 
+      "rating": "8", 
+      "title": "The Guns of Navarone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074937", 
+      "rating": "10", 
+      "title": "Murder by Death", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0180093", 
+      "rating": "9", 
+      "title": "Requiem for a Dream", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117951", 
+      "rating": "8", 
+      "title": "Trainspotting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066026", 
+      "rating": "7", 
+      "title": "MASH", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057115", 
+      "rating": "9", 
+      "title": "The Great Escape", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050212", 
+      "rating": "10", 
+      "title": "The Bridge on the River Kwai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070511", 
+      "rating": "8", 
+      "title": "Papillon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0123056", 
+      "rating": "6", 
+      "title": "Emoh Ruo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0266543", 
+      "rating": "10", 
+      "title": "Finding Nemo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0259393", 
+      "rating": "9", 
+      "title": "Lantana", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119512", 
+      "rating": "9", 
+      "title": "Left Luggage", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0036112", 
+      "rating": "9", 
+      "title": "The Life and Death of Colonel Blimp", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038733", 
+      "rating": "9", 
+      "title": "Stairway to Heaven", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091288", 
+      "rating": "9", 
+      "title": "Jean de Florette", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091480", 
+      "rating": "9", 
+      "title": "Manon of the Spring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057012", 
+      "rating": "10", 
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0059377", 
+      "rating": "6", 
+      "title": "Lady L", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120601", 
+      "rating": "8", 
+      "title": "Being John Malkovich", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0101053", 
+      "rating": "9", 
+      "title": "Brides of Christ", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0203166", 
+      "rating": "9", 
+      "title": "Together", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116931", 
+      "rating": "9", 
+      "title": "Love and Other Catastrophes", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0289328", 
+      "rating": "8", 
+      "title": "Me & Mrs Jones", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0169501", 
+      "rating": "10", 
+      "title": "Ultraviolet", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0108388", 
+      "rating": "5", 
+      "title": "The Trial", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0106104", 
+      "rating": "9", 
+      "title": "Prime Suspect 3", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0092581", 
+      "rating": "7", 
+      "title": "Around the World in Eighty Ways", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0150662", 
+      "rating": "10", 
+      "title": "Show Me Love", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0144796", 
+      "rating": "9", 
+      "title": "Bliss", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0094908", 
+      "rating": "5", 
+      "title": "Cool Blue", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0119360", 
+      "rating": "8", 
+      "title": "In & Out", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115685", 
+      "rating": "9", 
+      "title": "The Birdcage", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0038108"
+}

@@ -1,0 +1,803 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0083658", 
+      "rating": "10", 
+      "title": "Blade Runner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1396484", 
+      "rating": "10", 
+      "title": "It", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt4537888", 
+      "rating": "4", 
+      "title": "The Monster Project", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0451279", 
+      "rating": "10", 
+      "title": "Wonder Woman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt4513674", 
+      "rating": "8", 
+      "title": "Café Society", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2975590", 
+      "rating": "3", 
+      "title": "Batman v Superman: Dawn of Justice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093870", 
+      "rating": "10", 
+      "title": "RoboCop", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1323594", 
+      "rating": "9", 
+      "title": "Despicable Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1690953", 
+      "rating": "8", 
+      "title": "Despicable Me 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1502712", 
+      "rating": "4", 
+      "title": "Fantastic Four", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2322441", 
+      "rating": "1", 
+      "title": "Fifty Shades of Grey", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1043726", 
+      "rating": "1", 
+      "title": "The Legend of Hercules", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0993846", 
+      "rating": "8", 
+      "title": "The Wolf of Wall Street", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1321511", 
+      "rating": "5", 
+      "title": "Old Boy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1234721", 
+      "rating": "4", 
+      "title": "RoboCop", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088000", 
+      "rating": "10", 
+      "title": "Revenge of the Nerds", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080339", 
+      "rating": "10", 
+      "title": "Airplane!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1821694", 
+      "rating": "7", 
+      "title": "RED 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1483013", 
+      "rating": "5", 
+      "title": "Oblivion", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0481499", 
+      "rating": "7", 
+      "title": "The Croods", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095705", 
+      "rating": "10", 
+      "title": "The Naked Gun: From the Files of Police Squad!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1560747", 
+      "rating": "3", 
+      "title": "The Master", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1712170", 
+      "rating": "1", 
+      "title": "Alex Cross", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0247745", 
+      "rating": "10", 
+      "title": "Super Troopers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099864", 
+      "rating": "9", 
+      "title": "It", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt2071491", 
+      "rating": "2", 
+      "title": "Attack of the Jurassic Shark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0804492", 
+      "rating": "1", 
+      "title": "The Hottie & the Nottie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1714203", 
+      "rating": "1", 
+      "title": "Piranha 3DD", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1735898", 
+      "rating": "5", 
+      "title": "Snow White and the Huntsman", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1637725", 
+      "rating": "10", 
+      "title": "Ted", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107953", 
+      "rating": "6", 
+      "title": "Return of the Living Dead III", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0873886", 
+      "rating": "10", 
+      "title": "Red State", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1411238", 
+      "rating": "3", 
+      "title": "No Strings Attached", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1268799", 
+      "rating": "10", 
+      "title": "A Very Harold & Kumar 3D Christmas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "10", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0185183", 
+      "rating": "1", 
+      "title": "Battlefield Earth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1060277", 
+      "rating": "1", 
+      "title": "Cloverfield", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0424823", 
+      "rating": "3", 
+      "title": "Balls of Fury", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0413267", 
+      "rating": "6", 
+      "title": "Shrek the Third", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0366393", 
+      "rating": "10", 
+      "title": "DysEnchanted", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0113243", 
+      "rating": "10", 
+      "title": "Hackers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0475394", 
+      "rating": "10", 
+      "title": "Smokin' Aces", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0416449", 
+      "rating": "10", 
+      "title": "300", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0193524", 
+      "rating": "1", 
+      "title": "The Star Wars Holiday Special", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0367479", 
+      "rating": "9", 
+      "title": "After the Sunset", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0207783", 
+      "rating": "5", 
+      "title": "Teen Sorcery", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0364725", 
+      "rating": "10", 
+      "title": "Dodgeball: A True Underdog Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0361596", 
+      "rating": "10", 
+      "title": "Fahrenheit 9/11", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0365957", 
+      "rating": "1", 
+      "title": "You Got Served", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0271210", 
+      "rating": "5", 
+      "title": "R.S.V.P.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0266697", 
+      "rating": "10", 
+      "title": "Kill Bill: Vol. 1", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0378194", 
+      "rating": "10", 
+      "title": "Kill Bill: Vol. 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119396", 
+      "rating": "10", 
+      "title": "Jackie Brown", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0257106", 
+      "rating": "5", 
+      "title": "Scary Movie 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0077766", 
+      "rating": "6", 
+      "title": "Jaws 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0401851", 
+      "rating": "10", 
+      "title": "The Ultimate Ric Flair Collection", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0313737", 
+      "rating": "4", 
+      "title": "Two Weeks Notice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0252076", 
+      "rating": "1", 
+      "title": "Maid in Manhattan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0257360", 
+      "rating": "4", 
+      "title": "About Schmidt", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0303933", 
+      "rating": "1", 
+      "title": "Drumline", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0217505", 
+      "rating": "4", 
+      "title": "Gangs of New York", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0264464", 
+      "rating": "10", 
+      "title": "Catch Me If You Can", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0295297", 
+      "rating": "10", 
+      "title": "Harry Potter and the Chamber of Secrets", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167261", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Two Towers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0299658", 
+      "rating": "10", 
+      "title": "Chicago", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167260", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Return of the King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0332379", 
+      "rating": "10", 
+      "title": "School of Rock", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0317740", 
+      "rating": "10", 
+      "title": "The Italian Job", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0183790", 
+      "rating": "10", 
+      "title": "A Knight's Tale", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0257076", 
+      "rating": "8", 
+      "title": "S.W.A.T.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110950", 
+      "rating": "10", 
+      "title": "Reality Bites", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0311429", 
+      "rating": "1", 
+      "title": "The League of Extraordinary Gentlemen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0129387", 
+      "rating": "10", 
+      "title": "There's Something About Mary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0234215", 
+      "rating": "10", 
+      "title": "The Matrix Reloaded", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091042", 
+      "rating": "10", 
+      "title": "Ferris Bueller's Day Off", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0245429", 
+      "rating": "10", 
+      "title": "Spirited Away", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082971", 
+      "rating": "10", 
+      "title": "Raiders of the Lost Ark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0257044", 
+      "rating": "10", 
+      "title": "Road to Perdition", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0346952", 
+      "rating": "10", 
+      "title": "An Evening with Kevin Smith", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0080179", 
+      "rating": "10", 
+      "title": "Drunken Master", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0259446", 
+      "rating": "10", 
+      "title": "My Big Fat Greek Wedding", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0145487", 
+      "rating": "10", 
+      "title": "Spider-Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0268695", 
+      "rating": "5", 
+      "title": "The Time Machine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0243736", 
+      "rating": "1", 
+      "title": "40 Days and 40 Nights", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083866", 
+      "rating": "8", 
+      "title": "E.T. the Extra-Terrestrial", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0268978", 
+      "rating": "1", 
+      "title": "A Beautiful Mind", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120804", 
+      "rating": "10", 
+      "title": "Resident Evil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0187738", 
+      "rating": "10", 
+      "title": "Blade II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0277434", 
+      "rating": "7", 
+      "title": "We Were Soldiers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0268380", 
+      "rating": "5", 
+      "title": "Ice Age", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120737", 
+      "rating": "10", 
+      "title": "The Lord of the Rings: The Fellowship of the Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0277371", 
+      "rating": "10", 
+      "title": "Not Another Teen Movie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0233600", 
+      "rating": "4", 
+      "title": "Tokyo Raiders", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0186589", 
+      "rating": "6", 
+      "title": "Sugar & Spice", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094012", 
+      "rating": "10", 
+      "title": "Spaceballs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0209163", 
+      "rating": "9", 
+      "title": "The Mummy Returns", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0261392", 
+      "rating": "10", 
+      "title": "Jay and Silent Bob Strike Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0239395", 
+      "rating": "8", 
+      "title": "Cats & Dogs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0265029", 
+      "rating": "1", 
+      "title": "America's Sweethearts", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0240462", 
+      "rating": "1", 
+      "title": "Dr. Dolittle 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0227445", 
+      "rating": "1", 
+      "title": "The Score", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0271027", 
+      "rating": "10", 
+      "title": "Kiss of the Dragon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0173840", 
+      "rating": "10", 
+      "title": "Final Fantasy: The Spirits Within", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0232500", 
+      "rating": "5", 
+      "title": "The Fast and the Furious", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0250494", 
+      "rating": "7", 
+      "title": "Legally Blonde", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0163025", 
+      "rating": "5", 
+      "title": "Jurassic Park III", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0212720", 
+      "rating": "1", 
+      "title": "A.I. Artificial Intelligence", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109506", 
+      "rating": "10", 
+      "title": "The Crow", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0202402", 
+      "rating": "10", 
+      "title": "Whatever It Takes", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118865", 
+      "rating": "3", 
+      "title": "The Climb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112435", 
+      "rating": "5", 
+      "title": "The Baby-Sitters Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112807", 
+      "rating": "3", 
+      "title": "The Date", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "1", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120338", 
+      "rating": "1", 
+      "title": "Titanic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "10", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068646", 
+      "rating": "10", 
+      "title": "The Godfather", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "10", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102926", 
+      "rating": "10", 
+      "title": "The Silence of the Lambs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "1", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086190", 
+      "rating": "10", 
+      "title": "Star Wars: Episode VI - Return of the Jedi", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "10", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080684", 
+      "rating": "10", 
+      "title": "Star Wars: Episode V - The Empire Strikes Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116629", 
+      "rating": "10", 
+      "title": "Independence Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112573", 
+      "rating": "1", 
+      "title": "Braveheart", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114814", 
+      "rating": "7", 
+      "title": "The Usual Suspects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116282", 
+      "rating": "1", 
+      "title": "Fargo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103064", 
+      "rating": "8", 
+      "title": "Terminator 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0195714", 
+      "rating": "10", 
+      "title": "Final Destination", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112819", 
+      "rating": "1", 
+      "title": "Dead Presidents", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119695", 
+      "rating": "1", 
+      "title": "Money Talks", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119116", 
+      "rating": "1", 
+      "title": "The Fifth Element", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120812", 
+      "rating": "10", 
+      "title": "Rush Hour", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113118", 
+      "rating": "1", 
+      "title": "Friday", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0526551"
+}

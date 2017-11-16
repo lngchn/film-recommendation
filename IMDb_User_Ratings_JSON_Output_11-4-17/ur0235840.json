@@ -1,0 +1,659 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0120382", 
+      "rating": "7", 
+      "title": "The Truman Show", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0469021", 
+      "rating": "8", 
+      "title": "Alan Partridge", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0241303", 
+      "rating": "7", 
+      "title": "Chocolat", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088846", 
+      "rating": "9", 
+      "title": "Brazil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0188386", 
+      "rating": "8", 
+      "title": "6:3, avagy játszd újra Tutti", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117812", 
+      "rating": "6", 
+      "title": "Sztracsatella", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0335119", 
+      "rating": "8", 
+      "title": "Girl with a Pearl Earring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078112", 
+      "rating": "8", 
+      "title": "Pretty Peaches", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0058557", 
+      "rating": "8", 
+      "title": "Seance on a Wet Afternoon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0950502", 
+      "rating": "8", 
+      "title": "The Relief of Belsen", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0119038", 
+      "rating": "9", 
+      "title": "The Dinner Game", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0264616", 
+      "rating": "6", 
+      "title": "Frailty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0183649", 
+      "rating": "6", 
+      "title": "Phone Booth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0237572", 
+      "rating": "10", 
+      "title": "The Pledge", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070723", 
+      "rating": "7", 
+      "title": "Soylent Green", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0086637", 
+      "rating": "8", 
+      "title": "Zelig", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0345061", 
+      "rating": "5", 
+      "title": "Code 46", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0039694", 
+      "rating": "3", 
+      "title": "The Paradine Case", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097123", 
+      "rating": "9", 
+      "title": "Crimes and Misdemeanors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "8", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110413", 
+      "rating": "8", 
+      "title": "Léon: The Professional", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0211915", 
+      "rating": "9", 
+      "title": "Amélie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0416320", 
+      "rating": "4", 
+      "title": "Match Point", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0257360", 
+      "rating": "7", 
+      "title": "About Schmidt", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0274812", 
+      "rating": "5", 
+      "title": "Secretary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0337575", 
+      "rating": "10", 
+      "title": "Locked-in Syndrome", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0120598", 
+      "rating": "6", 
+      "title": "Barney's Great Adventure", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0312004", 
+      "rating": "8", 
+      "title": "The Curse of the Were-Rabbit", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089074", 
+      "rating": "8", 
+      "title": "Egészséges erotika", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0257290", 
+      "rating": "5", 
+      "title": "Glass Tiger", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067309", 
+      "rating": "8", 
+      "title": "Klute", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119677", 
+      "rating": "8", 
+      "title": "A miniszter félrelép", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0465551", 
+      "rating": "9", 
+      "title": "Notes on a Scandal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0192335", 
+      "rating": "8", 
+      "title": "Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr.", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0095302", 
+      "rating": "9", 
+      "title": "High Hopes", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0407945", 
+      "rating": "7", 
+      "title": "Liberty Bound", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0116294", 
+      "rating": "3", 
+      "title": "Femalien", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0317198", 
+      "rating": "3", 
+      "title": "Bridget Jones: The Edge of Reason", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120890", 
+      "rating": "4", 
+      "title": "Wild Things", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0243155", 
+      "rating": "8", 
+      "title": "Bridget Jones's Diary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0101765", 
+      "rating": "9", 
+      "title": "The Double Life of Veronique", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0354356", 
+      "rating": "6", 
+      "title": "5x2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105919", 
+      "rating": "6", 
+      "title": "Édes Emma, drága Böbe - vázlatok, aktok", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0404030", 
+      "rating": "8", 
+      "title": "Everything Is Illuminated", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113448", 
+      "rating": "5", 
+      "title": "Jack & Sarah", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076141", 
+      "rating": "7", 
+      "title": "High Anxiety", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0338135", 
+      "rating": "9", 
+      "title": "The Barbarian Invasions", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067959", 
+      "rating": "7", 
+      "title": "Walkabout", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119404", 
+      "rating": "9", 
+      "title": "Jane Eyre", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0103241", 
+      "rating": "8", 
+      "title": "What About Bob?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0290916", 
+      "rating": "6", 
+      "title": "Summer Things", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067128", 
+      "rating": "9", 
+      "title": "Get Carter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117589", 
+      "rating": "9", 
+      "title": "Secrets & Lies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0303661", 
+      "rating": "7", 
+      "title": "Anita & Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0301199", 
+      "rating": "8", 
+      "title": "Dirty Pretty Things", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0064107", 
+      "rating": "9", 
+      "title": "A Boy Named Charlie Brown", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0067104", 
+      "rating": "7", 
+      "title": "Flight of the Doves", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0430484", 
+      "rating": "9", 
+      "title": "The Power of Nightmares: The Rise of the Politics of Fear", 
+      "type": "Mini-Series"
+    }, 
+    {
+      "imdb_id": "tt0354575", 
+      "rating": "5", 
+      "title": "The Five Obstructions", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0396031", 
+      "rating": "9", 
+      "title": "George Orwell: A Life in Pictures", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0104779", 
+      "rating": "3", 
+      "title": "Bitter Moon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0365748", 
+      "rating": "8", 
+      "title": "Shaun of the Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0091288", 
+      "rating": "10", 
+      "title": "Jean de Florette", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0172396", 
+      "rating": "7", 
+      "title": "The End of the Affair", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0314331", 
+      "rating": "8", 
+      "title": "Love Actually", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0280707", 
+      "rating": "9", 
+      "title": "Gosford Park", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0130827", 
+      "rating": "9", 
+      "title": "Run Lola Run", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0335266", 
+      "rating": "9", 
+      "title": "Lost in Translation", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0216800", 
+      "rating": "9", 
+      "title": "With a Friend Like Harry...", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057134", 
+      "rating": "8", 
+      "title": "Heavens Above!", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033045", 
+      "rating": "9", 
+      "title": "The Shop Around the Corner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0310793", 
+      "rating": "9", 
+      "title": "Bowling for Columbine", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0102926", 
+      "rating": "7", 
+      "title": "The Silence of the Lambs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114369", 
+      "rating": "10", 
+      "title": "Se7en", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0169547", 
+      "rating": "7", 
+      "title": "American Beauty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167404", 
+      "rating": "9", 
+      "title": "The Sixth Sense", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114814", 
+      "rating": "9", 
+      "title": "The Usual Suspects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050083", 
+      "rating": "10", 
+      "title": "12 Angry Men", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0209144", 
+      "rating": "10", 
+      "title": "Memento", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053291", 
+      "rating": "9", 
+      "title": "Some Like It Hot", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047396", 
+      "rating": "10", 
+      "title": "Rear Window", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0033467", 
+      "rating": "9", 
+      "title": "Citizen Kane", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053125", 
+      "rating": "9", 
+      "title": "North by Northwest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066730", 
+      "rating": "8", 
+      "title": "10 Rillington Place", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053602", 
+      "rating": "8", 
+      "title": "The Angry Silence", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0278731", 
+      "rating": "8", 
+      "title": "Spider", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0252076", 
+      "rating": "4", 
+      "title": "Maid in Manhattan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092068", 
+      "rating": "9", 
+      "title": "Ménage", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100557", 
+      "rating": "8", 
+      "title": "The Nasty Girl", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096163", 
+      "rating": "10", 
+      "title": "The Vanishing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120338", 
+      "rating": "9", 
+      "title": "Titanic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "9", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117951", 
+      "rating": "7", 
+      "title": "Trainspotting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088763", 
+      "rating": "8", 
+      "title": "Back to the Future", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116282", 
+      "rating": "9", 
+      "title": "Fargo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097165", 
+      "rating": "7", 
+      "title": "Dead Poets Society", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103064", 
+      "rating": "9", 
+      "title": "Terminator 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119822", 
+      "rating": "9", 
+      "title": "As Good as It Gets", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0265666", 
+      "rating": "5", 
+      "title": "The Royal Tenenbaums", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075686", 
+      "rating": "10", 
+      "title": "Annie Hall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0070707", 
+      "rating": "10", 
+      "title": "Sleeper", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0134273", 
+      "rating": "3", 
+      "title": "8MM", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0101595", 
+      "rating": "8", 
+      "title": "Close My Eyes", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096250", 
+      "rating": "8", 
+      "title": "Testimony", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107653", 
+      "rating": "10", 
+      "title": "Naked", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119137", 
+      "rating": "2", 
+      "title": "Flubber", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105160", 
+      "rating": "9", 
+      "title": "Prague", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107048", 
+      "rating": "10", 
+      "title": "Groundhog Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103850", 
+      "rating": "9", 
+      "title": "Bob Roberts", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0235840"
+}

@@ -1,0 +1,605 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0129015", 
+      "rating": "8", 
+      "title": "Covenant", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0059798", 
+      "rating": "10", 
+      "title": "A Thousand Clowns", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092115", 
+      "rating": "2", 
+      "title": "Troll", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068575", 
+      "rating": "8", 
+      "title": "Fat City", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096926", 
+      "rating": "8", 
+      "title": "The Big Picture", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114343", 
+      "rating": "1", 
+      "title": "Sawbones", 
+      "type": "TV Movie"
+    }, 
+    {
+      "imdb_id": "tt0299930", 
+      "rating": "2", 
+      "title": "Gigli", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0305224", 
+      "rating": "3", 
+      "title": "Anger Management", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050613", 
+      "rating": "8", 
+      "title": "Throne of Blood", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0064940", 
+      "rating": "7", 
+      "title": "Fellini's Satyricon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0234215", 
+      "rating": "4", 
+      "title": "The Matrix Reloaded", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0242653", 
+      "rating": "1", 
+      "title": "The Matrix Revolutions", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0281686", 
+      "rating": "8", 
+      "title": "Bubba Ho-Tep", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0265666", 
+      "rating": "3", 
+      "title": "The Royal Tenenbaums", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0131325", 
+      "rating": "7", 
+      "title": "Bowfinger", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0040705", 
+      "rating": "8", 
+      "title": "Portrait of Jennie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0074811", 
+      "rating": "10", 
+      "title": "The Tenant", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110629", 
+      "rating": "1", 
+      "title": "Last Resort", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0092925", 
+      "rating": "1", 
+      "title": "Dragnet", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0285116", 
+      "rating": "8", 
+      "title": "A Friend Comes to Visit", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0180734", 
+      "rating": "2", 
+      "title": "Hardball", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116138", 
+      "rating": "1", 
+      "title": "Drawing Flies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113749", 
+      "rating": "1", 
+      "title": "Mallrats", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118842", 
+      "rating": "1", 
+      "title": "Chasing Amy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109445", 
+      "rating": "1", 
+      "title": "Clerks", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0261392", 
+      "rating": "1", 
+      "title": "Jay and Silent Bob Strike Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0204624", 
+      "rating": "10", 
+      "title": "The Shoe Store", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0212720", 
+      "rating": "5", 
+      "title": "A.I. Artificial Intelligence", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0092618", 
+      "rating": "8", 
+      "title": "Barfly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0063462", 
+      "rating": "9", 
+      "title": "The Producers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0139668", 
+      "rating": "2", 
+      "title": "True Crime", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0105682", 
+      "rating": "8", 
+      "title": "Un Coeur en Hiver", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0037674", 
+      "rating": "4", 
+      "title": "Children of Paradise", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0044008", 
+      "rating": "5", 
+      "title": "A Christmas Carol", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113862", 
+      "rating": "3", 
+      "title": "Mr. Holland's Opus", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113957", 
+      "rating": "1", 
+      "title": "The Net", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0017925", 
+      "rating": "10", 
+      "title": "The General", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071129", 
+      "rating": "9", 
+      "title": "Amarcord", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112281", 
+      "rating": "1", 
+      "title": "Ace Ventura: When Nature Calls", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113101", 
+      "rating": "1", 
+      "title": "Four Rooms", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114694", 
+      "rating": "1", 
+      "title": "Tommy Boy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113161", 
+      "rating": "4", 
+      "title": "Get Shorty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114069", 
+      "rating": "2", 
+      "title": "Outbreak", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0036775", 
+      "rating": "8", 
+      "title": "Double Indemnity", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112431", 
+      "rating": "7", 
+      "title": "Babe", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114319", 
+      "rating": "1", 
+      "title": "Sabrina", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112740", 
+      "rating": "2", 
+      "title": "Crimson Tide", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0052311", 
+      "rating": "8", 
+      "title": "Touch of Evil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0048424", 
+      "rating": "6", 
+      "title": "The Night of the Hunter", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113481", 
+      "rating": "1", 
+      "title": "Johnny Mnemonic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109424", 
+      "rating": "8", 
+      "title": "Chungking Express", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112715", 
+      "rating": "2", 
+      "title": "Congo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112818", 
+      "rating": "7", 
+      "title": "Dead Man Walking", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0065214", 
+      "rating": "9", 
+      "title": "The Wild Bunch", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0040897", 
+      "rating": "10", 
+      "title": "The Treasure of the Sierra Madre", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112346", 
+      "rating": "2", 
+      "title": "The American President", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053198", 
+      "rating": "9", 
+      "title": "The 400 Blows", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "8", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "4", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068646", 
+      "rating": "10", 
+      "title": "The Godfather", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114369", 
+      "rating": "1", 
+      "title": "Se7en", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120815", 
+      "rating": "4", 
+      "title": "Saving Private Ryan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112573", 
+      "rating": "3", 
+      "title": "Braveheart", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114814", 
+      "rating": "4", 
+      "title": "The Usual Suspects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113277", 
+      "rating": "4", 
+      "title": "Heat", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113497", 
+      "rating": "3", 
+      "title": "Jumanji", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112697", 
+      "rating": "7", 
+      "title": "Clueless", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113189", 
+      "rating": "2", 
+      "title": "GoldenEye", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114746", 
+      "rating": "1", 
+      "title": "Twelve Monkeys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112642", 
+      "rating": "2", 
+      "title": "Casper", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034583", 
+      "rating": "9", 
+      "title": "Casablanca", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112641", 
+      "rating": "3", 
+      "title": "Casino", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114709", 
+      "rating": "6", 
+      "title": "Toy Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112462", 
+      "rating": "2", 
+      "title": "Batman Forever", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114436", 
+      "rating": "8", 
+      "title": "Showgirls", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053291", 
+      "rating": "9", 
+      "title": "Some Like It Hot", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0056172", 
+      "rating": "9", 
+      "title": "Lawrence of Arabia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114898", 
+      "rating": "1", 
+      "title": "Waterworld", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057012", 
+      "rating": "10", 
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113540", 
+      "rating": "3", 
+      "title": "Kids", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047478", 
+      "rating": "10", 
+      "title": "Seven Samurai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114388", 
+      "rating": "5", 
+      "title": "Sense and Sensibility", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099348", 
+      "rating": "2", 
+      "title": "Dances with Wolves", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112851", 
+      "rating": "1", 
+      "title": "Desperado", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112384", 
+      "rating": "3", 
+      "title": "Apollo 13", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075029", 
+      "rating": "5", 
+      "title": "The Outlaw Josey Wales", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0055614", 
+      "rating": "6", 
+      "title": "West Side Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0022100", 
+      "rating": "8", 
+      "title": "M", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0053125", 
+      "rating": "8", 
+      "title": "North by Northwest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113243", 
+      "rating": "1", 
+      "title": "Hackers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113627", 
+      "rating": "8", 
+      "title": "Leaving Las Vegas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112442", 
+      "rating": "1", 
+      "title": "Bad Boys", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114558", 
+      "rating": "1", 
+      "title": "Strange Days", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113247", 
+      "rating": "1", 
+      "title": "La Haine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113819", 
+      "rating": "5", 
+      "title": "Mighty Aphrodite", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047296", 
+      "rating": "10", 
+      "title": "On the Waterfront", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112950", 
+      "rating": "1", 
+      "title": "Empire Records", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110005", 
+      "rating": "6", 
+      "title": "Heavenly Creatures", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112864", 
+      "rating": "1", 
+      "title": "Die Hard with a Vengeance", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114924", 
+      "rating": "1", 
+      "title": "While You Were Sleeping", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0128280"
+}

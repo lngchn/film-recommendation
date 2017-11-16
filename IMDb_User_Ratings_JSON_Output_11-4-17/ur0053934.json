@@ -1,0 +1,359 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0032553", 
+      "rating": "6", 
+      "title": "The Great Dictator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0027977", 
+      "rating": "6", 
+      "title": "Modern Times", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0021749", 
+      "rating": "7", 
+      "title": "City Lights", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "10", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0468569", 
+      "rating": "7", 
+      "title": "The Dark Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0816692", 
+      "rating": "8", 
+      "title": "Interstellar", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "9", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068646", 
+      "rating": "10", 
+      "title": "The Godfather", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1375666", 
+      "rating": "8", 
+      "title": "Inception", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0137523", 
+      "rating": "7", 
+      "title": "Fight Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114369", 
+      "rating": "10", 
+      "title": "Se7en", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0099685", 
+      "rating": "10", 
+      "title": "Goodfellas", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102926", 
+      "rating": "10", 
+      "title": "The Silence of the Lambs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "10", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120737", 
+      "rating": "7", 
+      "title": "The Lord of the Rings: The Fellowship of the Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078748", 
+      "rating": "9", 
+      "title": "Alien", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0482571", 
+      "rating": "7", 
+      "title": "The Prestige", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0407887", 
+      "rating": "5", 
+      "title": "The Departed", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2582802", 
+      "rating": "8", 
+      "title": "Whiplash", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "7", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "9", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110413", 
+      "rating": "10", 
+      "title": "Léon: The Professional", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110357", 
+      "rating": "7", 
+      "title": "The Lion King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0103064", 
+      "rating": "10", 
+      "title": "Terminator 2", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0172495", 
+      "rating": "10", 
+      "title": "Gladiator", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120689", 
+      "rating": "7", 
+      "title": "The Green Mile", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0078788", 
+      "rating": "9", 
+      "title": "Apocalypse Now", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088763", 
+      "rating": "10", 
+      "title": "Back to the Future", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120815", 
+      "rating": "10", 
+      "title": "Saving Private Ryan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0076759", 
+      "rating": "10", 
+      "title": "Star Wars: Episode IV - A New Hope", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114814", 
+      "rating": "9", 
+      "title": "The Usual Suspects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0209144", 
+      "rating": "9", 
+      "title": "Memento", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120586", 
+      "rating": "8", 
+      "title": "American History X", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0054215", 
+      "rating": "9", 
+      "title": "Psycho", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167260", 
+      "rating": "7", 
+      "title": "The Lord of the Rings: The Return of the King", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0082971", 
+      "rating": "10", 
+      "title": "Raiders of the Lost Ark", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0071562", 
+      "rating": "10", 
+      "title": "The Godfather: Part II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073486", 
+      "rating": "9", 
+      "title": "One Flew Over the Cuckoo's Nest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0317248", 
+      "rating": "10", 
+      "title": "City of God", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0245429", 
+      "rating": "5", 
+      "title": "Spirited Away", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050083", 
+      "rating": "10", 
+      "title": "12 Angry Men", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060196", 
+      "rating": "7", 
+      "title": "The Good, the Bad and the Ugly", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1675434", 
+      "rating": "10", 
+      "title": "The Intouchables", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118799", 
+      "rating": "7", 
+      "title": "Life Is Beautiful", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0253474", 
+      "rating": "6", 
+      "title": "The Pianist", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0167261", 
+      "rating": "6", 
+      "title": "The Lord of the Rings: The Two Towers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080684", 
+      "rating": "10", 
+      "title": "Star Wars: Episode V - The Empire Strikes Back", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034583", 
+      "rating": "10", 
+      "title": "Casablanca", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0057012", 
+      "rating": "6", 
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038650", 
+      "rating": "8", 
+      "title": "It's a Wonderful Life", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047478", 
+      "rating": "8", 
+      "title": "Seven Samurai", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0064116", 
+      "rating": "6", 
+      "title": "Once Upon a Time in the West", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047396", 
+      "rating": "10", 
+      "title": "Rear Window", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095765", 
+      "rating": "8", 
+      "title": "Cinema Paradiso", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0043014", 
+      "rating": "7", 
+      "title": "Sunset Blvd.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050825", 
+      "rating": "7", 
+      "title": "Paths of Glory", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt5039822", 
+      "rating": "10", 
+      "title": "Addicted to Sexting", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0188686", 
+      "rating": "10", 
+      "title": "Influence", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0801006", 
+      "rating": "10", 
+      "title": "Outlook Good", 
+      "type": "Short Film"
+    }
+  ], 
+  "user_id": "ur0053934"
+}

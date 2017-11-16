@@ -1,0 +1,803 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0114558", 
+      "rating": "9", 
+      "title": "Strange Days", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt5804038", 
+      "rating": "10", 
+      "title": "I Am Not Your Negro", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0113880", 
+      "rating": "7", 
+      "title": "Mut ohne Befehl - Widerstand und Verfolgung in Stuttgart 1933-1945", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1791682", 
+      "rating": "7", 
+      "title": "While We're Young", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3312830", 
+      "rating": "3", 
+      "title": "Youth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3577624", 
+      "rating": "7", 
+      "title": "A Perfect Day", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt3708886", 
+      "rating": "9", 
+      "title": "War on Everyone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093239", 
+      "rating": "8", 
+      "title": "I've Heard the Mermaids Singing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0251031", 
+      "rating": "8", 
+      "title": "Series 7: The Contenders", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1723811", 
+      "rating": "2", 
+      "title": "Shame", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0198529", 
+      "rating": "8", 
+      "title": "Yom Huledet Same'ach Mar Mograbi", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0804249", 
+      "rating": "8", 
+      "title": "Es ging Tag und Nacht, liebes Kind", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0424024", 
+      "rating": "7", 
+      "title": "Darwin's Nightmare", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0085267", 
+      "rating": "9", 
+      "title": "Born in Flames", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0059527", 
+      "rating": "9", 
+      "title": "The Shop on Main Street", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095545", 
+      "rating": "8", 
+      "title": "Looking for Langston", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0119217", 
+      "rating": "6", 
+      "title": "Good Will Hunting", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0073486", 
+      "rating": "8", 
+      "title": "One Flew Over the Cuckoo's Nest", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0080120", 
+      "rating": "9", 
+      "title": "The Warriors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120382", 
+      "rating": "7", 
+      "title": "The Truman Show", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1205489", 
+      "rating": "7", 
+      "title": "Gran Torino", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0095953", 
+      "rating": "6", 
+      "title": "Rain Man", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107818", 
+      "rating": "8", 
+      "title": "Philadelphia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0969355", 
+      "rating": "9", 
+      "title": "A Walk Into the Sea: Danny Williams and the Warhol Factory", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0027977", 
+      "rating": "9", 
+      "title": "Modern Times", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111161", 
+      "rating": "9", 
+      "title": "The Shawshank Redemption", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110912", 
+      "rating": "8", 
+      "title": "Pulp Fiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0108052", 
+      "rating": "2", 
+      "title": "Schindler's List", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109830", 
+      "rating": "5", 
+      "title": "Forrest Gump", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0137523", 
+      "rating": "3", 
+      "title": "Fight Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120737", 
+      "rating": "1", 
+      "title": "The Lord of the Rings: The Fellowship of the Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0133093", 
+      "rating": "7", 
+      "title": "The Matrix", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0050083", 
+      "rating": "9", 
+      "title": "12 Angry Men", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0034583", 
+      "rating": "10", 
+      "title": "Casablanca", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0038650", 
+      "rating": "2", 
+      "title": "It's a Wonderful Life", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047396", 
+      "rating": "10", 
+      "title": "Rear Window", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0058203", 
+      "rating": "7", 
+      "title": "That Man from Rio", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2217458", 
+      "rating": "8", 
+      "title": "Reaching for the Moon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0492454", 
+      "rating": "8", 
+      "title": "Dear Pyongyang", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0849468", 
+      "rating": "9", 
+      "title": "Rules of the Road", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0055614", 
+      "rating": "9", 
+      "title": "West Side Story", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0379593", 
+      "rating": "8", 
+      "title": "The Yes Men", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0070723", 
+      "rating": "7", 
+      "title": "Soylent Green", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0412019", 
+      "rating": "7", 
+      "title": "Broken Flowers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0166924", 
+      "rating": "8", 
+      "title": "Mulholland Dr.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0265666", 
+      "rating": "5", 
+      "title": "The Royal Tenenbaums", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0075686", 
+      "rating": "8", 
+      "title": "Annie Hall", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt2113090", 
+      "rating": "8", 
+      "title": "This Ain't California", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt2088714", 
+      "rating": "9", 
+      "title": "Call Me Kuchu", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0094849", 
+      "rating": "9", 
+      "title": "Celia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0239655", 
+      "rating": "8", 
+      "title": "Monday", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0409459", 
+      "rating": "8", 
+      "title": "Watchmen", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118929", 
+      "rating": "7", 
+      "title": "Dark City", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1399683", 
+      "rating": "9", 
+      "title": "Winter's Bone", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0093822", 
+      "rating": "8", 
+      "title": "Raising Arizona", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116282", 
+      "rating": "9", 
+      "title": "Fargo", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0387898", 
+      "rating": "8", 
+      "title": "Caché", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0322545", 
+      "rating": "6", 
+      "title": "Berlin Blues", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0060959", 
+      "rating": "10", 
+      "title": "Daisies", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0019760", 
+      "rating": "9", 
+      "title": "Man with a Movie Camera", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0117664", 
+      "rating": "4", 
+      "title": "Slaves to the Underground", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0181875", 
+      "rating": "9", 
+      "title": "Almost Famous", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt1022603", 
+      "rating": "2", 
+      "title": "(500) Days of Summer", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0390538", 
+      "rating": "9", 
+      "title": "Tarnation", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0114323", 
+      "rating": "9", 
+      "title": "Safe", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120907", 
+      "rating": "9", 
+      "title": "eXistenZ", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0473181", 
+      "rating": "8", 
+      "title": "Crossing the Line", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0924151", 
+      "rating": "9", 
+      "title": "Strange Culture", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0098725", 
+      "rating": "9", 
+      "title": "Sweetie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087428", 
+      "rating": "7", 
+      "title": "The Hotel New Hampshire", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110598", 
+      "rating": "8", 
+      "title": "Muriel's Wedding", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097937", 
+      "rating": "8", 
+      "title": "My Left Foot", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0154420", 
+      "rating": "9", 
+      "title": "The Celebration", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0083658", 
+      "rating": "10", 
+      "title": "Blade Runner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0180093", 
+      "rating": "8", 
+      "title": "Requiem for a Dream", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088847", 
+      "rating": "9", 
+      "title": "The Breakfast Club", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0087843", 
+      "rating": "6", 
+      "title": "Once Upon a Time in America", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0097493", 
+      "rating": "8", 
+      "title": "Heathers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0175880", 
+      "rating": "10", 
+      "title": "Magnolia", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0088846", 
+      "rating": "10", 
+      "title": "Brazil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0257034", 
+      "rating": "6", 
+      "title": "Love Inventory", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0192335", 
+      "rating": "8", 
+      "title": "Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr.", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0048434", 
+      "rating": "9", 
+      "title": "Night and Fog", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0090015", 
+      "rating": "10", 
+      "title": "Shoah", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0286978", 
+      "rating": "8", 
+      "title": "Sobibór, 14 octobre 1943, 16 heures", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0423310", 
+      "rating": "8", 
+      "title": "The Syrian Bride", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0352994", 
+      "rating": "7", 
+      "title": "Walk on Water", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0314412", 
+      "rating": "4", 
+      "title": "My Life Without Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0239401", 
+      "rating": "8", 
+      "title": "First Comes Love", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0106520", 
+      "rating": "9", 
+      "title": "Carmelita Tropicana: Your Kunst Is Your Waffen", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0236447", 
+      "rating": "9", 
+      "title": "Long Night's Journey Into Day", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0303832", 
+      "rating": "8", 
+      "title": "Casting", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0234805", 
+      "rating": "3", 
+      "title": "The Legend of Rita", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0235412", 
+      "rating": "7", 
+      "title": "Gaudi Afternoon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118798", 
+      "rating": "9", 
+      "title": "Bulworth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114814", 
+      "rating": "9", 
+      "title": "The Usual Suspects", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0181865", 
+      "rating": "6", 
+      "title": "Traffic", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0047677", 
+      "rating": "10", 
+      "title": "The Wild One", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0109579", 
+      "rating": "10", 
+      "title": "Death and the Maiden", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0102685", 
+      "rating": "10", 
+      "title": "Point Break", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0261936", 
+      "rating": "10", 
+      "title": "How Nice to See You Alive", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117196", 
+      "rating": "9", 
+      "title": "Nobody's Business", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0089960", 
+      "rating": "8", 
+      "title": "Vagabond", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0236576", 
+      "rating": "8", 
+      "title": "Paragraph 175", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0110251", 
+      "rating": "6", 
+      "title": "Nobody Loves Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117631", 
+      "rating": "6", 
+      "title": "Shine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0189172", 
+      "rating": "7", 
+      "title": "The Specialist", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0213702", 
+      "rating": "4", 
+      "title": "Hanele", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0206124", 
+      "rating": "8", 
+      "title": "Martin", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0242690", 
+      "rating": "5", 
+      "title": "Back Home to the Reich, with Bubi", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0105619", 
+      "rating": "7", 
+      "title": "The Heroic Trio", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0220644", 
+      "rating": "9", 
+      "title": "The Mission", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0096461", 
+      "rating": "8", 
+      "title": "As Tears Go By", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0216165", 
+      "rating": "9", 
+      "title": "Running Out of Time", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0169547", 
+      "rating": "5", 
+      "title": "American Beauty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084335", 
+      "rating": "8", 
+      "title": "Missing", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112651", 
+      "rating": "8", 
+      "title": "The Celluloid Closet", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0054743", 
+      "rating": "7", 
+      "title": "The Children's Hour", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0100557", 
+      "rating": "9", 
+      "title": "The Nasty Girl", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118586", 
+      "rating": "9", 
+      "title": "All Over Me", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0150662", 
+      "rating": "7", 
+      "title": "Show Me Love", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0063345", 
+      "rating": "7", 
+      "title": "The Inextinguishable Fire", 
+      "type": "Short Film"
+    }, 
+    {
+      "imdb_id": "tt0061075", 
+      "rating": "6", 
+      "title": "Ten Little Indians", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114682", 
+      "rating": "6", 
+      "title": "To Wong Foo Thanks for Everything, Julie Newmar", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089017", 
+      "rating": "8", 
+      "title": "Desperately Seeking Susan", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120879", 
+      "rating": "8", 
+      "title": "Velvet Goldmine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0061149", 
+      "rating": "6", 
+      "title": "The Velvet Underground and Nico", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0102926", 
+      "rating": "7", 
+      "title": "The Silence of the Lambs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116191", 
+      "rating": "7", 
+      "title": "Emma", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0139362", 
+      "rating": "9", 
+      "title": "High Art", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0163185", 
+      "rating": "8", 
+      "title": "Rosie", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0022183", 
+      "rating": "9", 
+      "title": "Mädchen in Uniform", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0094646", 
+      "rating": "6", 
+      "title": "The Girlfriend", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0123469"
+}

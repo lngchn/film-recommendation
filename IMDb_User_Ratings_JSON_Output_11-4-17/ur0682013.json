@@ -1,0 +1,545 @@
+{
+  "films": [
+    {
+      "imdb_id": "tt0067549", 
+      "rating": "8", 
+      "title": "The Panic in Needle Park", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0066999", 
+      "rating": "8", 
+      "title": "Dirty Harry", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0084649", 
+      "rating": "8", 
+      "title": "The Secret of NIMH", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120604", 
+      "rating": "6", 
+      "title": "Beowulf", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0462640", 
+      "rating": "10", 
+      "title": "Zombeak", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0311231", 
+      "rating": "6", 
+      "title": "The Greenskeeper", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0215135", 
+      "rating": "3", 
+      "title": "Route 666", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0218619", 
+      "rating": "4", 
+      "title": "Soul Survivors", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0272147", 
+      "rating": "5", 
+      "title": "Vampires: Los Muertos", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0295254", 
+      "rating": "2", 
+      "title": "Feardotcom", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0283632", 
+      "rating": "7", 
+      "title": "They", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0350044", 
+      "rating": "6", 
+      "title": "Reflections of Evil", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0212867", 
+      "rating": "5", 
+      "title": "Soulkeeper", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0118652", 
+      "rating": "2", 
+      "title": "The Attic Expeditions", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0261983", 
+      "rating": "9", 
+      "title": "Session 9", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0264616", 
+      "rating": "7", 
+      "title": "Frailty", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0271367", 
+      "rating": "7", 
+      "title": "Eight Legged Freaks", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0228333", 
+      "rating": "9", 
+      "title": "Ghosts of Mars", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0301165", 
+      "rating": "2", 
+      "title": "Dead & Rotting", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0166924", 
+      "rating": "9", 
+      "title": "Mulholland Dr.", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0298130", 
+      "rating": "8", 
+      "title": "The Ring", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0211443", 
+      "rating": "7", 
+      "title": "Jason X", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0263488", 
+      "rating": "7", 
+      "title": "Jeepers Creepers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0230600", 
+      "rating": "9", 
+      "title": "The Others", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0289043", 
+      "rating": "9", 
+      "title": "28 Days Later...", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0212985", 
+      "rating": "5", 
+      "title": "Hannibal", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0286106", 
+      "rating": "4", 
+      "title": "Signs", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0289765", 
+      "rating": "4", 
+      "title": "Red Dragon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0245674", 
+      "rating": "5", 
+      "title": "Thir13en Ghosts", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0187738", 
+      "rating": "7", 
+      "title": "Blade II", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0206314", 
+      "rating": "7", 
+      "title": "Joy Ride", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0288477", 
+      "rating": "3", 
+      "title": "Ghost Ship", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0220506", 
+      "rating": "2", 
+      "title": "Halloween: Resurrection", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0238546", 
+      "rating": "2", 
+      "title": "Queen of the Damned", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0163025", 
+      "rating": "6", 
+      "title": "Jurassic Park III", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0309039", 
+      "rating": "5", 
+      "title": "Vicious", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0314755", 
+      "rating": "7", 
+      "title": "Tales from the Mist: Inside 'The Fog'", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0113449", 
+      "rating": "2", 
+      "title": "Jack-O", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113982", 
+      "rating": "6", 
+      "title": "Night of the Scarecrow", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114070", 
+      "rating": "2", 
+      "title": "Mind Ripper", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114306", 
+      "rating": "2", 
+      "title": "Rumpelstiltskin", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112643", 
+      "rating": "8", 
+      "title": "Castle Freak", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0112288", 
+      "rating": "6", 
+      "title": "The Addiction", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113303", 
+      "rating": "7", 
+      "title": "Hideaway", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112625", 
+      "rating": "4", 
+      "title": "Candyman: Farewell to the Flesh", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114720", 
+      "rating": "5", 
+      "title": "Tremors II: Aftershocks", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0117658", 
+      "rating": "4", 
+      "title": "The Stendhal Syndrome", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114825", 
+      "rating": "3", 
+      "title": "Vampire in Brooklyn", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115610", 
+      "rating": "2", 
+      "title": "Bad Moon", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113858", 
+      "rating": "7", 
+      "title": "Mosquito", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114194", 
+      "rating": "6", 
+      "title": "The Prophecy", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114957", 
+      "rating": "2", 
+      "title": "Witchboard III: The Possession", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113762", 
+      "rating": "7", 
+      "title": "The Mangler", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117826", 
+      "rating": "2", 
+      "title": "Bordello of Blood", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116075", 
+      "rating": "3", 
+      "title": "The Dentist", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112922", 
+      "rating": "7", 
+      "title": "The Day of the Beast", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113409", 
+      "rating": "8", 
+      "title": "In the Mouth of Madness", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114852", 
+      "rating": "6", 
+      "title": "Village of the Damned", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114367", 
+      "rating": "6", 
+      "title": "Screamers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117894", 
+      "rating": "4", 
+      "title": "Thinner", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112896", 
+      "rating": "5", 
+      "title": "Dracula: Dead and Loving It", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0112722", 
+      "rating": "3", 
+      "title": "Copycat", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0114608", 
+      "rating": "8", 
+      "title": "Tales from the Crypt: Demon Knight", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116514", 
+      "rating": "3", 
+      "title": "Hellraiser: Bloodline", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117258", 
+      "rating": "2", 
+      "title": "Organ", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113690", 
+      "rating": "5", 
+      "title": "Lord of Illusions", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0117571", 
+      "rating": "8", 
+      "title": "Scream", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0115963", 
+      "rating": "5", 
+      "title": "The Craft", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116367", 
+      "rating": "8", 
+      "title": "From Dusk Till Dawn", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116365", 
+      "rating": "8", 
+      "title": "The Frighteners", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0116654", 
+      "rating": "8", 
+      "title": "The Island of Dr. Moreau", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0113253", 
+      "rating": "2", 
+      "title": "Halloween: The Curse of Michael Myers", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0162661", 
+      "rating": "9", 
+      "title": "Sleepy Hollow", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0068713", 
+      "rating": "7", 
+      "title": "Horror Express", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0111159", 
+      "rating": "2", 
+      "title": "Shatter Dead", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0110913", 
+      "rating": "3", 
+      "title": "Pumpkinhead II: Blood Wings", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0118798", 
+      "rating": "2", 
+      "title": "Bulworth", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0306063", 
+      "rating": "4", 
+      "title": "Severed", 
+      "type": "Video"
+    }, 
+    {
+      "imdb_id": "tt0267601", 
+      "rating": "7", 
+      "title": "Truth About Demons", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0089092", 
+      "rating": "7", 
+      "title": "Enemy Mine", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0245120", 
+      "rating": "3", 
+      "title": "The Forsaken", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0259182", 
+      "rating": "8", 
+      "title": "The American Nightmare", 
+      "type": "Documentary"
+    }, 
+    {
+      "imdb_id": "tt0219699", 
+      "rating": "7", 
+      "title": "The Gift", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0164334", 
+      "rating": "4", 
+      "title": "Along Came a Spider", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0243155", 
+      "rating": "6", 
+      "title": "Bridget Jones's Diary", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0107953", 
+      "rating": "6", 
+      "title": "Return of the Living Dead III", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0162222", 
+      "rating": "8", 
+      "title": "Cast Away", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0190590", 
+      "rating": "8", 
+      "title": "O Brother, Where Art Thou?", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0120627", 
+      "rating": "1", 
+      "title": "Carnival of Souls", 
+      "type": "Feature"
+    }, 
+    {
+      "imdb_id": "tt0055830", 
+      "rating": "10", 
+      "title": "Carnival of Souls", 
+      "type": "Feature"
+    }
+  ], 
+  "user_id": "ur0682013"
+}
