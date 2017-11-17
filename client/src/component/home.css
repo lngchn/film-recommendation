@@ -41,6 +41,13 @@
   margin: 0 auto;
 }
 
+.carousel-caption {
+  /* Move captions beside the images */
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
 .carousel-caption p {
   font-size: 2em;
 }

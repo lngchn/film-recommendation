@@ -121,10 +121,9 @@ class Recommendation extends React.Component {
     })
     .then(res => res.json())
     .then(user => {
-      let ratedFilms = user.ratedFilms.sort((filmA, filmB) => filmA.title < filmB.title ? -1 : 1);
-      ratedFilms = ratedFilms.map(movie => <RatedFilm data={movie} key={movie.id} onSeedAdd={this.handleSeedAdd} />);
-      const seedFilms = user.seedFilms.map(movie => <SeedFilm data={movie} key={movie.id} onSeedDelete={this.handleSeedDelete} />);
-      const recommendation = user.recommendation.map(movie => <RecommendationFilm data={movie} key={movie.id} />);
+      const ratedFilms = user.ratedFilms.sort((filmA, filmB) => filmA.title < filmB.title ? -1 : 1);
+      const seedFilms = user.seedFilms;
+      const recommendation = user.recommendation;
 
       this.setState({
         ratedFilms,
@@ -216,6 +215,10 @@ class Recommendation extends React.Component {
   }
 
   render() {
+    let ratedFilms = this.state.ratedFilms.map(movie => <RatedFilm data={movie} key={movie.id} onSeedAdd={this.handleSeedAdd} />);
+    let seedFilms = this.state.seedFilms.map(movie => <SeedFilm data={movie} key={movie.id} onSeedDelete={this.handleSeedDelete} />);
+    let recommendation = this.state.recommendation.map(movie => <RecommendationFilm data={movie} key={movie.id} />);
+
     return(
       <div className="container-fluid">
         <div className="row">
@@ -231,7 +234,7 @@ class Recommendation extends React.Component {
                 </button>
               </h2>
               <section className="row">
-                {this.state.seedFilms}
+                {seedFilms}
               </section>
             </div>
             <hr id="recommendation-hr" />
@@ -239,7 +242,7 @@ class Recommendation extends React.Component {
             <div>
               <h2 className="text-left mt-5">Recommendations</h2>
               <section className="row text-center placeholders">
-                {this.state.recommendation}
+                {recommendation}
               </section>
             </div>
           </main>
@@ -248,7 +251,7 @@ class Recommendation extends React.Component {
             <a href="#" className="closebtn" onClick={this.closeNav}>&times;</a>
               <div className="row" id="overlay-main">
                 <div className="col-6" id="overlay-content">
-                  {this.state.ratedFilms}
+                  {ratedFilms}
                 </div>
               </div>
           </div>

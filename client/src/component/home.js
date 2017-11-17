@@ -37,7 +37,7 @@ class Home extends Component {
               <div className="carousel-item">
                 <img className="d-block img-fluid" src={TutorialSlide2} alt="Second slide" />
                 <div className="carousel-caption d-none d-block">
-                  <p className="text-dark">Add as seed</p>
+                  <p>Add as seed</p>
                 </div>
               </div>
               <div className="carousel-item">
