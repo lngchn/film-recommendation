@@ -234,7 +234,7 @@ class Recommendation extends React.Component {
                 {this.state.seedFilms}
               </section>
             </div>
-            <hr />
+            <hr id="recommendation-hr" />
             {/* Recommendations */}
             <div>
               <h2 className="text-left mt-5">Recommendations</h2>

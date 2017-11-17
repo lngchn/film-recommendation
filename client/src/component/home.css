@@ -25,3 +25,22 @@
   text-decoration: none;
   color: #28a745;
 }
+
+#carouselTutorialIndicators {
+  background: linear-gradient(90deg, black, grey, black);
+}
+
+.carousel-inner {
+  width: 65%;
+  height: 65%;
+  margin: 0 auto;
+}
+
+.carousel-caption p {
+  font-size: 2em;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 4em;
+  width: 4em;
+}
