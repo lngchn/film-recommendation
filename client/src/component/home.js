@@ -15,16 +15,16 @@ class Home extends Component {
             <p className="lead text-center">Film Pro is the perfect guide for your adventures in movie watching.<br />If you're feeling adventurous, click below to begin your journey into cinema!</p>
             <p className="lead">
               <a className="btn btn-light btn-lg mr-2" href="/register" role="button">Sign Up</a>
-              <a className="btn btn-light btn-lg ml-2" href="#carouselTutorialIndicators" role="button">Tutorial</a>
+              <a className="btn btn-light btn-lg ml-2" href="#tutorial" role="button">Tutorial</a>
             </p>
           </div>
         </div>
 
-        <div id="carouselTutorialIndicators" className="carousel slide" data-ride="carousel">
+        <div id="tutorial" className="carousel slide" data-ride="carousel">
           <ol className="carousel-indicators">
-            <li data-target="#carouselTutorialIndicators" data-slide-to="0" className="active"></li>
-            <li data-target="#carouselTutorialIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselTutorialIndicators" data-slide-to="2"></li>
+            <li data-target="#tutorial" data-slide-to="0" className="active"></li>
+            <li data-target="#tutorial" data-slide-to="1"></li>
+            <li data-target="#tutorial" data-slide-to="2"></li>
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -46,11 +46,11 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <a className="carousel-control-prev" href="#carouselTutorialIndicators" role="button" data-slide="prev">
+          <a className="carousel-control-prev" href="#tutorial" role="button" data-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="sr-only">Previous</span>
           </a>
-          <a className="carousel-control-next" href="#carouselTutorialIndicators" role="button" data-slide="next">
+          <a className="carousel-control-next" href="#tutorial" role="button" data-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
           </a>
