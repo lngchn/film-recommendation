@@ -20,40 +20,42 @@ class Home extends Component {
           </div>
         </div>
 
-        <div id="tutorial" className="carousel slide" data-ride="carousel">
-          <ol className="carousel-indicators">
-            <li data-target="#tutorial" data-slide-to="0" className="active"></li>
-            <li data-target="#tutorial" data-slide-to="1"></li>
-            <li data-target="#tutorial" data-slide-to="2"></li>
-          </ol>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="d-block img-fluid" src={TutorialSlide1} alt="First slide" />
-              <div className="carousel-caption d-none d-block">
-                <p>Rate films</p>
+        <div className="jumbotron jumbotron-fluid m-0" id="tutorial-background">
+          <div className="carousel slide" id="tutorial" data-ride="carousel">
+            <ol className="carousel-indicators">
+              <li data-target="#tutorial" data-slide-to="0" className="active"></li>
+              <li data-target="#tutorial" data-slide-to="1"></li>
+              <li data-target="#tutorial" data-slide-to="2"></li>
+            </ol>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img className="d-block img-fluid" src={TutorialSlide1} alt="First slide" />
+                <div className="carousel-caption d-none d-block">
+                  <p>Rate films</p>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img className="d-block img-fluid" src={TutorialSlide2} alt="Second slide" />
+                <div className="carousel-caption d-none d-block">
+                  <p className="text-dark">Add as seed</p>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img className="d-block img-fluid" src={TutorialSlide3} alt="Third slide" />
+                <div className="carousel-caption d-none d-block">
+                  <p>Get recommendations</p>
+                </div>
               </div>
             </div>
-            <div className="carousel-item">
-              <img className="d-block img-fluid" src={TutorialSlide2} alt="Second slide" />
-              <div className="carousel-caption d-none d-block">
-                <p className="text-dark">Add as seed</p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img className="d-block img-fluid" src={TutorialSlide3} alt="Third slide" />
-              <div className="carousel-caption d-none d-block">
-                <p>Get recommendations</p>
-              </div>
-            </div>
+            <a className="carousel-control-prev" href="#tutorial" role="button" data-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#tutorial" role="button" data-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="sr-only">Next</span>
+            </a>
           </div>
-          <a className="carousel-control-prev" href="#tutorial" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
-          </a>
-          <a className="carousel-control-next" href="#tutorial" role="button" data-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
-          </a>
         </div>
 
       </div>

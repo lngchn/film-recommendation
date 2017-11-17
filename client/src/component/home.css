@@ -1,7 +1,8 @@
 #home-background {
   position: relative;
-  background: url("../img/home_background.jpg") no-repeat center;
+  background: url("../img/popcorn_background2.jpg") no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #home-background {
@@ -26,8 +27,12 @@
   color: #28a745;
 }
 
-#tutorial {
-  background: linear-gradient(90deg, black, grey, black);
+#tutorial-background {
+  position: relative;
+  background: url("../img/theater_background1.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;  
+  /*background: linear-gradient(90deg, black, grey, black);*/
 }
 
 .carousel-inner {
