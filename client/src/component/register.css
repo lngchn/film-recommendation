@@ -1,9 +1,15 @@
 #register-form {
   position: relative;
   height: 30em;
+  background: url("../img/home_background2.jpg") no-repeat center;
+  background-size: cover;
 }
 
 #register-form-content {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  width: 30%;
+}
+
+#register-form-content a {
+  text-decoration: none;
+  color: #28a745;
 }

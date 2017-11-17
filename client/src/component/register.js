@@ -78,34 +78,14 @@ class Register extends Component {
     return(
       <form onSubmit={this.handleSubmit} className="jumbotron jumbotron-fluid m-0" id="register-form" noValidate>
         <div className="container" id="register-form-content">
-          <div className="form-group row justify-content-center">
-            <label htmlFor="username-register" className="col-sm-2 col-form-label">Username</label>
-            <div className="col-sm-4">
-              <input type="text" value={this.state.username} onChange={this.handleUsernameChange} className="form-control" id="username-register" required/>
-            </div>
-          </div>      
-          <div className="form-group row justify-content-center">
-            <label htmlFor="email-register" className="col-sm-2 col-form-label">Email</label>
-            <div className="col-sm-4">
-              <input type="email" value={this.state.email} onChange={this.handleEmailChange} className="form-control" id="email-register" required/>
-            </div>
-          </div>
-          <div className="form-group row justify-content-center">
-            <label htmlFor="password-register" className="col-sm-2 col-form-label">Password</label>
-            <div className="col-sm-4">
-              <input type="password" value={this.state.password} onChange={this.handlePasswordChange} className="form-control" id="password-register" required/>
-            </div>
-          </div>
-          <div className="form-group row justify-content-center">
-            <label htmlFor="confirm-password-register" className="col-sm-2 col-form-label">Confirm Password</label>
-            <div className="col-sm-4">
-              <input type="password" value={this.state.confirmPassword} onChange={this.handleConfirmPasswordChange} className="form-control" id="confirm-password-register" required/>
-            </div>
-          </div>
-          <div className="form-group row justify-content-center">
-            <div className="col-sm-2">
-              <button type="submit" className="btn btn-success">Register</button>
-            </div>
+          <h1 className="text-white text-center">Create an account</h1>
+          <div className="row">
+            <input type="text" placeholder="Username" value={this.state.username} onChange={this.handleUsernameChange} className="form-control col-12 mb-3" id="username-register" required/>
+            <input type="email" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} className="form-control col-12 mb-3" id="email-register" required/>
+            <input type="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange} className="form-control col-12 mb-3" id="password-register" required/>
+            <input type="password" placeholder="Confirm Password" value={this.state.confirmPassword} onChange={this.handleConfirmPasswordChange} className="form-control col-12 mb-3" id="confirm-password-register" required/>
+            <button type="submit" className="btn btn-success col-4 mb-3 mx-auto">Register</button>
+            <span className="col-12 text-white text-center">Already have an account? <a href="/login">Login</a></span>
           </div>
         </div>
       </form>

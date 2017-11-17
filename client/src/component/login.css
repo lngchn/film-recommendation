@@ -1,21 +1,16 @@
 #login-form {
   position: relative;
   height: 30em;
+  background: url("../img/home_background2.jpg") no-repeat center;
+  background-size: cover;
 }
 
 #login-form-content {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 4%;
+  width: 30%;
 }
 
-.login-register-link {
-  /* Make <span> a block element in order to apply margin to it*/
-  display: block;
-  width: 15em;
-  margin-left: 29.7em;
-}
-
-.login-register-link a {
+#login-form-content a {
   text-decoration: none;
   color: #28a745;
 }
