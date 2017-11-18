@@ -1,16 +1,27 @@
 #login-form {
   position: relative;
-  height: 30em;
+  height: 40em;
   background: url("../img/home_background2.jpg") no-repeat center;
   background-size: cover;
 }
 
 #login-form-content {
-  margin-top: 4%;
   width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#login-form-content input {
+  font-size: 1.5em;
 }
 
 #login-form-content a {
   text-decoration: none;
   color: #28a745;
+}
+
+#login-form-content button {
+  font-size: 1.5em;
 }
