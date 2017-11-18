@@ -5,6 +5,7 @@ import Login from './component/login';
 import Register from './component/register';
 import Navbar from './component/navbar';
 import Home from './component/home';
+import Movie from './component/movie';
 import Recommendation from './component/recommendation';
 import Activity from './component/activity';
 import People from './component/people';
@@ -74,6 +75,7 @@ class App extends Component {
           <Switch>
             {/* <Redirect exact from="/" to="/recommendation" /> */}
             <Route exact path="/" component={Home} />
+            <Route path="/movie/:id" component={Movie} />
             <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/login" component={Login} />
             <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/register" component={Register} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/recommendation" component={Recommendation} />
