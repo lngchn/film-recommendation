@@ -1,22 +1,12 @@
-####### 11/12/17 1:24 PM
+####### 11/18/17 3:13 PM
 
 import json  #For exporting JSON files
 import glob  #For traversing directories
-from math import sqrt
+import math
 import time
 import numpy
+import operator
 import multiprocessing
-
-##dictionary in a dictionary --> film titles dictionary
-
-'''def get_pearsons(seed, all_data, sim):
-    for z in seed.keys():
-        for x in seed[z]["users"]:
-            for y in all_data.values():
-                if seed[z]["title"] == y["title"]: continue
-                if x["user_id"] == y["users"][0]["user_id"]:
-                    if y["title"] not in sim: sim.setdefault(y["title"], 0)
-                    sim[y["title"]] = sim[y["title"]] + pearson(int(x["rating"]), int(y["users"][0]["rating"]))'''
 
 
 #Get all the imdb_ids from a local collection of IMDb user files and save them into an array
@@ -29,7 +19,7 @@ def get_imdb_ids(imdb_ids, path_to_files):
                 imdb_ids.append(i["imdb_id"])
                 
 #Grab all the user ratings (and their ids) for a given film and merge that info with the IMDb ID into a dictionary 
-def get_user_info(imdb_ids, path_to_files, all_film_data, all_users):
+def get_user_info(imdb_ids, path_to_files, all_film_data):
     for i in range(0, len(imdb_ids)):
         imdb_id = imdb_ids[i]
         film_dict = {}
@@ -38,59 +28,81 @@ def get_user_info(imdb_ids, path_to_files, all_film_data, all_users):
             with open(filename) as json_file:
                 json_data = json.load(json_file)
             for i in json_data["films"]:
-                if i["imdb_id"] == imdb_id and i["rating"] != '':
-                    film_dict[str(json_data["user_id"])] = int(i["rating"])
-                    if json_data["user_id"] not in all_users: all_users.append(json_data["user_id"])
-        all_film_data[imdb_id] = film_dict
+                if i["imdb_id"] == imdb_id and i["rating"] != '': film_dict[str(json_data["user_id"])] = int(i["rating"])
+        all_film_data[str(imdb_id)] = film_dict
 
-def rec_movies(imdb_ids, all_film_data, all_users):
+def transform_data(imdb_ids, all_film_data):
     path_to_files = 'C://Users/bendo/Desktop/Capstone Project/itemtest/*json'
+
     get_imdb_ids(imdb_ids, path_to_files)
-    get_user_info(imdb_ids, path_to_files, all_film_data, all_users)
+    start = time.time()
+    get_user_info(imdb_ids, path_to_files, all_film_data)
+    print "time to finish get_user_info " + str(time.time() - start) + " secs"
 
 
 def get_pearsons(seed, all_data, sim):
     for seed_id, seed_info in seed.items():
         for imdb_id, imdb_info in all_data.items():
+            seed_r = []
+            other_r = []
             if seed_id == imdb_id: continue
             if len(seed_info) >= len(imdb_info):
-                seed_r = []
-                other_r = []
                 for user, rating in imdb_info.items():
                     if user in seed_info:
                         other_r.append(rating)
                         seed_r.append(seed_info[user])
                 if len(seed_r) == 0 or len(other_r) == 0: continue
+                elif len(seed_r) == 1 and len(other_r) == 1: continue
                 else: sim[imdb_id] = numpy.corrcoef(seed_r, other_r)[0, 1]
             else:
-                seed_r = []
-                other_r = []
                 for user, rating in seed_info.items():
                     if user in imdb_info:
                         seed_r.append(rating)
                         other_r.append(imdb_info[user])
                 if len(seed_r) == 0 or len(other_r) == 0: continue
-                else: sim[imdb_id] = numpy.corrcoef(other_r, seed_r)[0, 1]
+                elif len(seed_r) == 1 and len(other_r) == 1: continue
+                else: sim[imdb_id] = numpy.corrcoef(seed_r, other_r)[0, 1]
+
+def do_weights(seed, film, film_id, pearson, rating_pearson, just_pearson):
+    if film_id in seed: return
+    for user, rating in film.items():
+        rating_pearson.setdefault(film_id, 0)
+        rating_pearson[film_id] += rating * pearson
+        just_pearson.setdefault(film_id, 0)
+        just_pearson[film_id] += pearson
+
+def fill_rankings(rankings, rating_pearson, just_pearson):
+    
+        
+
+def rec_movies(seed, all_data, sim):
+    rating_pearson = {}
+    just_pearson = {}
+    rankings = {}
+
+    for film_id, pearson in sim.items():
+        do_weights(seed, all_data[film_id], film_id, pearson, rating_pearson, just_pearson) #j[0] --> film id, j[1] --> pearson
+
+    fill_rankings(rankings, rating_pearson, just_pearson)
+
                         
             
 #init functions 
 def main():
-    start = time.time()
     imdb_ids = []
     all_film_data = {}
-    all_users = []
     seed_films = {}
     sim_score = {}
 
-    rec_movies(imdb_ids, all_film_data, all_users)
-    #print all_film_data["tt1748207"][0]["user_id"] --> ur000001
-
+    transform_data(imdb_ids, all_film_data)
+    
+    #####
     seed_films["tt3748528"] = all_film_data["tt3748528"] #Rogue One FOR TESTING PURPOSES
-    #seed_films["tt1375666"] = all_film_data["tt1375666"] #Inception FOR TESTING PURPOSES
-
+    #####
+    
     get_pearsons(seed_films, all_film_data, sim_score)
-    
-    
+    rec_movies(seed_films, all_film_data, sim_score)
+
     
 if __name__ == "__main__":
     main()
