@@ -8,10 +8,10 @@ import numpy
 import operator
 import multiprocessing
 
+start = time.time()
 
 #Get all the imdb_ids from a local collection of IMDb user files and save them into an array
 def get_imdb_ids(imdb_ids, path_to_files):
-    #for filename in glob.iglob('IMDb_User_Ratings_JSON_Output_10-26-17/*json'):
     for filename in glob.iglob(path_to_files):
         with open(filename) as json_file:
             json_data = json.load(json_file)
@@ -31,38 +31,34 @@ def get_user_info(imdb_ids, path_to_files, all_film_data):
                 if i["imdb_id"] == imdb_id and i["rating"] != '': film_dict[str(json_data["user_id"])] = int(i["rating"])
         all_film_data[str(imdb_id)] = film_dict
 
+#transform .json file from user --> films to film --> users 
 def transform_data(imdb_ids, all_film_data):
-    path_to_files = 'C://Users/bendo/Desktop/Capstone Project/itemtest/*json'
-
+    path_to_files = 'C://Users/bendo/Desktop/Capstone Project/*json'
     get_imdb_ids(imdb_ids, path_to_files)
-    start = time.time()
     get_user_info(imdb_ids, path_to_files, all_film_data)
-    print "time to finish get_user_info " + str(time.time() - start) + " secs"
 
-
+#pearson calculation
 def get_pearsons(seed, all_data, sim):
     for seed_id, seed_info in seed.items():
         for imdb_id, imdb_info in all_data.items():
+            if seed_id == imdb_id: continue #ignore the seed films
             seed_r = []
             other_r = []
-            if seed_id == imdb_id: continue
-            if len(seed_info) >= len(imdb_info):
+            if len(seed_info) >= len(imdb_info): #save runtime, compare only the smaller list
                 for user, rating in imdb_info.items():
                     if user in seed_info:
                         other_r.append(rating)
                         seed_r.append(seed_info[user])
-                if len(seed_r) == 0 or len(other_r) == 0: continue
-                elif len(seed_r) == 1 and len(other_r) == 1: continue
-                else: sim[imdb_id] = numpy.corrcoef(seed_r, other_r)[0, 1]
             else:
                 for user, rating in seed_info.items():
                     if user in imdb_info:
                         seed_r.append(rating)
                         other_r.append(imdb_info[user])
-                if len(seed_r) == 0 or len(other_r) == 0: continue
-                elif len(seed_r) == 1 and len(other_r) == 1: continue
-                else: sim[imdb_id] = numpy.corrcoef(seed_r, other_r)[0, 1]
+            if len(seed_r) == 0 or len(other_r) == 0: continue ##ignore empty lists
+            elif len(seed_r) == 1 and len(other_r) == 1: continue ##ignore lists where there is only one rating in each list
+            else: sim[imdb_id] = numpy.corrcoef(seed_r, other_r)[0, 1] ##calculate the pearson
 
+#apply the weights to the pearson values
 def do_weights(seed, film, film_id, pearson, rating_pearson, just_pearson):
     if film_id in seed: return
     for user, rating in film.items():
@@ -71,10 +67,12 @@ def do_weights(seed, film, film_id, pearson, rating_pearson, just_pearson):
         just_pearson.setdefault(film_id, 0)
         just_pearson[film_id] += pearson
 
+#fill the recommendation films, ignore everything below 7
 def fill_rankings(rankings, rating_pearson, just_pearson):
-    
+    for movie, ranking in rating_pearson.items():
+        num = ranking / just_pearson[movie]
+        if num > 7: rankings[movie] = num
         
-
 def rec_movies(seed, all_data, sim):
     rating_pearson = {}
     just_pearson = {}
@@ -85,8 +83,11 @@ def rec_movies(seed, all_data, sim):
 
     fill_rankings(rankings, rating_pearson, just_pearson)
 
-                        
-            
+    rankings = sorted(rankings.items(), key=operator.itemgetter(1))
+    rankings.reverse()
+
+    return rankings
+          
 #init functions 
 def main():
     imdb_ids = []
@@ -101,7 +102,10 @@ def main():
     #####
     
     get_pearsons(seed_films, all_film_data, sim_score)
-    rec_movies(seed_films, all_film_data, sim_score)
+    films_to_rec = rec_movies(seed_films, all_film_data, sim_score)
+
+    '''for x in films_to_rec[:30]:
+        print x'''
 
     
 if __name__ == "__main__":
