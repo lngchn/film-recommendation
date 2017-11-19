@@ -6,6 +6,8 @@ import math
 import time
 import numpy
 import operator
+import sys
+import os
 import multiprocessing
 
 start = time.time()
@@ -29,11 +31,11 @@ def get_user_info(imdb_ids, path_to_files, all_film_data):
                 json_data = json.load(json_file)
             for i in json_data["films"]:
                 if i["imdb_id"] == imdb_id and i["rating"] != '': film_dict[str(json_data["user_id"])] = int(i["rating"])
-        all_film_data[str(imdb_id)] = film_dict
+        if len(film_dict) > 100: all_film_data[str(imdb_id)] = film_dict #change this later
 
 #transform .json file from user --> films to film --> users 
 def transform_data(imdb_ids, all_film_data):
-    path_to_files = 'C://Users/bendo/Desktop/Capstone Project/*json'
+    path_to_files = 'C://Users/bendo/Desktop/Capstone Project/itemtest/*json'
     get_imdb_ids(imdb_ids, path_to_files)
     get_user_info(imdb_ids, path_to_files, all_film_data)
 
@@ -98,14 +100,14 @@ def main():
     transform_data(imdb_ids, all_film_data)
     
     #####
-    seed_films["tt3748528"] = all_film_data["tt3748528"] #Rogue One FOR TESTING PURPOSES
+    seed_films["tt0114709"] = all_film_data["tt0114709"] #Toy Story FOR TESTING PURPOSES
     #####
     
     get_pearsons(seed_films, all_film_data, sim_score)
     films_to_rec = rec_movies(seed_films, all_film_data, sim_score)
 
-    '''for x in films_to_rec[:30]:
-        print x'''
+    for x in films_to_rec[:30]:
+        print x
 
     
 if __name__ == "__main__":
