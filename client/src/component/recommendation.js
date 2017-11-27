@@ -1,38 +1,29 @@
 import React from 'react';
 import ReactStars from 'react-stars';
-
 import './recommendation.css';
 
+
 function SideBarFilter(props) {
-  return(
-    <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
-      <h4 className="ml-3 mb-1 text-light text-uppercase">Genre</h4>
-      <nav className="nav flex-column filter-link">
-        <a className="nav-item nav-link" href="#">Action</a>
-        <a className="nav-item nav-link" href="#">Adventure</a>
-        <a className="nav-item nav-link" href="#">Animation</a>
-        <a className="nav-item nav-link" href="#">Comedy</a>
-        <a className="nav-item nav-link" href="#">Documentary</a>
-        <a className="nav-item nav-link" href="#">Drama</a>
-        <a className="nav-item nav-link" href="#">Horror</a>
-        <a className="nav-item nav-link" href="#">Sci-Fi</a>
-        <a className="nav-item nav-link" href="#">Fantasy</a>
-        <a className="nav-item nav-link text-right" href="#">More</a>
-      </nav>
-      
-      <h4 className="mt-4 ml-3 mb-1 text-light text-uppercase">Rating</h4>
-      <nav className="nav flex-column filter-link">
-        <a className="nav-item nav-link" href="#">G</a>
-        <a className="nav-item nav-link" href="#">PG</a>
-        <a className="nav-item nav-link" href="#">PG-13</a>
-        <a className="nav-item nav-link" href="#">R</a>
-        <a className="nav-item nav-link" href="#">NR</a>
-        <a className="nav-item nav-link" href="#">NC-17</a>
-        <a className="nav-item nav-link text-right" href="#">More</a>
-      </nav>
-    </nav>
-  );
+	return(<nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
+   		<nav className="nav flex-column filter-link">
+    
+      	<div className="checkbox">
+          <a className="nav-link nav-item" href="#" > <input type="checkbox" value="Adventure"  onChange={(event) => props.onFilterChange(event) }  /> Adventure</a><br />
+          <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Action"  onChange={(event) => props.onFilterChange(event) }  /> Action</a><br />
+          <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Animation"  onChange={(event) => props.onFilterChange(event) }  /> Animation</a><br />
+       	  <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Comedy"  onChange={(event) => props.onFilterChange(event) }  /> Comedy</a><br />
+       	  <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Documentary"/> Documentary</a><br />
+		   	  <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Drama"  onChange={(event) => props.onFilterChange(event) }  /> Drama</a><br />
+		   	  <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Horror"  onChange={(event) => props.onFilterChange(event) }  /> Horror</a><br />
+		   	  <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Science Fiction"  onChange={(event) => props.onFilterChange(event) }  /> Sci-Fi</a><br />
+			    <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Fantasy"  onChange={(event) => props.onFilterChange(event) }  /> Fantasy</a>
+		      <a className="nav-item nav-link text-right" href="#">More</a>
+      	</div>
+    	</nav>
+    	</nav>
+	);
 }
+
 
 function RatedFilm(props) {
   const id = props.data.id;
@@ -96,7 +87,10 @@ class Recommendation extends React.Component {
     this.state = {
       ratedFilms: [],
       seedFilms: [],
-      recommendation: []
+      recommendation: [],
+      recSubset: [],
+      userSelectedGenres: []
+      
     };
     this.handleSeedDelete = this.handleSeedDelete.bind(this);
     this.handleSeedAdd = this.handleSeedAdd.bind(this);
@@ -104,6 +98,7 @@ class Recommendation extends React.Component {
     this.updateRecommendation = this.updateRecommendation.bind(this);
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
+    this.handleFilterChange = this.handleFilterChange.bind(this)
   }
 
   componentDidMount() {
@@ -124,11 +119,15 @@ class Recommendation extends React.Component {
       const ratedFilms = user.ratedFilms.sort((filmA, filmB) => filmA.title < filmB.title ? -1 : 1);
       const seedFilms = user.seedFilms;
       const recommendation = user.recommendation;
+      const recSubset = user.recommendation;
+      const userSelectedGenres = [];
 
       this.setState({
         ratedFilms,
         seedFilms,
         recommendation,
+        recSubset,
+        userSelectedGenres
       });
     })
     .catch(err => {
@@ -213,16 +212,53 @@ class Recommendation extends React.Component {
     this.fetchFilms();
     document.getElementById("addSeedFilmNav").style.display = "none";
   }
+  
+
+	handleFilterChange(e) {
+  		const recommendation = this.state.recommendation;
+    	let userSelectedGenres = this.state.userSelectedGenres;
+   	 	let recSubset = [];
+   
+      if(e.target.checked){
+            userSelectedGenres.push(e.target.value);
+        }
+        else{
+            //Add to user genre selections
+            for(let i =0; i <  userSelectedGenres.length; i++){
+                if( userSelectedGenres[i] === e.target.value){
+                    userSelectedGenres.splice(i, 1);
+                } 
+            }  
+        }  
+     	
+      	recommendation.forEach(film => {
+      	//Execute this if there is at least one genre filter selected
+      		if(typeof userSelectedGenres !== 'undefined' && userSelectedGenres.length > 0){ 
+  				film.genres.forEach(genre => {
+   					if(userSelectedGenres.includes(genre.name) && !recSubset.includes(film)) {
+   						recSubset.push(film);
+   					} 	
+  		  		});
+  		   // Else, clear genre selections
+  		  	}else{ 
+  		  		recSubset.push(film);
+  		  	}	
+  		});
+	  	 		
+        this.setState({recSubset: recSubset} );
+        this.setState({userSelectedGenres: userSelectedGenres} );
+          
+    }
 
   render() {
     let ratedFilms = this.state.ratedFilms.map(movie => <RatedFilm data={movie} key={movie.id} onSeedAdd={this.handleSeedAdd} />);
     let seedFilms = this.state.seedFilms.map(movie => <SeedFilm data={movie} key={movie.id} onSeedDelete={this.handleSeedDelete} />);
-    let recommendation = this.state.recommendation.map(movie => <RecommendationFilm data={movie} key={movie.id} />);
-
+    //let recommendation = this.state.recommendation.map(movie => <RecommendationFilm data={movie} key={movie.id} />);
+	let recSubset = this.state.recSubset.map(movie => <RecommendationFilm data={movie} key={movie.id} />);
     return(
       <div className="container-fluid">
         <div className="row">
-          <SideBarFilter />
+          <SideBarFilter  onFilterChange = {this.handleFilterChange} />
 
           {/* Body */}
           <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pb-5 text-light recommendation">
@@ -242,7 +278,8 @@ class Recommendation extends React.Component {
             <div>
               <h2 className="text-left mt-5">Recommendations</h2>
               <section className="row text-center placeholders">
-                {recommendation}
+           
+               {recSubset}
               </section>
             </div>
           </main>
