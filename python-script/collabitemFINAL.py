@@ -1,4 +1,4 @@
-####### 11/24/17 3:07 PM
+####### 11/28/17 5:59 PM
 
 import json  #For exporting JSON files
 import glob  #For traversing directories
@@ -12,7 +12,7 @@ import multiprocessing
 
 #Get all the imdb_ids from a local collection of IMDb user files and save them into an array
 def get_imdb_ids(imdb_ids, path_to_files):
-    for filename in glob.iglob(path_to_files):
+    for filename in path_to_files:
         with open(filename) as json_file:
             json_data = json.load(json_file)
             for i in json_data["films"]:
@@ -24,7 +24,7 @@ def get_user_info(imdb_ids, path_to_files, all_film_data):
         imdb_id = imdb_ids[i]
         film_dict = {}
 
-        for filename in glob.iglob(path_to_files):
+        for filename in path_to_files:
             with open(filename) as json_file:
                 json_data = json.load(json_file)
             for i in json_data["films"]:
@@ -35,11 +35,10 @@ def get_user_info(imdb_ids, path_to_files, all_film_data):
 
 #transform .json file from user --> films to film --> users 
 def transform_data(imdb_ids, all_film_data):
-    path_to_files = 'C://Users/bendo/Desktop/Capstone Project/itemtest/*json'
+    parent = os.path.dirname(__file__)
+    path_to_files = glob.glob(os.path.join(parent, '../IMDB_User_Ratings/*.json'))
     get_imdb_ids(imdb_ids, path_to_files)
-    start = time.time()
     get_user_info(imdb_ids, path_to_files, all_film_data)
-    print "done with get_user_info in " + str(time.time() - start) + " seconds"
 
 #pearson calculation
 def get_pearsons(seed, all_data, sim):
@@ -91,26 +90,34 @@ def rec_movies(seed, all_data, sim):
     rankings.reverse()
 
     return rankings
+
+#read in user_obj data
+def read_in():
+    user_obj = sys.stdin.readlines()
+
+    return json.loads(user_obj[0])
           
 #init functions 
 def main():
+    user_obj = read_in()
     imdb_ids = []
     all_film_data = {}
     seed_films = {}
     sim_score = {}
+    output_str = ""
 
     transform_data(imdb_ids, all_film_data)
-    
-    #####
-    seed_films["tt0114709"] = all_film_data["tt0114709"] #Toy Story FOR TESTING PURPOSES
-    #####
-    
+
+    for x in user_obj["films"]:
+        seed_films[x["imdb_id"]] = all_film_data[x["imdb_id"]]
+        
     get_pearsons(seed_films, all_film_data, sim_score)
     films_to_rec = rec_movies(seed_films, all_film_data, sim_score)
 
-    for x in films_to_rec[:30]:
-        print x
+    for x in films_to_rec[:100]:
+        output_str += x + " "
 
-    
+    print (output_str)
+
 if __name__ == "__main__":
     main()
