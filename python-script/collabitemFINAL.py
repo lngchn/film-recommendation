@@ -1,4 +1,4 @@
-####### 11/28/17 5:59 PM
+####### 11/28/17 6:03 PM
 
 import json  #For exporting JSON files
 import glob  #For traversing directories
@@ -13,7 +13,7 @@ import multiprocessing
 #Get all the imdb_ids from a local collection of IMDb user files and save them into an array
 def get_imdb_ids(imdb_ids, path_to_files):
     for filename in path_to_files:
-        with open(filename) as json_file:
+        with open(filename, encoding="utf8") as json_file:
             json_data = json.load(json_file)
             for i in json_data["films"]:
                 if i["imdb_id"] not in imdb_ids: imdb_ids.append(i["imdb_id"])
@@ -25,7 +25,7 @@ def get_user_info(imdb_ids, path_to_files, all_film_data):
         film_dict = {}
 
         for filename in path_to_files:
-            with open(filename) as json_file:
+            with open(filename, encoding="utf8") as json_file:
                 json_data = json.load(json_file)
             for i in json_data["films"]:
                 if i["imdb_id"] == imdb_id and i["rating"] != '':
