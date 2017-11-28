@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactStars from 'react-stars';
-
 import './recommendation.css';
 
 
@@ -236,7 +235,7 @@ class Recommendation extends React.Component {
       	//Execute this if there is at least one genre filter selected
       		if(typeof userSelectedGenres !== 'undefined' && userSelectedGenres.length > 0){ 
   				film.genres.forEach(genre => {
-   					if(userSelectedGenres.includes(genre.name)) {
+   					if(userSelectedGenres.includes(genre.name) && !recSubset.includes(film)) {
    						recSubset.push(film);
    					} 	
   		  		});
