@@ -114,12 +114,12 @@ def do_weights(rankings, rating_pearson, just_pearson, my_dict, other_dict, pear
 def fill_rankings(rankings, rating_pearson, just_pearson):
     for movie, ranking in rating_pearson.items():
         num = ranking / just_pearson[movie]
-        if num > 7 and num <= 9: rankings[movie] = num
+        if num > 7 and num <= 10: rankings[movie] = num
 
 ##function to remove all movies that appear less than 50 times (removes bias towards films with only less than 50 ratings)
 def remove_fifty(all_movies, rankings):
     for movie, count in all_movies.items():
-        if count < 300 and movie in rankings: rankings.pop(movie, 0)
+        if count < 400 and movie in rankings: rankings.pop(movie, 0)
         
 ##get the id of the most similar user to me
 def rec_movies(me, sim_score, movie_id_store, all_movies):
