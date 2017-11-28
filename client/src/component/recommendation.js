@@ -8,16 +8,16 @@ function SideBarFilter(props) {
    		<nav className="nav flex-column filter-link">
     
       	<div className="checkbox">
-          <a className="nav-link nav-item" href="#" > <input type="checkbox" value="Adventure"  onChange={(event) => props.onFilterChange(event) }  /> Adventure</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Action"  onChange={(event) => props.onFilterChange(event) }  /> Action</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Animation"  onChange={(event) => props.onFilterChange(event) }  /> Animation</a><br />
-       	  <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Comedy"  onChange={(event) => props.onFilterChange(event) }  /> Comedy</a><br />
-       	  <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Documentary"/> Documentary</a><br />
-		   	  <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Drama"  onChange={(event) => props.onFilterChange(event) }  /> Drama</a><br />
-		   	  <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Horror"  onChange={(event) => props.onFilterChange(event) }  /> Horror</a><br />
-		   	  <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Science Fiction"  onChange={(event) => props.onFilterChange(event) }  /> Sci-Fi</a><br />
-			    <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Fantasy"  onChange={(event) => props.onFilterChange(event) }  /> Fantasy</a>
-		      <a className="nav-item nav-link text-right" href="#">More</a>
+        	<a className="nav-link nav-item" href="#" > <input type="checkbox" value="Adventure"  onChange={(event) => props.onFilterChange(event) }  /> Adventure</a><br />
+           	<a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Action"  onChange={(event) => props.onFilterChange(event) }  /> Action</a><br />
+           	<a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Animation"  onChange={(event) => props.onFilterChange(event) }  /> Animation</a><br />
+       	   	<a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Comedy"  onChange={(event) => props.onFilterChange(event) }  /> Comedy</a><br />
+		   	<a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Documentary"  onChange={(event) => props.onFilterChange(event) }  /> Documentary</a><br />
+		   	<a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Drama"  onChange={(event) => props.onFilterChange(event) }  /> Drama</a><br />
+		   	<a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Horror"  onChange={(event) => props.onFilterChange(event) }  /> Horror</a><br />
+		   	<a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Science Fiction"  onChange={(event) => props.onFilterChange(event) }  /> Sci-Fi</a><br />
+			<a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Fantasy"  onChange={(event) => props.onFilterChange(event) }  /> Fantasy</a>
+		    <a className="nav-item nav-link text-right" href="#">More</a>
       	</div>
     	</nav>
     	</nav>
