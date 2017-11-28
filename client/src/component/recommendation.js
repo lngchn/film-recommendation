@@ -2,6 +2,7 @@ import React from 'react';
 import ReactStars from 'react-stars';
 import './recommendation.css';
 
+
 function SideBarFilter(props) {
   return(
     <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
@@ -11,7 +12,7 @@ function SideBarFilter(props) {
           <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Action" onChange={(event) => props.onFilterChange(event) }  /> Action</a><br />
           <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Animation" onChange={(event) => props.onFilterChange(event) }  /> Animation</a><br />
           <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Comedy" onChange={(event) => props.onFilterChange(event) }  /> Comedy</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Documentary"/> Documentary</a><br />
+          <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Documentary"  onChange={(event) => props.onFilterChange(event) }  /> Documentary</a><br />
           <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Drama" onChange={(event) => props.onFilterChange(event) }  /> Drama</a><br />
           <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Horror" onChange={(event) => props.onFilterChange(event) }  /> Horror</a><br />
           <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Science Fiction" onChange={(event) => props.onFilterChange(event) }  /> Sci-Fi</a><br />
@@ -212,7 +213,6 @@ class Recommendation extends React.Component {
     document.getElementById("addSeedFilmNav").style.display = "none";
   }
   
-
   handleFilterChange(e) {
     const recommendation = this.state.recommendation;
     let userSelectedGenres = this.state.userSelectedGenres;
