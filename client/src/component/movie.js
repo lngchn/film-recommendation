@@ -144,7 +144,7 @@ class Movie extends Component{
   render(){
       return (
         <div className="container-fluid">
-          <div className="row">
+          <div className="row movie">
             <div className= "col-sm-2 pt-5 pl-3 border border-dark border-top-0 border-left-0 border-bottom-0">
               <h2 className= "pl-3 pb-4 mt-3 text-light text-bold text-uppercase">{this.state.movie.title}</h2>
               <img src= {'https://image.tmdb.org/t/p/w500' + this.state.movie.poster_path} className=" pl-3 pr-4 pb-4 thumbnail img " width="230" height="300"  alt="Movie Poster"/>
@@ -197,13 +197,7 @@ class Movie extends Component{
                 </div>
               </div>
             </div>
-
-          </div>
-            <div>
-            <br />
-            <br />
-            <br />
-            <br />
+          
           </div>
       </div>
       );
