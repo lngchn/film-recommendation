@@ -31,7 +31,7 @@ def get_user_info(imdb_ids, path_to_files, all_film_data):
                 if i["imdb_id"] == imdb_id and i["rating"] != '':
                     film_dict[str(json_data["user_id"])] = int(i["rating"])
                     break
-        all_film_data[str(imdb_id)] = film_dict
+        if len(film_dict) > 100: all_film_data[str(imdb_id)] = film_dict
 
 #transform .json file from user --> films to film --> users 
 def transform_data(imdb_ids, all_film_data):
