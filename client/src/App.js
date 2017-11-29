@@ -11,6 +11,7 @@ import Activity from './component/activity';
 import People from './component/people';
 import Footer from './component/footer';
 import NotFound from './component/not-found';
+import Movie from './component/movie';
 
 function PrivateRoute({component: Component, isAuthed, ...rest}) {
   return(
@@ -81,6 +82,7 @@ class App extends Component {
             <PrivateRoute isAuthed={this.state.isAuthed} path="/recommendation" component={Recommendation} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/activity" component={Activity} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/people" component={People} />
+            <Route path="/movie/:id" component={Movie} />
             <Route component={NotFound} />
           </Switch>
           <Footer />
