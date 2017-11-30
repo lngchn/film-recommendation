@@ -1,4 +1,4 @@
-####### 11/28/17 6:03 PM
+####### 11/24/17 3:07 PM
 
 import json  #For exporting JSON files
 import glob  #For traversing directories
@@ -8,37 +8,31 @@ import numpy
 import operator
 import sys
 import os
-import multiprocessing
 
-#Get all the imdb_ids from a local collection of IMDb user files and save them into an array
+####################### INACTIVE FUNCTIONS #################
+'''#Get all the imdb_ids from a local collection of IMDb user files and save them into an array
 def get_imdb_ids(imdb_ids, path_to_files):
     for filename in path_to_files:
         with open(filename, encoding="utf8") as json_file:
             json_data = json.load(json_file)
             for i in json_data["films"]:
-                if i["imdb_id"] not in imdb_ids: imdb_ids.append(i["imdb_id"])
+                if i["imdb_id"] not in imdb_ids: imdb_ids.append(i["imdb_id"])'''
+############################################################
                 
 #Grab all the user ratings (and their ids) for a given film and merge that info with the IMDb ID into a dictionary 
-def get_user_info(imdb_ids, path_to_files, all_film_data):
-    for i in range(0, len(imdb_ids)):
-        imdb_id = imdb_ids[i]
-        film_dict = {}
-
-        for filename in path_to_files:
-            with open(filename, encoding="utf8") as json_file:
-                json_data = json.load(json_file)
-            for i in json_data["films"]:
-                if i["imdb_id"] == imdb_id and i["rating"] != '':
-                    film_dict[str(json_data["user_id"])] = int(i["rating"])
-                    break
-        if len(film_dict) > 100: all_film_data[str(imdb_id)] = film_dict
+def get_user_info(path_to_files, all_film_data):
+    for filename in glob.iglob(path_to_files):
+        with open(filename) as json_file:
+            json_data = json.load(json_file)
+        for i in json_data["films"]:
+            if i["imdb_id"] in all_film_data and i["rating"] != '': all_film_data[i["imdb_id"]].update({str(json_data["user_id"]): int(i["rating"])})
+            elif i["imdb_id"] not in all_film_data and i["rating"] != '': all_film_data[i["imdb_id"]] = {str(json_data["user_id"]): int(i["rating"])}
 
 #transform .json file from user --> films to film --> users 
-def transform_data(imdb_ids, all_film_data):
+def transform_data(all_film_data):
     parent = os.path.dirname(__file__)
     path_to_files = glob.glob(os.path.join(parent, '../IMDB_User_Ratings/*.json'))
-    get_imdb_ids(imdb_ids, path_to_files)
-    get_user_info(imdb_ids, path_to_files, all_film_data)
+    get_user_info(path_to_files, all_film_data)
 
 #pearson calculation
 def get_pearsons(seed, all_data, sim):
@@ -100,13 +94,12 @@ def read_in():
 #init functions 
 def main():
     user_obj = read_in()
-    imdb_ids = []
     all_film_data = {}
     seed_films = {}
     sim_score = {}
     output_str = ""
 
-    transform_data(imdb_ids, all_film_data)
+    transform_data(all_film_data)
 
     for x in user_obj["films"]:
         seed_films[x["imdb_id"]] = all_film_data[x["imdb_id"]]
