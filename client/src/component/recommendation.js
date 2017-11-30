@@ -4,19 +4,21 @@ import './recommendation.css';
 
 
 function SideBarFilter(props) {
+
   return(
     <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
       <nav className="nav flex-column filter-link">
         <div className="checkbox">
-          <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Adventure" onChange={(event) => props.onFilterChange(event) }  /> Adventure</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Action" onChange={(event) => props.onFilterChange(event) }  /> Action</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Animation" onChange={(event) => props.onFilterChange(event) }  /> Animation</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Comedy" onChange={(event) => props.onFilterChange(event) }  /> Comedy</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox"  value="Documentary"  onChange={(event) => props.onFilterChange(event) }  /> Documentary</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Drama" onChange={(event) => props.onFilterChange(event) }  /> Drama</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Horror" onChange={(event) => props.onFilterChange(event) }  /> Horror</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Science Fiction" onChange={(event) => props.onFilterChange(event) }  /> Sci-Fi</a><br />
-          <a className="nav-link nav-item" href="#" ><input type="checkbox" value="Fantasy" onChange={(event) => props.onFilterChange(event) }  /> Fantasy</a>
+          <a className="nav-link nav-item" href="#"><input type="checkbox" value="Adventure" onChange={(event) => props.onFilterChange(event)}/> Adventure</a><br />
+          <a className="nav-link nav-item" href="#"><input type="checkbox" value="Action" onChange={(event) => props.onFilterChange(event) } /> Action</a><br />
+          <a className="nav-link nav-item" href="#"><input type="checkbox" value="Animation" onChange={(event) => props.onFilterChange(event)}  /> Animation</a><br />
+          <a className="nav-link nav-item" href="#"><input type="checkbox" value="Comedy" onChange={(event) => props.onFilterChange(event)}/> Comedy</a><br />
+          <a className="nav-link nav-item" href="#"><input type="checkbox"  value="Documentary"  onChange={(event) => props.onFilterChange(event) }  /> Documentary</a><br />
+          <a className="nav-link nav-item" href="#"><input type="checkbox" value="Drama" onChange={(event) => props.onFilterChange(event)} /> Drama</a><br />
+          <a className="nav-link nav-item" href="#"><input type="checkbox" value="Horror" onChange={(event) => props.onFilterChange(event)} /> Horror</a><br />
+          <a className="nav-link nav-item" href="#"><input type="checkbox" value="Science Fiction" onChange={(event) => props.onFilterChange(event) }  /> Sci-Fi</a><br />
+          <a className="nav-link nav-item" href="#"><input type="checkbox" value="Fantasy" onChange={(event) => props.onFilterChange(event)} /> Fantasy</a><br />
+          <a className="nav-link nav-item" href="#"><button type="button" value="Reset" onClick={() => props.onReset() }>Reset Filters</button></a>     
           <a className="nav-item nav-link text-right" href="#">More</a>
         </div>
       </nav>
@@ -156,6 +158,8 @@ class Recommendation extends React.Component {
       console.log(err.message);
     });
   }
+  
+ 
 
   handleSeedDelete(id, imdb_id, event) {
     // When the user delete a seed film, it doesn't call updateRecommendation()
@@ -243,22 +247,48 @@ class Recommendation extends React.Component {
         recommendationSubset.push(film);
       } 
     });
+    
+    // Shuffle recommendations results
+    recommendationSubset =  this.shuffleArray(recommendationSubset);
           
     this.setState({
       recommendationSubset: recommendationSubset,
       userSelectedGenres: userSelectedGenres
     });
   }
+  
+   handleReset(){
+   //Receiving an error when this is uncommented
+   /**
+	  const recommendationSubset = this.state.recommendation;
+    let userSelectedGenres = [];
+   	
+    this.setState({
+  	  recommendationSubset: recommendationSubset,
+      userSelectedGenres: userSelectedGenres
+    });
+    ***/   
+  }
+  
+ 
+  shuffleArray(array){
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+     }
+    return array;
+  }
+ 
 
   render() {
     let ratedFilms = this.state.ratedFilms.map(movie => <RatedFilm data={movie} key={movie.id} onSeedAdd={this.handleSeedAdd} />);
     let seedFilms = this.state.seedFilms.map(movie => <SeedFilm data={movie} key={movie.id} onSeedDelete={this.handleSeedDelete} />);
     let recommendationSubset = this.state.recommendationSubset.map(movie => <RecommendationFilm data={movie} key={movie.id} />);
-
+    
     return(
       <div className="container-fluid">
         <div className="row">
-          <SideBarFilter  onFilterChange = {this.handleFilterChange} />
+          <SideBarFilter  onFilterChange = {this.handleFilterChange}  onReset = {this.handleReset} />
           {/* Body */}
           <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pb-5 text-light recommendation">
             {/* Seed Films */}
