@@ -63,6 +63,8 @@ function callPyScript(dataToPython, req, res) {
             let title = null;
             let poster_path = null;
             let genres = null; 
+            let release_date = null;
+            let runtime = null;
 
             axios.get(`https://api.themoviedb.org/3/movie/${imdb_id}?api_key=${API_KEY}`)
               .then(result => {
@@ -71,8 +73,13 @@ function callPyScript(dataToPython, req, res) {
                 title = result.data.title;
                 poster_path = result.data.poster_path;
                 genres = result.data.genres;
+                release_date = result.data.release_date;
+                runtime = result.data.runtime;
 
-                let film = { id: id, imdb_id: imdb_id, rating: rating, title: title, poster_path: poster_path, genres: genres };
+                let film = { id: id, imdb_id: imdb_id, rating: rating, 
+                             title: title, poster_path: poster_path, genres: genres, 
+                             release_date: release_date, runtime: runtime };
+                             
                 recommendation.push(film);
 
                 // Wait for for loop to finish to have all the films in the recommendation array
