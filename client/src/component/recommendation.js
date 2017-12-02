@@ -236,6 +236,10 @@ class Recommendation extends React.Component {
       if(checkboxes[i].defaultValue === value) {
         checked = !checkboxes[i].checked
         checkboxes[i].checked = !checkboxes[i].checked;
+
+        checked === true ? checkboxes[i].parentElement.style.color = "#72d147"
+                         : checkboxes[i].parentElement.style.color = "white";
+
         break;
       }
     }    
@@ -281,6 +285,7 @@ class Recommendation extends React.Component {
     let checkboxes = document.getElementsByClassName("filterCheckbox");
     for(let i = 0; i < checkboxes.length; i++) {
       checkboxes[i].checked = false;
+      checkboxes[i].parentElement.style.color = "white";
     }
 
     const recommendationSubset = this.state.recommendation;
