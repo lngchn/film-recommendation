@@ -1,4 +1,4 @@
-####### 11/30/17 7:09 PM
+####### 11/24/17 3:07 PM
 
 import json  #For exporting JSON files
 import glob  #For traversing directories
@@ -27,8 +27,9 @@ def get_user_info(path_to_files, all_film_data):
         with open(filename) as json_file:
             json_data = json.load(json_file)
         for i in json_data["films"]:
-            if i["imdb_id"] in all_film_data and i["rating"] != '': all_film_data[i["imdb_id"]].update({str(json_data["user_id"]): int(i["rating"])})
-            elif i["imdb_id"] not in all_film_data and i["rating"] != '': all_film_data[i["imdb_id"]] = {str(json_data["user_id"]): int(i["rating"])}
+            if i["rating"] == '': continue
+            if i["imdb_id"] in all_film_data: all_film_data[i["imdb_id"]].update({str(json_data["user_id"]): int(i["rating"])})
+            else: all_film_data[i["imdb_id"]] = {str(json_data["user_id"]): int(i["rating"])}
 
 #remove movies with less than 10 user ratings, since they may affect weighted pearson
 def remove_few(all_film_data):
