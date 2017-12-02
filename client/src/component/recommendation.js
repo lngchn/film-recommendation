@@ -5,19 +5,29 @@ import './recommendation.css';
 import ShuffleArray from '../helperFunctions/shuffleArray';
   
 function SideBarFilter(props) {
+  // Use disabled for the input, readonly has bug.
   return(
     <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
       <nav className="nav flex-column filter-link">
         <div className="checkbox">
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Adventure" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)}/> Adventure</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Action" className="filterCheckbox" onChange={(event) => props.onFilterChange(event) } /> Action</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Animation" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)}  /> Animation</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Comedy" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)}/> Comedy</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Documentary" className="filterCheckbox" onChange={(event) => props.onFilterChange(event) }  /> Documentary</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Drama" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)} /> Drama</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Horror" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)} /> Horror</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Science Fiction" className="filterCheckbox" onChange={(event) => props.onFilterChange(event) }  /> Sci-Fi</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Fantasy" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)} /> Fantasy</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Action", event)}><input type="checkbox" value="Action" className="filterCheckbox" disabled/> Action</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Adventure", event)}><input type="checkbox" value="Adventure" className="filterCheckbox" disabled/> Adventure</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Animation", event)}><input type="checkbox" value="Animation" className="filterCheckbox" disabled/> Animation</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Comedy", event)}><input type="checkbox" value="Comedy" className="filterCheckbox" disabled/> Comedy</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Crime", event)}><input type="checkbox" value="Crime" className="filterCheckbox" disabled/> Crime</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Documentary", event)}><input type="checkbox" value="Documentary" className="filterCheckbox" disabled/> Documentary</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Drama", event)}><input type="checkbox" value="Drama" className="filterCheckbox" disabled/> Drama</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Family", event)}><input type="checkbox" value="Family" className="filterCheckbox" disabled/> Family</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Fantasy", event)}><input type="checkbox" value="Fantasy" className="filterCheckbox" disabled/> Fantasy</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("History", event)}><input type="checkbox" value="History" className="filterCheckbox" disabled/> History</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Horror", event)}><input type="checkbox" value="Horror" className="filterCheckbox" disabled/> Horror</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Music", event)}><input type="checkbox" value="Music" className="filterCheckbox" disabled/> Music</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Mystery", event)}><input type="checkbox" value="Mystery" className="filterCheckbox" disabled/> Mystery</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Romance", event)}><input type="checkbox" value="Romance" className="filterCheckbox" disabled/> Romance</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Science Fiction", event)}><input type="checkbox" value="Science Fiction" className="filterCheckbox" disabled/> Sci-Fi</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Thriller", event)}><input type="checkbox" value="Thriller" className="filterCheckbox" disabled/> Thriller</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("War", event)}><input type="checkbox" value="War" className="filterCheckbox" disabled/> War</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Western", event)}><input type="checkbox" value="Western" className="filterCheckbox" disabled/> Western</a>
           <a className="nav-item nav-link text-right" href="#">More</a>
           <button type="button" className="btn btn-secondary" onClick={() => props.onFilterReset()}>Reset Filters</button>
         </div>
@@ -215,18 +225,32 @@ class Recommendation extends React.Component {
     document.getElementById("addSeedFilmNav").style.display = "none";
   }
   
-  handleFilterChange(e) {
+  handleFilterChange(value, e) {
+    e.preventDefault();
+
+    let checked = false;
+    let checkboxes = document.getElementsByClassName("filterCheckbox");
+
+    // Check or uncheck checkbox
+    for(let i = 0; i < checkboxes.length; i++) {
+      if(checkboxes[i].defaultValue === value) {
+        checked = !checkboxes[i].checked
+        checkboxes[i].checked = !checkboxes[i].checked;
+        break;
+      }
+    }    
+
     const recommendation = this.state.recommendation;
     let userSelectedGenres = this.state.userSelectedGenres;
     let recommendationSubset = [];
    
-    if(e.target.checked){
-      userSelectedGenres.push(e.target.value);
+    if(checked){
+      userSelectedGenres.push(value);
     }
     else{
       //Add to user genre selections
       for(let i = 0; i < userSelectedGenres.length; i++) {
-        if(userSelectedGenres[i] === e.target.value) {
+        if(userSelectedGenres[i] === value) {
           userSelectedGenres.splice(i, 1);
         } 
       }  
