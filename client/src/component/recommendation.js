@@ -10,26 +10,36 @@ function SideBarFilter(props) {
     <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
       <nav className="nav flex-column filter-link">
         <div className="checkbox">
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Action", event)}><input type="checkbox" value="Action" className="filterCheckbox" disabled/> Action</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Adventure", event)}><input type="checkbox" value="Adventure" className="filterCheckbox" disabled/> Adventure</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Animation", event)}><input type="checkbox" value="Animation" className="filterCheckbox" disabled/> Animation</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Comedy", event)}><input type="checkbox" value="Comedy" className="filterCheckbox" disabled/> Comedy</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Crime", event)}><input type="checkbox" value="Crime" className="filterCheckbox" disabled/> Crime</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Documentary", event)}><input type="checkbox" value="Documentary" className="filterCheckbox" disabled/> Documentary</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Drama", event)}><input type="checkbox" value="Drama" className="filterCheckbox" disabled/> Drama</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Family", event)}><input type="checkbox" value="Family" className="filterCheckbox" disabled/> Family</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Fantasy", event)}><input type="checkbox" value="Fantasy" className="filterCheckbox" disabled/> Fantasy</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("History", event)}><input type="checkbox" value="History" className="filterCheckbox" disabled/> History</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Horror", event)}><input type="checkbox" value="Horror" className="filterCheckbox" disabled/> Horror</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Music", event)}><input type="checkbox" value="Music" className="filterCheckbox" disabled/> Music</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Mystery", event)}><input type="checkbox" value="Mystery" className="filterCheckbox" disabled/> Mystery</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Romance", event)}><input type="checkbox" value="Romance" className="filterCheckbox" disabled/> Romance</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Science Fiction", event)}><input type="checkbox" value="Science Fiction" className="filterCheckbox" disabled/> Sci-Fi</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Thriller", event)}><input type="checkbox" value="Thriller" className="filterCheckbox" disabled/> Thriller</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("War", event)}><input type="checkbox" value="War" className="filterCheckbox" disabled/> War</a>
-          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Western", event)}><input type="checkbox" value="Western" className="filterCheckbox" disabled/> Western</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Action", event)}><input type="checkbox" value="Action" className="filterCheckbox" disabled/> Action</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Adventure", event)}><input type="checkbox" value="Adventure" className="filterCheckbox" disabled/> Adventure</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Animation", event)}><input type="checkbox" value="Animation" className="filterCheckbox" disabled/> Animation</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Comedy", event)}><input type="checkbox" value="Comedy" className="filterCheckbox" disabled/> Comedy</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Crime", event)}><input type="checkbox" value="Crime" className="filterCheckbox" disabled/> Crime</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Documentary", event)}><input type="checkbox" value="Documentary" className="filterCheckbox" disabled/> Documentary</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Drama", event)}><input type="checkbox" value="Drama" className="filterCheckbox" disabled/> Drama</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Family", event)}><input type="checkbox" value="Family" className="filterCheckbox" disabled/> Family</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Fantasy", event)}><input type="checkbox" value="Fantasy" className="filterCheckbox" disabled/> Fantasy</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("History", event)}><input type="checkbox" value="History" className="filterCheckbox" disabled/> History</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Horror", event)}><input type="checkbox" value="Horror" className="filterCheckbox" disabled/> Horror</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Music", event)}><input type="checkbox" value="Music" className="filterCheckbox" disabled/> Music</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Mystery", event)}><input type="checkbox" value="Mystery" className="filterCheckbox" disabled/> Mystery</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Romance", event)}><input type="checkbox" value="Romance" className="filterCheckbox" disabled/> Romance</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Science Fiction", event)}><input type="checkbox" value="Science Fiction" className="filterCheckbox" disabled/> Sci-Fi</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Thriller", event)}><input type="checkbox" value="Thriller" className="filterCheckbox" disabled/> Thriller</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("War", event)}><input type="checkbox" value="War" className="filterCheckbox" disabled/> War</a>
+          <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Western", event)}><input type="checkbox" value="Western" className="filterCheckbox" disabled/> Western</a>
           <a className="nav-item nav-link text-right" href="#">More</a>
-          <button type="button" className="btn btn-secondary" onClick={() => props.onFilterReset()}>Reset Filters</button>
+        </div>
+        <label className="nav-static-text" >Release Year:</label>
+       	<div className="input-group">
+    		<input className="form-control width100" id="selected_release_year" type="text" autoComplete="off"/>
+    			<span className="input-group-btn">
+        			<button type="button" className="btn btn-secondary" onClick={() => props.onReleaseYearFilter()}>Submit</button>
+    			</span>
+		</div>
+        <br />
+        <div>
+        	 <button type="button" className="btn btn-secondary" onClick={() => props.onFilterReset()}>Reset Filters</button>
         </div>
       </nav>
     </nav>
@@ -109,7 +119,8 @@ class Recommendation extends React.Component {
     this.updateRecommendation = this.updateRecommendation.bind(this);
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
-    this.handleFilterChange = this.handleFilterChange.bind(this)
+    this.handleGenreFilter = this.handleGenreFilter.bind(this);
+    this.handleReleaseYearFilter = this.handleReleaseYearFilter.bind(this);
     this.handleFilterReset = this.handleFilterReset.bind(this);
   }
 
@@ -225,7 +236,7 @@ class Recommendation extends React.Component {
     document.getElementById("addSeedFilmNav").style.display = "none";
   }
   
-  handleFilterChange(value, e) {
+  handleGenreFilter(value, e) {
     e.preventDefault();
 
     let checked = false;
@@ -280,6 +291,41 @@ class Recommendation extends React.Component {
     });
   }
   
+  handleReleaseYearFilter(){
+    const recommendation = this.state.recommendation;
+    const selected_year = parseInt(document.getElementById("selected_release_year").value, 10);
+    let recommendationSubset = [];
+    
+    /**User input is invalid, reset recommendation subset to that of the full recommendation set
+    Alert the user and return function ***/
+    if (!/^\d{4}$/.test(selected_year)) {
+    	alert("Invalid input! Please enter a 4-digit release year.");
+    	//Clear film release query
+  		document.getElementById('selected_release_year').value="";
+    	this.setState({recommendationSubset: recommendation});
+    	return;
+    }
+   
+    recommendation.forEach(film => {
+		var curr_year = parseInt(String(film.release_date).substring(0, 4),10);
+        if( curr_year === selected_year && !recommendationSubset.includes(film)) {
+        	recommendationSubset.push(film);
+      	}
+	});
+	
+  	if(typeof recommendationSubset !== 'undefined' && recommendationSubset.length > 0){
+  		this.setState({recommendationSubset: recommendationSubset});
+  	}
+  	else{
+  		// If rec. subset is empty, set to that of the full recommendation set
+  		alert("Sorry, the recommendation results do not contain any films from " + String(selected_year) + ".");
+  		//Clear film release query
+  		document.getElementById('selected_release_year').value="";
+  		this.setState({recommendationSubset: recommendation});
+  	}
+  }
+  
+
   handleFilterReset(){
     // Uncheck all filter checkboxes
     let checkboxes = document.getElementsByClassName("filterCheckbox");
@@ -290,6 +336,10 @@ class Recommendation extends React.Component {
 
     const recommendationSubset = this.state.recommendation;
     const userSelectedGenres = [];
+    
+    //Clear film release query
+  	document.getElementById('selected_release_year').value="";
+
     
     this.setState({
       recommendationSubset: recommendationSubset,
@@ -305,7 +355,7 @@ class Recommendation extends React.Component {
     return(
       <div className="container-fluid">
         <div className="row">
-          <SideBarFilter onFilterChange={this.handleFilterChange} onFilterReset={this.handleFilterReset} />
+          <SideBarFilter onGenreFilter={this.handleGenreFilter} onFilterReset={this.handleFilterReset} onReleaseYearFilter={this.handleReleaseYearFilter} />
           {/* Body */}
           <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pb-5 text-light recommendation">
             {/* Seed Films */}
