@@ -1,3 +1,7 @@
+.sidebar {
+  min-height: 70em;
+}
+
 .sidebar, .recommendation {
    /*background-color: #14181c;*/
    background-color: #212529;
