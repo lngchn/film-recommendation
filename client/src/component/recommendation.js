@@ -9,15 +9,15 @@ function SideBarFilter(props) {
     <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
       <nav className="nav flex-column filter-link">
         <div className="checkbox">
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Adventure" onChange={(event) => props.onFilterChange(event)}/> Adventure</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Action" onChange={(event) => props.onFilterChange(event) } /> Action</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Animation" onChange={(event) => props.onFilterChange(event)}  /> Animation</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Comedy" onChange={(event) => props.onFilterChange(event)}/> Comedy</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Documentary"  onChange={(event) => props.onFilterChange(event) }  /> Documentary</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Drama" onChange={(event) => props.onFilterChange(event)} /> Drama</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Horror" onChange={(event) => props.onFilterChange(event)} /> Horror</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Science Fiction" onChange={(event) => props.onFilterChange(event) }  /> Sci-Fi</a>
-          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Fantasy" onChange={(event) => props.onFilterChange(event)} /> Fantasy</a>
+          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Adventure" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)}/> Adventure</a>
+          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Action" className="filterCheckbox" onChange={(event) => props.onFilterChange(event) } /> Action</a>
+          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Animation" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)}  /> Animation</a>
+          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Comedy" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)}/> Comedy</a>
+          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Documentary" className="filterCheckbox" onChange={(event) => props.onFilterChange(event) }  /> Documentary</a>
+          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Drama" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)} /> Drama</a>
+          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Horror" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)} /> Horror</a>
+          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Science Fiction" className="filterCheckbox" onChange={(event) => props.onFilterChange(event) }  /> Sci-Fi</a>
+          <a className="nav-link nav-item mb-1" href="#"><input type="checkbox" value="Fantasy" className="filterCheckbox" onChange={(event) => props.onFilterChange(event)} /> Fantasy</a>
           <a className="nav-item nav-link text-right" href="#">More</a>
           <button type="button" className="btn btn-secondary" onClick={() => props.onFilterReset()}>Reset Filters</button>
         </div>
@@ -253,6 +253,12 @@ class Recommendation extends React.Component {
   }
   
   handleFilterReset(){
+    // Uncheck all filter checkboxes
+    let checkboxes = document.getElementsByClassName("filterCheckbox");
+    for(let i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = false;
+    }
+
     const recommendationSubset = this.state.recommendation;
     const userSelectedGenres = [];
     
