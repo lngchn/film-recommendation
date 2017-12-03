@@ -102,9 +102,11 @@ class SearchBar extends Component {
     let image = imageUrl.includes("null") ? <i className="fa fa-file-image-o fa-4x" aria-hidden="true"></i> : <img src={imageUrl} alt="Movie Poster" /> 
     const year = suggestion.release_date.substring(0, 4);
     const isAuthed = this.props.isAuthed;
+    let detailsUrl = "/movie" + suggestion.id;
     return (
-      <span className='suggestion-content row ml-2'>
-        {image}
+     <a href={detailsUrl}>
+       <span className='suggestion-content row ml-2'>
+         {image}
         <span className="name col">
           {
             parts.map((part, index) => {
@@ -125,7 +127,8 @@ class SearchBar extends Component {
                         color2={'#ffd700'} />
           </span>}
       </span>
-    );
+    </a>
+   );
   }
 
   // Async suggestion, the 1000 milliseconds is VERY IMPORTANT because it needs to wait
