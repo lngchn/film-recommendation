@@ -53,13 +53,9 @@ function CalculateMovieReleaseDate(date){
 }
 
 function CalculateBudget (amount){
-  if (amount === undefined){
-    return;
-  }
-
   if (amount === 0){
     return 'N/A';
-  } else if (amount === NaN){
+  } else if (Number.isNaN(amount)){
     return '';
   } else {
     let budget = parseInt(amount, 10);
@@ -71,7 +67,7 @@ function CalculateBudget (amount){
 function CalculateEarnings(amount){
   if (amount === 0){
     return 'N/A';
-  } else if (amount === NaN){
+  } else if (Number.isNaN(amount)){
     return '';
   } else {
     let earnings = parseInt(amount, 10);
@@ -81,7 +77,7 @@ function CalculateEarnings(amount){
 }
 
 function ExtractActors(cast){
-  if (cast == undefined){
+  if (cast === undefined){
     return;
   }
 
@@ -115,7 +111,9 @@ function ExtractGenres(genres){
 }
 
 function CalculateMovieTime(runtime){
-    return parseInt(runtime/60, 10) + 'h ' + runtime%60 + 'm';
+    if (Number.isNaN(runtime) || runtime === undefined){
+      return "";
+    } else return parseInt(runtime/60, 10) + 'h ' + runtime%60 + 'm';
 }
 
 class Movie extends Component{
@@ -142,6 +140,22 @@ class Movie extends Component{
   }
 
   render(){
+    let directors = [];
+    let producers = [];
+    let writers = [];
+
+    if (this.state.movie.credits !== undefined){
+      for (var i = 0; i < this.state.movie.credits.crew.length; i++){
+        if (this.state.movie.credits.crew[i].job === "Director" && directors.length < 5){
+          directors.push(this.state.movie.credits.crew[i].name);
+        } else if ((this.state.movie.credits.crew[i].job === "Producer" || "Executive Producer") && producers.length < 5){
+          producers.push(this.state.movie.credits.crew[i].name);
+        } else if ((this.state.movie.credits.crew[i].job === "Writer" || this.state.movie.credits.crew[i].department === "Writing") && writers.length < 5){
+          writers.push(this.state.movie.credits.crew[i].name);
+        }
+      }
+    }
+
       return (
         <div className="container-fluid">
           <div className="row movie">
@@ -151,9 +165,25 @@ class Movie extends Component{
               <div className= "pl-3 text-success text-uppercase text-bold">User Score: N/A </div>
               <div className= "pl-3 text-light text-bold">{CalculateMovieTime(this.state.movie.runtime)}</div>
               <div className= "pl-3 text-light text-bold">{CalculateMovieReleaseDate(this.state.movie.release_date)}</div>
-              <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Directors:</div>
-              <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Language:</div>
-              <span className= "pl-3 text-light text-bold">{this.state.movie.spoken_languages ? this.state.movie.spoken_languages[0].name: ""}</span>
+              <div className= "pt-4 pl-3 text-light text-bold">DIRECTORS:
+                {directors.map(member => {
+                    return (
+                      <div>{member}</div>
+                    );
+                  })
+                }
+              </div>
+              <div className= "pt-4 pl-3 text-light text-bold">LANGUAGES:
+                {this.state.movie.spoken_languages ?
+                  this.state.movie.spoken_languages.map(language =>{
+                  return (
+                    <div className ="text-light text-bold">
+                      {language.name}
+                    </div>
+                  );
+                }): ""
+              }
+              </div>
 
               <div className= "pt-4 pl-3 text-light text-bold">STARRING:
                   {this.state.movie.credits ?
@@ -169,12 +199,24 @@ class Movie extends Component{
               </div>
 
             <div className= "col-sm-2 pt-5 pl-3 border border-dark border-top-0 border-left-0 border-bottom-0">
-              <div className= "pt-3 pl-3 text-light text-uppercase text-bold">Writers:</div>
-              <span className= "pl-3 text-light text-bold">N/A</span>
-              <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Music:</div>
-              <span className= "pl-3 text-light text-bold">N/A</span>
-              <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Cinematography:</div>
-              <span className= "pl-3 text-light text-bold">N/A</span>
+              <div className= "pt-3 pl-3 text-light text-uppercase text-bold">WRITERS:</div>
+              <div className= "pl-3 text-light">
+                {writers.map(member => {
+                    return (
+                      <div>{member}</div>
+                    );
+                  })
+                }
+              </div>
+              <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Producers:</div>
+              <div className= "pl-3 text-light">
+                {producers.map(member => {
+                    return (
+                      <div>{member}</div>
+                    );
+                  })
+                }
+              </div>
               <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Budget:</div>
               <span className= "pl-3 text-light text-bold">{CalculateBudget(this.state.movie.budget)}</span>
               <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Box Office:</div>
@@ -191,23 +233,18 @@ class Movie extends Component{
                   {this.state.movie.genres ? ExtractGenres(this.state.movie.genres) : ""}
                   </div>
               </div>
-              <div className= "pt-4 pl-3 text-light text-bold">KEYWORDS:
+              <div className= "pt-4 pl-3 pb-5 text-light text-bold">KEYWORDS:
                 <div>
                   {this.state.movie.keywords ? ExtractKeywords(this.state.movie.keywords.keywords) : ""}
                 </div>
               </div>
             </div>
-
-          </div>
-            <div>
-            <br />
-            <br />
-            <br />
-            <br />
           </div>
       </div>
       );
   }
 }
+
+
 
 export default Movie;
