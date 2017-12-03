@@ -148,7 +148,7 @@ class Movie extends Component{
       for (var i = 0; i < this.state.movie.credits.crew.length; i++){
         if (this.state.movie.credits.crew[i].job === "Director" && directors.length < 5){
           directors.push(this.state.movie.credits.crew[i].name);
-        } else if ((this.state.movie.credits.crew[i].job === "Producer" || "Executive Producer") && producers.length < 5){
+        } else if ((this.state.movie.credits.crew[i].job === ("Producer" || "Executive Producer")) && producers.length < 5){
           producers.push(this.state.movie.credits.crew[i].name);
         } else if ((this.state.movie.credits.crew[i].job === "Writer" || this.state.movie.credits.crew[i].department === "Writing") && writers.length < 5){
           writers.push(this.state.movie.credits.crew[i].name);
