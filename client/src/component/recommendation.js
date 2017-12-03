@@ -68,10 +68,13 @@ function RatedFilm(props) {
 function SeedFilm(props) {
   const title = props.data.title;
   const imageUrl = `https://image.tmdb.org/t/p/w185/${props.data.poster_path}`;
+  const detailsUrl = '/movie/' + props.data.id;
   return(
     <div className="col-6 col-md-3 mt-4 thumbnail text-center">
-      <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
-      <h4 className="movie-title">{title}</h4>
+      <a href={detailsUrl}>
+        <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
+        <h4 className="movie-title">{title}</h4>
+      </a>
       <a href="#" onClick={(event) => props.onSeedDelete(props.data.id, props.data.imdb_id, event)}>
         <button type="button" className="btn btn-outline-danger remove-button">
           <i className="fa fa-minus" aria-hidden="true"></i>
@@ -84,10 +87,13 @@ function SeedFilm(props) {
 function RecommendationFilm(props) {
   const title = props.data.title;
   const imageUrl = `https://image.tmdb.org/t/p/w185/${props.data.poster_path}`;
+  const detailsUrl = '/movie/' + props.data.id;
   return(
     <div className="col-6 col-md-3 mt-4 thumbnail text-center">
-      <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
-      <h4 className="movie-title">{title}</h4>
+      <a href={detailsUrl}>
+        <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
+        <h4 className="movie-title">{title}</h4>
+      </a>
     </div>
   );  
 }
