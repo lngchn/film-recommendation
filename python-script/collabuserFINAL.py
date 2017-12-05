@@ -127,7 +127,7 @@ def rec_movies(me, sim_score, movie_id_store, all_movies):
     ############################
 
     do_append(my_dict, movie_id_store, me, all_movies) ##set up my dictionary for pearson
-    i#f len(me) > 0: rating = me[0]["rating"] #for lack of variance in input data
+    #if len(me) > 0: rating = me[0]["rating"] #for lack of variance in input data
     for i in range(0, len(json_files_store)):
         with open(json_files_store[i], encoding="utf8") as data_file:
             other = json.load(data_file) #1) get the .json file data, store as object
