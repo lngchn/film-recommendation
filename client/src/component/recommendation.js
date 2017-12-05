@@ -106,8 +106,8 @@ class Recommendation extends React.Component {
       seedFilms: [],
       recommendation: [],
       recommendationSubset: [],
-      userSelectedGenres: []
-      
+      userSelectedGenres: [],
+      updateRecommendationTimeout: 0,
     };
     this.handleSeedDelete = this.handleSeedDelete.bind(this);
     this.handleSeedAdd = this.handleSeedAdd.bind(this);
@@ -201,23 +201,34 @@ class Recommendation extends React.Component {
   }
 
   updateRecommendation() {
-    fetch("/recommendation", {
-      method: "get",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      credentials: "same-origin"
-    })
-    .then(res => {
-      // Heroku has a 30 seconds limit on request waiting. 
-      // If request waits for more than 30 seconds, it will timeout.
-      // Need to implement Socket.IO to get around this.
-      this.fetchFilms();
-    })
-    .catch(err => {
-      console.log(err.message);
-    }); 
+    // Call fetch after 5000 milliseconds. Timer will reset if updateRecommendation is called
+    // again within 5000 milliseconds.
+    if(this.state.updateRecommendationTimeout) {
+      clearTimeout(this.state.updateRecommendationTimeout);
+    }
+
+    this.setState({
+      updateRecommendationTimeout: setTimeout(() => {
+        console.log('testing123');
+        fetch("/recommendation", {
+          method: "get",
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          credentials: "same-origin"
+        })
+        .then(res => {
+          // Heroku has a 30 seconds limit on request waiting. 
+          // If request waits for more than 30 seconds, it will timeout.
+          // Need to implement Socket.IO to get around this.
+          this.fetchFilms();
+        })
+        .catch(err => {
+          console.log(err.message);
+        }); 
+      }, 5000)
+    });
   }
 
   openNav() {
