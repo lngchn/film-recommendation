@@ -30,13 +30,12 @@ function SideBarFilter(props) {
             <div className="modal-dialog" role="document">
               <div className="modal-content">
                 <div className="modal-body">
-            <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Documentary", event)}><input type="checkbox" value="Documentary" className="filterCheckbox" disabled/> Documentary</a>
-            <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Family", event)}><input type="checkbox" value="Family" className="filterCheckbox" disabled/> Family</a>
-            <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("History", event)}><input type="checkbox" value="History" className="filterCheckbox" disabled/> History</a>
-            <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Music", event)}><input type="checkbox" value="Music" className="filterCheckbox" disabled/> Music</a>
-            <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("War", event)}><input type="checkbox" value="War" className="filterCheckbox" disabled/> War</a>
-            <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Western", event)}><input type="checkbox" value="Western" className="filterCheckbox" disabled/> Western</a>
-
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Documentary", event)}><input type="checkbox" value="Documentary" className="filterCheckbox" disabled/> Documentary</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Family", event)}><input type="checkbox" value="Family" className="filterCheckbox" disabled/> Family</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("History", event)}><input type="checkbox" value="History" className="filterCheckbox" disabled/> History</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Music", event)}><input type="checkbox" value="Music" className="filterCheckbox" disabled/> Music</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("War", event)}><input type="checkbox" value="War" className="filterCheckbox" disabled/> War</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Western", event)}><input type="checkbox" value="Western" className="filterCheckbox" disabled/> Western</a>
                 </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -224,7 +223,6 @@ class Recommendation extends React.Component {
 
     this.setState({
       updateRecommendationTimeout: setTimeout(() => {
-        console.log('testing123');
         fetch("/recommendation", {
           method: "get",
           headers: {
