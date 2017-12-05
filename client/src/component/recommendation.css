@@ -18,7 +18,8 @@
 }
 
 .filter-link a:hover {
-  color: gray;
+  /*color: gray;*/
+  color:#5bc0de;
 }
 
 .thumbnail {
@@ -114,3 +115,14 @@
   left: 0.7em;
 }
 
+.nav-static-text{
+	color: white;
+}
+
+.btn{
+	cursor: pointer; 
+}
+
+#min_year_input, #max_year_input, #min_runtime_input, #max_runtime_input{
+	margin-right:2%;
+}
