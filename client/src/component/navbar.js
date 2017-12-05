@@ -11,7 +11,7 @@ function LoggedInNavbar(props) {
     <div className="row">
       <div className="col">
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-          <a className="navbar-brand text-uppercase mr-5" href="./"><img src={Logo} width="100" height="13" alt="Film Pro" /></a>
+          <NavLink className="navbar-brand text-uppercase mr-5" exact to="/"><img src={Logo} width="100" height="13" alt="Film Pro" /></NavLink>
           <SearchBar isAuthed={props.isAuthed} />
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@ function LoggedOutNavbar(props) {
     <div className="row">
       <div className="col">
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-          <a className="navbar-brand text-uppercase mr-5" href="./"><img src={Logo} width="100" height="13" alt="Film Pro" /></a>
+          <NavLink className="navbar-brand text-uppercase mr-5" exact to="/"><img src={Logo} width="100" height="13" alt="Film Pro" /></NavLink>
           <SearchBar isAuthed={props.isAuthed} />
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

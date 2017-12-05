@@ -63,6 +63,12 @@
   color: inherit;
 }
 
+.movie-detail-link, .movie-detail-link:visited, 
+.movie-detail-link:hover, .movie-detail-link:active {
+  text-decoration: none;
+  color: white;
+}
+
 #list-rated-films a:hover {
   border: 1px solid #72d147;
 }

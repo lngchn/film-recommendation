@@ -71,7 +71,7 @@ function SeedFilm(props) {
   const detailsUrl = '/movie/' + props.data.id;
   return(
     <div className="col-6 col-md-3 mt-4 thumbnail text-center">
-      <a href={detailsUrl}>
+      <a href={detailsUrl} className="movie-detail-link">
         <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
         <h4 className="movie-title">{title}</h4>
       </a>
@@ -90,7 +90,7 @@ function RecommendationFilm(props) {
   const detailsUrl = '/movie/' + props.data.id;
   return(
     <div className="col-6 col-md-3 mt-4 thumbnail text-center">
-      <a href={detailsUrl}>
+      <a href={detailsUrl} className="movie-detail-link">
         <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
         <h4 className="movie-title">{title}</h4>
       </a>
