@@ -46,12 +46,6 @@ def remove_non_genre(seed_genres, movie_id_store, rankings):
                     if genre not in seed_genres: seed_genres.append(str(genre))'''
 ##############################
 
-#euclidean distance, only applied for when there is only one seed film
-def euc(p1, p2, common):
-    p1p2_sum_sq = float(pow(p1.get(common) - p2.get(common), 2))
-    
-    return 1 / (1 + p1p2_sum_sq)
-
 #calculate the pearson correlation between two users UNLESS only one seed film --> euclidean
 #pearson ALWAYS returns 1 if there is only one value, which is bad because I'm ignoring perfect pearsons
 def pearson(p1, p2):
@@ -59,35 +53,14 @@ def pearson(p1, p2):
     for movie in p1:
         if movie in p2: common_films[movie] = 1
 
-    '''if len(common_films) == 0: return 0
+    if len(common_films) == 0: return 0
     cfp1 = [p1.get(movie) for movie in common_films]
     cfp2 = [p2.get(movie) for movie in common_films]
 
     if len(set(cfp1)) == 1 and len(set(cfp2)) == 1: return 0
-    if cfp1.sort() == cfp2.sort(): return 1
+    if cfp1.sort() == cfp2.sort(): return 1.0
 
-    return numpy.corrcoef(cfp1, cfp2)[0, 1]'''
-
-    the_length = len(common_films)
-    if the_length == 0: return 0
-    if len(p1) == 1: return euc(p1, p2, common_films.keys()[0]) ##only one seed, use euclidean
-    p1_sum = float(sum([p1.get(movie) for movie in common_films]))
-    p2_sum = float(sum([p2.get(movie) for movie in common_films]))
-    ########
-    p1_sum_sq = float(sum([pow(p1.get(movie), 2) for movie in common_films]))
-    p2_sum_sq = float(sum([pow(p2.get(movie), 2) for movie in common_films]))
-    ########
-    product_sum = float(sum([p1.get(movie) * p2.get(movie) for movie in common_films]))
-    ########
-    if len(set(p1.values())) == 1:
-        top = abs(product_sum - (p1_sum * p2_sum))
-        bottom = sqrt((p1_sum_sq - pow(p1_sum, 2)) * (p2_sum_sq - pow(p2_sum, 2)))
-    else:
-        top = product_sum - (p1_sum * p2_sum / the_length)
-        bottom = sqrt((p1_sum_sq - pow(p1_sum, 2) / the_length) * (p2_sum_sq - pow(p2_sum, 2) / the_length))
-    ########
-    if bottom == 0: return 0
-    return top/bottom 
+    return numpy.corrcoef(cfp1, cfp2)[0, 1]
 
 #set up a dictionary, (movie title -> rating) for movie based on user
 #also, sets up dictionary for movie ids (movie title -> ID) for movie_id_store
