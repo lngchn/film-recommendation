@@ -227,7 +227,8 @@ class Recommendation extends React.Component {
   }
 
   closeNav() {
-    this.updateRecommendation();
+    // disable updateRecommendation() until item based script is fixed.
+    // this.updateRecommendation();  
     this.fetchFilms();
     document.getElementById("addSeedFilmNav").style.display = "none";
   }

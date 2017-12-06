@@ -58,7 +58,6 @@ class SearchBar extends Component {
       credentials: "same-origin",
       body: JSON.stringify({
         id: id,
-        imdb_id: '',
         rating: rating,
         title: title, 
         poster_path: poster_path

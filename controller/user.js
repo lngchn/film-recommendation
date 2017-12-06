@@ -202,7 +202,7 @@ router.post('/user/ratedfilm', (req, res) => {
         }
         else {
           let id = parseInt(req.body.id);
-          let imdb_id = req.body.imdb_id;
+          let imdb_id = null;
           let rating = parseInt(req.body.rating);
           let title = req.body.title;
           let poster_path = req.body.poster_path;
