@@ -59,7 +59,6 @@ function callPyScript(dataToPython, req, res) {
           setTimeout(function () {
             let id = null;
             let imdb_id = recommendation_imdb_id[i];
-            let rating = null;
             let title = null;
             let poster_path = null;
             let genres = null; 
@@ -69,14 +68,13 @@ function callPyScript(dataToPython, req, res) {
             axios.get(`https://api.themoviedb.org/3/movie/${imdb_id}?api_key=${API_KEY}`)
               .then(result => {
                 id = result.data.id;
-                rating = null;
                 title = result.data.title;
                 poster_path = result.data.poster_path;
                 genres = result.data.genres;
                 release_date = result.data.release_date;
                 runtime = result.data.runtime;
 
-                let film = { id: id, imdb_id: imdb_id, rating: rating, 
+                let film = { id: id, imdb_id: imdb_id,
                              title: title, poster_path: poster_path, genres: genres, 
                              release_date: release_date, runtime: runtime };
                              
@@ -98,18 +96,18 @@ function callPyScript(dataToPython, req, res) {
   });
 }
 
-router.get('/', (req, res) => {
+router.get('/userbased', (req, res) => {
   const user = req.user;
 
   if(!user){
     res.sendStatus(401);
   }
 
-  const seedFilms = user.seedFilms;
+  const ratedFilms = user.ratedFilms;
   let dataToPython =  { films: [], user_id: user._id };
   
-  for(let i in seedFilms) {
-    let film = seedFilms[i];
+  for(let i in ratedFilms) {
+    let film = ratedFilms[i];
     dataToPython["films"].push({ "id": film.id, "imdb_id": film.imdb_id, "rating": film.rating, "title": film.title});
   }
 

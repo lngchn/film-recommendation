@@ -111,7 +111,6 @@ class Recommendation extends React.Component {
       recommendation: [],
       recommendationSubset: [],
       userSelectedGenres: [],
-      updateRecommendationTimeout: 0,
       itemBasedSearchTimeout: 0,
       itemBasedSearchValue: '',
       itemBasedSearchResults: [],
@@ -181,9 +180,6 @@ class Recommendation extends React.Component {
   }
   
   handleSeedDelete(id, event) {
-    // When the user delete a seed film, it doesn't call updateRecommendation()
-    // to update the recommendation films because the current implementation will 
-    // require multiple calls, which is too heavy on the TMDB API.
     event.preventDefault();
     fetch("/user/seedfilm", {
       method: "delete",
@@ -205,33 +201,24 @@ class Recommendation extends React.Component {
   }
 
   updateRecommendation() {
-    // Call fetch after 5000 milliseconds. Timer will reset if updateRecommendation is called
-    // again within 5000 milliseconds.
-    if(this.state.updateRecommendationTimeout) {
-      clearTimeout(this.state.updateRecommendationTimeout);
-    }
-
-    this.setState({
-      updateRecommendationTimeout: setTimeout(() => {
-        fetch("/recommendation", {
-          method: "get",
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-          },
-          credentials: "same-origin"
-        })
-        .then(res => {
-          // Heroku has a 30 seconds limit on request waiting. 
-          // If request waits for more than 30 seconds, it will timeout.
-          // Need to implement Socket.IO to get around this.
-          this.fetchFilms();
-        })
-        .catch(err => {
-          console.log(err.message);
-        }); 
-      }, 5000)
-    });
+    // Ideally, item based algorithm should be scheduled in the back-end
+    fetch("/recommendation/itembased", {
+      method: "get",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin"
+    })
+    .then(res => {
+      // Heroku has a 30 seconds limit on request waiting. 
+      // If request waits for more than 30 seconds, it will timeout.
+      // Need to implement Socket.IO to get around this.
+      this.fetchFilms();
+    })
+    .catch(err => {
+      console.log(err.message);
+    }); 
   }
 
   openNav() {
