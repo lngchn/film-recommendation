@@ -50,30 +50,21 @@ function SideBarFilter(props) {
   );
 }
 
-function RatedFilm(props) {
+function SearchResultFilm(props) {
   const id = props.data.id;
-  const imdb_id = props.data.imdb_id;
-  const rating = props.data.rating;
   const title = props.data.title;
   const imageUrl = `https://image.tmdb.org/t/p/w45/${props.data.poster_path}`;
   const image = imageUrl.includes("null") ? <i className="fa fa-file-image-o fa-4x" aria-hidden="true"></i> : <img src={imageUrl} alt="Movie Poster" /> 
   
   return(
     <div className="list-group" id="list-rated-films">
-      <a href="#" onClick={(event) => props.onSeedAdd(id, imdb_id, event)} className="list-group-item list-group-item-action flex-column align-items-start">
+      <a href="#" onClick={(event) => props.onSeedAdd(id, event)} className="list-group-item list-group-item-action flex-column align-items-start">
         <span className="col-2">
           {image}
         </span>
         <span className="col-2">
           {title}
         </span>
-        <ReactStars className="uneditableStars"
-          count={10}
-          half={false}
-          size={24}
-          color2={'#ffd700'} 
-          edit={false}
-          value={rating} />
       </a>
     </div>
   );
@@ -89,7 +80,7 @@ function SeedFilm(props) {
         <img src={imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
         <h4 className="movie-title">{title}</h4>
       </a>
-      <a href="#" onClick={(event) => props.onSeedDelete(props.data.id, props.data.imdb_id, event)}>
+      <a href="#" onClick={(event) => props.onSeedDelete(props.data.id, event)}>
         <button type="button" className="btn btn-outline-danger remove-button">
           <i className="fa fa-minus" aria-hidden="true"></i>
         </button>
@@ -116,12 +107,14 @@ class Recommendation extends React.Component {
   constructor() {
     super();
     this.state = {
-      ratedFilms: [],
       seedFilms: [],
       recommendation: [],
       recommendationSubset: [],
       userSelectedGenres: [],
       updateRecommendationTimeout: 0,
+      itemBasedSearchTimeout: 0,
+      itemBasedSearchValue: '',
+      itemBasedSearchResults: [],
     };
     this.handleSeedDelete = this.handleSeedDelete.bind(this);
     this.handleSeedAdd = this.handleSeedAdd.bind(this);
@@ -131,6 +124,7 @@ class Recommendation extends React.Component {
     this.closeNav = this.closeNav.bind(this);
     this.handleFilterChange = this.handleFilterChange.bind(this)
     this.handleFilterReset = this.handleFilterReset.bind(this);
+    this.itemBasedSearch = this.itemBasedSearch.bind(this);
   }
 
   componentDidMount() {
@@ -148,14 +142,12 @@ class Recommendation extends React.Component {
     })
     .then(res => res.json())
     .then(user => {
-      const ratedFilms = user.ratedFilms.sort((filmA, filmB) => filmA.title < filmB.title ? -1 : 1);
       const seedFilms = user.seedFilms;
       const recommendation = ShuffleArray(user.recommendation);
       const recommendationSubset = recommendation;
       const userSelectedGenres = [];
 
       this.setState({
-        ratedFilms,
         seedFilms,
         recommendation,
         recommendationSubset,
@@ -167,7 +159,7 @@ class Recommendation extends React.Component {
     });
   }
 
-  handleSeedAdd(id, imdb_id, event) {
+  handleSeedAdd(id, event) {
     event.preventDefault();
     fetch("/user/seedfilm", {
       method: "post",
@@ -177,8 +169,7 @@ class Recommendation extends React.Component {
       },
       credentials: "same-origin",
       body: JSON.stringify({
-        id: id,
-        imdb_id: imdb_id
+        id: id
       })
     })
     .then(res => {
@@ -189,7 +180,7 @@ class Recommendation extends React.Component {
     });
   }
   
-  handleSeedDelete(id, imdb_id, event) {
+  handleSeedDelete(id, event) {
     // When the user delete a seed film, it doesn't call updateRecommendation()
     // to update the recommendation films because the current implementation will 
     // require multiple calls, which is too heavy on the TMDB API.
@@ -203,7 +194,6 @@ class Recommendation extends React.Component {
       credentials: "same-origin",
       body: JSON.stringify({
         id: id,
-        imdb_id: imdb_id
       })
     })
     .then(res => {
@@ -278,11 +268,11 @@ class Recommendation extends React.Component {
     let userSelectedGenres = this.state.userSelectedGenres;
     let recommendationSubset = [];
    
-    if(checked){
+    if(checked) {
       userSelectedGenres.push(value);
     }
-    else{
-      //Add to user genre selections
+    else {
+      // Add to user genre selections
       for(let i = 0; i < userSelectedGenres.length; i++) {
         if(userSelectedGenres[i] === value) {
           userSelectedGenres.splice(i, 1);
@@ -310,7 +300,7 @@ class Recommendation extends React.Component {
     });
   }
   
-  handleFilterReset(){
+  handleFilterReset() {
     // Uncheck all filter checkboxes
     let checkboxes = document.getElementsByClassName("filterCheckbox");
     for(let i = 0; i < checkboxes.length; i++) {
@@ -326,12 +316,48 @@ class Recommendation extends React.Component {
       userSelectedGenres: userSelectedGenres
     });
   }
+
+  itemBasedSearch(event) {
+    this.setState({
+      itemBasedSearchValue: event.target.value
+    });
+
+    if(this.state.itemBasedSearchTimeout) {
+      clearTimeout(this.state.itemBasedSearchTimeout);
+    }
+
+    this.setState({
+      itemBasedSearchTimeout: setTimeout(() => {
+        fetch("/search", {
+          method: "post",
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            query: this.state.itemBasedSearchValue
+          })
+        })
+        .then(res => res.json())
+        .then(json => {
+          this.setState({
+            itemBasedSearchResults: json.results,
+          });
+        })
+        .catch(err => {
+          this.setState({
+            itemBasedSearchResults: []
+          })
+        });
+      }, 1000)
+    });
+  }
   
   render() {
-    let ratedFilms = this.state.ratedFilms.map(movie => <RatedFilm data={movie} key={movie.id} onSeedAdd={this.handleSeedAdd} />);
     let seedFilms = this.state.seedFilms.map(movie => <SeedFilm data={movie} key={movie.id} onSeedDelete={this.handleSeedDelete} />);
     let recommendationSubset = this.state.recommendationSubset.map(movie => <RecommendationFilm data={movie} key={movie.id} />);
-    
+    let itemBasedSearchResults = this.state.itemBasedSearchResults.map(movie => <SearchResultFilm data={movie} key={movie.id} onSeedAdd={this.handleSeedAdd} />);
+
     return(
       <div className="container-fluid">
         <div className="row">
@@ -354,18 +380,23 @@ class Recommendation extends React.Component {
             <div>
               <h2 className="text-left mt-5">Recommendations</h2>
               <section className="row text-center placeholders">
-               {recommendationSubset}
+                {recommendationSubset}
               </section>
             </div>
           </main>
 
           <div id="addSeedFilmNav">
             <a href="#" className="closebtn" onClick={this.closeNav}>&times;</a>
-              <div className="row" id="overlay-main">
-                <div className="col-6" id="overlay-content">
-                  {ratedFilms}
-                </div>
+
+            <div id='test' className="row">
+              <input className="col-12" id="test-input" type="text" value={this.state.itemBasedSearchValue} onChange={this.itemBasedSearch} placeholder="Search" aria-label="Search" />
+            </div>
+            <div className="row" id="overlay-main">
+              <div className="col-6" id="overlay-content">
+                {itemBasedSearchResults}
               </div>
+            </div>
+
           </div>
 
         </div>

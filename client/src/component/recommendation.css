@@ -120,3 +120,15 @@
   left: 0.7em;
 }
 
+#test {
+  position: absolute;
+  left: 50%;
+  transform: translate(-49%, 70%);
+}
+
+#test input {
+  width: 22em;
+  font-size: 1.7em;
+  border: 1px solid grey;
+  outline: none;
+}

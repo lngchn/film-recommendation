@@ -291,18 +291,32 @@ router.post('/user/seedfilm', (req, res) => {
         }
         else {
           const id = parseInt(req.body.id);
-          const imdb_id = req.body.imdb_id;
+          let imdb_id = null;
+          let title = null;
+          let poster_path = null;
+          let seedFilm = { id, imdb_id, title, poster_path };
 
-          let seedFilm = req.user.ratedFilms.find((film) => {
-            return film.id === id && film.imdb_id === imdb_id;
-          })
+          axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
+            .then(result => {
+              imdb_id = result.data.imdb_id;
+              title = result.data.title;
+              poster_path = result.data.poster_path;
 
-          MongoClient.connect(url, (err, db) => {
-            addSeedFilm(db, email, seedFilm, (result) => {
-              db.close();
-              res.sendStatus(200);
+              seedFilm = { id, imdb_id, title, poster_path };
+            })
+            .then(() => {
+              if(req.user.seedFilms.find(film => film.id === id) === undefined) {
+                MongoClient.connect(url, (err, db) => {
+                  addSeedFilm(db, email, seedFilm, (result) => {
+                    db.close();
+                    res.sendStatus(200);
+                  });
+                });
+              }
+            })
+            .catch(error => {
+              console.log(error.message);
             });
-          });
         }
       });
     });
@@ -325,10 +339,9 @@ router.delete('/user/seedfilm', (req, res) => {
       }
       else {
         const id = req.body.id;
-        const imdb_id = req.body.imdb_id;
 
         let seedFilm = req.user.seedFilms.find((film) => {
-          return film.id === id && film.imdb_id === imdb_id;
+          return film.id === id;
         })
 
         MongoClient.connect(url, (err, db) => {
