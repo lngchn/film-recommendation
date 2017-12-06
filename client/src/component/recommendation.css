@@ -15,6 +15,7 @@
 .filter-link a {
   text-decoration: none;
   color: white;
+  outline: none;
 }
 
 .filter-link a:hover {
@@ -116,18 +117,14 @@
   font-size: 1000%;
 }
 
-.uneditableStars {
-  left: 0.7em;
-}
-
-#test {
+#itemBasedSearchBar {
   position: absolute;
   left: 50%;
-  transform: translate(-49%, 70%);
+  transform: translate(-46.5%, 70%);
 }
 
-#test input {
-  width: 22em;
+#itemBasedSearchBar input {
+  width: 23.2em;
   font-size: 1.7em;
   border: 1px solid grey;
   outline: none;

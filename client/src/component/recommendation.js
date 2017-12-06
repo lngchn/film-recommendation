@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactStars from 'react-stars';
 import './recommendation.css';
 
 import ShuffleArray from '../helperFunctions/shuffleArray';
@@ -376,8 +375,8 @@ class Recommendation extends React.Component {
           <div id="addSeedFilmNav">
             <a href="#" className="closebtn" onClick={this.closeNav}>&times;</a>
 
-            <div id='test' className="row">
-              <input className="col-12" id="test-input" type="text" value={this.state.itemBasedSearchValue} onChange={this.itemBasedSearch} placeholder="Search" aria-label="Search" />
+            <div id='itemBasedSearchBar' className="row">
+              <input className="col-12" type="text" value={this.state.itemBasedSearchValue} onChange={this.itemBasedSearch} placeholder="Search" aria-label="Search" />
             </div>
             <div className="row" id="overlay-main">
               <div className="col-6" id="overlay-content">
