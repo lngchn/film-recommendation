@@ -23,13 +23,13 @@ def get_imdb_ids(imdb_ids, path_to_files):
                 
 #Grab all the user ratings (and their ids) for a given film and merge that info with the IMDb ID into a dictionary 
 def get_user_info(path_to_files, all_film_data):
-    for filename in glob.iglob(path_to_files):
-        with open(filename) as json_file:
+    for filename in path_to_files:
+        with open(filename, encoding="utf8") as json_file:
             json_data = json.load(json_file)
-        for i in json_data["films"]:
-            if i["rating"] == '': continue
-            if i["imdb_id"] in all_film_data: all_film_data[i["imdb_id"]].update({str(json_data["user_id"]): int(i["rating"])})
-            else: all_film_data[i["imdb_id"]] = {str(json_data["user_id"]): int(i["rating"])}
+            for i in json_data["films"]:
+                if i["rating"] == '': continue
+                if i["imdb_id"] in all_film_data: all_film_data[i["imdb_id"]].update({str(json_data["user_id"]): int(i["rating"])})
+                else: all_film_data[i["imdb_id"]] = {str(json_data["user_id"]): int(i["rating"])}
 
 #remove movies with less than 10 user ratings, since they may affect weighted pearson
 def remove_few(all_film_data):
