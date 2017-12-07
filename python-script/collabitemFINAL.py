@@ -119,7 +119,7 @@ def main():
     films_to_rec = rec_movies(seed_films, all_film_data, sim_score)
 
     for x in films_to_rec[:100]:
-        output_str += x + " "
+        output_str += str(x[0]) + " "
 
     print (output_str)
 
