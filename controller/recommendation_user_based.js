@@ -12,18 +12,18 @@ const axios = require('axios');
 
 const PythonShell = require('python-shell');
 
-function saveRecommendation(db, email, recommendation, callback) {
+function saveRecommendation(db, email, userBasedRecommendation, callback) {
   const collection = db.collection('users');
 
-  collection.update({email: email}, { $set: {recommendation: recommendation} }, (err, result) => {
+  collection.update({email: email}, { $set: {userBasedRecommendation: userBasedRecommendation} }, (err, result) => {
       assert.equal(err, null);
       callback(result);
   });
 }
 
-function doneFetchingMovies(email, recommendation, res) {
+function doneFetchingMovies(email, userBasedRecommendation, res) {
   MongoClient.connect(url, (err, db) => {
-    saveRecommendation(db, email, recommendation, (result) => {
+    saveRecommendation(db, email, userBasedRecommendation, (result) => {
       db.close();
       res.sendStatus(200);
     });

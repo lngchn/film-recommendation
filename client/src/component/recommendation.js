@@ -1,7 +1,5 @@
 import React from 'react';
 import './recommendation.css';
-
-import ShuffleArray from '../helperFunctions/shuffleArray';
   
 function SideBarFilter(props) {
   // Use disabled for the input, readonly has bug.
@@ -141,7 +139,7 @@ class Recommendation extends React.Component {
     .then(res => res.json())
     .then(user => {
       const seedFilms = user.seedFilms;
-      const recommendation = ShuffleArray(user.recommendation);
+      const recommendation = user.recommendation;
       const recommendationSubset = recommendation;
       const userSelectedGenres = [];
 
@@ -227,7 +225,7 @@ class Recommendation extends React.Component {
 
   closeNav() {
     // disable updateRecommendation() until item based script is fixed.
-    // this.updateRecommendation();  
+    this.updateRecommendation();  
     this.fetchFilms();
     document.getElementById("addSeedFilmNav").style.display = "none";
   }

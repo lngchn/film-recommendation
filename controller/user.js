@@ -70,7 +70,8 @@ router.post('/register', (req, res) => {
             password: password,
             ratedFilms: [],
             seedFilms: [],
-            recommendation: [],
+            itemBasedRecommendation: [],
+            userBasedRecommendation: [],
           }
 
           bcrypt.hash(newUser.password, saltRounds)
@@ -131,10 +132,23 @@ router.get('/user/films', (req, res) => {
         }
         else {
           let user = result[0];
-          let ratedFilms = user.ratedFilms;
           let seedFilms = user.seedFilms;
-          let recommendation = user.recommendation;
-          res.status(200).json({ratedFilms, seedFilms, recommendation});
+          let itemBasedRecommendation = user.itemBasedRecommendation;
+          let userBasedRecommendation = user.userBasedRecommendation;
+          let recommendation = [];
+
+          // Compare two arrays, remove same object from itemBasedRecommendation
+          itemBasedRecommendation = itemBasedRecommendation.filter(film1 => {
+            return !userBasedRecommendation.some(film2 => {
+              return film1.id === film2.id;
+            });
+          });
+
+          recommendation = itemBasedRecommendation.concat(userBasedRecommendation);
+          recommendation = ShuffleArray(recommendation);
+          recommendation = recommendation.slice(0, recommendation.length / 2);
+
+          res.status(200).json({seedFilms, recommendation});
         }
       });
     });
@@ -355,4 +369,15 @@ router.delete('/user/seedfilm', (req, res) => {
   });
 });
 
+function ShuffleArray(array){
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+   }
+  return array;
+}
+
 module.exports = router;
+
+
+
