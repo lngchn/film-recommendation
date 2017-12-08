@@ -110,9 +110,9 @@ router.get('/auth', (req, res) => {
   else {
     res.sendStatus(401);
   }
-}); 
+});
 
-
+ 
 ////////////////////////////////////////////////
 // API for adding rated films and seed films  //
 ////////////////////////////////////////////////
@@ -164,16 +164,18 @@ function addRatedFilm(db, email, ratedFilm, callback) {
       return film.id === ratedFilm.id && film.imdb_id === ratedFilm.imdb_id;
     });
 
-    // If the film already exists in the rated film, we don't add it.
-    // This essentailly prevent the users from updating their rating.
-    // If changing rating is allowed, a different logic is required here.
+    // If film doesn't exist, add it to the array. Otherwise, find the film in the ratedFilms array,
+    // and update the object.
     if(!ratedFilms) {
       collection.updateOne({email: email}, { $addToSet: {ratedFilms: ratedFilm} }, (err, result) => {
           assert.equal(err, null);
           callback(result);
       });
     } else {
-      callback(null);
+      collection.updateOne({email: email, "ratedFilms.id": ratedFilm.id}, { $set: {"ratedFilms.$": ratedFilm} }, (err, result) => {
+          assert.equal(err, null);
+          callback(result);
+      });
     }
   });
 }
@@ -201,6 +203,14 @@ function deleteRatedFilm(db, email, ratedFilm, callback) {
   });
 }
 
+router.get('/user/ratedfilm', (req, res) => {
+  if(req.user) {
+    res.json(req.user.ratedFilms);
+  } else {
+    res.sendStatus(401);
+  }
+});
+
 router.post('/user/ratedfilm', (req, res) => {
   if(!req.user) {
     res.sendStatus(401);
@@ -218,13 +228,17 @@ router.post('/user/ratedfilm', (req, res) => {
           let id = parseInt(req.body.id);
           let imdb_id = null;
           let rating = parseInt(req.body.rating);
-          let title = req.body.title;
-          let poster_path = req.body.poster_path;
+          let title = null;
+          let poster_path = null;
 
           axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
             .then(res => {
               imdb_id = res.data.imdb_id;
+              title = res.data.title;
+              poster_path = res.data.poster_path;
+
               const ratedFilm = { id: id, imdb_id: imdb_id, rating: rating, title: title, poster_path: poster_path };
+              
               MongoClient.connect(url, (err, db) => {
                 addRatedFilm(db, email, ratedFilm, (user) => {
                   db.close();

@@ -48,7 +48,7 @@ class SearchBar extends Component {
     });
   };
 
-  handleRatingChange(id, title, poster_path, rating, event) {
+  handleRatingChange(id, rating, event) {
     fetch("/user/ratedfilm", {
       method: "post",
       headers: {
@@ -58,9 +58,7 @@ class SearchBar extends Component {
       credentials: "same-origin",
       body: JSON.stringify({
         id: id,
-        rating: rating,
-        title: title, 
-        poster_path: poster_path
+        rating: rating
       })
     })
     .then(res => {
@@ -119,7 +117,7 @@ class SearchBar extends Component {
           <span className="col-12 pl-0" id="film-rating">
             <ReactStars count={10}
                         half={false}
-                        onChange={(event) => this.handleRatingChange(suggestion.id, suggestion.title, suggestion.poster_path, event)} 
+                        onChange={(event) => this.handleRatingChange(suggestion.id, event)} 
                         size={24}
                         color2={'#ffd700'} />
           </span>}
