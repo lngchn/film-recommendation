@@ -1,7 +1,12 @@
 .movie {
   background-color: #212529;
-  padding-bottom: 200px;
+  padding-bottom: 4em;
 }
 .movie_title {
-  max-width: 200px
+  min-width: 4em;
+  max-width: 5em;
+}
+
+.movie-credit-col {
+  min-width: 10em;
 }
