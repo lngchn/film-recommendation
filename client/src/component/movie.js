@@ -48,7 +48,10 @@ function CalculateMovieReleaseDate(date){
     case '12':
         month = 'December';
         break;
+    default:
+        break;
       }
+
       return month + ' ' + day + ', ' + year;
 }
 
@@ -74,18 +77,6 @@ function CalculateEarnings(amount){
     earnings = (Math.ceil(earnings)).toLocaleString('en');
     return earnings + ' (USD)';
   }
-}
-
-function ExtractActors(cast){
-  if (cast === undefined){
-    return;
-  }
-
-  let actors = [];
-  for (let i = 0; i < 5; i++){
-    actors[i] = cast[i];
-  }
-  return actors;
 }
 
 function ExtractKeywords(keywords){
@@ -140,7 +131,7 @@ class Movie extends Component{
   }
 
   render(){
-    let directors = [];
+    let directors =[];
     let producers = [];
     let writers = [];
 
@@ -159,25 +150,25 @@ class Movie extends Component{
       return (
         <div className="container-fluid">
           <div className="row movie">
-            <div className= "col-sm-2 pt-5 pl-3 border border-dark border-top-0 border-left-0 border-bottom-0">
-              <h2 className= "pl-3 pb-4 mt-3 text-light text-bold text-uppercase">{this.state.movie.title}</h2>
-              <img src= {'https://image.tmdb.org/t/p/w500' + this.state.movie.poster_path} className=" pl-3 pr-4 pb-4 thumbnail img " width="230" height="300"  alt="Movie Poster"/>
+            <div className= "col-xs-2 pt-5 pl-3 border border-dark border-top-0 border-left-0 border-bottom-0">
+              <h2 className= "pl-3 pb-4 mt-3 text-light text-bold text-uppercase movie_title">{this.state.movie.title}</h2>
+              <img src= {this.state.movie.poster_path ? 'https://image.tmdb.org/t/p/w500' + this.state.movie.poster_path : ""} className=" pl-3 pr-4 pb-4 thumbnail img " width="230" height="300"  alt="Movie Poster"/>
               <div className= "pl-3 text-success text-uppercase text-bold">User Score: N/A </div>
               <div className= "pl-3 text-light text-bold">{CalculateMovieTime(this.state.movie.runtime)}</div>
               <div className= "pl-3 text-light text-bold">{CalculateMovieReleaseDate(this.state.movie.release_date)}</div>
               <div className= "pt-4 pl-3 text-light text-bold">DIRECTORS:
-                {directors.map(member => {
+                {directors.map((member, index) => {
                     return (
-                      <div>{member}</div>
+                      <div key={index}>{member}</div>
                     );
                   })
                 }
               </div>
               <div className= "pt-4 pl-3 text-light text-bold">LANGUAGES:
                 {this.state.movie.spoken_languages ?
-                  this.state.movie.spoken_languages.map(language =>{
+                  this.state.movie.spoken_languages.map((language, index) =>{
                   return (
-                    <div className ="text-light text-bold">
+                    <div className ="text-light text-bold" key={index}>
                       {language.name}
                     </div>
                   );
@@ -187,9 +178,9 @@ class Movie extends Component{
 
               <div className= "pt-4 pl-3 text-light text-bold">STARRING:
                   {this.state.movie.credits ?
-                    this.state.movie.credits.cast.slice(0,5).map(actor => {
+                    this.state.movie.credits.cast.slice(0,5).map((actor, index) => {
                       return (
-                        <div className ="text-light text-bold">
+                        <div className ="text-light text-bold" key={index}>
                           {actor.name}
                         </div>
                       );
@@ -201,31 +192,31 @@ class Movie extends Component{
             <div className= "col-sm-2 pt-5 pl-3 border border-dark border-top-0 border-left-0 border-bottom-0">
               <div className= "pt-3 pl-3 text-light text-uppercase text-bold">WRITERS:</div>
               <div className= "pl-3 text-light">
-                {writers.map(member => {
+                {writers.map((member, index) => {
                     return (
-                      <div>{member}</div>
+                      <div key={index}>{member}</div>
                     );
                   })
                 }
               </div>
               <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Producers:</div>
               <div className= "pl-3 text-light">
-                {producers.map(member => {
+                {producers.map((member,index) => {
                     return (
-                      <div>{member}</div>
+                      <div key={index}>{member}</div>
                     );
                   })
                 }
               </div>
               <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Budget:</div>
-              <span className= "pl-3 text-light text-bold">{CalculateBudget(this.state.movie.budget)}</span>
+              <div className= "pl-3 text-light text-bold">{CalculateBudget(this.state.movie.budget)}</div>
               <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Box Office:</div>
               <div className= "pl-3 text-light text-bold">{CalculateEarnings(this.state.movie.revenue)}</div>
             </div>
 
-            <div className= "col-sm-8 pt-5 pl-3">
+            <div className= "col-6 pt-5">
               <div className= "embed-responsive embed-responsive-16by9">
-                <iframe className= "pl-3 pt-3 embed-responsive-item" width="900" height="500" src={this.state.movie.videos ? 'https://www.youtube.com/embed/' + this.state.movie.videos.results[0].key: ""} frameBorder='0' allowFullScreen></iframe>
+                <iframe className= "pl-3 pt-3 embed-responsive-item" title={this.state.movie.original_title} width="900" height="500" src={this.state.movie.videos ? 'https://www.youtube.com/embed/' + this.state.movie.videos.results[0].key: ""} frameBorder='0' allowFullScreen></iframe>
               </div>
               <p className= "pt-3 pl-3 text-secondary">{this.state.movie.overview}</p>
               <div className= "pt-3 pl-3 text-light text-bold">GENRES:
