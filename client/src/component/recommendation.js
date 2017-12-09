@@ -7,19 +7,38 @@ function SideBarFilter(props) {
       <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
         <nav className="nav flex-column filter-link">
           <div className="checkbox">
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Action", event)}><input type="checkbox" value="Action" className="filterCheckbox" disabled/> Action</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Adventure", event)}><input type="checkbox" value="Adventure" className="filterCheckbox" disabled/> Adventure</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Animation", event)}><input type="checkbox" value="Animation" className="filterCheckbox" disabled/> Animation</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Comedy", event)}><input type="checkbox" value="Comedy" className="filterCheckbox" disabled/> Comedy</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Crime", event)}><input type="checkbox" value="Crime" className="filterCheckbox" disabled/> Crime</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Drama", event)}><input type="checkbox" value="Drama" className="filterCheckbox" disabled/> Drama</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Fantasy", event)}><input type="checkbox" value="Fantasy" className="filterCheckbox" disabled/> Fantasy</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Horror", event)}><input type="checkbox" value="Horror" className="filterCheckbox" disabled/> Horror</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Mystery", event)}><input type="checkbox" value="Mystery" className="filterCheckbox" disabled/> Mystery</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Romance", event)}><input type="checkbox" value="Romance" className="filterCheckbox" disabled/> Romance</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Science Fiction", event)}><input type="checkbox" value="Science Fiction" className="filterCheckbox" disabled/> Sci-Fi</a>
-            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onFilterChange("Thriller", event)}><input type="checkbox" value="Thriller" className="filterCheckbox" disabled/> Thriller</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Action", event)}><input type="checkbox" value="Action" className="filterCheckbox" disabled/> Action</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Adventure", event)}><input type="checkbox" value="Adventure" className="filterCheckbox" disabled/> Adventure</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Animation", event)}><input type="checkbox" value="Animation" className="filterCheckbox" disabled/> Animation</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Comedy", event)}><input type="checkbox" value="Comedy" className="filterCheckbox" disabled/> Comedy</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Crime", event)}><input type="checkbox" value="Crime" className="filterCheckbox" disabled/> Crime</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Drama", event)}><input type="checkbox" value="Drama" className="filterCheckbox" disabled/> Drama</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Fantasy", event)}><input type="checkbox" value="Fantasy" className="filterCheckbox" disabled/> Fantasy</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Horror", event)}><input type="checkbox" value="Horror" className="filterCheckbox" disabled/> Horror</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Mystery", event)}><input type="checkbox" value="Mystery" className="filterCheckbox" disabled/> Mystery</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Romance", event)}><input type="checkbox" value="Romance" className="filterCheckbox" disabled/> Romance</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Science Fiction", event)}><input type="checkbox" value="Science Fiction" className="filterCheckbox" disabled/> Sci-Fi</a>
+            <a className="nav-link nav-item mb-1" href="#" onClick={(event) => props.onGenreFilter("Thriller", event)}><input type="checkbox" value="Thriller" className="filterCheckbox" disabled/> Thriller</a>
             <a className="nav-item nav-link text-right" href="#" data-toggle="modal" data-target="#sidebarFilterModal">More</a>
+            
+        	<label className="filter-labels">Release Year:</label>
+        	<div className="input-group">
+        		<input className="form-control" id="min_year_input" placeholder="Min" type="text" autoComplete="off"  onChange={props.onReleaseYearMin}  />
+        		<input className="form-control" id="max_year_input" placeholder="Max" type="text" autoComplete="off"  onChange={props.onReleaseYearMax} />
+        		<button type="button" className="btn btn-secondary" onClick={() => props.onReleaseYearFilter()}>Find</button>
+        	</div>
+        	<br />
+       		<label className="filter-labels">Runtime:</label>
+        	<div className="input-group">
+        		<select className="form-control" id="runtime-selector" onChange={props.onRuntimeSelection}>
+        			<option value="reset"></option>
+        			<option value="1hr_or_less">1 hr or less </option>
+        			<option value="1_to_2_hrs">1 to 2 hrs</option>
+        			<option value="2hrs_or_more">2 hrs or more </option>
+      			</select>
+      		    <button type="button" className="btn btn-secondary" onClick={() => props.onRuntimeFilter()}>Find</button>
+      		</div>
+        	<br />
             <button type="button" className="btn btn-secondary" onClick={() => props.onFilterReset()}>Reset Filters</button>
           </div>
 
@@ -27,12 +46,12 @@ function SideBarFilter(props) {
             <div className="modal-dialog" role="document">
               <div className="modal-content">
                 <div className="modal-body">
-                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Documentary", event)}><input type="checkbox" value="Documentary" className="filterCheckbox" disabled/> Documentary</a>
-                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Family", event)}><input type="checkbox" value="Family" className="filterCheckbox" disabled/> Family</a>
-                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("History", event)}><input type="checkbox" value="History" className="filterCheckbox" disabled/> History</a>
-                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Music", event)}><input type="checkbox" value="Music" className="filterCheckbox" disabled/> Music</a>
-                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("War", event)}><input type="checkbox" value="War" className="filterCheckbox" disabled/> War</a>
-                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onFilterChange("Western", event)}><input type="checkbox" value="Western" className="filterCheckbox" disabled/> Western</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onGenreFilter("Documentary", event)}><input type="checkbox" value="Documentary" className="filterCheckbox" disabled/> Documentary</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onGenreFilter("Family", event)}><input type="checkbox" value="Family" className="filterCheckbox" disabled/> Family</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onGenreFilter("History", event)}><input type="checkbox" value="History" className="filterCheckbox" disabled/> History</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onGenreFilter("Music", event)}><input type="checkbox" value="Music" className="filterCheckbox" disabled/> Music</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onGenreFilter("War", event)}><input type="checkbox" value="War" className="filterCheckbox" disabled/> War</a>
+                  <a className="nav-link nav-item mb-1 text-dark" href="#" onClick={(event) => props.onGenreFilter("Western", event)}><input type="checkbox" value="Western" className="filterCheckbox" disabled/> Western</a>
                 </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -40,12 +59,11 @@ function SideBarFilter(props) {
               </div>
             </div>
           </div>
-
         </nav>
       </nav>
-
   );
 }
+
 
 function SearchResultFilm(props) {
   const id = props.data.id;
@@ -111,6 +129,9 @@ class Recommendation extends React.Component {
       itemBasedSearchTimeout: 0,
       itemBasedSearchValue: '',
       itemBasedSearchResults: [],
+      releaseYearMax: null,
+      releaseYearMin: null,
+      runtimeSelection:null
     };
     this.handleSeedDelete = this.handleSeedDelete.bind(this);
     this.handleSeedAdd = this.handleSeedAdd.bind(this);
@@ -118,9 +139,16 @@ class Recommendation extends React.Component {
     this.updateRecommendation = this.updateRecommendation.bind(this);
     this.openNav = this.openNav.bind(this);
     this.closeNav = this.closeNav.bind(this);
-    this.handleFilterChange = this.handleFilterChange.bind(this)
+    this.handleGenreFilter = this.handleGenreFilter.bind(this)
     this.handleFilterReset = this.handleFilterReset.bind(this);
     this.itemBasedSearch = this.itemBasedSearch.bind(this);
+    this.handleReleaseYearMin = this.handleReleaseYearMin.bind(this);
+    this.handleReleaseYearMax = this.handleReleaseYearMax.bind(this);
+    this.handleReleaseYearFilter = this.handleReleaseYearFilter.bind(this);
+    this.handleRuntimeFilter = this.handleRuntimeFilter.bind(this);
+    this.handleRuntimeSelection =this.handleRuntimeSelection.bind(this);
+    this.updateReleaseYearInputs = this.updateReleaseYearInputs.bind(this);
+    this.resetRuntimeSelector = this.resetRuntimeSelector.bind(this);
   }
 
   componentDidMount() {
@@ -142,12 +170,18 @@ class Recommendation extends React.Component {
       const recommendation = user.recommendation;
       const recommendationSubset = recommendation;
       const userSelectedGenres = [];
+      const releaseYearMin = null;
+      const releaseYearMax = null;
+      const runtimeSelection = null;
 
       this.setState({
         seedFilms,
         recommendation,
         recommendationSubset,
-        userSelectedGenres
+        userSelectedGenres,
+        releaseYearMin,
+        releaseYearMax,
+        runtimeSelection
       });
     })
     .catch(err => {
@@ -230,60 +264,220 @@ class Recommendation extends React.Component {
     document.getElementById("addSeedFilmNav").style.display = "none";
   }
   
-  handleFilterChange(value, e) {
-    e.preventDefault();
-
-    let checked = false;
-    let checkboxes = document.getElementsByClassName("filterCheckbox");
-
-    // Check or uncheck checkbox
-    for(let i = 0; i < checkboxes.length; i++) {
-      if(checkboxes[i].defaultValue === value) {
-        checked = !checkboxes[i].checked
-        checkboxes[i].checked = !checkboxes[i].checked;
-
-        checked === true ? checkboxes[i].parentElement.style.color = "#72d147"
-                         : checkboxes[i].parentElement.style.color = "white";
-
-        break;
-      }
-    }    
-
-    const recommendation = this.state.recommendation;
-    let userSelectedGenres = this.state.userSelectedGenres;
-    let recommendationSubset = [];
-   
-    if(checked) {
-      userSelectedGenres.push(value);
-    }
-    else {
-      // Add to user genre selections
-      for(let i = 0; i < userSelectedGenres.length; i++) {
-        if(userSelectedGenres[i] === value) {
-          userSelectedGenres.splice(i, 1);
-        } 
-      }  
-    }  
-    
-    recommendation.forEach(film => {
-      //Execute this if there is at least one genre filter selected
-      if(typeof userSelectedGenres !== 'undefined' && userSelectedGenres.length > 0) { 
-        film.genres.forEach(genre => {
-          if(userSelectedGenres.includes(genre.name) && !recommendationSubset.includes(film)) {
-            recommendationSubset.push(film);
-          }   
-        });
-       // Else, clear genre selections
-      } else { 
-        recommendationSubset.push(film);
-      } 
-    });
-              
+  handleReleaseYearMin(event){  
     this.setState({
-      recommendationSubset: recommendationSubset,
-      userSelectedGenres: userSelectedGenres
+      releaseYearMin: event.target.value
     });
   }
+  
+  
+  handleReleaseYearMax(event){  
+    this.setState({
+      releaseYearMax: event.target.value
+    });
+  }
+  
+  handleRuntimeSelection(event){
+   	var e = document.getElementById("runtime-selector");
+    var strUser = e.options[e.selectedIndex].value;
+  	this.setState({
+      runtimeSelection: strUser 
+    });
+  
+  }
+  
+   handleRuntimeFilter(){
+     const runtimeSelection = this.state.runtimeSelection;
+	 const recommendationSubset = this.state.recommendation;
+     let recommendationSubsetTemp = [];
+     let output_str ="";
+    
+     recommendationSubset.forEach(film => {
+	 var i = parseInt(film.runtime);
+       
+     if(!recommendationSubsetTemp.includes(film)){
+       if(runtimeSelection === "1hr_or_less" && i <= 60  ){
+         recommendationSubsetTemp.push(film);
+       }
+        	
+       else if(runtimeSelection === "1_to_2_hrs" && 60 < i  && i <= 120 ){
+         recommendationSubsetTemp.push(film);
+       }
+        	
+       else if(runtimeSelection === "2hrs_or_more" && 120 < i){
+         recommendationSubsetTemp.push(film);
+       }
+      }
+	});
+	
+	// If recommendation subset is not undefined or empty, update the state
+	if(typeof recommendationSubsetTemp !== 'undefined' && recommendationSubsetTemp.length > 0){
+  	  this.setState({recommendationSubset: recommendationSubsetTemp});
+  	}
+  	else{
+  	  if(runtimeSelection === "1hr_or_less") output_str = "1 hr or less";
+  	  else if(runtimeSelection === "1_to_2_hrs") output_str = "between 1 to 2 hrs";
+      else if(runtimeSelection === "2hrs_or_more") output_str = "2 hrs or more";
+  	
+  	  alert( "No results for films that are " + output_str  +".");
+  	  //Clear the min and max runtime input queries
+  	  this.resetRuntimeSelector();
+  	  this.setState({
+  	    recommendationSubset: recommendationSubset,
+  		runtimeSelection: null
+  	  });
+    } 
+  }
+  
+  
+  handleReleaseYearFilter(){
+	const recommendationSubset = this.state.recommendation;
+    let min_year = parseInt(this.state.releaseYearMin, 10);
+    let max_year = parseInt(this.state.releaseYearMax, 10);
+    let recommendationSubsetTemp = [];
+    
+    // If user does not fill in second parameter, fill in with min value and update query display.
+    if(min_year && !max_year){
+    	 max_year = min_year;
+    	this.updateReleaseYearInputs(min_year, max_year); 
+    	this.setState({
+    		releaseYearMin: min_year,
+    		releaseYearMax: max_year
+    	});
+    }
+    
+    // If the user does not fill in the first parameter, fill in with the max value and update query display.
+    if(!min_year && max_year ){
+    	min_year = max_year;
+    	this.updateReleaseYearInputs(min_year, max_year); 
+    	this.setState({
+    		releaseYearMin: min_year,
+    		releaseYearMax: max_year
+    	});
+    }
+    
+   //If the user's input is invalid, i.e. the user enters symbols letters etc.
+   if (!/^\d{4}$/.test(min_year) ||  !/^\d{4}$/.test(max_year)) {
+        alert("Invalid input! Please enter a 4-digit release year.");
+    	// Clear input box text
+    	this.updateReleaseYearInputs();
+    	
+    	this.setState({
+    		recommendationSubset: recommendationSubset,
+    		releaseYearMin: null,
+    		releaseYearMax: null
+    	});
+    	return;
+    }
+    
+    // If min year is greater than the max year
+    if(min_year > max_year ){
+    	//alert("Invalid input! The minimum release year value exceeds the maximum input value.");
+    	let temp = min_year;
+    	min_year = max_year;
+    	max_year = temp;
+    	
+    	this.updateReleaseYearInputs(min_year, max_year);
+    	
+    	this.setState({
+    		recommendationSubset: recommendationSubset,
+    		releaseYearMin: min_year,
+    		releaseYearMax: max_year
+    	});
+    }
+    
+	//If every condition is passed, push the film into the recommendation subset array.
+    recommendationSubset.forEach(film => {
+		var i = parseInt(String(film.release_date).substring(0, 4),10);
+		// if i is between min year and max year
+        if( min_year <= i &&  i <= max_year  && !recommendationSubsetTemp.includes(film)) {
+        	recommendationSubsetTemp.push(film);
+      	}
+	});
+	
+	// If recommendation subset is not undefined or empty, update state
+	if(typeof recommendationSubsetTemp !== 'undefined' && recommendationSubsetTemp.length > 0){
+  		this.setState({recommendationSubset: recommendationSubsetTemp});
+  	}
+  	else{
+  		// If rec. subset is empty, set to that of the full recommendation set
+  		alert("The recommendation results do not contain any films between " + String(min_year) + " and " + String(max_year) + ".");
+        this.updateReleaseYearInputs();
+  		this.setState({
+    		recommendationSubset: recommendationSubset,
+    		releaseYearMin: null,
+    		releaseYearMax: null
+    	});
+  	}
+  }
+
+
+    handleGenreFilter(value, e) {
+      e.preventDefault();
+      let checked = false;
+      let checkboxes = document.getElementsByClassName("filterCheckbox");
+
+      // Check or uncheck checkbox
+      for(let i = 0; i < checkboxes.length; i++) {
+        if(checkboxes[i].defaultValue === value) {
+          checked = !checkboxes[i].checked
+          checkboxes[i].checked = !checkboxes[i].checked;
+
+          checked === true ? checkboxes[i].parentElement.style.color = "#72d147"
+                         : checkboxes[i].parentElement.style.color = "white";
+
+          break;
+        }
+      }    
+
+      const recommendationTemp = this.state.recommendation;
+      let userSelectedGenres = this.state.userSelectedGenres;
+      let recommendationSubsetTemp = [];
+      let x = this.state.recommendation;
+   
+      if(checked) {
+        userSelectedGenres.push(value);
+      }
+      else {
+        // Add to user genre selections
+        for(let i = 0; i < userSelectedGenres.length; i++) {
+          if(userSelectedGenres[i] === value) {
+            userSelectedGenres.splice(i, 1);
+          }  
+        }  
+      }  
+    
+      recommendationTemp.forEach(film => {
+        //Execute this if there is at least one genre filter selected
+        if(typeof userSelectedGenres !== 'undefined' && userSelectedGenres.length > 0) { 
+          film.genres.forEach(genre => {
+            if(userSelectedGenres.includes(genre.name) && !recommendationSubsetTemp.includes(film)) {
+              recommendationSubsetTemp.push(film);
+            }   
+          });
+        } 
+        else { 
+          recommendationSubsetTemp.push(film);
+        } 
+      });
+    
+  	  this.setState({
+        recommendationSubset: recommendationSubsetTemp,
+        userSelectedGenres: userSelectedGenres
+      });  
+  }
+  
+  //Reset runtime selector
+  resetRuntimeSelector(){ 
+    document.getElementById('runtime-selector').selectedIndex = 0;
+  }
+  
+  //Clear input text boxes, default empty string values
+  //Utilized this method because setState will not clear input box
+  updateReleaseYearInputs(string_1="", string_2=""){
+  	document.getElementById('min_year_input').value=string_1;
+    document.getElementById('max_year_input').value=string_2;
+  }  
   
   handleFilterReset() {
     // Uncheck all filter checkboxes
@@ -295,10 +489,15 @@ class Recommendation extends React.Component {
 
     const recommendationSubset = this.state.recommendation;
     const userSelectedGenres = [];
+    this.resetRuntimeSelector();
+    this.updateReleaseYearInputs();
     
     this.setState({
       recommendationSubset: recommendationSubset,
-      userSelectedGenres: userSelectedGenres
+      userSelectedGenres: userSelectedGenres,
+      releaseYearMin: null,
+      releaseYearMax: null,
+      runtimeSelection: null
     });
   }
 
@@ -346,7 +545,8 @@ class Recommendation extends React.Component {
     return(
       <div className="container-fluid">
         <div className="row">
-          <SideBarFilter onFilterChange={this.handleFilterChange} onFilterReset={this.handleFilterReset} />
+          <SideBarFilter onGenreFilter={this.handleGenreFilter} onRuntimeSelection={this.handleRuntimeSelection}  onRuntimeFilter={this.handleRuntimeFilter}  onReleaseYearMin={this.handleReleaseYearMin}  onReleaseYearMax={this.handleReleaseYearMax} onReleaseYearFilter={this.handleReleaseYearFilter} onFilterReset={this.handleFilterReset}/>
+                    
           {/* Body */}
           <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pb-5 text-light recommendation">
             {/* Seed Films */}
@@ -376,6 +576,7 @@ class Recommendation extends React.Component {
             <div id='itemBasedSearchBar' className="row">
               <input className="col-12" type="text" value={this.state.itemBasedSearchValue} onChange={this.itemBasedSearch} placeholder="Search" aria-label="Search" />
             </div>
+            
             <div className="row" id="overlay-main">
               <div className="col-6" id="overlay-content">
                 {itemBasedSearchResults}
@@ -383,7 +584,6 @@ class Recommendation extends React.Component {
             </div>
 
           </div>
-
         </div>
       </div>
     );
