@@ -129,3 +129,11 @@
   border: 1px solid grey;
   outline: none;
 }
+
+#min_year_input, #max_year_input, #runtime-selector{
+	margin-right: 2%;
+}
+
+.filter-labels{
+  color: white;
+}
