@@ -84,7 +84,7 @@
     width: 100%;
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: white;
@@ -128,12 +128,4 @@
   font-size: 1.7em;
   border: 1px solid grey;
   outline: none;
-}
-
-#min_year_input, #max_year_input, #runtime-selector{
-	margin-right: 2%;
-}
-
-.filter-labels{
-  color: white;
 }
