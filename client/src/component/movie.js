@@ -171,7 +171,6 @@ class Movie extends Component{
       })
       .then(res => res.json())
       .then(data => {
-        console.log(data);
         let rating = 0;
         for (let i=0; i < data.length; i++){
           if (data[i].id === this.state.movie.id){
@@ -179,7 +178,6 @@ class Movie extends Component{
             break;
           }
         }
-        console.log(rating);
         return rating;
       }).then(score => {
         if (score !== this.state.rating){
