@@ -34,6 +34,17 @@ function LoginOrRegisterRoute({component: Component, isAuthed, onAuthChange, ...
   );
 }
 
+function ConditionalRoute({component: Component, isAuthed, ...rest}) {
+  return(
+    <Route 
+      {...rest}
+      render={(props) => isAuthed === true 
+        ? <Redirect to={{pathname: '/recommendation', state: {from: props.location}}} />
+        : <Component {...props} /> }
+    />
+  );
+}
+
 class App extends Component {
   constructor() {
     super();
@@ -74,7 +85,7 @@ class App extends Component {
           <Navbar isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} />
           <Switch>
             {/* <Redirect exact from="/" to="/recommendation" /> */}
-            <Route exact path="/" component={Home} />
+            <ConditionalRoute isAuthed={this.state.isAuthed} exact path="/" component={Home} />
             <Route path="/movie/:id" component={Movie} />
             <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/login" component={Login} />
             <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/register" component={Register} />
