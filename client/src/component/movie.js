@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './movie.css';
+import ReactStars from 'react-stars';
 
 function CalculateMovieReleaseDate(date){
   if (date === undefined){
@@ -111,12 +112,16 @@ class Movie extends Component{
   constructor(){
     super();
     this.state = {
-      movie: {}
+      movie: {},
+      rating: 0
     };
+    this.handleRatingChange = this.handleRatingChange.bind(this);
+    this.fetchPrevFilmRatings = this.fetchPrevFilmRatings.bind(this);
+    this.filmTrailer = this.filmTrailer.bind(this);
   }
 
   componentDidMount(){
-    fetch(`/film/${this.props.match.params.id}`, {
+    fetch(`/film/${this.props.url_info.match.params.id}`, {
       method: "get",
       headers: {
         'Accept': 'application/json',
@@ -125,15 +130,87 @@ class Movie extends Component{
     })
     .then(res => res.json())
     .then(movie => this.setState({movie: movie}))
+    .then(this.fetchPrevFilmRatings())
     .catch(error => {
       console.log(error.message);
     });
+  }
+
+  componentWillReceiveProps(nextProps){
+    if(this.props.isAuthed === false && (this.props.isAuthed !== nextProps.isAuthed)){
+      this.fetchPrevFilmRatings();
+    }
+  }
+
+  handleRatingChange(id, rating, event) {
+    fetch("/user/ratedfilm", {
+      method: "post",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin",
+      body: JSON.stringify({
+        id: id,
+        rating: rating
+      })
+    }).then(this.fetchPrevFilmRatings())
+    .catch(err => {
+      console.log(err.message);
+    });
+  }
+
+  fetchPrevFilmRatings(){
+    return fetch("/user/ratedfilm", {
+        method: "get",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        credentials: "same-origin"
+      })
+      .then(res => res.json())
+      .then(data => {
+        let rating = 0;
+        for (let i=0; i < data.length; i++){
+          if (data[i].id === this.state.movie.id){
+            rating = data[i].rating;
+            break;
+          }
+        }
+        return rating;
+      }).then(score => {
+        if (score !== this.state.rating){
+          this.setState({rating:score});
+        }
+    })
+      .catch(err => {
+        console.log(err.message);
+      });
+    }
+
+  filmTrailer(){
+    if (this.state.movie.videos !== undefined){
+      if (this.state.movie.videos.results.length !== 0){
+        return (
+          <iframe className= "pl-3 pt-3 embed-responsive-item"
+            title={this.state.movie.original_title}
+            width="900"
+            height="500"
+            src={'https://www.youtube.com/embed/' + this.state.movie.videos.results[0].key}
+            frameBorder='0'
+            allowFullScreen>
+          </iframe>
+        );
+      }
+    }
   }
 
   render(){
     let directors =[];
     let producers = [];
     let writers = [];
+
 
     if (this.state.movie.credits !== undefined){
       for (var i = 0; i < this.state.movie.credits.crew.length; i++){
@@ -151,11 +228,21 @@ class Movie extends Component{
         <div className="container-fluid">
           <div className="row movie">
             <div className= "col-xs-2 pt-5 pl-3 border border-dark border-top-0 border-left-0 border-bottom-0">
-              <h2 className= "pl-3 pb-4 mt-3 text-light text-bold text-uppercase movie_title">{this.state.movie.title}</h2>
-              <img src= {this.state.movie.poster_path ? 'https://image.tmdb.org/t/p/w500' + this.state.movie.poster_path : ""} className=" pl-3 pr-4 pb-4 thumbnail img " width="230" height="300"  alt="Movie Poster"/>
-              <div className= "pl-3 text-success text-uppercase text-bold">User Score: N/A </div>
-              <div className= "pl-3 text-light text-bold">{CalculateMovieTime(this.state.movie.runtime)}</div>
-              <div className= "pl-3 text-light text-bold">{CalculateMovieReleaseDate(this.state.movie.release_date)}</div>
+              <img src= {this.state.movie.poster_path ? 'https://image.tmdb.org/t/p/w500' + this.state.movie.poster_path : ""} className="pl-3 pr-4 pb-2 thumbnail img " width="230" height="300"  alt="Movie Poster"/>
+              <div>
+              {this.props.isAuthed && (this.state.movie.id !== undefined) ?
+                <div className="pl-3" id="film-rating">
+                <ReactStars count={10}
+                            value={this.state.rating}
+                            half={false}
+                            onChange={(event) => this.handleRatingChange(this.state.movie.id, event)}
+                            size={24}
+                            color2={'#ffd700'} />
+                </div>: ""
+              }
+              </div>
+              <div className= "pl-3 pt-1 text-light text-bold">{this.state.movie.runtime ? CalculateMovieTime(this.state.movie.runtime): ""}</div>
+              <div className= "pl-3 text-light text-bold">{this.state.movie.release_date ? CalculateMovieReleaseDate(this.state.movie.release_date): ""}</div>
               <div className= "pt-4 pl-3 text-light text-bold">DIRECTORS:
                 {directors.map((member, index) => {
                     return (
@@ -190,7 +277,7 @@ class Movie extends Component{
               </div>
 
             <div className= "col-sm-2 pt-5 pl-3 border border-dark border-top-0 border-left-0 border-bottom-0">
-              <div className= "pt-3 pl-3 text-light text-uppercase text-bold">WRITERS:</div>
+              <div className= "pl-3 text-light text-uppercase text-bold">WRITERS:</div>
               <div className= "pl-3 text-light">
                 {writers.map((member, index) => {
                     return (
@@ -214,10 +301,9 @@ class Movie extends Component{
               <div className= "pl-3 text-light text-bold">{CalculateEarnings(this.state.movie.revenue)}</div>
             </div>
 
-            <div className= "col-6 pt-5">
-              <div className= "embed-responsive embed-responsive-16by9">
-                <iframe className= "pl-3 pt-3 embed-responsive-item" title={this.state.movie.original_title} width="900" height="500" src={this.state.movie.videos ? 'https://www.youtube.com/embed/' + this.state.movie.videos.results[0].key: ""} frameBorder='0' allowFullScreen></iframe>
-              </div>
+            <div className= "col-7 pt-3">
+            <h4 className= "pl-4 mt-2 text-light text-bold text-uppercase">{this.state.movie.title}</h4>
+              <div className= "embed-responsive embed-responsive-16by9">{this.filmTrailer()}</div>
               <p className= "pt-3 pl-3 text-secondary">{this.state.movie.overview}</p>
               <div className= "pt-3 pl-3 text-light text-bold">GENRES:
                 <div>
