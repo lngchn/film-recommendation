@@ -4,8 +4,6 @@ import Autosuggest from 'react-autosuggest';
 import AutosuggestHighlightMatch from 'autosuggest-highlight/match';
 import AutosuggestHighlightParse from 'autosuggest-highlight/parse';
 
-import ReactStars from 'react-stars';
-
 import './searchbar.css';
 
 class SearchBar extends Component {
@@ -17,7 +15,6 @@ class SearchBar extends Component {
       suggestions: []
     };
     this.renderSuggestion = this.renderSuggestion.bind(this);
-    this.handleRatingChange = this.handleRatingChange.bind(this);
     this.escapeRegexCharacters = this.escapeRegexCharacters.bind(this);
   }
 
@@ -48,29 +45,6 @@ class SearchBar extends Component {
     });
   };
 
-  handleRatingChange(id, rating, event) {
-    fetch("/user/ratedfilm", {
-      method: "post",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      credentials: "same-origin",
-      body: JSON.stringify({
-        id: id,
-        rating: rating
-      })
-    })
-    .then(res => {
-      this.setState({
-        value: ''
-      });
-    })
-    .catch(err => {
-      console.log(err.message);
-    });
-  }
-
   escapeRegexCharacters = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
   // Get a list of suggestions from the this.state.films
@@ -98,30 +72,25 @@ class SearchBar extends Component {
     const imageUrl = `https://image.tmdb.org/t/p/w45/${suggestion.poster_path}`;
     let image = imageUrl.includes("null") ? <i className="fa fa-file-image-o fa-4x" aria-hidden="true"></i> : <img src={imageUrl} alt="Movie Poster" /> 
     const year = suggestion.release_date.substring(0, 4);
-    const isAuthed = this.props.isAuthed;
+    const movieLink = `/movie/${suggestion.id}`;
+
     return (
-      <span className='suggestion-content row ml-2'>
-        {image}
-        <span className="name col">
-          {
-            parts.map((part, index) => {
-              const className = part.highlight ? 'highlight' : null;
-              return (
-                <span className={className} key={index}>{part.text}</span>
-              );
-            })
-          }
-          {` (${year})`}
+      <a href={movieLink} className="search-bar-link">
+        <span className='suggestion-content row ml-2'>
+          {image}
+          <span className="name col">
+            {
+              parts.map((part, index) => {
+                const className = part.highlight ? 'highlight' : null;
+                return (
+                  <span className={className} key={index}>{part.text}</span>
+                );
+              })
+            }
+            {` (${year})`}
+          </span>
         </span>
-        {isAuthed && 
-          <span className="col-12 pl-0" id="film-rating">
-            <ReactStars count={10}
-                        half={false}
-                        onChange={(event) => this.handleRatingChange(suggestion.id, event)} 
-                        size={24}
-                        color2={'#ffd700'} />
-          </span>}
-      </span>
+      </a>
     );
   }
 

@@ -78,6 +78,12 @@
   color: #120000;
 }
 
+.search-bar-link, .search-bar-link:visited,
+.search-bar-link:hover, .search-bar-link:active {
+  text-decoration: none;
+  color: black;
+}
+
 #film-rating {
   margin-left: auto;
 }
