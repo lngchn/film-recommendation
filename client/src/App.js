@@ -86,7 +86,7 @@ class App extends Component {
           <Switch>
             {/* <Redirect exact from="/" to="/recommendation" /> */}
             <ConditionalRoute isAuthed={this.state.isAuthed} exact path="/" component={Home} />
-            <Route path="/movie/:id" render={(params) => <Movie url_info={params} isAuthed={this.state.isAuthed}/>}/>
+            <Route render={routeProps => (<Movie {...routeProps} isAuthed={this.state.isAuthed} />)} path="/movie/:id" />
             <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/login" component={Login} />
             <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/register" component={Register} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/recommendation" component={Recommendation} />

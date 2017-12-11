@@ -121,7 +121,7 @@ class Movie extends Component{
   }
 
   componentDidMount(){
-    fetch(`/film/${this.props.url_info.match.params.id}`, {
+    fetch(`/film/${this.props.match.params.id}`, {
       method: "get",
       headers: {
         'Accept': 'application/json',
