@@ -9,6 +9,8 @@ const passport = require('./middleware/authentication');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.enable('trust proxy');   // for use with express-rate-limit
+
 app.use(expressSession(({
   secret: 'super secret',
   resave: false,

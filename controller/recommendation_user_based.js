@@ -10,6 +10,13 @@ const API_KEY = process.env.TMDB_KEY;
 
 const axios = require('axios');
 
+const RateLimit = require('express-rate-limit');
+const apiLimiter = new RateLimit({
+  windowMs: 2*60*1000,      // in milliseconds
+  max: 1,                   // num of request within windowsMs timer
+  skipFailedRequests: true, 
+});
+
 const PythonShell = require('python-shell');
 
 function saveRecommendation(db, email, userBasedRecommendation, callback) {
@@ -79,24 +86,25 @@ function callPyScript(dataToPython, req, res) {
                              release_date: release_date, runtime: runtime };
                              
                 recommendation.push(film);
-
-                // Wait for for loop to finish to have all the films in the recommendation array
-                if(i === numOfFilmsToSave - 1) {
-                  let email = req.user.email;
-                  doneFetchingMovies(email, recommendation, res);
-                }
               })
               .catch(error => {
                 console.log(error.message);
               });
-          }, 260 * i);    // Set 260 ms delay per TMDB API call, average limit is 4/1sec
+
+              // Wait for for loop to finish to have all the films in the recommendation array
+              if(i === numOfFilmsToSave - 1) {
+                let email = req.user.email;
+                doneFetchingMovies(email, recommendation, res);
+              }
+              
+          }, 350 * i);  // average limit is 4/1sec
         })(i);
       }   
     }
   });
 }
 
-router.get('/userbased', (req, res) => {
+router.get('/userbased', apiLimiter, (req, res) => {
   const user = req.user;
 
   if(!user){

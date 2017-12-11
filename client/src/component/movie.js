@@ -118,6 +118,7 @@ class Movie extends Component{
     this.handleRatingChange = this.handleRatingChange.bind(this);
     this.fetchPrevFilmRatings = this.fetchPrevFilmRatings.bind(this);
     this.filmTrailer = this.filmTrailer.bind(this);
+    this.updateRecommendation = this.updateRecommendation.bind(this);
   }
 
   componentDidMount(){
@@ -154,7 +155,10 @@ class Movie extends Component{
         id: id,
         rating: rating
       })
-    }).then(this.fetchPrevFilmRatings())
+    }).then(() => {
+      this.fetchPrevFilmRatings();
+      this.updateRecommendation();
+    })
     .catch(err => {
       console.log(err.message);
     });
@@ -206,11 +210,28 @@ class Movie extends Component{
     }
   }
 
+  updateRecommendation() {
+    // Ideally, algorithm should be scheduled in the back-end
+    fetch("/recommendation/userbased", {
+      method: "get",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      credentials: "same-origin"
+    })
+    .then(res => {
+
+    })
+    .catch(err => {
+      console.log(err.message);
+    }); 
+  }  
+
   render(){
     let directors =[];
     let producers = [];
     let writers = [];
-
 
     if (this.state.movie.credits !== undefined){
       for (var i = 0; i < this.state.movie.credits.crew.length; i++){
