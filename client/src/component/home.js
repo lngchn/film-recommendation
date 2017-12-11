@@ -11,7 +11,7 @@ class Home extends Component {
       <div>
         <div className="jumbotron jumbotron-fluid m-0" id="home-background">
           <div className="container text-light text-center" id="home-content">
-            <h1 className="display-3 text-uppercase text-center">Welcome to Film Pro!</h1>
+            <h1 className="display-3 text-uppercase text-center"><strong>Welcome to Film Pro!</strong></h1>
             <p className="lead text-center">Film Pro is the perfect guide for your adventures in movie watching.<br />If you're feeling adventurous, click below to begin your journey into cinema!</p>
             <p className="lead">
               <a className="btn btn-light btn-lg mr-2" href="/register" role="button">Sign Up</a>
