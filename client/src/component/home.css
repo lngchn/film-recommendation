@@ -1,6 +1,6 @@
 #home-background {
   position: relative;
-  background: url("../img/popcorn_background2.jpg") no-repeat center;
+  background: url("../img/home_background_1.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -29,7 +29,7 @@
 
 #tutorial-background {
   position: relative;
-  background: url("../img/theater_background1.jpg") no-repeat center;
+  background: url("../img/home_background_2.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;  
   /*background: linear-gradient(90deg, black, grey, black);*/
