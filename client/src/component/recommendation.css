@@ -124,12 +124,11 @@
 #itemBasedSearchBar {
   position: absolute;
   left: 50%;
-  transform: translate(-46.1%, 60%);
+  transform: translate(-46.5%, 70%);
 }
 
 #itemBasedSearchBar input {
-  /*width: 23.2em;*/
-  width: 21.1em;
+  width: 23.2em;
   font-size: 1.7em;
   border: 1px solid grey;
   outline: none;
