@@ -22,6 +22,10 @@
   color: gray;
 }
 
+.filterLabel {
+  cursor: pointer;
+}
+
 .thumbnail {
   position: relative;
 }

@@ -7,62 +7,62 @@ function SideBarFilter(props) {
     <nav className="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar text-left pt-3 border border-dark border-top-0 border-bottom-0 border-left-0">
       <nav className="nav flex-column filter-link">
         <div>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Action" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Action</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Adventure" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Adventure</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Animation" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Animation</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Comedy" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Comedy</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Crime" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Crime</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Drama" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Drama</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Fantasy" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Fantasy</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Horror" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Horror</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Mystery" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Mystery</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Romance" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Romance</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Science Fiction" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Science Fiction</span>
           </label>
-          <label className="col custom-control custom-checkbox text-light">
+          <label className="col custom-control custom-checkbox text-light filterLabel">
             <input type="checkbox" className="custom-control-input filterCheckbox" value="Thriller" onClick={props.onGenreChange} />
             <span className="custom-control-indicator"></span>
             <span className="custom-control-description">Thriller</span>
@@ -93,32 +93,32 @@ function SideBarFilter(props) {
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-body">
-                <label className="col custom-control custom-checkbox text-dark">
+                <label className="col custom-control custom-checkbox text-dark filterLabel">
                   <input type="checkbox" className="custom-control-input filterCheckbox" value="Documentary" onClick={props.onGenreChange} />
                   <span className="custom-control-indicator"></span>
                   <span className="custom-control-description">Documentary</span>
                 </label>
-                <label className="col custom-control custom-checkbox text-dark">
+                <label className="col custom-control custom-checkbox text-dark filterLabel">
                   <input type="checkbox" className="custom-control-input filterCheckbox" value="Family" onClick={props.onGenreChange} />
                   <span className="custom-control-indicator"></span>
                   <span className="custom-control-description">Family</span>
                 </label>
-                <label className="col custom-control custom-checkbox text-dark">
+                <label className="col custom-control custom-checkbox text-dark filterLabel">
                   <input type="checkbox" className="custom-control-input filterCheckbox" value="History" onClick={props.onGenreChange} />
                   <span className="custom-control-indicator"></span>
                   <span className="custom-control-description">History</span>
                 </label>
-                <label className="col custom-control custom-checkbox text-dark">
+                <label className="col custom-control custom-checkbox text-dark filterLabel">
                   <input type="checkbox" className="custom-control-input filterCheckbox" value="Music" onClick={props.onGenreChange} />
                   <span className="custom-control-indicator"></span>
                   <span className="custom-control-description">Music</span>
                 </label>
-                <label className="col custom-control custom-checkbox text-dark">
+                <label className="col custom-control custom-checkbox text-dark filterLabel">
                   <input type="checkbox" className="custom-control-input filterCheckbox" value="War" onClick={props.onGenreChange} />
                   <span className="custom-control-indicator"></span>
                   <span className="custom-control-description">War</span>
                 </label>
-                <label className="col custom-control custom-checkbox text-dark">
+                <label className="col custom-control custom-checkbox text-dark filterLabel">
                   <input type="checkbox" className="custom-control-input filterCheckbox" value="Western" onClick={props.onGenreChange} />
                   <span className="custom-control-indicator"></span>
                   <span className="custom-control-description">Western</span>
