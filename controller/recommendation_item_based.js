@@ -38,6 +38,7 @@ function doneFetchingMovies(email, itemBasedRecommendation, res) {
 }
 
 function callPyScript(dataToPython, req, res) {
+  console.log('Calling item based script');
   let options = {
     scriptPath: `${__dirname}/../python-script`
   }
