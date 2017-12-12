@@ -112,6 +112,8 @@ def main():
 
     transform_data(all_film_data)
 
+    print (len(all_film_data))
+
     for x in user_obj["films"]:
         seed_films[x["imdb_id"]] = all_film_data[x["imdb_id"]]
         
