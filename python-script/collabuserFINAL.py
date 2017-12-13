@@ -46,6 +46,12 @@ def remove_non_genre(seed_genres, movie_id_store, rankings):
                     if genre not in seed_genres: seed_genres.append(str(genre))'''
 ##############################
 
+#euclidean distance, only applied for when there is only one seed film
+def euc(p1, p2, common):
+    p1p2_sum_sq = float(pow(p1.get(common) - p2.get(common), 2))
+    
+    return 1 / (1 + p1p2_sum_sq)
+
 #calculate the pearson correlation between two users UNLESS only one seed film --> euclidean
 #pearson ALWAYS returns 1 if there is only one value, which is bad because I'm ignoring perfect pearsons
 def pearson(p1, p2):
@@ -57,7 +63,7 @@ def pearson(p1, p2):
     cfp1 = [p1.get(movie) for movie in common_films]
     cfp2 = [p2.get(movie) for movie in common_films]
 
-    if len(set(cfp1)) == 1 and len(set(cfp2)) == 1: return 0
+    if len(set(cfp1)) == 1: return euc(cfp1, cfp2, common_films)
     if cfp1.sort() == cfp2.sort(): return 1.0
 
     return numpy.corrcoef(cfp1, cfp2)[0, 1]
@@ -163,7 +169,7 @@ def main():
  
     films_to_rec = rec_movies(user_obj["films"], sim_score, movie_id_store, all_movies)
     
-    for x in films_to_rec[:100]:
+    for x in films_to_rec[:200]:
         output_str += movie_id_store[x[0]] + " "
 
     print (output_str)
