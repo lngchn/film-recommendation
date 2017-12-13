@@ -104,7 +104,7 @@ function SideBarFilter(props) {
       			</select>
       		</div>   		
         
-          <button type="button" className="btn btn-secondary" onClick={() => props.onFilterReset()}>Reset Filters</button>
+          <button type="button" className="btn btn-danger" onClick={() => props.onFilterReset()}>Reset Filters</button>
         </div>
 
         <div className="modal fade" id="sidebarFilterModal" tabIndex="-1" role="dialog" aria-labelledby="sidebarFilterModalLabel" aria-hidden="true">
@@ -473,6 +473,7 @@ class Recommendation extends React.Component {
     if(selectedRuntime.length > 0) {
       recommendationSubset = recommendationSubset.filter(film => {
         let runtime = film.runtime;
+
         if(selectedRuntime === "1hr_or_less") {
           return runtime <= 60;
         } else if(selectedRuntime === "1_to_2_hrs") {
@@ -519,7 +520,6 @@ class Recommendation extends React.Component {
         }
       });
     }
-    
 
     this.setState({ recommendationSubset });
   }
@@ -555,7 +555,7 @@ class Recommendation extends React.Component {
                          onReleaseYearMinChange={this.handleReleaseYearMinChange} releaseYearMin={this.state.releaseYearMin}
                          onReleaseYearMaxChange={this.handleReleaseYearMaxChange} releaseYearMax={this.state.releaseYearMax}
                          onRuntimeFilterChange={this.handleRuntimeFilterChange} selectedRuntime={this.state.selectedRuntime}
-                         onRatingFilterChange={this.handleRatingFilterChange}    selectedRating={this.state.selectedRating}
+                         onRatingFilterChange={this.handleRatingFilterChange} selectedRating={this.state.selectedRating}
           />                    
           {/* Body */}
           <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pb-5 text-light recommendation">
