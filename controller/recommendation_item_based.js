@@ -50,7 +50,6 @@ function callPyScript(dataToPython, req, res) {
 
   // After receiving data from Python script
   pyshell.on('message', function(result) {
-    console.log(result);
     recommendation_imdb_id = JSON.parse(JSON.stringify(result));
     recommendation_imdb_id = recommendation_imdb_id.split(' ');
     recommendation_imdb_id.pop();   // remove the last empty array item
