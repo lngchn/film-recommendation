@@ -68,6 +68,10 @@ web: node server.js
 ```
 requests==2.18.4
 ```
+10) Additionally, you may create a 'runtime.txt' file to tell Heroku what Python version you want to use. For example, adding this line to the runtime.txt tells Heroku to use Python version 3.6.3
+```
+python-3.6.3
+```
 
 ### NOTE
 - Make sure you push the production /client/build folder to Heroku master branch for the app to work.
