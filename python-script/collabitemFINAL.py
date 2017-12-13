@@ -31,11 +31,11 @@ def get_user_info(path_to_files, all_film_data):
                 if i["imdb_id"] in all_film_data: all_film_data[i["imdb_id"]].update({str(json_data["user_id"]): int(i["rating"])})
                 else: all_film_data[i["imdb_id"]] = {str(json_data["user_id"]): int(i["rating"])}
 
-#remove movies with less than 10 user ratings, since they may affect weighted pearson
+#remove movies with less than 150 user ratings, since they may affect weighted pearson
 def remove_few(all_film_data):
     all_film_data_copy = all_film_data.copy()
     for imdb_id, user_info in all_film_data_copy.items():
-        if len(all_film_data[imdb_id]) < 10: all_film_data.pop(imdb_id, None)
+        if len(all_film_data_copy[imdb_id]) < 150: all_film_data.pop(imdb_id, None)
 
 #transform .json file from user --> films to film --> users 
 def transform_data(all_film_data):
