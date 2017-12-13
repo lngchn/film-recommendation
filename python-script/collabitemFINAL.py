@@ -40,7 +40,7 @@ def remove_few(all_film_data):
 #transform .json file from user --> films to film --> users 
 def transform_data(all_film_data):
     parent = os.path.dirname(__file__)
-    path_to_files = glob.glob(os.path.join(parent, '../IMDB_User_Ratings/*.json'))
+    path_to_files = glob.glob(os.path.join(parent, '../IMDb_User_Ratings/*.json'))
     get_user_info(path_to_files, all_film_data)
     remove_few(all_film_data)
 
