@@ -35,7 +35,7 @@ def get_user_info(path_to_files, all_film_data):
 def remove_few(all_film_data):
     all_film_data_copy = all_film_data.copy()
     for imdb_id, user_info in all_film_data_copy.items():
-        if len(all_film_data[imdb_id]) < 10: all_film_data.pop(imdb_id, None)
+        if len(all_film_data_copy[imdb_id]) < 200: all_film_data.pop(imdb_id, None)
 
 #transform .json file from user --> films to film --> users 
 def transform_data(all_film_data):
