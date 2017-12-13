@@ -47,8 +47,8 @@ def remove_non_genre(seed_genres, movie_id_store, rankings):
 ##############################
 
 #euclidean distance, only applied for when there is only one seed film
-def euc(p1, p2, common):
-    p1p2_sum_sq = float(pow(p1.get(common) - p2.get(common), 2))
+def euc(p1, p2):
+    p1p2_sum_sq = float(pow(p1[0] - p2[0], 2))
     
     return 1 / (1 + p1p2_sum_sq)
 
@@ -63,7 +63,8 @@ def pearson(p1, p2):
     cfp1 = [p1.get(movie) for movie in common_films]
     cfp2 = [p2.get(movie) for movie in common_films]
 
-    if len(set(cfp1)) == 1: return euc(cfp1, cfp2, common_films)
+    if len(cfp1) == 1: return euc(cfp1, cfp2) #for only one rated film
+    if len(set(common_films)) == 1: cfp1[0] -= 1 #add noise to cases where all ratings are the same
     if cfp1.sort() == cfp2.sort(): return 1.0
 
     return numpy.corrcoef(cfp1, cfp2)[0, 1]
