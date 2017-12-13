@@ -78,7 +78,7 @@ function SideBarFilter(props) {
         	</div>
 
        		<label className="text-light">Runtime</label>
-        	<div className="input-group mb-5">
+        	<div className="input-group mb-3">
         		<select className="form-control" id="runtime-selector" value={props.selectedRuntime} onChange={event => props.onRuntimeFilterChange(event)}>
         			<option value=""></option>
         			<option value="1hr_or_less">1 hr or less</option>
@@ -86,7 +86,24 @@ function SideBarFilter(props) {
         			<option value="2hrs_or_more">2 hrs or more</option>
       			</select>
       		</div>
-          
+      		
+      		<label className="text-light">Avg. User Rating</label>
+        	<div className="input-group mb-5">
+        		<select className="form-control" id="rating-selector" value={props.selectedRating} onChange={event => props.onRatingFilterChange(event)}>
+        			<option value=""></option>  
+        			<option value="less_than_one_star">less than one star</option>
+        			<option value="1_star_or_more">1 star or more</option>
+        			<option value="2_stars_or_more">2 stars or more</option>
+        			<option value="3_stars_or_more">3 stars or more</option>
+        			<option value="4_stars_or_more">4 stars or more</option>
+        			<option value="5_stars_or_more">5 stars or more</option>
+        			<option value="6_stars_or_more">6 stars or more</option>
+        			<option value="7_stars_or_more">7 stars or more</option>
+        			<option value="8_stars_or_more">8 stars or more</option>
+        			<option value="9_stars_or_more">9 stars or more</option>
+      			</select>
+      		</div>   		
+        
           <button type="button" className="btn btn-secondary" onClick={() => props.onFilterReset()}>Reset Filters</button>
         </div>
 
@@ -131,7 +148,6 @@ function SideBarFilter(props) {
             </div>
           </div>
         </div>
-
       </nav>
     </nav>
   );
@@ -202,6 +218,7 @@ class Recommendation extends React.Component {
       releaseYearMin: '',
       releaseYearMax: '',
       selectedRuntime: '',
+      selectedRating: '',
       itemBasedSearchTimeout: 0,
       itemBasedSearchValue: '',
       itemBasedSearchResults: [],
@@ -216,6 +233,7 @@ class Recommendation extends React.Component {
     this.handleReleaseYearMinChange = this.handleReleaseYearMinChange.bind(this);
     this.handleReleaseYearMaxChange = this.handleReleaseYearMaxChange.bind(this);
     this.handleRuntimeFilterChange = this.handleRuntimeFilterChange.bind(this);
+    this.handleRatingFilterChange = this.handleRatingFilterChange.bind(this);
     this.handleGenreChange = this.handleGenreChange.bind(this);
     this.applyFilters = this.applyFilters.bind(this);
     this.handleFilterReset = this.handleFilterReset.bind(this);
@@ -248,6 +266,7 @@ class Recommendation extends React.Component {
         releaseYearMin: '',
         releaseYearMax: '',
         selectedRuntime: '',
+        selectedRating: '',
       });
     })
     .catch(err => {
@@ -385,6 +404,13 @@ class Recommendation extends React.Component {
       this.applyFilters();
     }, 1000)
   }
+  
+  handleRatingFilterChange(event) {
+    this.setState({ selectedRating: event.target.value });
+    setTimeout(() => {
+      this.applyFilters();
+    }, 1000)
+  }
 
   handleGenreChange(event) {
     let genre = event.target.value;
@@ -409,6 +435,7 @@ class Recommendation extends React.Component {
     let releaseYearMin = this.state.releaseYearMin;
     let releaseYearMax = this.state.releaseYearMax;
     let selectedRuntime = this.state.selectedRuntime;
+    let selectedRating  = this.state.selectedRating;
 
     if(selectedGenres.length > 0) {
       recommendation.forEach(film => {
@@ -455,6 +482,44 @@ class Recommendation extends React.Component {
         }
       });
     }
+    
+   if(selectedRating.length > 0) {
+      recommendationSubset = recommendationSubset.filter(film => {
+        let rating = film.vote_average;
+
+        if(selectedRating === "less_than_one_star") {
+         
+          return rating < 1;
+        } else if(selectedRating === "1_star_or_more") {
+          return rating >= 1;
+          
+        } else if(selectedRating === "2_stars_or_more") {
+          return rating >= 2;
+          
+        } else if(selectedRating === "3_stars_or_more") {
+          return rating >= 3;
+          
+        } else if(selectedRating === "4_stars_or_more") {
+          return rating >= 4;
+          
+        } else if(selectedRating === "5_stars_or_more") {
+          return rating >= 5;
+          
+        } else if(selectedRating === "6_stars_or_more") {
+          return rating >= 6;
+          
+        } else if(selectedRating === "7_stars_or_more") {
+          return rating >= 7;
+          
+        } else if(selectedRating === "8_stars_or_more") {
+          return rating >= 8;
+          
+        } else{
+          return rating >= 9;
+        }
+      });
+    }
+    
 
     this.setState({ recommendationSubset });
   }
@@ -474,6 +539,7 @@ class Recommendation extends React.Component {
       releaseYearMin: '',
       releaseYearMax: '',
       selectedRuntime: '',
+      selectedRating: '',
     });
   }
 
@@ -489,6 +555,7 @@ class Recommendation extends React.Component {
                          onReleaseYearMinChange={this.handleReleaseYearMinChange} releaseYearMin={this.state.releaseYearMin}
                          onReleaseYearMaxChange={this.handleReleaseYearMaxChange} releaseYearMax={this.state.releaseYearMax}
                          onRuntimeFilterChange={this.handleRuntimeFilterChange} selectedRuntime={this.state.selectedRuntime}
+                         onRatingFilterChange={this.handleRatingFilterChange}    selectedRating={this.state.selectedRating}
           />                    
           {/* Body */}
           <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pb-5 text-light recommendation">
