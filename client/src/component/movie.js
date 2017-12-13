@@ -284,7 +284,7 @@ class Movie extends Component{
                     return (
                       <div key={index}>{member}</div>
                     );
-                  }) : "N/A"
+                  }) : " N/A"
                 }
               </div>
               <div className= "pt-4 pl-3 text-light text-bold">LANGUAGES:
@@ -300,7 +300,7 @@ class Movie extends Component{
               </div>
 
               <div className= "pt-4 pl-3 text-light text-bold">STARRING:
-                  {this.state.movie.credits && this.state.movie.credits.length > 0 ?
+                  {this.state.movie.credits && this.state.movie.credits.cast.length > 0 ?
                     this.state.movie.credits.cast.slice(0,5).map((actor, index) => {
                       return (
                         <div className ="text-light text-bold" key={index}>
@@ -328,7 +328,7 @@ class Movie extends Component{
                     return (
                       <div key={index}>{member}</div>
                     );
-                  }) : "N/A"
+                  }) : " N/A"
                 }
               </div>
               <div className= "pt-4 pl-3 text-light text-uppercase text-bold">Budget:</div>
