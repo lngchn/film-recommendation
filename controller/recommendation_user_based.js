@@ -112,14 +112,17 @@ router.get('/userbased', apiLimiter, (req, res) => {
   }
 
   const ratedFilms = user.ratedFilms;
-  let dataToPython =  { films: [], user_id: user._id };
-  
-  for(let i in ratedFilms) {
-    let film = ratedFilms[i];
-    dataToPython["films"].push({ "id": film.id, "imdb_id": film.imdb_id, "rating": film.rating, "title": film.title});
-  }
 
-  callPyScript(dataToPython, req, res);
+  if(ratedFilms.length > 0) {
+    let dataToPython =  { films: [], user_id: user._id };
+    
+    for(let i in ratedFilms) {
+      let film = ratedFilms[i];
+      dataToPython["films"].push({ "id": film.id, "imdb_id": film.imdb_id, "rating": film.rating, "title": film.title});
+    }
+
+    callPyScript(dataToPython, req, res);
+  }
 });
 
 module.exports = router;

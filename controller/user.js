@@ -137,16 +137,18 @@ router.get('/user/films', (req, res) => {
           let userBasedRecommendation = user.userBasedRecommendation;
           let recommendation = [];
 
-          // Compare two arrays, remove same object from itemBasedRecommendation
-          itemBasedRecommendation = itemBasedRecommendation.filter(film1 => {
-            return !userBasedRecommendation.some(film2 => {
-              return film1.id === film2.id;
+          if(itemBasedRecommendation.length > 0) {
+            // Compare two arrays, remove same object from itemBasedRecommendation
+            itemBasedRecommendation = itemBasedRecommendation.filter(film1 => {
+              return !userBasedRecommendation.some(film2 => {
+                return film1.id === film2.id;
+              });
             });
-          });
 
-          recommendation = itemBasedRecommendation.concat(userBasedRecommendation);
-          recommendation = ShuffleArray(recommendation);
-          recommendation = recommendation.slice(0, recommendation.length / 2);
+            recommendation = itemBasedRecommendation.concat(userBasedRecommendation);
+            recommendation = ShuffleArray(recommendation);
+            recommendation = recommendation.slice(0, recommendation.length / 2);
+          }
 
           res.status(200).json({seedFilms, recommendation});
         }

@@ -112,14 +112,17 @@ router.get('/itembased', apiLimiter, (req, res) => {
   }
 
   const seedFilms = user.seedFilms;
-  let dataToPython =  { films: [], user_id: user._id };
   
-  for(let i in seedFilms) {
-    let film = seedFilms[i];
-    dataToPython["films"].push({ "id": film.id, "imdb_id": film.imdb_id, "title": film.title});
-  }
+  if(seedFilms.length > 0) {
+    let dataToPython =  { films: [], user_id: user._id };
+    
+    for(let i in seedFilms) {
+      let film = seedFilms[i];
+      dataToPython["films"].push({ "id": film.id, "imdb_id": film.imdb_id, "title": film.title});
+    }
 
-  callPyScript(dataToPython, req, res);
+    callPyScript(dataToPython, req, res);
+  }
 });
 
 module.exports = router;
