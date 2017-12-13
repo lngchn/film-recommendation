@@ -1,6 +1,6 @@
 import React from 'react';
 import './recommendation.css';
-import PlaceHolder from '../img/image_not_found_placeholder_360.jpg';
+import PosterPlaceHolder from '../img/image_not_found_placeholder_360.jpg';
   
 function SideBarFilter(props) {
   // Use disabled for the input, readonly has bug.
@@ -165,7 +165,7 @@ function SeedFilm(props) {
   return(
     <div className="col-6 col-md-3 mt-4 thumbnail text-center">
       <a href={detailsUrl} className="movie-detail-link">
-        <img src={imageUrl.includes("null") ? PlaceHolder : imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
+        <img src={imageUrl.includes("null") ? PosterPlaceHolder : imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
         <h4 className="movie-title">{title}</h4>
       </a>
       <a href="#" onClick={(event) => props.onSeedDelete(props.data.id, event)}>
@@ -184,7 +184,7 @@ function RecommendationFilm(props) {
   return(
     <div className="col-6 col-md-3 mt-4 thumbnail text-center">
       <a href={detailsUrl} className="movie-detail-link">
-        <img src={imageUrl.includes("null") ? PlaceHolder : imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
+        <img src={imageUrl.includes("null") ? PosterPlaceHolder : imageUrl} className="img-fluid movie-poster" alt="Movie Poster" />
         <h4 className="movie-title">{title}</h4>
       </a>
     </div>
