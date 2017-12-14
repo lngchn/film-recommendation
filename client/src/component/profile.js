@@ -45,19 +45,25 @@ class Profile extends Component{
 
   render() {
       return (
-        <div className="jumbotron jumbotron-fluid m-0 text-center" id="main-profile">
-          <div className="container" id="main-profile-content">
-            <img src="http://placehold.it/200x200" className="rounded avatar img-responsive"></img>
-            <h1 className="display-4">{this.state.username}</h1>
-            <h1 className="display-4">{this.state.email}</h1>
-            <h1 className="display-4">{this.state.ratedFilms}</h1>
-            <ul className="text-center" id="list-buttons">
-              <li><button type="button" className="btn btn-outline-success mt-4 p-3">Edit Profile</button></li>
-              <li><button type="button" className="btn btn-outline-success mt-4 p-3">Change Password</button></li>
-              <li><button type="button" className="btn btn-outline-success mt-4 p-3">Take Me To The Homepage</button></li>
-            </ul>          
+        <div className="container-fluid" id="container-profile">
+          <div className="row" id="main-profile">
+            <div className="rounded col-4 text-center" id="profile-sidebar">
+              <img src="https://d2g50grrs5gsgl.cloudfront.net/images/placeholders/default-user-pic-display-fp-25783b166928d6761389e6d34279290e.gif" className="rounded avatar img-responsive"></img>
+              <p className="strong">Username {this.state.username}</p>
+              <p className="strong">Email {this.state.email}</p>
+              <ul id="list-buttons">
+                <li><button type="button" className="btn btn-outline-secondary btn-sm btn-block">Edit Profile</button></li>
+                <li><button type="button" className="btn btn-outline-secondary btn-sm btn-block">Change Password</button></li>
+              </ul>  
+            </div>
+            <div className="rounded col-1 text-center">   
+            </div>
+            <div className="rounded col-7 text-center" id="profile-main">   
+              <h1 className="display-4">{this.state.ratedFilms}</h1>
+              <h1>Rated Films</h1>
+            </div>     
           </div>
-      </div>
+        </div>
       )
     }
 
