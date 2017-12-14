@@ -9,6 +9,7 @@ import Movie from './component/movie';
 import Recommendation from './component/recommendation';
 import Activity from './component/activity';
 import People from './component/people';
+import Profile from './component/profile';
 import Footer from './component/footer';
 import NotFound from './component/not-found';
 
@@ -92,6 +93,7 @@ class App extends Component {
             <PrivateRoute isAuthed={this.state.isAuthed} path="/recommendation" component={Recommendation} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/activity" component={Activity} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/people" component={People} />
+            <PrivateRoute isAuthed={this.state.isAuthed} path="/profile" component={Profile} />
             <Route component={NotFound} />
           </Switch>
           <Footer />

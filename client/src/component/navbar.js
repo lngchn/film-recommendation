@@ -19,7 +19,7 @@ function LoggedInNavbar(props) {
           <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <div className="navbar-nav mr-md-3">
               <NavLink to="/recommendation" className="nav-item nav-link text-uppercase navbar-item">Recommendation</NavLink>
-              <NavLink to="/activity" className="nav-item nav-link text-uppercase navbar-item">Activity</NavLink>
+              <NavLink to="/profile" className="nav-item nav-link text-uppercase navbar-item">Profile</NavLink>
               <NavLink to="/people" className="nav-item nav-link text-uppercase navbar-item">People</NavLink>
             </div>
             <div className="btn-group mr-md-1" role="group">
@@ -27,7 +27,6 @@ function LoggedInNavbar(props) {
                 <i className="fa fa-bars" aria-hidden="true"></i>
               </button>
               <div className="dropdown-menu" id="navSettingButton" aria-labelledby="navbarLoggedIn">
-                <a className="dropdown-item" href="#">Profile</a>
                 <a className="dropdown-item" href="#">Setting</a>
                 <a className="dropdown-item" href="#" onClick={props.onLogoutClick}>Logout</a>
               </div>
