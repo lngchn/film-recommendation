@@ -393,6 +393,31 @@ function ShuffleArray(array){
   return array;
 }
 
+router.get('/profile', (req, res) => {
+  if(!req.user) {
+    res.sendStatus(401);
+  } else {
+    const username = req.user.username;
+    const email = req.user.email;
+
+    MongoClient.connect(url, (err, db) => {
+      findUser(db, username, email, (result) => {
+        db.close();
+        if(result.length === 0) {
+          res.sendStatus(400);  // Need to return message saying that user is not found.
+        }
+        else {
+          let user = result[0];
+          let username = user.username;
+          let email = user.email;
+          let ratedFilms = user.ratedFilms;
+          res.status(200).json({username, email, ratedFilms});
+        }
+      });
+    });
+  }
+});
+
 module.exports = router;
 
 

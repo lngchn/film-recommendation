@@ -9,7 +9,7 @@ class Footer extends React.Component {
           <div className="col">
             <nav className="nav justify-content-center mt-4 footer-link">
               <a className="nav-link" href="/">Home</a>
-              <a className="nav-link" href="#">About</a>
+              <a className="nav-link" href="/about">About</a>
               <a className="nav-link" href="#">FAQ</a>
               <a className="nav-link" href="#">Contact</a>
             </nav>
