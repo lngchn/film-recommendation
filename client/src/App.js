@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import Login from './component/login';
+import About from './component/about';
 import Register from './component/register';
 import Navbar from './component/navbar';
 import Home from './component/home';
@@ -90,6 +91,7 @@ class App extends Component {
             <Route render={routeProps => (<Movie {...routeProps} isAuthed={this.state.isAuthed} />)} path="/movie/:id" />
             <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/login" component={Login} />
             <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/register" component={Register} />
+            <LoginOrRegisterRoute isAuthed={this.state.isAuthed} onAuthChange={this.handleAuth} path="/about" component={About} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/recommendation" component={Recommendation} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/activity" component={Activity} />
             <PrivateRoute isAuthed={this.state.isAuthed} path="/people" component={People} />
