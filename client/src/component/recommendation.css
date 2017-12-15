@@ -54,8 +54,12 @@
 
 .movie-title {
   top: 10%;
-  left: 2.6vw;
-  width: 15.5vw;
+
+  /* Setting the width of movie title to the poster size, and together with left and
+     transform properties to keep the title within the poster, instead of the col */
+  width: 185px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .remove-button {
