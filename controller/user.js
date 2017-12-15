@@ -146,9 +146,12 @@ router.get('/user/films', (req, res) => {
             });
 
             recommendation = itemBasedRecommendation.concat(userBasedRecommendation);
-            recommendation = ShuffleArray(recommendation);
-            recommendation = recommendation.slice(0, recommendation.length / 2);
+          } else {
+            recommendation = userBasedRecommendation;
           }
+
+          recommendation = ShuffleArray(recommendation);
+          recommendation = recommendation.slice(0, recommendation.length / 2);
 
           res.status(200).json({seedFilms, recommendation});
         }
