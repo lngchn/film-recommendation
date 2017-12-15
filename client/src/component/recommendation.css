@@ -64,7 +64,10 @@
 
 .remove-button {
   bottom: 10%;
-  left: 44%;
+
+  /* Center the remove seed film button */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .remove-button a {
