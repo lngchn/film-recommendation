@@ -77,3 +77,10 @@ python-3.6.3
 - Make sure you push the production /client/build folder to Heroku master branch for the app to work.
 - If you have an existing app on Heroku and you are getting 'no app specified' message on the command line, you can correct it by running this on your local terminal: `heroku git:remote -a MyHerokuAppName`
 - To SSH into Heroku app: `heroku run bash`
+
+
+### ESLint:
+In the project's root directory:
+```
+./node_modules/.bin/eslint yourfile.js
+```
