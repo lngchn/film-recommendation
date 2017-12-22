@@ -1,4 +1,5 @@
 const express = require('express');
+
 const app = express();
 
 const bodyParser = require('body-parser');
@@ -9,12 +10,12 @@ const passport = require('./middleware/authentication');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.enable('trust proxy');   // for use with express-rate-limit
+app.enable('trust proxy'); // for use with express-rate-limit
 
 app.use(expressSession(({
   secret: 'super secret',
   resave: false,
-  saveUninitialized: true
+  saveUninitialized: true,
 })));
 app.use(passport.initialize());
 app.use(passport.session());
@@ -24,10 +25,6 @@ app.use(passport.session());
 app.use(express.static(`${__dirname}/client/build`));
 
 app.use(controllers);
-
-app.get('/welcome', (req, res) => {
-  res.json({message: "Welcome, you have logged in"});
-});
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {

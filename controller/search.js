@@ -1,20 +1,20 @@
-var express = require('express');
-var router = express.Router();
-var request = require('request');
+const express = require('express');
+
+const router = express.Router();
+const request = require('request');
 
 const API_KEY = process.env.TMDB_KEY;
 
 router.post('/', (req, res) => {
-  let query = req.body.query;
+  const query = req.body.query;
 
   request({
     uri: 'https://api.themoviedb.org/3/search/movie',
     qs: {
       api_key: API_KEY,
-      query: query
-    }
+      query,
+    },
   }).pipe(res);
-
 });
 
 module.exports = router;
